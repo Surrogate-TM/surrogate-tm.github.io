@@ -1,0 +1,356 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Функция SETATREF. Справка Visio 2010</title>
+<link rel="stylesheet" href="../../styles/main.css" type="text/css">
+
+</head>
+
+<body lang=RU link="#0560A6" vlink=purple>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=1 cellpadding=0 width="100%"
+ style='width:100.0%;border:none;border-bottom:solid #C8CDDE 1.0pt'>
+ <tr>
+  <td valign=top style='border:none;border-bottom:solid #D4DFFF 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin:3.0pt'><b><span style='font-size:9.5pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif";color:#003399'>Функция
+  SETATREF</span></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Перенаправляет обновленные значения,
+которые получены в результате действий, выполненных с помощью пользовательского
+интерфейса или автоматизации, в другую ячейку. </span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;background:white'><b><span style='font-size:10.0pt;font-family:
+"Tahoma","sans-serif";color:#003399'>Синтаксис</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><b><span lang=EN-US
+style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>SETATREF(<i>reference</i>
+[,<i>set_expression</i> [,<i>ignore_eval</i>]])</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;background:white'><b><span style='font-size:10.0pt;font-family:
+"Tahoma","sans-serif";color:#003399'>Parameters</span></b></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Имя</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Требуется/Необязательно</span></b></p>
+  </td>
+  <td width="10%" style='width:10.0%;border:none;border-bottom:solid #C8CDDE 1.0pt;
+  background:#EFEFF7;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Тип данных</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Описание</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><i><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>reference</span></i></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Требуется</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><b><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Строка</span></b></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Ссылка на ячейку, в
+  которую перенаправляются обновления.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><i><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>set_expression</span></i></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Необязательно</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><b><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Строка</span></b></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Выражение,
+  присваиваемое аргументу <i>reference</i>.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><i><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>ignore_eval</span></i></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Необязательно</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><b><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Логический</span></b></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin:.75pt'><span style='font-size:8.0pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif"'>Если этот аргумент
+  имеет значение ИСТИНА, функция SETATREF возвращает 0; в противном случае
+  возвращается значение аргумента <i>reference</i>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;background:white'><b><span style='font-size:10.0pt;font-family:
+"Tahoma","sans-serif";color:#003399'>Заметки</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Когда действие пользователя в окне
+документа или метод автоматизации приводят к тому, что Microsoft Visio
+обновляет ячейку с формулой SETATREF, значение перенаправляется в ячейку, на
+которую ссылается формула SETATREF (<i>reference</i>). Формула в ячейке,
+содержащей функцию SETATREF, остается прежней.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Если аргумент <i>set_expression</i>
+опущен, значение, заданное с помощью пользовательского интерфейса или
+автоматизации, присваивается ячейке, на которую указывает ссылка; в противном
+случае этой ячейке присваивается значение аргумента <i>set_expression</i>. Это
+позволяет изменить или преобразовать новое значение, прежде чем присвоить его
+ячейке по ссылке. </span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>С функцией SETATREF связаны две другие
+функции: </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>функция
+SETATREFEXPR, которую можно использовать для представления нового значения в
+выражении <i>set_expression</i> (например, если аргумент <i>set_expression</i>
+содержит выражение SETATREFEXPR()-2&nbsp;см, из результата функции SETATREFEXPR
+вычитаются два сантиметра ); </span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:9.75pt;background:white'><span
+style='font-size:10.0pt;font-family:Symbol'><img width=6 height=9
+src="../../images/arrowdown.gif" alt="*"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>функция
+SETATREFEVAL, которая позволяет указать, что некоторую часть выражения <i>set_expression</i>
+следует вычислить и заменить ее результатами. </span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Функция SETATREF предназначена для
+использования в ячейках, которые могут быть изменены в результате действий
+пользователя в окне документа. Поддерживаются такие типы ячеек:</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>раздел
+преобразования фигуры&nbsp;— ячейки Width, Height, Angle, PinX и PinY; </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>раздел
+преобразования текста&nbsp;— ячейки TxtWidth, TxtHeight, TxtAngle, TxtPinX и
+TxtPinY; </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>раздел
+одномерных конечных точек&nbsp;— ячейки BeginX, BeginY, EndX и EndY; </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>раздел
+элементов управления&nbsp;— ячейки Controls.X и Controls.Y; </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>раздел
+данных фигуры.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Поскольку функция SETATREF
+модифицирует место изменения значений ячеек, она влияет на запуск событий. Если
+ячейка содержит функцию SETATREF, события <b>FormulaChanged</b> и <b>CellChanged</b>
+запускаются для ячейки, указанной в функции SETATREF, а не для ячейки,
+содержащей эту функцию. Если ячейка, содержащая функцию SETATREF, содержит
+также функцию SETATREFEXPR, событие <b>FormulaChanged</b> запускается и для
+ячейки с функцией SETATREF, поскольку изменяется параметр функции. </span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Следует отметить еще ряд важных
+моментов, связанных с функцией SETATREF.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Функции
+SETATREF могут объединять в цепочку до 10 ссылок на другие функции SETATREF. </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Ячейки
+могут содержать помимо функции SETATREF и другие выражения (в том числе
+несколько экземпляров SETATREF в одной ячейке). </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Если
+фигуры склеены, Visio следует по цепочке ссылок SETATREF на том же листе и
+помещает склеенные формулы в ячейку, на которую указывает ссылка. </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Средства
+автоматизации распознают функцию SETATREF и следуют по цепочке ячеек, на
+которые указывают ссылки. </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Как
+и функция GUARD, SETATREF не защищает ячейки от изменений, сделанных с помощью
+функции SETF в таблице свойств фигуры.</span></p>
+
+<p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;line-height:9.75pt;background:white'><b><span
+style='font-size:9.5pt;font-family:"Tahoma","sans-serif"'>Пример 1</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Предположим, что у фигуры есть
+настраиваемое свойство ширины Width, а ячейка Width в разделе преобразования
+фигуры содержит следующую формулу:</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>=SETATREF(Prop.Width)</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Если ширина фигуры изменяется в
+пользовательском интерфейсе, новое значение присваивается ячейке Prop.Width, а
+не ячейке Width в разделе преобразования фигуры. Формула в ячейке Width при
+этом не изменяется. Задать ширину фигуры также можно с помощью данных фигуры.</span></p>
+
+<p class=MsoNormal style='margin-top:24.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;line-height:9.75pt;background:white'><b><span
+style='font-size:9.5pt;font-family:"Tahoma","sans-serif"'>Пример 2</span></b></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Решения Visio часто содержат фигуры с
+иерархической структурой отношений, т.&nbsp;е. при перемещении родительских
+фигур должны перемещаться и дочерние. В примере ниже показано, как можно
+управлять этими отношениями с помощью функции SETATREF в таблице свойств
+фигуры. </span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Указанные ниже формулы содержатся в
+разделе преобразования фигуры дочерней фигуры. Кроме того, определены
+пользовательские ячейки User.DeltaX и User.DeltaY, предназначенные для
+отслеживания величины перемещения родительской фигуры. В результате дочерняя
+фигура перемещается при перемещении родительской, а при перемещении дочерней
+фигуры иерархическая структура сохраняется.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span lang=EN-US
+style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>PinX
+=SETATREF(User.DeltaX; SETATREFEVAL(SETATREFEXPR() - ParentShape!PinX)) +
+ParentShape!PinX</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span lang=EN-US
+style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>PinY
+=SETATREF(User.DeltaY; SETATREFEVAL(SETATREFEXPR() - ParentShape!PinY)) +
+ParentShape!PinY</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>При перемещении дочерней фигуры с
+помощью пользовательского интерфейса новые значения PinX и PinY задаются как
+параметры в функции SETATREFEXPR. Функция SETATREF вычисляет формулу, вложенную
+в функцию SETATREFEVAL, и заменяет параметры PinX и PinY результатами
+вычисления, а затем получившаяся формула присваивается пользовательским
+ячейкам, указанным в функции SETATREF (User.DeltaX и User.DeltaY). Наконец,
+значения, возвращенные функцией SETATREF (User.DeltaX и User.DeltaY),
+добавляются к координатам точки привязки родительской фигуры, чтобы вычислить
+точку привязки дочерней фигуры.</span></p>
+
+</div>
+
+</body>
+
+</html>

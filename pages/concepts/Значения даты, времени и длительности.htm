@@ -1,0 +1,693 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Значения даты, времени и длительности. Справка Visio 2010</title>
+<link rel="stylesheet" href="../../styles/main.css" type="text/css">
+
+</head>
+
+<body lang=RU link="#0560A6" vlink=purple>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=1 cellpadding=0 width="100%"
+ style='width:100.0%;border:none;border-bottom:solid #C8CDDE 1.0pt'>
+ <tr>
+  <td valign=top style='border:none;border-bottom:solid #D4DFFF 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin:3.0pt'><b><span style='font-size:9.5pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif";color:#003399'>Значения
+  даты, времени и длительности </span></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>В формулах можно выполнять операции с
+использованием значений даты, времени и длительности. В Microsoft Visio
+выражение даты и времени может вычисляться как одно значение. Выражение даты и
+времени — это любое выражение, которое может быть распознано как дата или
+время, или ссылка на ячейку, содержащую дату или время. К таким выражениям
+относятся строки и числа, которые выглядят как даты, и значения даты и времени,
+которые возвращаются функциями.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Значения времени и даты хранятся в
+Visio как 64-разрядные числа с плавающей запятой. Значение слева от запятой
+обозначает число дней, прошедших с 30 декабря 1899 г., а значение справа от
+запятой — часть дня начиная с полуночи. Полдень обозначается как 0,5.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Чтобы использовать дату и время в
+выражении (а не в виде константы), необходимо определить их как значения даты и
+времени с помощью соответствующей функции.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'><b>Допустимые даты</b></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;28.02&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;28.02.99&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;28.02.1999&quot;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;28-2&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;28-2-99&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;28-2-1999&quot;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;6 мар 99&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;6 мар&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;6 мар 99&quot;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;1 января 99&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;1 янв 99&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;1 янв 1999&quot;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;Янв 00&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;Январь 2000&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;1 янв 00&quot;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'><b>Допустимые значения времени</b></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;3:45&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;3:45:27&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;7 a&quot;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;7 am&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;7 p&quot;</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>&quot;7:30 PM&quot;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'><b>Функции даты и времени</b></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Функция</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Описание</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">DATE</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Преобразует числа в значение даты.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">DATETIME</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Преобразует строку в значение даты и
+  времени.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">DATEVALUE</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Преобразует строку в значение даты.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">NOW</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Преобразует текущую системную дату в
+  значение даты и времени.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">TIME</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Преобразует числа в значение времени.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">TIMEVALUE</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Преобразует строку в значение времени.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">DAY</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает часть выражения даты и
+  времени, обозначающую день.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">DAYOFYEAR</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает порядковый номер дня года в
+  выражении даты и времени.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">HOUR</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает часть выражения даты и
+  времени, обозначающую часы.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">MINUTE</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает часть выражения даты и
+  времени, обозначающую минуты.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">MONTH</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает часть выражения даты и
+  времени, обозначающую месяц.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">SECOND</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает часть выражения даты и
+  времени, обозначающую секунды.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">WEEKDAY</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает номер дня недели в выражении
+  даты и времени.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'><a
+  href="">YEAR</a></span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Возвращает часть выражения даты и
+  времени, обозначающую год.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'><b>Длительность</b></span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Можно выполнять вычисления
+длительности или затраченного времени. Длительность хранится в системе в виде
+количества дней и дробной части дня. Например, если затрачена 1 неделя (7 дней,
+168 часов), это значение хранится в системе как 7,0, но отображается в
+соответствующих единицах измерения.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>В Visio распознаются единицы
+длительности, указанные в следующей таблице.</span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Единицы</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Сокращение</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Универсальное сокращение</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Затраченное время в днях</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>день, дн.</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>дн</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Затраченное время в часах</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>час, час.</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>час</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Затраченное время в минутах</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>минута, мин.</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>мин</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Затраченное время в секундах</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>секунда, сек.</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>сек</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Затраченное время в неделях</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>неделя, нед.</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>нед</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>К длительности можно добавить дату и
+время для вычисления новой даты или времени. Со значениями даты, времени и
+длительности можно выполнять указанные в таблице операции.</span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Входные значения</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C8CDDE 1.0pt;background:#EFEFF7;
+  padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:3.75pt;margin-right:0cm;margin-bottom:
+  3.75pt;margin-left:0cm'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif";color:#000066'>Результат</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Дата и время +/- длительность</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Значение даты и времени</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Длительность +/- дата и время</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Значение даты и времени</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Длительность +/- длительность</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Значение длительности</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Дата и время + дата и время</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Значение даты и времени</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Дата и время - дата и время</span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Значение длительности</span></p>
+  </td>
+ </tr>
+</table>
+
+
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

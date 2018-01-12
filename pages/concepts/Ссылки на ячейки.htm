@@ -1,0 +1,377 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Ссылки на ячейки. Справка Visio 2010</title>
+<link rel="stylesheet" href="../../styles/main.css" type="text/css">
+
+</head>
+
+<body lang=RU link="#0560A6" vlink=purple>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=1 cellpadding=0 width="100%"
+ style='width:100.0%;border:none;border-bottom:solid #C8CDDE 1.0pt'>
+ <tr>
+  <td valign=top style='border:none;border-bottom:solid #D4DFFF 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='margin:3.0pt'><b><span style='font-size:9.5pt;
+  line-height:115%;font-family:"Segoe UI","sans-serif";color:#003399'>Ссылки на
+  ячейки </span></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Можно создавать взаимозависимости
+между формулами с помощью ссылок на ячейки таблицы свойств фигуры. Ссылки на
+ячейки позволяют вычислять значение одной ячейки на основе значения другой
+ячейки. Например, ячейка Width фигуры может содержать формулу, которая
+вычисляет ширину фигуры, ссылаясь на значение ячейки Height, благодаря чему при
+изменении размера фигуры по вертикали ее ширина пропорционально меняется.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>В формулу ячейки можно добавить ссылку
+на ячейку в той же фигуре или в другом объекте, например на документе или
+странице, чтобы значение в ячейке вычислялось на основе значения другой ячейки.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'><b>Элементы ссылок
+на ячейки</b></span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Ссылки на ячейки могут включать
+идентификаторы (ИД) фигур или имена. Для любой фигуры на странице можно создать
+ссылку по ее ИД, даже если у нее нет имени. Если фигуре не присвоено имя,
+используется имя по умолчанию &quot;Лист.<i>i</i>&quot;, где <i>i</i> — ИД
+фигуры. ИД назначается при создании фигуры и не изменяется, если фигуру не
+переместить на другую страницу или в другой документ. Если у нескольких фигур
+на странице одинаковое имя, необходимо указать назначенный ИД.</span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'><b>Синтаксис и
+примеры ссылок на ячейки</b></span></p>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>Используемый синтаксис и возможность
+ссылки на фигуру по имени зависят от отношения между двумя объектами. При этом
+действуют описанные ниже общие правила.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Если
+фигура, на которую создается ссылка, и фигура, формула которой изменяется,
+являются одноуровневыми, можно использовать ссылку по имени. Если такая фигура
+является группой, можно ссылаться по имени на группу, но не на ее компоненты.
+Кроме того, нельзя ссылаться по имени на родительский объект фигуры и на
+элементы того же уровня, что и родительский объект. </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Синтаксис
+&quot;Лист.ИД&quot; можно использовать для ссылки на любую фигуру на странице,
+даже если она является группой или родительским объектом. </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+9.75pt;background:white'><span style='font-size:10.0pt;font-family:Symbol'><img
+width=6 height=9 src="../../images/arrowdown.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:8.5pt;font-family:"Tahoma","sans-serif"'>Имена,
+содержащие нестандартные символы, необходимо заключать в одинарные кавычки.
+Если в имени используется одинарная кавычка, необходимо поставить перед ней еще
+одну одинарную кавычку. </span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Местонахождение ячейки </span></b></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Синтаксис </span></b></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><b><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Пример</span></b><span style='font-size:
+  8.0pt;line-height:115%;font-family:"Segoe UI","sans-serif"'> </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Та же фигура </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Имя_ячейки </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Width </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Фигура, группа или направляющая </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Имя_фигуры!Имя_ячейки </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Звезда!Angle </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Фигура, группа или направляющая, в
+  которых несколько фигур одного уровня имеют одинаковое имя </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Имя_фигуры.ИД!Имя_ячейки </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Директор.2!Height </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Именованный столбец с индексированными
+  строками </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Раздел.Столбец[индекс] </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Char.Font[3] </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Неименованный столбец с индексированными
+  строками </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Раздел.Индекс_столбца </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Scratch.A5 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Любая фигура, страница, образец или
+  стиль </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Лист.ИД!Имя_ячейки </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Лист.8!FillForegnd </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Образец </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Masters[Имя_образца]!Имя_листа!Ссылка_на_ячейку
+  </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Masters[Шестерня]!Стержень!Geometry1.X1 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Страница или главная страница, на
+  которой расположен объект </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Страница!Ссылка_на_ячейку </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Страница!User.Vanishing_Point </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Другая страница в документе </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Pages[Имя_страницы]!Имя_листа!Ссылка_на_ячейку
+  </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Pages[Страница-3]!Лист.4!BeginX </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Стиль </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Styles!Имя_листа!Ссылка_на_ячейку </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Styles!Руководитель!LineColor </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Документ </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>TheDoc!Ссылка_на_ячейку </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>TheDoc!PreviewQuality </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>Фигура, страница, образец, документ или
+  стиль с нестандартным именем </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>'Имя_листа'!Имя_ячейки </span></p>
+  </td>
+  <td style='border-top:none;border-left:solid #D5D5D3 1.0pt;border-bottom:
+  solid #D5D5D3 1.0pt;border-right:none;background:#F7F7FF;padding:.75pt 3.75pt .75pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
+  7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
+  font-family:"Segoe UI","sans-serif"'>'1-D'!LineColor </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:7.2pt;
+margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
+8.5pt;font-family:"Tahoma","sans-serif"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
