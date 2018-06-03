@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//RU">
+<HTML>
+	<HEAD>
+		<TITLE>29. Вектор привязки</TITLE>
+	
+	</HEAD>
+	<BODY MARGINHEIGHT="30" TOPMARGIN="30" MARGINWIDTH="40" LEFTMARGIN="40" BACKGROUND="" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="Blue" ALINK="Navy" VLINK="Purple">
+	<a href="../articles/index.html"><IMG BORDER=0 ALT="Раздел Статьи" ALIGN=LEFT src="../images/article.gif" width=72 height=72></a>
+	<H1><P ALIGN=CENTER>Статья 29. Вектор привязки</H1></P><BR>
+	<HR WIDTH=75% ALIGN=CENTER COLOR="#6699FF"><BR>
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+В процессе создания каких-либо не прямоугольных фигур или если мы рисуем в изометрии может возникнуть необходимость пометить какую-то точку для последующего использования. Можно для этого использовать линию. Но если таких точек надо 5 или 10, то тут уже можно легко запутаться, где какая точка к чему относится.
+	
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Для таких случаев можно создать фигуру, которая бы отличалась от линии и однозначно определяла бы необходимую точку привязки.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Соответственно, нам нужен вектор, т.к. у вектора есть начало и направление. Но вначале надо, чтобы линия отличалась. Как один из вариантов могу предложить сделать линию с линией. Такая линия будет однозначно отличаться от других линий.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Для этого сначала создадим Line Patterns и назовем его Marker. Настраиваем поведение как показано в окне ниже и далее по порядку.
+
+	<BR><BR><IMG src="../images/pic2901.png">
+	<ol>
+	<li>Создаем прямоугольник произвольной высоты.
+	<li>Примерно вполовину создаем красный прямоугольник без контура.
+	<li>Затем поверх рисуем линию, и делаем её толщину в 0 pt.
+	<li>Потом убираем линию на задний план и группируем.
+	<li>И теперь выделяем белый прямоугольник в группе и удаляем его.
+	</ol>
+	
+	<BR><IMG src="../images/pic2902.png">
+
+	<BR><BR><IMG src="../images/pic2903.png">
+	
+	<BR><IMG src="../images/null.gif" width=40 height=10>	
+
+	Итак, наша заготовка готова. Можем выйти из режима редактирования, применить Marker шаблон к линии и увидеть линию в линии.
+
+	<BR><BR><IMG src="../images/pic2904.png">
+	<BR><BR><IMG src="../images/pic2905.png">
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Дальше осталось сделать вектору начало — привязку. Для этого создаем конечный шаблон линии и называем его Vector.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Настраиваем поведение, как показано в окне ниже и далее снова по порядку.
+
+	<BR><BR><IMG src="../images/pic2907.png">
+
+	<ol>
+	<li>Создаем два круга.
+	<li>затем прямоугольник
+	<li>Объединяем.
+	<li>Затем еще один круг
+	<li>Убираем у фигур линии, разукрашиваем и группируем.
+	<li>Сжимаем группу в ноль для предотвращения конечного перехода, который описан в <a href="../articles/article20.html">этой</a> статье.
+	<li>Перемещаем фигуры как показано на рисунке.
+
+	<BR><BR><IMG src="../images/pic2908.png"><BR><BR><IMG src="../images/null.gif" width=40 height=10>
+
+
+Все. Осталось только назначить конечный шаблон линии Vector и вектор привязки готов.
+	
+	<BR><BR><IMG src="../images/pic2909.png">
+	<BR><BR><IMG src="../images/pic2910.png"><BR><BR><IMG src="../images/null.gif" width=40 height=10>
+	
+Осталось только показать применение вектора привязки «в деле»
+
+	<BR><BR><IMG src="../images/pic2911.png">
+	<BR><BR><IMG src="../images/pic2912.png">
+
+	
+	
+	<HR WIDTH=75% ALIGN=CENTER COLOR="#6699FF"><BR>
+	<P>Статьи:
+		
+		&#160;<A HREF="../articles/article24.html"><IMG border="0" ALT="XML в Visio 2003" src="../images/pic1N24.png"></a>
+		&#160;<A HREF="../articles/article25.html"><IMG border="0" ALT="Почти конфиденциально в Visio 2003" src="../images/pic1N25.png"></a>
+		&#160;<A HREF="../articles/article26.html"><IMG border="0" ALT="Visio на двух мониторах" src="../images/pic1N26.png"></a>
+		&#160;<A HREF="../articles/article27.html"><IMG border="0" ALT="«Информационный катарсис»" src="../images/pic1N27.png"></a>
+		&#160;<A HREF="../articles/article28.html"><IMG border="0" ALT="Разукрашиваем Actions" src="../images/pic1N28.png"></a>
+	  	&#160;<IMG border="0" ALT="Вектор привязки" src="../images/pic2N29.png"><br><br>
+		&#160;<A HREF="../articles/index.html">В начало раздела</A>&#160;&#160;
+		&#160;Автор: Ничков Алексей <A HREF="mailto:digitall@mail.ru">(Digitall)</A></P>
+
+
+</body>
+</html>

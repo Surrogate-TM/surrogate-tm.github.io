@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//RU">
+<HTML>
+	<HEAD>
+		<TITLE>Метод создания интерактивной прозрачности.</TITLE>
+	</HEAD>
+	<BODY MARGINHEIGHT="30" TOPMARGIN="30" MARGINWIDTH="40" LEFTMARGIN="40" BACKGROUND="" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="Blue" ALINK="Navy" VLINK="Purple">
+	<IMG ALT="Раздел Статьи" ALIGN=LEFT src="../images/article.gif" width=72 height=72>
+	<H1><P ALIGN=CENTER>Метод создания интерактивной прозрачности.</H1></P><BR>
+	<HR WIDTH=75% ALIGN=CENTER COLOR="#6699FF"><BR>
+	<IMG src="../images/null.gif" width=20 height=10><B>Действия будут приводиться в сжатом виде. Для более полного объяснения всех выполняемых действий, рекомендуется ознакомиться с предыдущими статьями.</B><BR><BR>
+	<IMG src="../images/null.gif" width=20 height=10>В Visio объекты не имеют возможности изменения во времени, как например, во Flash. Это связанно в первую очередь с настройками течения времени в самой программе, и отсутствием инструментов по работе с ними. В течении времени объекты должны изменяться по какому-либо условию (2-м нажатие мышкой, например).<BR>
+Для корректного течения времени необходимо добавить в реестр этот <a href="../articles/article6.reg">reg</a>-файл, либо внести изменения вручную, как это было описано в <a href="../articles/article6.html">этой</a> статье.
+	<BR>Как вариант, создадим объект, который будет исчезать при нажатии на него правой кнопкой мышью и выбора действия. Для этого создадим простую фигуру (прямоугольник, например) и создадим в ТаблицеФигур (ShapeSheet), этого прямоугольника, раздел Ячейки пользователя(User-defined Cells). И внести следующие изменения:<BR>
+	<BR>Для Visio 2002 
+	<BR>В ячейку User.Row_1:
+	<BR>=FORMAT(NOW();"ydMHHmmss")
+	<BR>В ячейку User.Row_3:
+	<BR>=User.Row_2+5
+	<BR>В ячейку User.Row_4:
+	<BR>=IF(FORMAT((User.Row_3-User.Row_1);"0 u")>0;FORMAT((User.Row_3-User.Row_1);"0 u");User.Row_5*6)
+	<BR>В ячейку User.Row_5:
+	<BR>=1
+	<BR>
+	<BR>Для Visio 2003 
+	<BR>В ячейку User.Row_1:
+	<BR>=FORMAT(NOW(),"ydMHHmmss")
+	<BR>В ячейку User.Row_3:
+	<BR>=User.Row_2+5
+	<BR>В ячейку User.Row_4:
+	<BR>=IF(FORMAT((User.Row_3-User.Row_1),"0 u")>0,FORMAT((User.Row_3-User.Row_1),"0 u"),User.Row_5*6)
+	<BR>В ячейку User.Row_5:
+	<BR>=1
+	<BR><BR><IMG ALT="Раздел Ячейки пользователя" src="../images/pic0901.png" width=767 height=103><BR>
+	<BR>Далее создается раздел Действия (Actions) и в этот раздел вносятся изменения:
+	<BR>Для Visio 2002 
+	<BR>
+	<BR>В ячейку Action:
+<BR>=IF(User.Row_5=0;SETF("User.Row_5";1)+SETF(GetRef(User.Row_2);User.Row_1);SETF(GetRef(User.Row_2);User.Row_1)+SETF("User.Row_5";0))
+	<BR>В ячейку Menu:
+	<BR>="Показать/Скрыть"
+	<BR>
+	<BR>Для Visio 2003 
+	<BR>В ячейку Action:
+<BR>=IF(User.Row_5=0,SETF("User.Row_5",1)+SETF(GetRef(User.Row_2),User.Row_1),SETF(GetRef(User.Row_2),User.Row_1)+SETF("User.Row_5",0))
+	<BR>В ячейку Menu:
+	<BR>="Показать/Скрыть"
+	<BR><BR><IMG ALT="Раздел Действия" src="../images/pic0902.png" width=898 height=35><BR>
+	<BR>Затем вносятся изменения в раздел Формат заливки(Fill Format):
+	<BR>
+	<BR>Для Visio 2002 
+	<BR>В ячейку FillForegndTrans:
+	<BR>=IF(User.Row_5=1;IF(User.Row_4>5;(ROUND(1-User.Row_4*0,2;0));User.Row_4*0,2);1-User.Row_4*0,2)
+	<BR>В ячейку FillBkgndTrans:
+	<BR>=FillForegndTrans
+	<BR>
+	<BR>Для Visio 2003  
+	<BR>В ячейку FillForegndTrans:
+	<BR>=IF(User.Row_5=1,IF(User.Row_4>5,(ROUND(1-User.Row_4*0.2,0)),User.Row_4*0.2),1-User.Row_4*0.2)
+	<BR>В ячейку FillBkgndTrans:
+	<BR>=FillForegndTrans
+	<BR>
+	<BR><IMG ALT="Раздел Формат заливки" src="../images/pic0903.png" width=797 height=86><BR>
+	<BR>Затем вносятся изменения в раздел Формат линии(Line Format):
+	<BR>
+	<BR>В ячейку LineColorTrans:
+	<BR>=FillForegndTrans
+	<BR>
+	<BR><IMG ALT="Раздел Формат линии" src="../images/pic0904.png" width=287 height=86><BR>
+	<BR>Теперь закрыв ТаблицуФигур и нажав правой кнопкой мыши на прямоугольнике, в контекстном меню выбираем “ Показать/Скрыть ”. И если все было сделано правильно, то прямоугольник начнет исчезать.<BR>
+	<BR><IMG ALT="Раздел Формат линии" src="../images/pic0905.png" width=178 height=218><BR>
+	<BR>Также добавив формулу из ячейки FillForegndTrans в ячейку PinX, раздела Трансформация фигуры, получится “уезжающая” исчезающая часть.<BR>
+	<BR><IMG ALT="Раздел Формат линии" src="../images/pic0906.png" width=794 height=86><BR>
+	<BR>Данный способ не является самым оптимальным. Он лишь показывает, что это можно сделать.
+	<BR><BR><A HREF="../stencils/index.html">Примеры из статьи.</A><BR>
+	<BR><HR WIDTH=75% ALIGN=CENTER COLOR="#6699FF"><BR>
+	<P>&#160;<A HREF="../articles/index.html">В начало раздела</A>
+	   &#160;<A HREF="../articles/article8.html">Предыдущая статья</A>
+	   &#160;<A HREF="../articles/article10.html">Следующая статья</A>
+	   &#160;Автор: Ничков Алексей <A HREF="mailto:digitall@mail.ru">(Digitall)</A></P>
+
+
+</body>
+</html> 
