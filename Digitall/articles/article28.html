@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//RU">
+<HTML>
+	<HEAD>
+		<TITLE>28. Разукрашиваем Actions</TITLE>
+	
+	</HEAD>
+	<BODY MARGINHEIGHT="30" TOPMARGIN="30" MARGINWIDTH="40" LEFTMARGIN="40" BACKGROUND="" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="Blue" ALINK="Navy" VLINK="Purple">
+	<a href="../articles/index.html"><IMG BORDER=0 ALT="Раздел Статьи" ALIGN=LEFT src="../images/article.gif" width=72 height=72></a>
+	<H1><P ALIGN=CENTER>Статья 28. Разукрашиваем Actions</H1></P><BR>
+	<HR WIDTH=75% ALIGN=CENTER COLOR="#6699FF"><BR>
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Часто, при создании нового меню мы можем лишь текстовой строкой показать пользователю на какой-либо пункт меню. Но это не предел. Помимо текстовой составляющей мы можем сделать и значок для нашей команды. Как именно сделать это, и рассказывается в статье.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+	А теперь немного теории. В таблице фигур (ShapeSheet) есть ячейка ButtonFace, которая отвечает за изображение при выборе команды.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	
+К примеру, если заполнить поле Menu каким-либо текстом и поставить в ячейку ButtonFace число 2, то отобразиться значок проверки орфографии. Т.е. по сути ограничения касаются только выбором из заранее предопределенных 
+«образов», зато таких «образов» в Офисе порядка 6—7 тысяч. Есть где развернуться.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+
+Итак, с теорией покончено, теперь необходимо сделать фигуру, которая показывала бы максимально количество этих самых значков. МОжно конечно самому по одному числу просмотреть 6 тысяч значков, но это дело крайне неблагодарное, хочется какой-либо выбор.
+
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	Итак, все что нам понадобится — это прямоугольник посередине листа. Все остальные действия будут производиться уже в Таблице фигур. Нарисовав прямоугольник входим в Таблицу фигур. Далее создаем раздел User-defined cells и уже в этом разделе создаем 51 ячейку. Почему 51, спросите вы. Потому, что в 51 ячейку мы внесем текст фигуры, а в 50 оставшихся одинаковую, ну, почти одинаковую, формулу.
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	Думаю, что раз уж вы, дорогой читатель, на 28 статье, то вставить формулу изъятия текста фигуры уже не представляется такой сложной задачей, я все же напомню.
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>
+	=SHAPETEXT(TheText)
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>
+	И вставляем эту формулу именно в 51 ячейку. Почему не в первую, сейчас поймете.
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	Теперь надо в разделе Actions создать 50 строк и во все строки ввести следующие формулы (в столбец Menu):
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>
+	Actions.Row_1.Menu	=Actions.Row_1.ButtonFace<BR><IMG src="../images/null.gif" width=40 height=10>
+	Actions.Row_2.Menu	=Actions.Row_2.ButtonFace<BR><IMG src="../images/null.gif" width=40 height=10>
+	...<BR><IMG src="../images/null.gif" width=40 height=10>
+	Actions.Row_50.Menu	=Actions.Row_50.ButtonFace<BR><IMG src="../images/null.gif" width=40 height=10>
+	<br><IMG src="../images/null.gif" width=40 height=10><IMG src="../images/pic2801.png">
+	
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>Теперь заполняем раздел User-defined Cells.
+
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>
+	User.Row_1	=SETF("Actions.Row_1.ButtonFace",1+50*User.Row_51)
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	User.Row_2	=SETF("Actions.Row_2.ButtonFace",2+50*User.Row_51)
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	...
+	<BR><IMG src="../images/null.gif" width=40 height=10>
+	User.Row_50	=SETF("Actions.Row_50.ButtonFace",50+50*User.Row_51)
+	<br><br><IMG src="../images/null.gif" width=40 height=10><IMG src="../images/pic2802.png">
+
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>Как видите, заполнять такт-в-такт гораздо удобнее.	
+	<BR><IMG src="../images/null.gif" width=40 height=10>Теперь остается только ввести номер в фигуру и вызвать контекстное меню.
+	
+	<br><br><IMG src="../images/null.gif" width=40 height=10><IMG src="../images/pic2803.png">
+	
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>Теперь останется только запомнить номер понравившегося значка и ввести его в соответствующую ячейку ButtonFace строки команды.
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10>Приведу некоторые значки для удобства:
+	<BR><BR><IMG src="../images/null.gif" width=40 height=10><IMG src="../images/0_200.png">
+	<BR><IMG src="../images/null.gif" width=40 height=10><IMG src="../images/201_400.png">
+	<BR><IMG src="../images/null.gif" width=40 height=10><IMG src="../images/401_600.png">
+	
+	
+	<HR WIDTH=75% ALIGN=CENTER COLOR="#6699FF"><BR>
+	<P>Статьи:
+		
+		
+		&#160;<A HREF="../articles/article24.html"><IMG border="0" ALT="XML в Visio 2003" src="../images/pic1N24.png"></a>
+		&#160;<A HREF="../articles/article25.html"><IMG border="0" ALT="Почти конфиденциально в Visio 2003" src="../images/pic1N25.png"></a>
+		&#160;<A HREF="../articles/article26.html"><IMG border="0" ALT="Visio на двух мониторах" src="../images/pic1N26.png"></a>
+		&#160;<A HREF="../articles/article27.html"><IMG border="0" ALT="«Информационный катарсис»" src="../images/pic1N27.png"></a>
+	  	&#160;<IMG border="0" ALT="Разукрашиваем Actions" src="../images/pic2N28.png">
+		&#160;<A HREF="../articles/article29.html"><IMG border="0" ALT="Вектор привязки" src="../images/pic1N29.png"></a><br><br>
+		&#160;<A HREF="../articles/index.html">В начало раздела</A>&#160;&#160;
+		&#160;Автор: Ничков Алексей <A HREF="mailto:digitall@mail.ru">(Digitall)</A></P>
+
+
+</body>
+</html>
