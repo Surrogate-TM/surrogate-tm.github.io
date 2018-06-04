@@ -1,0 +1,23 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Visio\Visio 2000\colors]
+"ColorStencilBackground"="178 213 153"
+"ColorMasterNameBackground"="178 213 153"
+"ColorNonPage"="218 239 249"
+"ColorPage"="255 255 255"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Visio\colors]
+"ColorStencilGradStart"="178 213 153"
+"ColorStencilGradEnd"="178 213 153"
+"ColorMasterNameBackground"="178 213 153"
+"ColorNonPageGradStart"="218 239 249"
+"ColorNonPageGradEnd"="218 239 249"
+"ColorPage"="255 255 255"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Visio\colors]
+"ColorStencilGradStart"="178 213 153"
+"ColorStencilGradEnd"="178 213 153"
+"ColorMasterNameBackground"="178 213 153"
+"ColorNonPageGradStart"="218 239 249"
+"ColorNonPageGradEnd"="218 239 249"
+"ColorPage"="255 255 255"
