@@ -1,0 +1,282 @@
+﻿<html>
+<head>
+<title>Методы создания штампов и вопросы автопозиционирования</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="../index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="../reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="../forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="../f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="../bib.htm">Библиотека</a> |
+ <a class="menu" href="../faq.htm">Частые вопросы</a> |
+ <a class="menu" href="../bookpdf.htm">Литература</a> |
+ <a class="menu" href="../loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="../site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="../visicorp.htm">История Visio</a> |
+ <a class="menu" href="../product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>Методы создания штампов и вопросы автопозиционирования</h1>
+<p align="right">Ничков А.В.</p>
+
+<p align="Justify">Все кто работает в Visio, не раз задумывались над рамкой или
+штампом и чтобы сам равнялся по странице, в нужном месте… Но обычно просто рисовалась
+таковая от руки и все. Если страниц в чертеже одна, а если 20 и с разным масштабом
+и ориентацией страниц. Тогда и необходимо придумать универсальный инструмент.
+Его мы и создадим, но сначала немного теории.</p>
+<p align="Justify">В Visio мы работаем с объектами независимо от того что чертим,
+все это для Visio одинаковые объекты с хвостиком настроек. Для примера создадим
+прямоугольник. Прямоугольник, это объект с длинным хвостом параметров, текстовая
+надпись это тот же прямоугольник, но без заливки и контура, и линия как ни странно
+тоже прямоугольная фигура, но только нулевой толщины. Что касается группы, то при
+ее создании создается новый объект, т.е. это сама группа как объект + все входящие
+в эту группу фигуры и как следствие увеличение числа параметров.  Все это можно
+посмотреть выделив прямоугольник и открыть ТаблицуФигур (Окно>Показать ТаблицуФигур)
+в Visio 2000 Ru . В этой таблице собраны все параметры которые описывают фигуру.
+Все параметры разбиты на разделы для удобства. Обратите внимание на раздел Геометрия1,
+в нем описано формулами создание этого прямоугольника, а нам показывается его
+графическое представление.</p>
+<img src="r011/image002.jpg" height="138" width="360" alt="" border="0"../>
+<p align="Justify">Соответственно один раздел на геометрию и по одному разделу
+параметров этой фигуры. Если мы создадим штамп сразу из прямоугольников, то получим
+несколько десятков прямоугольников  и сразу заметим как начнет притормаживать
+программа при работе с этим штампом. Произойдет это потому, что у нас, предположим,
+50 прямоугольников и 50 разделов параметров этих фигур. Но все можно упростить.
+Если создать, например, 20 фигур и применить к ним команду Присоединение
+(Фигуры>Операции>Присоединение), то посмотрев снова в ТаблицуФигур, мы увидим что
+Разделов Геометрия стало больше, а остальных параметров всего по одному разделу. </p>
+<table border="0">
+  <tr><td width="30%" align="center"><img src="r011/image004.jpg" height="105" width="94" alt=""
+  border="0" align="center"../></td>
+  <td width="70%">И получившаяся фигура будет обрабатываться намного быстрее, чем группа созданная
+из них. По такому принципу и будем уменьшать количество фигур в штампе.</td></tr>
+</table>
+<p align="Justify">Итак, приступим:</p>
+<p align="Justify">Во-первых, нарисуем большую таблицу будущего штампа, используя
+наименьшее кол-во фигур:</p>
+<p align="Justify">1) Малая сетка, как на рисунке (это 1 объект, составленный из 14 линий)</p>
+<p><img src="r011/image006.jpg" height="237" width="277" alt="" border="0"../></p>
+<p align="Justify">2) Основной контур (это 1 объект, состоящий из 1 прямоугольника
+по контуру и 7 линий)</p>
+<p><img src="r011/image008.jpg" height="182" width="576" alt="" border="0"../></p>
+<p align="Justify">3) Надписи(4 объекта. Можно и в 3 сделать, но для удобства лучше 4)</p>
+<p><img src="r011/image010.jpg" height="75" width="576" alt="" border="0"../></p>
+
+<p align="Justify">Только с надписями есть одна тонкость, необходимо выставить
+все отступы на 0 мм и между надписями в фигуре делать пробел размером шрифта 6 ед.
+Пока получилось 6 объектов.</p>
+<p align="Justify">Далее малая боковая таблица</p>
+<p><img src="r011/image012.jpg" height="114" width="576" alt="" border="0"../></p>
+<p align="Justify">1 надпись и 1 объект(1 прямоугольник и 4 линии) и последний
+объект это собственно рамка. Вот и все. 8 правильно составленных объектов и вся рамка.</p>
+<p align="Justify">Теперь займемся автопозиционированием. Наша рамка будет группой,
+в силу того, что в трафарете при добавлении на лист эти элементы будут помещаться группой.</p>
+<p align="Justify">Нам необходимо создать 2 группы:</p>
+<p align="Justify">1) Группа большой таблицы (размерами 181,3*54,2334 мм)<br>
+2) Группа малой таблицы (размерами 143*14,7 мм)</p>
+<table border="0">
+  <tr><td width="30%" align="center">
+  <img src="r011/image014.jpg" height="268" width="193" alt="" border="0"../></td>
+  <td width="70%">Размеры немного меньше ГОСТ’овских, но это сделано специально для
+  того, чтобы все элементы уместились в зону печати и не заходили на непечатаемые отступы.<br>
+Далее все эти 3 фигуры: Большая Таблица + Малая Таблица + Рамка, располагаем
+(как показано на рисунке) так как они должны стоять (Малую таблицу необходимо
+повернуть на 90 градусов)<br>
+и группируем, далее заходим в ТаблицуФигур получившейся группы. Делаем вставку
+раздела Ячейки пользователя (В ТаблицеФигур нажать правую кнопку мыши и выбрать>Вставка
+раздела>Ячейки пользователя) и создать 4 строки с названиями
+</td></tr>
+</table>
+<p><img src="r011/image016.jpg" height="86" width="563" alt="" border="0"../></p>
+<p align="Justify">И ввести следующие формулы:<br>
+1) =ThePage!DrawingScale/ThePage!PageScale<br>
+2) =ThePage!DrawingScale*ThePage!PageScale/1 mm^2<br>
+4) =ThePage!PageWidth<ThePage!PageHeight</p>
+<p align="Justify">и ввести названия этих параметров в ячейки Promt как показано на рисунке.</p>
+<p align="Justify">Теперь нам необходимо узнать ID данной группы, для этого зайдите
+в «Специальное…» (Формат>Специальное) и запомните номер ID группы(13-й к примеру),
+далее он нам понадобится.</p>
+<p align="Justify">С группой пока все. Далее займемся рамкой. Для этого необходимо
+выделить ее из группы двойным нажатием и вызвать ТаблицуФигур для нее. Теперь
+необходимо снова создать такие же строки, но написать другое:</p>
+<table border="0" width="90%">
+  <tr><td width="60%" align="center">
+  <img src="r011/image018.jpg" height="88" width="408" alt="" border="0"../></td>
+  <td width="40%">1) =Sheet.13!User.Row_1<br>
+  2) =Sheet.13!User.Row_2<br>
+  3) =Sheet.13!User.Row_3<br>
+  4) =Sheet.13!User.Row_4
+</td></tr>
+</table>
+<p align="Justify">Где вместо 13 впишите свой ID главной группы. Мы создали ссылку
+на значение этих ячеек в Главной группе, т.к. проще 1 раз вычислить какое-то
+значение и потом давать ссылку на него, чем вычислять каждый раз.</p>
+<p align="Justify">В разделе Трансформация Фигуры, внесите следующие изменения:</p>
+<p align="Justify">В ячейку Width:<br>
+=IF(User.Row_4=1;GUARD(ThePage!PageWidth-(28,7 mm*User.Row_1));
+GUARD(ThePage!PageWidth-(14 mm*User.Row_1)))<br>
+В ячейку Height:<br>
+=IF(User.Row_4=1;GUARD(ThePage!PageHeight-(14 mm*User.Row_1));
+GUARD(ThePage!PageHeight-(28,7 mm*User.Row_1)))<br>
+В ячейку Angle:<br>
+= GUARD (0 deg)<br>
+В ячейку PinX:<br>
+=IF(User.Row_4=1;GUARD(21,7 mm/User.Row_1);GUARD(7 mm/User.Row_1))<br>
+В ячейку PinY:<br>
+=IF(User.Row_4=1;GUARD(7 mm/User.Row_1);GUARD(7 mm/User.Row_1))<br>
+В ячейку LocPinX:<br>
+=GUARD(0)<br>
+В ячейку LocPinY:<br>
+=GUARD(0)</p>
+<p align="Justify">С рамкой все (она «прижалась» к правому верхнему краю листа).
+Далее займемся большой таблицей. Для этого необходимо выделить ее из группы двойным
+нажатием и вызвать ТаблицуФигур для нее. Далее надо снова создать такие же строки в
+разделе Ячейки пользователя, и так же заполнить:</p>
+<table border="0" width="90%">
+  <tr><td width="60%" align="center">
+  <img src="r011/image019.jpg" height="88" width="408" alt="" border="0"../></td>
+  <td width="40%">5) =Sheet.13!User.Row_1<br>
+  6) =Sheet.13!User.Row_2<br>
+  7) =Sheet.13!User.Row_3<br>
+  8) =Sheet.13!User.Row_4<br>
+  Где вместо 13 впишите свой ID главной группы.
+</td></tr>
+</table>
+<p align="Justify">В разделе Трансформация Фигуры большой таблицы, внесите следующие изменения:</p>
+<p><img src="r011/image021.jpg" height="69" width="435" alt="" border="0"../></p>
+<p align="Justify">В ячейку Width:<br>
+=GUARD(181,3 mm*User.Row_1)<br>
+В ячейку Height:<br>
+=GUARD(54,2334 mm*User.Row_1)<br>
+В ячейку Angle:<br>
+=IF(User.Row_4=1;GUARD(90 deg*User.Row_3);GUARD(-90 deg*User.Row_3))<br>
+В ячейку PinX:<br>
+=IF(User.Row_4=1;IF(User.Row_3=0;GUARD(ThePage!PageWidth-(7 mm*User.Row_1));
+GUARD(ThePage!PageWidth-7 mm*User.Row_1));IF(User.Row_3=0;
+GUARD(ThePage!PageWidth-7 mm*User.Row_1);GUARD(7 mm*User.Row_1)))<br>
+В ячейку PinY:<br>
+=IF(User.Row_3=0;IF(User.Row_4=0;GUARD(7 mm*User.Row_1);
+GUARD(7 mm*User.Row_1));IF(User.Row_4=0;GUARD(7 mm*User.Row_1);
+GUARD(ThePage!PageHeight-7 mm*User.Row_1)))<br>
+В ячейку LocPinX:<br>
+=GUARD(Width)<br>
+В ячейку LocPinY:<br>
+=GUARD(0)</p>
+<p align="Justify">С большой таблицей все и она тоже «прижалась» к рамке. Далее
+займемся малой таблицей. Для этого необходимо выделить ее из группы двойным
+нажатием и вызвать ТаблицуФигур для нее. теперь необходимо снова создать такие
+же строки в разделе Ячейки пользователя, и так же заполнить:</p>
+<table border="0" width="90%">
+  <tr><td width="60%" align="center">
+  <img src="r011/image022.jpg" height="88" width="408" alt="" border="0"../></td>
+  <td width="40%">9) =Sheet.13!User.Row_1<br>
+10)  =Sheet.13!User.Row_2<br>
+11)  =Sheet.13!User.Row_3<br>
+12)  =Sheet.13!User.Row_4<br>
+Где вместо 13 впишите свой ID главной группы.
+</td></tr>
+</table>
+<p align="Justify">В разделе Трансформация Фигуры малой таблицы, внесите следующие изменения:</p>
+<p><img src="r011/image024.jpg" height="70" width="686" alt="" border="0"../></p>
+<p align="Justify">В ячейку Width:<br>
+=GUARD(143 mm*User.Row_1)<br>
+В ячейку Height:<br>
+=GUARD(14,7 mm*User.Row_1)<br>
+В ячейку Angle:<br>
+=IF(User.Row_4=1;GUARD(90 deg);GUARD(0 deg))<br>
+В ячейку PinX:<br>
+=GUARD(7 mm*User.Row_1)<br>
+В ячейку PinY:<br>
+=IF(User.Row_4=1;GUARD(7 mm*User.Row_1);
+GUARD(ThePage!PageHeight-(7 mm*User.Row_1)))<br>
+В ячейку LocPinX:<br>
+=GUARD(0)<br>
+В ячейку LocPinY:<br>
+=GUARD(Height)</p>
+<p align="Justify">Все эти параметры для случая когда малая таблица создавалась
+в ширину, группировалась, а потом поворачивалась на 90 градусов.</p>
+<p align="Justify">И наконец внести еще поправки в Главную группу. Для этого ее
+опять необходимо открыть в ТаблицеФигур и создать раздел Действия (нажать на правую
+кнопку мыши>Вставка раздела>Действия). Затем заполнить:</p>
+<p><img src="r011/image026.jpg" height="38" width="567" alt="" border="0"../></p>
+<p align="Justify">В ячейку Actions:<br>
+=IF(User.Row_3=1;SETF("User.Row_3";0);SETF("User.Row_3";1))<br>
+В ячейку Menu:<br>
+="Горизонтально/Вертикально"../p>
+<p align="Justify">В разделе Трансформация Фигуры Главной группы, внесите следующие изменения:</p>
+<p><img src="r011/image028.jpg" height="86" width="414" alt="" border="0"../></p>
+<p align="Justify">В ячейку Width:<br>
+=GUARD(ThePage!PageWidth)<br>
+В ячейку Height:<br>
+=GUARD(ThePage!PageHeight)<br>
+В ячейку Angle:<br>
+= GUARD(0 deg)<br>
+В ячейку PinX:<br>
+=GUARD(0)<br>
+В ячейку PinY:<br>
+=GUARD(0)<br>
+В ячейку LocPinX:<br>
+=GUARD(0)<br>
+В ячейку LocPinY:<br>
+=GUARD(0)</p>
+<p align="Justify">И наконец штамп расположился правильно по листу.</p>
+<p align="Justify">Теперь если выделить нашу рамку и нажать правую кнопку мыши,
+то мы увидим новое меню, которое и будет менять ориентацию нашей рамки независимо от листа.</p>
+<p><img src="r011/image028.jpg" height="86" width="414" alt="" border="0"../></p>
+<p align="Justify">Это очень удобно, если необходимо в одном документе чертить
+листы разной ориентации. Просто поворачиваем нужные страницы(Ctrl+0 и переместить
+на угол листа), меняем ориентацию рамки и работаем. Теперь тестируем на всех масштабах,
+поправляем надписи, если где съехали и все. Как можно было заметить у нашей рамки
+отступ не 5 мм, а 7. Это сделано из-за того, что Visio сам имеет отступ 6,5 мм
+«мертвой зоны», где принтер не печатает.</p>
+<p align="Justify">Наша автопозиционирующаяся рамка готова. Всего фигур получилось 12.</p>
+<hr>
+<p align="Justify">Теперь несколько замечаний и советов.</p>
+<p align="Justify">1) В трафаретах можно хранить узоры заливки, линии и т.д.<br>
+2) При изменении размеров фигуры угловым маркером, зажать Shift,
+то будут меняться высота и ширина независимо.</p>
+<p align="Justify">Пока все. В следующий раз будут статьи:</p>
+<p align="Justify">Как создать будильник в Visio? (статья будет посвящена
+интерактивности в Visio 2000 и Visio 2002) и Градиентные заливки линий в Visio.
+</p>
+<p align="center">
+<img src="r011/image032.jpg" height="178" width="145" alt="" border="0"../>
+<img src="r011/image034.jpg" height="185" width="184" alt="" border="0"../>
+</p>
+
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

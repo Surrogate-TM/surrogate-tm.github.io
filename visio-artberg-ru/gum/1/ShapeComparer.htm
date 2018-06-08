@@ -1,0 +1,117 @@
+﻿<html>
+<head>
+<title>ShapeComparer - tool for comparing Visio shapes</title>
+
+<!-- "header.inc"-->
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="../vis.css">
+</head>
+<body bgcolor="white">
+<img alt height="2" src="../spacer.gif" width="1"><BR>
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- end header --------------------------- -->
+
+<h1>ShapeComparer - tool for comparing Visio shapes</h1>
+<p align="right"><a href="ShapeComparer_ru.htm">ru</a></p>
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr>
+<td width="20%" bgcolor="FFFFFF">
+<IMG SRC="sc.jpg" WIDTH="200" HEIGHT="123" BORDER="0" ALT="">
+</td>
+<td width="50%" bgcolor="FFFFFF">
+<p><b>ShapeComparer</b> - is a utility for shape developers. The utility performs
+operations such as: comparison of shapes, copying shape-sheet
+formulas, copying shape-sheet sections.</p>
+<p>The utility is designed as a Visio stencil, containing macros.</p>
+</td>
+<td width="30%" bgcolor="FFFFFF">Stencil is free.<br>Posted on service Gumroad.
+<br><a href="https://gum.co/EjDU">Download stencil.</a><br><font size="-1">At the same time, you can
+donate for the development of this and other utilities in the amount of $2 - $5.</font> 
+</td>
+</tr>
+</table>
+<hr>
+<p>ShapeComparer features:</p>
+<ul>
+<li>comparison of the two shapes with the recording of the results in the log;
+<li>copying formulas from one shapes to a other;
+<li>copying sections from one shape to a other;
+<li>duplication pages.
+</ul>
+<p>The utility is framed as a stencil containing the master shapes and macros.
+For applying the utilitiy you need to open a stencil and use
+the context menu of master shapes.</p>
+<h3>Shapes comparison</h3>
+<p>To compare two shapes you need to connect them with the CompShape connector
+and use <b>Compare</b> menu. The comparison protocol will saved in a text file "log.log".</p>
+<p>The connector contains two fields that control the format of the protocol.</p>
+<p>If the <b>Print cell names</b> Field is set to "True", the list of cell names
+is added to the protocol. If that field is set to "False", only differences is written.</p>
+<p>Field <b>Print both formulas</b> affects the output format of the result.
+If the field is set to "True", the compared cell appears beside (in two columns).
+If the field is set to "False", first all cells of one shape are displayed, then of another..</p>
+<p>Sample of output format with <b>Print both formulas = True</b>:</p>
+<table width=50%>
+<tr><td>Sheet.2!PinX = 41 mm</td><td>Sheet.3!PinX = 152 mm</td></tr>
+<tr><td>Sheet.2!PinY = 226 mm</td><td>Sheet.3!PinY = 244 mm</td></tr>
+</table>
+<p>Sample of output format with <b>Print both formulas = False</b>:</p>
+<table width=50%>
+<tr><td>------------------------------------</td></tr>
+<tr><td>Sheet.2!PinX = 41 mm</td></tr>
+<tr><td>Sheet.2!PinY = 226 mm</td></tr>
+<tr><td>------------------------------------</td></tr>
+<tr><td>Sheet.3!PinX = 152 mm</td></tr>
+<tr><td>Sheet.3!PinY = 244 mm</td></tr>
+</table>
+<p>The second option gives the compact notation that can be used successfully
+to document the development of shapes.</p>
+<IMG SRC="image002.jpg" WIDTH="401" HEIGHT="161" BORDER="0" ALT="">
+<h3>Copying formulas</h3>
+<p>During the comparison of shapes together with the writting
+of the results in the log the names list of different cells is formed
+and recorded in the connector shape. It is stored in a drop-down
+list in the Differences field.</p>
+<p>If you select one position in this list and perform the
+<b>Copy formula</b> function, the formula will be copied from the
+original shapes to the destination.</p>
+<p>Thus, you can quickly copy multiple cells.</p>
+<IMG SRC="image004.jpg" WIDTH="244" HEIGHT="208" BORDER="0" ALT="">
+<h3>Copying section</h3>
+<p>During the comparison of shapes also the names list of
+different sections is formed and recorded in the connector shape.
+It is stored in a drop-down list in the Sections field.</p>
+<p>If you select one position in this list and perform the
+<b>Copy section</b> function, all cells of this section will be copied from the
+original shapes to the destination.</p>
+<IMG SRC="image006.jpg" WIDTH="244" HEIGHT="208" BORDER="0" ALT="">
+<p><b>Copy sections</b> function preliminary removes a similar section in the target shapes.
+There is <b>Add to section</b> function. This function is usefull for section with named rows.
+When it is executed the existing rows are not removed.</p>
+<p>Restriction: Geometry section and Text Fields section will not be copied</p>
+<h3>Duplication pages</h3>
+<p>To duplicate pages, you may use the CopyPage master shape. Drag it to the desired
+Visio page and execute the menu command <b>Copy page</b>. A copy of the active page
+will be added to the end of the document.</p>
+<p>Master shape has the <b>Destination page</b> field. Enter in this field a name
+of the page to compare, and use <b>Compare</b> menu. The comparison protocol will
+saved in a text file log.log.</p>
+<p>Duplicate function is not used in Visio 2013. Visio 2013 performs this
+operation by regular means. But in earlier versions of Visio it can be useful.</p>
+<p>The function has a restriction - it does not work in the presence of groups.</p>
+
+<!-- "bott.inc"--------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Mailto:</b> Gennady Tumanov&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

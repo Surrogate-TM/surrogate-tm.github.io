@@ -1,0 +1,180 @@
+﻿<html>
+<head>
+<title>API для Visio 2007 Viewer</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="../index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="../reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="../forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="../f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="../bib.htm">Библиотека</a> |
+ <a class="menu" href="../faq.htm">Частые вопросы</a> |
+ <a class="menu" href="../bookpdf.htm">Литература</a> |
+ <a class="menu" href="../loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="../site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="../visicorp.htm">История Visio</a> |
+ <a class="menu" href="../product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>API для Visio 2007 Viewer</h1>
+<p align="right">Геннадий Туманов</p>
+
+<p align="Justify">Visio 2007 Viewer появился впервые в конце 2006 года. 
+Предназначен для просмотра файлов Visio там, где отсутствует установленный Visio 
+или установлена более ранняя версия по сравнению с той, в которой создан файл.</p>
+<p align="Justify">Основные характеристики базовой версии просмотрщика:</p>
+<UL>
+	<LI>Работает под Windows 2000, Windows XP, Windows 2003, Windows Vista.
+	<LI>Реализован как элемент управления ActiveX, который загружает и обрабатывает рисунки Visio в окне Internet Explorer. Требует IE 5.0 или выше.
+	<LI>Распространяется бесплатно.
+	<LI>Объем дистрибутива менее 8 Мб.
+</UL>
+<p align="Justify">Показывает рисунки, созданные практически во всех версиях Visio - Visio 5.0, 2000, 2002, 2003 или 2007, причем как в двоичном (vsd) формате, так и в виде XML (vdx).</p>
+<p align="Justify">После установки на компьютер пользователя прописывается в качестве средства обработки файлов Visio. После этого пользователю достаточно просто щелкнуть по файлу с расширением .vsd, .vss, .vst и т.д. и файл откроется в окне Internet Explorer.</p>
+<p align="Justify">Рисунок можно двигать, масштабировать, селектировать шейпы и просматривать их пользовательские свойства в отдельном окне. В том же окне можно слегка изменить форму отображения - назначить цвет фона, показать или скрыть сетку, управлять отображением слоев и замечаний рецензентов. В общем-то, присутствует все, чего можно ожидать от просмотрщика.</p>
+<p align="Justify">Но вот в январе 2009 (через пару лет) появилось Developer Reference for Visio 2007 Viewer и как-то сразу подсветилась не очень афишируемая возможность строить свои приложения на основе Visio 2007 Viewer.</p>
+<p align="Justify">Итак, что мы имеем. Имеется ActiveX, который можно водрузить на свою форму, добавить органы управления и обработчики событий и получить просмотрщик, оптимизированный под нужное применение. API просмотрщика позволяет выполнять следующие функции:</p>
+<UL>
+	<LI>Загружать и выгружать рисунки Visio;
+	<LI>Селектировать шейпы;
+	<LI>Работать с гиперссылками;
+	<LI>Выводить и скрывать настроечное окно просмотрщика;
+	<LI>Управлять размерами и положением окна просмотрщика;
+	<LI>Управлять цветами страницы, фона, отображением сетки и скролбаров;
+	<LI>Управлять отображением (видимость и цвет) слоев;
+	<LI>Управлять видимостью комментариев;
+	<LI>Управлять тулбарами;
+	<LI>Поддерживать обработчики событий.
+</UL>
+<p align="Justify">Рисовать, естественно, ничего нельзя, но ведь можно придумать немало пользовательских приложений, для которых эта функция и не нужна. Это может быть интерактивная карта города или план помещения, связанные с базой данных, интерактивное электронное руководство, основанное на графических данных, и т.д. Пользователь получит приложение с графическим интерфейсом, не покупая Visio, как это понадобилось бы ему в случае создания приложения на основе самого Visio или ActiveX Drawing Explorer.</p>
+<p align="Justify"><b>Вызов и управление</b></p>
+<p align="Justify">Использование ActiveX трудностей не представляет. К проекту подключается Microsoft Visio Viewer 12.0 Type Library. При этом появляется компонент Viewer.</p>
+<p align="Justify">API позволяет управлять компонентом примерно так:</p>
+<p class="t">Viewer1.Load ("D:\d2007.vsd")</p>
+<p class="t">Viewer1.GridVisible = True</p>
+<p class="t">Viewer1.PageVisible = True</p>
+<p class="t">Debug.Print Viewer1.SRC</p>
+<p class="t">Viewer1.ContextMenuEnabled = True</p>
+<p class="t">Viewer1.ToolbarVisible = True</p>
+<p align="Justify"><b>Перечень свойств компонента:</b></p>
+<p class="t">AlertsEnabled</p>
+<p class="t">BackColor</p>
+<p class="t">BuildNumber</p>
+<p class="t">ContextMenuEnabled</p>
+<p class="t">CurrentPageIndex</p>
+<p class="t">CustomPropertyCount</p>
+<p class="t">CustomPropertyName</p>
+<p class="t">CustomPropertyValue</p>
+<p class="t">DocumentLoaded</p>
+<p class="t">GridVisible</p>
+<p class="t">HighQualityRender</p>
+<p class="t">HyperlinkAddress</p>
+<p class="t">HyperlinkCount</p>
+<p class="t">LastErrorCode</p>
+<p class="t">LayerColor</p>
+<p class="t">LayerColorOverride</p>
+<p class="t">LayerColorTrans</p>
+<p class="t">LayerCount</p>
+<p class="t">LayerDeleted</p>
+<p class="t">LayerName</p>
+<p class="t">LayerVisible</p>
+<p class="t">MajorVersionNumber</p>
+<p class="t">MarkupOverlaysVisible</p>
+<p class="t">MinorVersionNumber</p>
+<p class="t">PageColor</p>
+<p class="t">PageCount</p>
+<p class="t">PageIDToIndex</p> 
+<p class="t">PageIndexToID</p>
+<p class="t">PageName</p>
+<p class="t">PageTabsVisible</p>
+<p class="t">PageVisible</p>
+<p class="t">ParentShape</p>
+<p class="t">PropertyDialogEnabled</p>
+<p class="t">ReviewerColor</p>
+<p class="t">ReviewerCount</p>
+<p class="t">ReviewerID</p>
+<p class="t">ReviewerInitial</p>
+<p class="t">ReviewerMarkupVisible</p>
+<p class="t">ReviewerName</p>
+<p class="t">ScrollbarsVisible</p>
+<p class="t">SelectedShapeIndex</p>
+<p class="t">ShapeAtPoint</p>
+<p class="t">ShapeCount</p>
+<p class="t">ShapeIDToIndex</p> 
+<p class="t">ShapeIndexToID</p>
+<p class="t">ShapeName</p>
+<p class="t">SRC</p>
+<p class="t">SubShapeAtPoint</p>
+<p class="t">ToolbarButtons</p>
+<p class="t">ToolbarCustomizable</p>
+<p class="t">ToolbarVisible</p>
+<p class="t">Zoom</p>
+<p align="Justify"><b>Доступные методы:</b></p>
+<p class="t">DisplayAbout</p>
+<p class="t">DisplayContextMenu</p>
+<p class="t">DisplayHelp</p>
+<p class="t">DisplayPropertyDialog</p>
+<p class="t">FollowHyperlink</p>
+<p class="t">GetErrorMessage</p>
+<p class="t">GetPageView</p>
+<p class="t">Load</p>
+<p class="t">Pan</p>
+<p class="t">SelectShape</p>
+<p class="t">SetPageView</p>
+<p class="t">Unload</p>
+<p class="t">ZoomToPoint</p>
+<p class="t">ZoomToRect</p>
+<p align="Justify"><b>И события:</b></p>
+<p class="t">OnDocumentLoaded</p>
+<p class="t">OnDocumentUnloaded</p>
+<p class="t">OnLayerChanged</p>
+<p class="t">OnMarkupOverlaysVisibleChanged</p>
+<p class="t">OnPageChanged</p>
+<p class="t">OnReviewerChanged</p> 
+<p class="t">OnSelectionChanged</p>
+<p class="t">OnToolbarCustomized</p>
+<p class="t">OnViewChanged</p>
+<p align="Justify"><b>Ссылки</b></p>
+<p align="Justify">На данный момент справка по объектной модели доступна по адресу
+<a href="http://msdn.microsoft.com/en-us/library/cc297218(loband).aspx">Visio 2007 Viewer Object Model Reference</a></p>
+<p align="Justify">Загрузить Visio 2007 Viewer можно с
+<a href="http://www.microsoft.com/downloads/details.aspx?displaylang=ru&FamilyID=d88e4542-b174-4198-ae31-6884e9edd524"> сайта Microsoft</a></p>
+<p align="Justify"><b>Visio 2007 Viewer SP2</b></p>
+<p align="Justify">А в августе 2009 вышел Visio 2007 Viewer SP2. Объявлено, что сервис пак содержит исправления замеченных ошибок, а также ряд улучшений, связанных со стабильностью, производительностью и безопасностью. Однако старенькие системы поддерживаться перестали. В списке систем присутствуют только: Windows Server 2003 Service Pack 2; Windows Server 2008; Windows Vista Service Pack 1; Windows XP Service Pack 3. На Windows 2000 он у меня устанавливаться отказался.</p>
+
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

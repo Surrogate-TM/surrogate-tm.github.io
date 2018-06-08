@@ -1,0 +1,185 @@
+Sub NetVis()
+' Основная программа: переносит данные из листа Excel в массивы VBA,
+' открывает экземпляр Visio, рисует соответствующие шейпы,
+' соединяет их и сохраняет рисунок Visio
+'------------------------------
+ 'Массивы для хранения данных Excel
+  Dim ind() As Integer
+  Dim tip() As String
+  Dim conn() As Integer
+  Dim func() As String
+  Dim comm() As String
+  Dim ip() As String
+  Dim ipx() As String
+ 'Определение размерности и перенос данных в массивы
+Dim imax As Integer
+Dim i As Integer
+i = 2
+Do While Not IsEmpty(Worksheets("Лист1").Cells(i, 1))
+  i = i + 1
+Loop
+  imax = i - 1
+ReDim ind(imax)
+ReDim tip(imax)
+ReDim conn(imax)
+ReDim func(imax)
+ReDim comm(imax)
+ReDim ip(imax)
+ReDim ipx(imax)
+For i = 0 To imax - 1
+  ind(i) = Worksheets("Лист1").Cells(i + 2, 1).Value
+  tip(i) = Worksheets("Лист1").Cells(i + 2, 2).Value
+  conn(i) = Worksheets("Лист1").Cells(i + 2, 3).Value
+  func(i) = Worksheets("Лист1").Cells(i + 2, 4).Value
+  comm(i) = Worksheets("Лист1").Cells(i + 2, 5).Value
+  ip(i) = Worksheets("Лист1").Cells(i + 2, 6).Value
+  ipx(i) = Worksheets("Лист1").Cells(i + 2, 7).Value
+Next
+
+'Технологические счетчики для размещения шейпов Visio
+Dim h As Integer
+Dim c As Integer
+Dim p As Integer
+ h = 0
+ c = 0
+ p = 0
+'и координаты
+Dim x As Integer
+Dim y As Integer
+'Определение переменных для объектов Visio
+Dim appVisio As Visio.Application 'Это экземпляр Visio
+Dim docsObj As Visio.Documents    'Коллекция документов Visio
+Dim pagsObj As Visio.Pages        'Коллекция страниц
+Dim pagObj As Visio.Page          'Страница
+Dim stnObj As Visio.Document      'Трафарет
+Dim docObj As Visio.Document      'Документ Visio
+Dim cel1 As Visio.Cell            'Ячейка шейп-листа Visio
+ 'Массив шейпов с элементами сети
+ Dim elements() As Visio.Shape
+ ReDim elements(imax)
+ 
+  
+'------------------------------------------------------------------
+'Начало работы с Visio
+'------------------------------------------------------------------
+ 'Создается экземпляр Visio
+ Set appVisio = CreateObject("visio.application")
+ Set docsObj = appVisio.Documents
+ 'Создается документ на основе шаблона
+ Set docObj = docsObj.Add("Basic Network.vst")
+ Set pagsObj = appVisio.ActiveDocument.Pages
+ Set pagObj = pagsObj.Item(1)
+ 'Выбираем трафарет из коллекции
+ 'Set stnObj = docsObj.Add("Basic Network Shapes.vss")
+ Set stnObj = docsObj.Item("Basic Network Shapes.vss")
+  x = 1
+  y = 8
+ '--------------------------------
+ 'Прорисовка всех сетевых объектов
+ For i = 0 To imax - 1
+  'Рисуем все встречающиеся концентраторы
+  If (tip(i) = """Hub""") Then
+    Set elements(i) = SetHub(stnObj, pagObj, func(i), 0.7 + 1.5 * h, y - 2)
+    Call SetCLabel(elements(i))  'Добавляем заголовки пользовательских свойств
+    'и значения для полей Тип и Комментарий
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 0, visCustPropsValue)
+    cel1.Formula = tip(i)
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 3, visCustPropsValue)
+    cel1.Formula = comm(i)
+    h = h + 1
+  End If
+  'Рисуем Компьютеры
+  If (tip(i) = """Server""") Or (tip(i) = """Workstation""") Then
+    Set elements(i) = SetComp(stnObj, pagObj, tip(i), func(i), 0.7 + 1.2 * c, y - 3)
+    Call SetCLabel(elements(i))
+    'Здесь заполняются все 4 поля
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 0, visCustPropsValue)
+    cel1.Formula = tip(i)
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 1, visCustPropsValue)
+    cel1.Formula = ip(i)
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 2, visCustPropsValue)
+    cel1.Formula = ipx(i)
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 3, visCustPropsValue)
+    cel1.Formula = comm(i)
+    c = c + 1
+  End If
+  'и все остальное
+  If (tip(i) = """Laser Printer""") Or (tip(i) = """Scanner""") Then
+    Set elements(i) = SetPeriph(stnObj, pagObj, tip(i), func(i), 0.7 + 1.2 * p, y - 4)
+    Call SetCLabel(elements(i))
+    '2 поля
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 0, visCustPropsValue)
+    cel1.Formula = tip(i)
+    Set cel1 = elements(i).CellsSRC(visSectionProp, visRowProp + 3, visCustPropsValue)
+    cel1.Formula = comm(i)
+    p = p + 1
+  End If
+ Next
+     
+ '-------------------------------------------------------------------
+ 'Начинаем соединять элементы
+ Dim mastObj         As Visio.Master
+ Dim shpConnector    As Visio.Shape
+ Dim celBeginX       As Visio.Cell
+ Dim celEndX         As Visio.Cell
+For i = 1 To imax - 2
+  Set mastObj = stnObj.Masters("Dynamic connector")
+  Set shpConnector = pagObj.Drop(mastObj, 4.25, 9)
+  shpConnector.SendToBack
+  shpConnector.Cells("LineColor") = 0
+  shpConnector.Cells("LineWeight") = 0.02
+  Set celBeginX = shpConnector.CellsSRC(visSectionObject, visRowXForm1D, vis1DBeginX)
+  celBeginX.GlueTo elements(i).CellsSRC(visSectionObject, visRowXFormOut, visXFormPinX)
+  Set celEndX = shpConnector.CellsSRC(visSectionObject, visRowXForm1D, vis1DEndX)
+  celEndX.GlueTo elements(conn(i) - 1).CellsSRC(visSectionObject, visRowXFormOut, visXFormPinX)
+Next
+
+'сохраняется полученный документ
+'в формате рисунка Visio
+'docObj.SaveAs "C:\Мои документы\NetV.vsd"
+'или в html формате
+pagObj.Export "C:\Мои документы\NetV.htm"
+'MsgBox "Нарисовано!", , ""
+'Закрывается Visio
+appVisio.Quit
+End Sub
+
+Public Function SetHub(docObj As Visio.Document, pagObj As Visio.Page, name As String, x As Integer, y As Integer) As Visio.Shape
+   Dim mastObj As Visio.Master
+   Set mastObj = docObj.Masters("Hub")
+   Set SetHub = pagObj.Drop(mastObj, x, y)
+   SetHub.Text = name
+End Function
+
+Public Function SetComp(docObj As Visio.Document, pagObj As Visio.Page, tip, name As String, x As Integer, y As Integer) As Visio.Shape
+   Dim mastObj As Visio.Master
+   If tip = """Server""" Then
+     Set mastObj = docObj.Masters("Server")
+   Else
+     Set mastObj = docObj.Masters("Workstation")
+   End If
+   Set SetComp = pagObj.Drop(mastObj, x, y)
+   SetComp.Text = name
+End Function
+Public Function SetPeriph(docObj As Visio.Document, pagObj As Visio.Page, tip, name As String, x As Integer, y As Integer) As Visio.Shape
+   Dim mastObj As Visio.Master
+   If tip = """Laser Printer""" Then
+     Set mastObj = docObj.Masters("Printer 3")
+   Else
+     Set mastObj = docObj.Masters("Scanner")
+   End If
+   Set SetPeriph = pagObj.Drop(mastObj, x, y)
+   SetPeriph.Text = name
+End Function
+Public Sub SetCLabel(Shp As Visio.Shape)
+'Заголовки для пользовательских свойств одинаковые для всех типов объектов
+Dim cell1 As Visio.Cell
+   Set cell1 = Shp.CellsSRC(visSectionProp, visRowProp + 0, visCustPropsLabel)
+   cell1.Formula = """Тип"""
+   Set cell1 = Shp.CellsSRC(visSectionProp, visRowProp + 1, visCustPropsLabel)
+   cell1.Formula = """IP"""
+   Set cell1 = Shp.CellsSRC(visSectionProp, visRowProp + 2, visCustPropsLabel)
+   cell1.Formula = """IPX"""
+   Set cell1 = Shp.CellsSRC(visSectionProp, visRowProp + 3, visCustPropsLabel)
+   cell1.Formula = """Примеч."""
+End Sub

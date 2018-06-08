@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+<title>Экспорт из Visio</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="./index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="./reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="./forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="./f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="./bib.htm">Библиотека</a> |
+ <a class="menu" href="./faq.htm">Частые вопросы</a> |
+ <a class="menu" href="./bookpdf.htm">Литература</a> |
+ <a class="menu" href="./loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="./site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="./visicorp.htm">История Visio</a> |
+ <a class="menu" href="./product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>Экспорт из Visio</h1>
+<h2 align="center"><font face="Arial" color="navy">Экспорт из Visio</font></h2>
+<p align="right">Ничков А.В.</p>
+
+<p align="Justify">При рисовании объектов в Visio данный рисунок можно
+экспортировать в векторный формат и использовать в другом приложении, но эта
+простая операция не всегда выполняется корректно. В особенности это касается
+градиентных заливок. При экспортировании, Visio не преобразует градиентные заливки
+своих объектов, вставляя их «как есть». Так же это касается криволинейных фигур
+с градиентной заливкой. И при преобразовании, например их в файл *.PDF возникают
+ошибки в отображении.</p>
+<p align="Justify">Рассмотрим пример.</p>
+<p align="Justify">Нарисуем произвольную криволинейную фигуру (рисунок 1). И
+попробуем вставить этот объект в CorelDRAW (рисунок 2) или
+Illustrator (рисунок 3).</p>
+<p align="center">
+<img src="image002.jpg" height="155" width="156" alt="" border="0"../>
+<img src="image004.jpg" height="123" width="122" alt="" border="0"../>
+<img src="image008.jpg" height="129" width="121" alt="" border="0"../>
+</p>
+<p align="Justify">Как видно на рисунках, объект либо не отображается, либо просто
+отображается рамка этого объекта.</p>
+<p align="Justify">Тоже самое касается экспорта этого объекта в векторные форматы
+и просмотр в этих векторных редакторах.</p>
+<p align="Justify">Как правильно экспортировать объект и сделать его
+по-настоящему векторным. Сначала этому объекту надо сделать монотонную заливку
+(рисунок 4). Далее его надо экспортировать в векторный формат (*.cgm например)
+File &gt; Save As. И во вкладке Тип файла выбрать Computer Graphics Metafile.
+Далее надо импортировать этот файл в CorelDRAW Для этого надо загрузить его и потом
+File &gt; Import. Открыть файл с объектом. Как видно на рисунке 5, этот объект
+нормально отображается.</p>
+<p align="center">
+<img src="image012.jpg" height="156" width="156" alt="" border="0"../>
+<img src="image010.jpg" height="160" width="154" alt="" border="0"../>
+</p>
+<img src="image006.jpg" height="276" width="152" alt="" border="0" align="left" style="margin: 4px 5% />
+<p align="Justify">Далее делаем ему заливку теми же цветами, но средствами
+CorelDRAW (было подробно описано в статье «3D в Visio»). Затем экспортируем
+из CorelDRAW (File &gt; Import) в тот же векторный формат. Потом
+вставляем этот файл в  Visio (Insert &gt; Picture). Делаем
+разгруппировку объекта (Shape &gt; Grouping &gt; Ungroup). Затем группируем ( Shape &gt;
+Grouping &gt; Group) и получаем векторный объект Visio с градиентной заливкой
+(разницы между 2-мя объектами нет). И если данный объект экспортировать или
+вставить в другое приложение, то он будет корректно отображаться, в том числе и
+в *.PDF. Таким образом созданные объекты можно использовать не только в Visio.</p>
+
+<h3>Некоторые советы по работе с Visio.</h3>
+<p align="Justify">1) Если вы создаете объекты для схем или диаграмм, то не
+забывайте делать точки привязки (Connection Point Tool) после создания объектов.
+Это облегчит вам дальнейшее редактирование диаграмм и схем.</p>
+<p align="Justify">2) Точки привязки можно делать и для линии. Для соединения,
+например, линии и объекта.</p>
+<p align="Justify">3) Если вы сделали заливку объекта, например, цветом 14 до
+цвета 21.(номер цвета во вкладке заливок). Для просмотра соответствия номера и
+цвета пользуйтесь Tools &gt; Color Palette…, выберете номер цвета и нажмите Edit.
+Появится окно с цветовой формулой этого цвета (Red 128, Green 128, Blue 128).</p>
+
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

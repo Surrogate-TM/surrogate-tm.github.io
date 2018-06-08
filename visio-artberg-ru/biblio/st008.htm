@@ -1,0 +1,109 @@
+﻿<html>
+<head>
+<title>Методы создания градиентных заливок в Visio2K</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="../index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="../reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="../forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="../f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="../bib.htm">Библиотека</a> |
+ <a class="menu" href="../faq.htm">Частые вопросы</a> |
+ <a class="menu" href="../bookpdf.htm">Литература</a> |
+ <a class="menu" href="../loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="../site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="../visicorp.htm">История Visio</a> |
+ <a class="menu" href="../product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>Методы создания градиентных заливок в Visio 2000</h1>
+<p align="right">Ничков А.В.</p>
+
+<p align="Justify">Как известно, Visio2K может создавать градиентную заливку только
+переходом из одного цвета в другой путем перехода через 1 цвет  и только под определенным
+углом. Но иногда требуются более сложные построения. Мы рассмотрим некоторые приемы
+на полностью масштабируемых объектах.</p>
+<p align="Justify">1) Можно, к примеру, сделать переход через 2-3 основных цвета.
+Как это сделать? Берем объект, делим его пополам и остатками этого объекта делаем
+последовательный переход через нужные цвета. (Рис. 1)</p>
+<p align="Justify">2) Таким образом можно сделать весь видимый спектр как один
+масштабируемый объект. (Рис.2)</p>
+<p align="center">
+<img src="r008/risa1.jpg" height="342" width="361" alt="" border="0"../>
+<img src="r008/risa2.jpg" height="342" width="361" alt="" border="0"../>
+</p>
+<p align="Justify">3) Также можно менять насыщенность одного или другого цвета в
+заливке. Делается это простым смещением центра. (Рис.3)</p>
+<p align="Justify">4) Если требуется сделать заливку цветом под определенным углом,
+то надо сделать следующее. (Рис.4)</p>
+<ul>
+<li>Повернуть фигуру на нужный угол.</li>
+<li>Нарисовать линию и применить команду объединения. (Shape>Operations>Union)</li>
+<li>После объединения будет получен уже другой объект, для которого угол поворота
+будет нулевым. Применяем заливку нужным переходом цвета и поворачиваем объект на тоже
+кол-во градусов назад.</li>
+</ul>
+<p align="center">
+<img src="r008/risa3.jpg" height="459" width="361" alt="" border="0"../>
+<img src="r008/risa4.jpg" height="459" width="369" alt="" border="0"../>
+</p>
+<p align="Justify">Данную операцию можно применять для придания объекту глубины. (Рис.5)</p>
+<p align="center">
+<img src="r008/risa5.jpg" height="244" width="361" alt="" border="0"../>
+<img src="r008/risa6.jpg" height="244" width="369" alt="" border="0"../>
+</p>
+<h3>Примечания и общие советы.</h3>
+<p align="Justify">1) Для масштабируемости линий можно использовать более простой
+метод. Для этого требуется в ShapeSheet'е, в разделе LineFormat ввести в строке
+LineWeight=Weight/100. После этого толщина линий будет изменяться пропорционально
+объекту. (Рис.6)</p>
+<p align="Justify">2) Для изменения насыщенности цветов в п.4 можно разбивать
+объект на более тонкие части. (Рис.7)</p>
+<p align="Justify">3) Чем больше будет таких тонких переходов, тем более естественной
+будет фигура.</p>
+<p align="center">
+<img src="r008/risa7.jpg" height="342" width="361" alt="" border="0"../>
+<img src="r008/risa8.jpg" height="342" width="361" alt="" border="0"../>
+</p>
+<p align="Justify">Вроде пока все…  В следующий раз поговорим о 3-х мерных объектах.</p>
+<p align="Justify">Исходные материалы можно взять для подробного рассмотрения в
+<a href="r008/test.zip">zip-архиве</a>.</p>
+<p align="center">
+<img src="r008/risa9.jpg" height="505" width="391" alt="" border="0"../>
+</p>
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

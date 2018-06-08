@@ -1,0 +1,131 @@
+﻿<html>
+<head>
+<title>Создание Addon-ов в Borland Delphi 6 для Microsoft Visio 2003</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="../index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="../reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="../forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="../f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="../bib.htm">Библиотека</a> |
+ <a class="menu" href="../faq.htm">Частые вопросы</a> |
+ <a class="menu" href="../bookpdf.htm">Литература</a> |
+ <a class="menu" href="../loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="../site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="../visicorp.htm">История Visio</a> |
+ <a class="menu" href="../product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>Создание Addon-ов в Borland Delphi 6 для Microsoft Visio 2003</h1>
+<p align="right">Бучацкий И.В.</p>
+
+<p align="Justify">Пожалуй, начну свою статью с задачи, которая подвигла меня, во-первых, написать Addon для Visio, а во-вторых, как следствие, поделиться накопленным опытом. Очень часто можно увидеть вопросы на форуме, касающиеся написания Addon-ов на Дельфи, но пока ответов не было. Этот пробел автор статьи и решил восполнить.</p>
+<p align="Justify">Задача, которая стояла передо мной, была довольно необычна. Имелся шейп, символизирующий в определенных ситуациях таблицу базы данных. Поэтому необходимо было дать пользователю инструмент, позволяющий ему определить основные характеристики этой таблицы: имя таблицы, описание, поля таблицы, типы полей и т.п. Решить поставленную задачу тривиальными способами не представлялось возможным. Конечно, существует в составе Visio встроенный язык VBA (Visual Basic for application), но его возможности достаточно ограничены, например, в части доступных визуальных компонентов. Поэтому было принято решение искать другие пути. В результате не слишком продолжительных изысканий оно было найдено. Суть его заключалась в  написании с помощью Delphi 6 программы-редактора таблицы базы данных и использования его Visio в качестве Addon-а.</p>
+<p align="Justify">Теперь несколько слов об Addon-ах. Информации по этой теме не так много, в основном в справочном руководстве. Addon – написанное пользователем, т.е. нами с вами, приложение. Соответственно, Addon-ы бывают двух типов:</p>
+<UL>
+	<LI>в виде “.vsl” файла, который представляет собой стандартную динамическую библиотеку (DLL) Windows; </LI>
+	<LI>в виде “.exe” файла, т.е. обычного приложения. </LI>
+</UL>
+<p align="Justify">Главное отличие Addon-ов в виде “.vsl” файла по сравнению с другим типом, состоит в том, что библиотека подгружается внутрь процесса Visio и работает как его составная часть, что сказывается, в первую очередь, на скорости работы. В случае же обычного приложения, Addon работает как отдельная программа с вытекающими из этого недостатками: более низкая скорость работы, дополнительный расход памяти. Addon-ы первого типа, следуя справочному руководству, пишутся на языке С++, второго же типа на любом языке программирования, поддерживающим серверы автоматизации, в частности Delphi6. В этой статье описано создание Addon-а в виде exe-файла с помощью Borland Delphi 6.</p>
+<p align="Justify">Процесс создания Addon-а можно разделить на три независимых этапа:</p>
+<UL>
+	<LI>написание Addon-а или программы на Delphi, реализирующей всю функциональность редактора; </LI>
+	<LI>подключение Addon-а к Visio;</LI>
+	<LI>и последний этап - запуск Addon-а из Visio. </LI>
+</UL>
+<p align="Justify">Пример, который идет со статьей содержит следующие файлы: </p>
+<UL>
+	<LI>DBEdit.exe - сам Addon вместе с исходными текстами (DBEdit*, Unit_Field.*, Unit_Main.*); </LI>
+	<LI>DSample.vss - трафарет, содержащий шейп Object, из которого вызывается в Visio Addon.</LI>
+</UL>
+<p align="Justify">Чтобы запустить Addon надо: во-первых, подключить Addon (о способах подключения см. ниже); во-вторых, создать новый документ, подключить к нему трафарет “DSample.vss” : File => Shapes => Open Stencils; в-третьих, перетащить Object с открытого трафарета на лист; и наконец, щелкнуть правой клавишей мыши на шейпе и выбрать в контекстном меню “Редактор таблицы БД”.</p>
+<CENTER><IMG SRC="st012_image1.png" WIDTH="545" HEIGHT="423" BORDER="0" ALT=""></CENTER>
+<p align="Center">Рис 1. Окно программы DBEdit (Addon)</p>
+<p align="Justify"><b>Написание Addon-а на Delphi 6.</b> Эта среда разработки была выбрана по двум объективным причинам: поддержка серверов автоматизации и хорошее знание автора данного языка программирования. Написать Addon на другом языке будет ничуть не сложнее. К статье прилагается полностью рабочий пример Addon-а с исходными текстами с комментариями. Дальше в статье лишь кратко будут объяснены ключевые моменты. </p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>SVisioSTR = 'Visio.Application';</td></tr>
+</table>
+<p align="Justify">Строка-индификатор приложения Visio.</p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>private</td></tr>
+<tr><td>&nbsp;&nbsp;FVisio: Variant;  ссылка на приложение Visio</td></tr>
+<tr><td>&nbsp;&nbsp;FAShape: Variant; ссылка на редактируемый шейп</td></tr>
+</table>
+<p align="Justify">Переменные типа Variant, с помощью которого можно вызывать методы сервера (Visio) напрямую за счет поддержки интерфейса IDispatch..</p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>procedure TForm1.FormCreate(Sender: TObject);</td></tr>
+<tr><td>var</td></tr>
+<tr><td>&nbsp;&nbsp;Result: HRESULT;</td></tr>
+<tr><td>&nbsp;&nbsp;Unknown: IUnknown;</td></tr>
+<tr><td>&nbsp;&nbsp;WGuid: TGUID;</td></tr>
+<tr><td>begin</td></tr>
+<tr><td>&nbsp;&nbsp;WGuid := StringToGUID(SVisioSTR);</td></tr>
+<tr><td>&nbsp;&nbsp;Result := GetActiveObject(WGuid,nil,Unknown);</td></tr>
+<tr><td>&nbsp;&nbsp;if Result = MK_E_UNAVAILABLE then</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;FVisio := CreateOleObject(SVisioSTR)</td></tr>
+<tr><td>&nbsp;&nbsp;else</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;FVisio := GetActiveOleObject(SVisioSTR);</td></tr>
+<tr><td>&nbsp;&nbsp;FAShape := FVisio.ActiveWindow.Selection(1);</td></tr>
+</table>
+<p align="Justify">В этом блоке программа получает глобальный идентификатор интерфейса Visio, а потом пытается подключиться к серверу автоматизации. Если Visio запущен, то подключается к работающей версии. После этого получает ссылку на активный шейп.</p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>procedure TForm1.FormDestroy(Sender: TObject);</td></tr>
+<tr><td>begin</td></tr>
+<tr><td>&nbsp;&nbsp;FVisio := Unassigned;</td></tr>
+<tr><td>end;</td></tr>
+</table>
+<p align="Justify">При закрытии Addon-а надо обязательно обнулить ссылку с сервером автоматизации !</p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>S := FAShape.CellsSRC(242, 0, 0).FormulaU;</td></tr>
+</table>
+<p align="Justify">Получаем строку с данными из активного шейпа.</p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>FAShape.CellsSRC(242, 0, 0).FormulaU := S;</td></tr>
+</table>
+<p align="Justify">Соотвественно, после редактирования записываем обратно сформированную строку с данными в активный шейп.</p>
+<p align="Justify"><b>Подключение Addon-а к Visio.</b> Способов, подключить Addon в Visio несколько. Первый, наименее трудоемкий, заключается в том, что в настройках Visio надо указать папку, в которой лежит разработанный Addon. Делается это через главное меню: Visio => Tools => Options => Advanced => File Paths => Addons. Второй способ, программный, состоит в том, чтобы добавить путь к своему Addon-у в коллекцию Addon-ов объекта Application, т.е. Visio. Пример второго способа подключения Addon-а есть в Microsoft Office Visio SDK 2003. </p>
+<p align="Justify"><b>Запуск Addon-а из Visio.</b> Запустить подключенный Addon можно тоже несколькими способами. Все они прекрасно описаны в Microsoft Office Visio SDK 2003. Самый простой способ реализуется через главное меню: Tools => Addons => выбираем наш Addon. Для программного запуска Addon можно воспользоваться двумя функциями: RUNADDON и RUNADDONWARGS. Первая просто запускает Addon с указанным в скобках именем. Вторая же позволяет запустить Addon и передать ему какую-либо информацию в виде параметров командной строки. В прилагаемом примере используется функция RUNADDON. Описана она в Row_2 секции Actions шейпа (см. ShapeSheet) следующим образом:</p>
+<table border="0" bgcolor="#EEEEFF">
+<tr><td>=RUNADDON("DBEdit")</td></tr>
+</table>
+<p align="Justify">В качестве единственного аргумента функции указано имя Addon-а. </p>
+<p align="Justify">И последний важный момент. В качестве места, в котором можно хранить данные шейпа, т.е. данные таблицы выбран новый ряд в секции User-difined cells DBData. Это легко можно проверить следующим способом. Отредактировать с помощью Addon-а объект, а после с помощью DBData посмотреть значение ячейки User.DBData. Все данные помещаются туда в отформатированном виде.</p>
+<p align="Justify">Все исходные материалы обсуждаемого примера
+можно взять для подробного рассмотрения в <a href="dbedit.rar">rar-архиве</a>. Объем архива 471 Кб.</p>
+
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

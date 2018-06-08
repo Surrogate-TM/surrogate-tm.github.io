@@ -1,4 +1,5 @@
-﻿# Visio 2010 Shapesheet Справка
-## Обзор справки Visio Shapesheet Справка
+﻿# Полезные сайты о Microsoft Visio
 
-[Digitall site](https://surrogate-tm.github.io/digitall/index.html)
+## На русском
+[Зеркало сайта visio.artberg.ru](https://surrogate-tm.github.io/visio-artberg-ru/index.html)
+[Зеркало сайта Digitall](https://surrogate-tm.github.io/digitall/index.html)

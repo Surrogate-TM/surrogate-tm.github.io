@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+<title>ШАР в стиле 3D средствами Visio</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="../index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="../reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="../forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="../f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="../bib.htm">Библиотека</a> |
+ <a class="menu" href="../faq.htm">Частые вопросы</a> |
+ <a class="menu" href="../bookpdf.htm">Литература</a> |
+ <a class="menu" href="../loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="../site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="../visicorp.htm">История Visio</a> |
+ <a class="menu" href="../product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>ШАР в стиле 3D средствами Visio</h1>
+
+<p align="right">Георгий Щербаков. Вольный перевод статьи от <a href="http://www.visguy.com/">Visio Guy</a></p>
+
+<p align="Justify">После прочтения 
+ <a href="../biblio/st009.htm">статьи</a>
+ мне показалось, что использовать внешние программы для создания эффектов конечно не плохо,
+ но не у всех имеется такая возможность. </p>
+<p align="Justify">Поискав в интернете (искал я конечно не только это, а вообще все что
+ касается создания фигур в VISIO) я наткнулся на
+ <a href="http://www.visguy.com/2007/08/30/off-center-radial-fill-effect/">статью</a>,
+ вольный перевод которой предлагаю вашему вниманию.
+<p align="Justify">Когда вы работаете с градиентной заливкой объектов, иногда хочется,
+ чтобы радиальная заливка начиналась не в центре, а со смещением. Это можно сделать
+ средствами Visio.</p>
+<h3>Обман градиента</h3>
+<p align="Justify">Один из вариантов решить эту проблему - сделать фактическую часть
+ фигуры несколько больше, чем ее видимая часть:</p>
+<img src="r013/r1.png" alt="" border="0"../>
+<p align="Justify">Смотрится неплохо, это почти то, чего мы добиваемся. Но не хорошо,
+ что рамка выделения фигуры больше, чем круг, не говоря уже о том, что менять размеры круга
+ тоже будет сложно.</p>
+<h3>Решение</h3>
+<p align="Justify">Чтобы выйти из создавшегося положения, создаем круг и от его центра
+ проводим линию:</p>
+<img src="r013/r2.png" alt="" border="0"../>
+<p align="Justify">Теперь объединяем эти две фигуры. Однако, если выбрать инструмент
+ "Карандаш" и применить его к линии, то можно переместить вершины линии, в том числе и
+ за пределы круга. Если это сделать, то рамка выделения тоже увеличится, чего собственно
+ не нужно. Чтобы этого не произошло, изменим в секции Protection значение ячейки LockCalcWH на 1:</p>
+<img src="r013/r3.png" alt="" border="0"../>
+<p align="Justify">Теперь даже при перемещении вершины линии за пределы круга, рамка выделения
+ не увеличится:</p>
+<img src="r013/r4.png" alt="" border="0"../>
+<p align="Justify">Теперь выполним радиальную градиентную заливку полученной фигуры.
+ На рисунке использован образец №40. После выполнения этой операции получаем:</p>
+<img src="r013/r5.png" alt="" border="0"../>
+<p align="Justify">Захватываем "карандашом" вершину линии, перемещаем и получаем, что эффект
+ заливки смещается вслед за линией.</p>
+<h3>Прячем линию</h3>
+<p align="Justify">Но линия все еще видимая и нужно ее спрятать. Заходим в таблицу
+ свойств фигуры, находим секцию Geometry, которая относится к линии, и устанавливаем
+ в ячейку NoLine значение 1. В результате линия становится невидимой, но можно, тем не менее,
+ "карандашом" перемещать вершину для перемещения эффекта градиента. Только это неудобно.</p>
+<h3>Управление линией</h3>
+<p align="Justify">Можно было бы остановится на достигнутом результате и использовать
+ "карандаш" для перемещения эффекта. Но давайте добавим управление к нашей фигуре и
+  установим его на вершину линии, чтобы регулировать эффект когда угодно:</p>
+<img src="r013/r6.png" alt="" border="0"../>
+<p align="Justify">Для того, чтобы добавить точку управления, открываем таблицу свойств фигуры
+ и добавляем секцию Controls:</p>
+<img src="r013/r7.png" alt="" border="0"../>
+<p align="Justify">На рисунке желтым фоном отмечены ячейки, которые были изменены.
+ Внесите эти изменения и получите новую фигуру - шар 3D с управляемым эффектом.</p> 
+<p align="Justify">Все исходные материалы  можно взять для подробного рассмотрения в
+ <a href="http://www.visguy.com/wp-content/uploads/2007/08/off-center-radial-fill-effect.zip">Off-center Radial Fill Effect.zip</a> (25 KB).</p>
+
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

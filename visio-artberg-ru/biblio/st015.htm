@@ -1,0 +1,210 @@
+﻿<html>
+<head>
+<title>Выборка данных из файла Visio по XML технологии</title>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="STYLESHEET" HREF="vis.css">
+</head>
+<body bgcolor="white">
+<table width="100%"><tr>
+<td width="20%" align="center"><a href="../index.htm"><IMG SRC="../images/vl1.png" WIDTH="230" HEIGHT="130" BORDER="0" ALT=""></a>&nbsp;</td>
+<td width="10%" align="center">&nbsp;</td>
+<td class='menutd' width="70%" align="center">
+ <a class="menu" href="http://visio.getbb.ru/">Форум visio.getbb.ru</a> |
+ <a class="menu" href="../reg.htm">О форумах</a>
+<!-- 
+ <a class="menu" href="../forum/default.asp">форум visio.artberg.ru</a> |
+ <a class="menu" href="../f_rubr/top.htm">Указатель artberg</a>
+--> 
+<br/>
+ <a class="menu" href="../bib.htm">Библиотека</a> |
+ <a class="menu" href="../faq.htm">Частые вопросы</a> |
+ <a class="menu" href="../bookpdf.htm">Литература</a> |
+ <a class="menu" href="../loading.htm">Склад материалов</a>
+<br/>
+ <a class="menu" href="http://visio-all.blogspot.ru/p/blog-page.html">Полезные ссылки</a> |
+ <a class="menu" href="../site.htm">О сайте</a>
+<br/>
+ <a class="menu" href="../visicorp.htm">История Visio</a> |
+ <a class="menu" href="../product.htm">Продукты Visio</a>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" class="min"><tr><td width="10%" align="center">&nbsp;</td>
+	<td width="90%">&nbsp;&nbsp;Для русскоязычных пользователей Visio. Начинающих и профессионалов.
+Где взять, как сделать, что купить и т.д.
+</td></tr></table>
+<!-- --------------------------- -->
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- Внутренняя табл. для чужого текста -->
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- --------------------------- -->
+
+<h1>Выборка данных из файла Visio по XML технологии</h1>
+<p align="right">Геннадий Туманов</p>
+
+<p align="Justify">Так как Visio, начиная с 2002 версии позволяет сохранять документ в формате XML (.vdx) 
+интересно было попробовать использовать его в качестве XML источника данных. Попробовал, вот что получилось.</p>
+<p align="Justify">Исходный файл d1.vdx содержит всего три прямоугольника с Custom Properties p1, p2 и p3.
+Ставилась задача – выбрать эти Custom Properties. Вспомогательный инструмент – MSXML.
+Программа написана в VB6.</p>
+<p align="Justify">Проверены два способа: работа с DOM и XSLT-преобразование.</p>
+<h3>Работа с DOM</h3>
+<p align="Justify">Работа с DOM никаких неожиданностей не принесла. Вот такой текст</p>
+<p class="t">Sub GetCustProp()</p>
+<p class="t">'Выборка данных из Visio файла с помощью MSXML</p>
+<p class="t">    Dim xmlVis As MSXML2.DOMDocument    'Исходный документ</p>
+<p class="t">    Dim NL As MSXML2.IXMLDOMNodeList</p>
+<p class="t">    Dim NL1 As MSXML2.IXMLDOMNodeList</p>
+<p class="t">    Dim NL2 As MSXML2.IXMLDOMNodeList</p>
+<p class="t">    Set xmlVis = New MSXML2.DOMDocument</p>
+<p class="t">    xmlVis.validateOnParse = False</p>
+<p class="t">    xmlVis.async = False</p>
+<p class="t">    s = fPath & "d1.vdx"../p>
+<p class="t">    xmlVis.Load (s)</p>
+<p class="t">    Set NL = xmlVis.getElementsByTagName("../Shape")</p>
+<p class="t">    For i = 0 To NL.length - 1</p>
+<p class="t">        Set NL1 = NL.Item(i).selectNodes("@ID")</p>
+<p class="t">        Debug.Print "ID шейпа = " & NL1.Item(0).Text</p>
+<p class="t">        Set NL1 = NL.Item(i).selectNodes("Prop")</p>
+<p class="t">        s = ""../p>
+<p class="t">        For j = 0 To NL1.length - 1</p>
+<p class="t">            Set NL2 = NL1.Item(j).selectNodes("Label")</p>
+<p class="t">            s = s & NL2.Item(0).Text</p>
+<p class="t">            Set NL2 = NL1.Item(j).selectNodes("Value")</p>
+<p class="t">            s = s & " = " & NL2.Item(0).Text & "; "../p>
+<p class="t">        Next</p>
+<p class="t">        Debug.Print s</p>
+<p class="t">    Next</p>
+<p class="t">    Set xmlVis = Nothing</p>
+<p class="t">End Sub</p>
+<p align="Justify">дает вот такой вывод</p>
+<p class="t">ID шейпа = 1</p>
+<p class="t">p1 = Первый; p2 = wetwer; p3 = fgdfgsdfgsdf;</p>
+<p class="t">ID шейпа = 2</p>
+<p class="t">p1 = Второй; p2 = wert wer wer ; p3 = gh fg hfgh fg h;</p>
+<p class="t">ID шейпа = 3</p>
+<p class="t">p1 = Третий; p2 = kkkkkk; p3 = uyyyyyyyyi iiii;</p>
+<p align="Justify">Все, что требуется, – ориентироваться в XML модели Visio.</p>
+<h3>Работа с XSLT-преобразованием</h3>
+<p align="Justify">Этот вариант дался немного потяжелее. Текст программы</p>
+<p class="t">Sub CopyCustPropToFile()</p>
+<p class="t">'Конвертирование Visio файла с помощью MSXML. XLT-преобразование</p>
+<p class="t">    Dim xmlSource As MSXML2.DOMDocument</p>
+<p class="t">    Dim xmlTr As MSXML2.DOMDocument</p>
+<p class="t">    Set xmlSource = New MSXML2.DOMDocument</p>
+<p class="t">    xmlSource.validateOnParse = False</p>
+<p class="t">    xmlSource.async = False</p>
+<p class="t">    s = fPath & "d1.vdx"../p>
+<p class="t">    'Из входного файла приходится вырезать xmlns</p>
+<p class="t">    s1 = fPath & "d1.vdx"../p>
+<p class="t">    s2 = fPath & "temp.vdx"../p>
+<p class="t">    Open s1 For Input As #1</p>
+<p class="t">    Open s2 For Output As #2</p>
+<p class="t">    Input #1, s3</p>
+<p class="t">    Print #2, s3</p>
+<p class="t">    Input #1, s3</p>
+<p class="t">    s3 = Replace(s3, " xmlns='http://schemas.microsoft.com/visio/2003/core'", "")</p>
+<p class="t">    Print #2, s3</p>
+<p class="t">    Do While Not EOF(1)</p>
+<p class="t">        Input #1, s3</p>
+<p class="t">        Print #2, s3</p>
+<p class="t">    Loop</p>
+<p class="t">    Close #1</p>
+<p class="t">    Close #2</p>
+<p class="t">    'На вход загружается почищенная копия</p>
+<p class="t">    s = fPath & "temp.vdx"../p>
+<p class="t">    xmlSource.Load (s)</p>
+<p class="t">    'Загрузка трансформатора</p>
+<p class="t">    Set xmlTr = New MSXML2.DOMDocument</p>
+<p class="t">    xmlTr.validateOnParse = False</p>
+<p class="t">    s = fPath & "Автоконвертор.xslt"../p>
+<p class="t">    xmlTr.Load (s)</p>
+<p class="t">    'Вот собственно преобразование</p>
+<p class="t">    s = xmlSource.transformNode(xmlTr)</p>
+<p class="t">    'Трансформатор по умолчанию создает выходной файл в кодировке "UTF-16"../p>
+<p class="t">    'Это можно исправить непосредственно в трансформаторе или (грубо) вручную функцией Replace</p>
+<p class="t">    s = Replace(s, "UTF-16", "Windows-1251")</p>
+<p class="t">    s1 = fPath & "d2.htm"../p>
+<p class="t">    Open s1 For Output As #1</p>
+<p class="t">    Print #1, s</p>
+<p class="t">    Close #1</p>
+<p class="t">    Set xmlSource = Nothing</p>
+<p class="t">    Set xmlTr = Nothing</p>
+<p class="t">End Sub</p>
+<p align="Justify">Текст конвертора (файл Автоконвертор.xslt)</p>
+<p class="t">&lt;?xml version="1.0" encoding="ISO-8859-5"?&gt;</p>
+<p class="t">&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"../p>
+<p class="t">xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
+<p class="t">    &lt;xsl:template match="/"&gt;</p>
+<p class="t">        &lt;html&gt;</p>
+<p class="t">            &lt;head /&gt;</p>
+<p class="t">            &lt;body&gt;</p>
+<p class="t">                &lt;xsl:for-each select="VisioDocument"&gt;</p>
+<p class="t">                    &lt;xsl:for-each select="DocumentSheet"&gt;</p>
+<p class="t">                        &lt;xsl:for-each select="@NameU"&gt;</p>
+<p class="t">                            &lt;xsl:value-of select="."../&gt;</p>
+<p class="t">                        &lt;/xsl:for-each&gt;</p>
+<p class="t">                    &lt;/xsl:for-each&gt;</p>
+<p class="t">                    &lt;br /&gt;</p>
+<p class="t">                    &lt;xsl:for-each select="Pages/Page"&gt;</p>
+<p class="t">                            &lt;xsl:for-each select="@NameU"&gt;Страница = &lt;xsl:value-of select="."../&gt;</p>
+<p class="t">                            &lt;/xsl:for-each&gt;</p>
+<p class="t">                            &lt;br /&gt;</p>
+<p class="t">	                             &lt;table border="1"&gt;</p>
+<p class="t">                            &lt;xsl:for-each select="Shapes"&gt;</p>
+<p class="t">	                             &lt;xsl:for-each select="Shape"&gt;</p>
+<p class="t">		                          &lt;tr&gt;</p>
+<p class="t">		                            &lt;xsl:for-each select="Prop"&gt;</p>
+<p class="t">		                          &lt;td&gt;</p>
+<p class="t">	                                        &lt;xsl:for-each select="Label"&gt;</p>
+<p class="t">				                           &lt;xsl:value-of select="."../&gt;</p>
+<p class="t">	                                        &lt;/xsl:for-each&gt; = </p>
+<p class="t">	                                        &lt;xsl:for-each select="Value"&gt;</p>
+<p class="t">				                           &lt;xsl:value-of select="."../&gt;</p>
+<p class="t">	                                        &lt;/xsl:for-each&gt;</p>
+<p class="t">		                           &lt;/td&gt;</p>
+<p class="t">		                            &lt;/xsl:for-each&gt;</p>
+<p class="t">		                           &lt;/tr&gt;</p>
+<p class="t">	                            &lt;/xsl:for-each&gt;</p>
+<p class="t">                            &lt;/xsl:for-each&gt;</p>
+<p class="t">	                            &lt;/table&gt;</p>
+<p class="t">                    &lt;/xsl:for-each&gt;</p>
+<p class="t">                &lt;/xsl:for-each&gt;</p>
+<p class="t">            &lt;/body&gt;</p>
+<p class="t">        &lt;/html&gt;</p>
+<p class="t">    &lt;/xsl:template&gt;</p>
+<p class="t">&lt;/xsl:stylesheet&gt;</p>
+<p align="Justify">На выходе получается html файл d2.htm примерно такого вида</p>
+<p class="t">TheDoc</p>
+<p class="t">Страница = Page-1</p>
+<p class="t">p1 = Первый p2 = wetwer p3 = fgdfgsdfgsdf </p>
+<p class="t">p1 = Второй p2 = wert wer wer  p3 = gh fg hfgh fg h </p>
+<p class="t">p1 = Третий p2 = kkkkkk p3 = uyyyyyyyyi iiii</p>
+<p align="Justify">Все неприятности возникли почему-то из-за ссылки на пространство имен.
+Visio вставляет в файл атрибут xmlns='http://schemas.microsoft.com/visio/2003/core'. 
+Но MSXML с такой ссылкой работать отказывается (еще надо бы выяснить, почему).
+Удаляться через RemoveNamedItem такой атрибут отказывается (другие атрибуты удаляются).</p>
+<p align="Justify">Причина скорее всего в том, что привязка к пространству имен в MSXML очень глубокая. 
+Однажды захватив эту ссылку, он уже распространяет ее на весь документ. При попытке удаления атрибута 
+со ссылкой атрибут на самом деле удаляется, но для сохранения привязки MSXML тут же вставляет аналогичный 
+атрибут в другом месте.</p>
+<p align="Justify">Аналогичная история происходит при попытке создать новый документ и поэлементно 
+перенести в него компоненты из первого. Ссылка xmlns размножается и присваивается каждому переносимому компоненту.</p>
+<p align="Justify">Радикальный способ – удалить ссылку непосредственно во входном файле. 
+Это работает. Если весь входной файл переписать во временный, вычистив из второй строки ссылку xmlns, 
+и подать полученную копию на вход конвертора, у MSXML претензий не возникает. Так и сделано в приведенном примере.</p>
+</p>
+
+<!-- --------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Контакты:</b> Туманов Геннадий Евгеньевич&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+﻿<html>
+<head>
+<meta name="GENERATOR" content="MSHTML 5.00.2614.3500">
+<meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+<LINK REL="stylesheet" HREF="vis.css" type="text/css" />
+<title>Visio stencil for data import</title>
+</head>
+<body bgcolor="white">
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr><td width="100%" bgcolor="FFFFFF">
+<!-- end header --------------------------- -->
+
+<h1>Visio stencil for data import</h1>
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr>
+<td width="20%" bgcolor="FFFFFF">
+<IMG SRC="pr.jpg" WIDTH="200" HEIGHT="133" BORDER="0" ALT="">
+</td>
+<td width="50%" bgcolor="FFFFFF">
+<p><b>Instrument for automatic creation of diagrams based on the data</b></p>
+<p>The stencil contains the Shape-Importer and a few macros.</p>
+<p>Creation of the diagram is reduced to copying the contents
+of the Clipboard into a shape and execution the Draw command.
+The stencil automatically makes all remaining operations.</p>
+</td>
+<td width="30%" bgcolor="FFFFFF">
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/XBmS">Buy on Gumroad</a>
+</td></tr></table>
+<hr>
+
+<h3>Application area</h3>
+<p>Some Visio add-ons have a built-in tools, that allow users
+to import data and automatically create a diagram. Such tools are used
+in Organisation chart and Brainstorm diagram. But it is strongly specialized things.</p>
+<p>If you have programming skills, you can write a macro to import
+data. But not everybody may programming and in addition this takes a time.</p>
+<p>Here it is proposed a different way - a Shape-Importer.
+Shape contains some of the most common charting algorithm.
+All operations are as simple as possible. Creation of the chart requires only several clicks.</p>
+<p>Naturally, this approach does not cover all the data import requirements.
+But let us hope that it will be among the familiar and commonly used tools.</p>
+
+<h3>General technique</h3>
+<p>The stencil can be used in any document. It is only necessary to throw
+a portion of the data into shape-importer and execute the context menu.
+Shape performs all the necessary work and constructs the chart completely automatically.</p>
+
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr>
+<td width="20%" bgcolor="FFFFFF">
+<a target="New" href="f/ip1.gif"><IMG SRC="pr001.jpg" WIDTH="300" HEIGHT="200" BORDER="0" ALT=""></a>
+</td>
+<td width="80%" bgcolor="FFFFFF">
+<p><a target="New" href="f/ip1.gif">See an example of the import and building network diagrams with data from Excel.</a></p>
+<p>The example contains following sequence of actions:</p>
+<UL>
+<LI> open the stencil
+<LI> drop the shape-importer onto page
+<LI> throw a piece of data in the shape
+<LI> perform the shortcut menu.
+</UL>
+</td></tr></table>
+
+<h3>Variants of the data format</h3>
+<p>Shape-importer supports some of the most popular data formats.</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr><td  bgcolor="FFFFFF">
+<IMG SRC="pr000_r1.png" WIDTH="200" HEIGHT="50" BORDER="0" ALT="">
+</td>
+<td bgcolor="FFFFFF">One column - array of shapes</td>
+<td bgcolor="FFFFFF">
+<IMG SRC="pr000_r2.png" WIDTH="200" HEIGHT="50" BORDER="0" ALT="">
+</td>
+<td bgcolor="FFFFFF">2 columns - tree - the connected shapes, one master</td></tr>
+<tr><td bgcolor="FFFFFF">
+<IMG SRC="pr000_r3.png" WIDTH="200" HEIGHT="50" BORDER="0" ALT="">
+</td>
+<td bgcolor="FFFFFF">4 columns - tree, different masters</td>
+<td bgcolor="FFFFFF">
+<IMG SRC="pr000_r4.png" WIDTH="200" HEIGHT="50" BORDER="0" ALT="">
+</td>
+<td bgcolor="FFFFFF">6 columns - tree, different masters plus additional parameter</td></tr>
+</table>
+<p>There are 2 major modifications provided for placing shapes. Tree - for diagrams
+like Orgchart. Network - the nodes connected by straight lines.
+After construction, you can change the layout of the chart using a regular function.</p>
+
+<h3>Array of shapes.</h3>
+<p>This function is used when you want to convert a set of rows in a lot of shapes.
+For example, there is a text algorithm to get a block diagram.</p>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr><td width="20%" bgcolor="FFFFFF">
+<a target="New" href="f/pr000_f3.gif"><IMG SRC="pr000_r1.png" WIDTH="200" HEIGHT="50" BORDER="0" ALT=""></a>
+</td>
+<td width="60%" bgcolor="FFFFFF">
+<p><a target="New" href="f/pr000_f3.gif">The picture</a> shows the following operations in sequence:</p>
+<UL>
+<LI>copy text to clipboard
+<LI>copy the contents of the buffer to notebook
+<LI>open the import.vss stencil
+<LI>drop the shape-importer onto page
+<LI>insert text from buffer
+<LI>open the Document Stencil and select necessary master
+<LI>execute the "Draw Array" menu item 
+</UL>
+<p>After this, the ArrayController master is used:</p>
+<UL>
+<LI>drop the master onto page (the shape is converted to a form)
+<LI>select previously drawn diagram, click ...
+<LI>check "Columns" CheckBox
+<LI>use Arrow keys to reduce the number of columns to one (vertical layout)
+</UL>
+</td></tr>
+</table>
+<p>Note. The features of ArrayController master are described below.</p>
+<p>Rules. Source data should be placed in a single column. Each string is converted
+to one shape. The 2D shapes are produced based on the selected master. That is, by selecting
+different masters you will make different arrays. The input strings transfer to the shapes's text.</p>
+<p>By default, the array contains 10 columns. The number of lines depends
+on the data volume. The intervals depend on the shape's size.</p>
+<p>The stencil also contains the "ArrayController" shape.</p>
+<p>The "ArrayController" shape provides the folloving abilities:</p>
+<UL>
+<LI>rebuild an array of shapes, reducing or increasing the number of columns;
+<LI>change the offset between shapes horizontally and vertically (without changing the size of shapes);
+<LI>while holding down the Shift key, the increment will decrease ten times;
+<LI>set the exact area to fit the array of shapes;
+<LI>set the exact interval between the centers or edges of shapes.
+</UL>
+<p>By default, the shapes in array are connected. If you want to get an array
+of unconnected shapes, it is enough to select the shapes
+on a "connecting line" layer with the "Select by type" and remove them (menu "Edit / Select by type").</p> 
+
+<table><tr><td>
+<h3>2 columns</h3>
+<div style="float:left; padding:10pt">
+<IMG SRC="pr000_r91.png" WIDTH="150" HEIGHT="200" BORDER="0" ALT="">
+</div>
+<div>
+<p>Typical using - display the links between shapes.
+For example, the organizational structure or data flows between the devices.
+<a target="New" href="f/ip1.gif">In an example</a> the following operations are shown:</p>
+<UL style="margin-left:160pt">
+	<LI>open the stencil
+	<LI>drop ImportBox master ontu page
+	<LI>copy data from Excel into notebook
+	<LI>copy data from notebook into ImportBox
+	<LI>open the desired stencil and select a master
+	<LI>perform a Draw Network function
+</UL>
+<p>As a result of import we see devices and communication between them, corresponding to the imported data.</p>
+<p>Data requirements. Data should be presented in two columns,
+separated by tabs. When you copy data from Excel or a database it is recommended
+to use an intermediate copy in a notebook while the separator is inserted by default.</p>
+<p>Both columns must contain the device's names (shape text).</p>
+<p>The first column - the source, the second - the receiver.
+(For organizational structure - Executive - Report To).</p>
+<p>All the nodes are represented by copies of a master, that is chosen
+at the moment of the Draw command execution. As a connector "Dynamic connector" is used.</p>
+<p>Shape-Importer uses two layout modifications, which differ
+by the method of shape's placement and line types: "Draw Tree" and "Draw Network".
+If you want another method, then after the import, you can change it
+manually or use the regular autoplacement functions.</p>
+</div>
+</td></tr></table>
+
+<table><tr><td>
+<h3>4 columns</h3>
+<div style="float:left; padding:10pt">
+<a target="New" href="f/pr000_f4.gif"><IMG SRC="pr000_r8.png" WIDTH="160" HEIGHT="200" BORDER="0" ALT=""></a>
+</div>
+<div>
+<p>This mode allows you to use different masters and various connectors.
+In the <a target="New" href="f/pr000_f4.gif">example</a> the diagram is constructed using four different masters.</p>
+<p>Columns 1 and 2, as well in the previous example, define the source
+and receiver node. Column 3 contains the name of the master
+for 2D shapes. Column 4 - the name of the master for the connector.</p>
+<p>All nodes must be present in the first column. In case of root node
+column 2 should be left blank.</p>
+<p>All used masters must be present in the Document Stencil.
+Otherwise you will receive an error message, such as "Master Server is missing".
+To transfer the desired masters from the target stencil to the
+Document Stencil, you need to drop them to a page, then remove them.
+As a result, the copies will appear in the Document Stencil.</p>
+<p>By default the Shape-Importer works with local names of the masters.
+The paid version has the ability to switch to universal names.
+To do this, open the editor and change the value of the constant
+UseUniversal to True. The code of free version is not available, so this is not possible.</p>
+</div>
+</td></tr></table>
+
+<table><tr><td>
+<h3>6 columns</h3>
+<div style="float:left; padding:5pt">
+<IMG SRC="pr000_r9.png" WIDTH="200" HEIGHT="200" BORDER="0" ALT="">
+</div>
+<p>This mode, besides using different masters, allows you also
+to pass an additional parameter to them. This makes it possible to control
+the color, line thickness or configuration of shapes.</p>
+<p>The value of the control parameter (integer) will be entered in column 5 for the 2D shape
+and column 6 for the connector.</p>
+<p>The masters for such using must be previously prepared. The value is transferred to
+the "User.importP" cell. So ShapeSheet should contain the cell with such name
+in a "User-defined cells" section. And other (target) cell will contain the formula
+referred to this cell.
+<a target="new" href="importer_dop_en.htm#id001">The example below</a> shows
+how to organize the dependence a fill color of shape with the imported parameter.</p>
+<p>If the "User.importP" cell is missing in master, then the "Draw with parameters" function will
+work the same way as the "Draw with masters" function.
+</p>
+</td></tr></table>
+
+<div>
+<h3>Differences between versions</h3>
+<p>There are two versions of the stencil: paid and free.</p>
+<p>The code of the free version is closed and it occasionally displays a reminder of the possibility
+of buying the paid version. In other respects the two versions are identical.
+That is, you can download the free version, make sure that it suits you
+and then buy the paid version.</p>
+<p>Open source allows you to ensure that existing macros are safe
+and allow you to create your own modifications to perform different or additional tasks.</p>
+</div>
+
+<h3>Placement and using</h3>
+<p>All functionality is completely packed in the "import.vss" stencil.</p>
+<p>Stencil does not require the installation or the presence of other components.
+However, for ease of use, better put it in the folder that Visio uses
+to store user's stencils. For example, in the My Documents \ My Shapes folder
+or that specified in the Visio settings.
+The correct location will facilitate the opening of a stencil from any necessary documents.</p>
+
+<h3>Technical support</h3>
+<p>In case of need you can contact the author with questions and suggestions by email mentioned below.</p>
+<HR>
+
+<h3>Addendum</h3>
+<UL>
+	<LI><a target="new" href="importer_dop_en.htm#id001">How to make a shape with controlled fill color</a>
+	<LI><a target="new" href="importer_dop_en.htm#id002">How to allow the use of macros</a>
+	<LI><a target="new" href="importer_dop_en.htm#id003">How to change the layout of shapes</a>
+	<LI><a target="new" href="importer_dop_en.htm#id004">The "Select subtree" function</a>
+</UL>
+
+<!-- "bott.inc"--------------------------- -->
+</td></tr></table>
+<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+<TBODY><tr width="100%"><td bgColor="#000000" width="100%"><img height="2"
+src="spacer.gif" width="100"></td></tr></TBODY>
+</table>
+<img alt height="2" src="spacer.gif" width="1"><BR>
+<!-- --------------------------- -->
+<b>Mailto:</b> Gennady Tumanov&nbsp;&nbsp;&nbsp;<a href="mailto:gCroc@yandex.ru">gCroc@yandex.ru</a>
+<br/>
+
+</body>
+</html>
