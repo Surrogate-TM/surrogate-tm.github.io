@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+              <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>Deploying a VSTO 3.0 based Visio add-in using Windows Installer &#8211; Chris Hopkins&#039; Blog &#8211; #makinitdostuff</title>
+<link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-parent-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft/style.css?ver=02092017' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-child-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft-msdn/style.css?ver=04152016' type='text/css' media='all' />
+	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
+<link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
+
+<link rel="canonical" href="https://blogs.msdn.microsoft.com/chhopkin/2008/11/13/deploying-a-vsto-3-0-based-visio-add-in-using-windows-installer/" />
+<!-- og:title -->
+<meta property="og:title" content="Deploying a VSTO 3.0 based Visio add-in using Windows Installer" />
+<!-- og:description -->
+<meta property="og:description" content="In a previous post I gave you a brief description of Click-Once vs. Windows Installer based deployment choices and how to choose between the two. In this post I will describe in detail how to setup a Windows Installer (MSI) based project for deploying your VSTO 3.0 Visio 2007 add-in. This MSDN article has more..." />
+</head>
+<body class="post-template-default single single-post postid-1543 single-format-standard">
+<div id="page" class="site container-fluid">
+	<header id="site-header" class="site-header row" role="banner">
+		<div id="site-header-global-wrapper" class="site-header-global-wrapper">
+			<div id="site-header-global" class="site-header-global">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-profile-menu" aria-label="toggle menu" tabindex="0" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="site-logo" class="col-sm-5 row navbar-header">
+					<div id="header-microsoft-logo">
+						<a id="home-link" href="https://www.microsoft.com/" tabindex="1" aria-label="Microsoft logo">
+							<img id="header-microsoft-logo-svg" src="https://blogs.msdn.microsoft.com/visio/wp-content/themes/microsoft/images/ms-logo-gray.svg" alt="Microsoft logo">
+							<span id="brand">
+								<span id="brand-separator">|</span>
+								<span id="brand-name"></span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div id="site-header-global-right" class="col-sm-7">
+				</div>
+			</div>
+
+		</div>
+		<div id="site-header-blog-wrapper" class="site-header-blog-wrapper ms-blog-header clear-both">
+			<div id="site-header-blog" class="site-header-blog">
+				<nav class="navbar navbar-inverse">
+					<div id="blog-logo-area" class="navbar-header">
+						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
+														<div id="blog-logo-text">
+<h1 class="site-title ms-blog-title">
+					<a href="https://blogs.msdn.microsoft.com/chhopkin" class="for-desktop">
+						Chris Hopkins&#039; Blog &#8211; #makinitdostuff					</a>
+					<a href="https://blogs.msdn.microsoft.com/chhopkin" class="for-mobile">
+						Chris Hopkins&#039; Blog &#8211; #makinitdostuff					</a>
+				</h1>
+<!-- blog description -->
+<p class="site-description ms-blog-description">The place where I post information about the products I manage; SharePoint, Yammer, Project and Visio and maybe from some that I don&#039;t!</p>
+			</div>
+									</div>
+					</div>
+									</nav>
+			</div>
+			
+		</div>
+		<div id="site-content" class="site-content row">
+
+	<div id="primary" class="content-area col-sm-9">
+	<main id="site-main" class="site-main" role="main">
+		<div id="single-content" class="div-content">
+<!-- Post start -->
+<article id="post-1543" class="post-1543 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+<h1 class="entry-title">Deploying a VSTO 3.0 based Visio add-in using Windows Installer</h1>
+<div class="entry-meta">
+<span class="byline"><span class="author vcard"><a class="url fn n profile-usercard-hover" data-profile-userid="8269f8fdfe8043a0993263bbfc5f124b" href="https://social.msdn.microsoft.com/profile/Christopher+R+Hopkins">Christopher R Hopkins</a></span>
+</span><span class="posted-on posted-on-margin">
+			<span class="screen-reader-text"></span>
+<time class="entry-date published updated" datetime="2008-11-13T18:03:43+00:00">November 13, 2008</time>
+			</span>
+		</div>
+		<hr>
+	</header><!-- .entry-header -->
+<div class="entry-content single">
+		<p>In a <a href="http://blogs.msdn.com/chhopkin/archive/2008/08/29/vsto-3-0-and-visio-essentials.aspx">previous post</a> I gave you a brief description of Click-Once vs. Windows Installer based deployment choices and how to choose between the two.</p>
+<p>In this post I will describe in detail how to setup a Windows Installer (MSI) based project for deploying your VSTO 3.0 Visio 2007 add-in. This MSDN <a href="http://msdn.microsoft.com/en-us/library/cc563937.aspx">article</a> has more detailed information for VSTO 3.0 Add-Ins using an Excel add-in as the example project. </p>
+<p><b>Creating the Setup project</b> </p>
+<p>I assume at this point you have a solution in Visual Studio that contains a VSTO 3.0 based add-in project for Visio 2007. </p>
+<p>The first step is to add a new Setup project to your solution. To do this simple choose <i>File &gt; New &gt; Project…</i> from the menu and in the New Project dialog choose ‘Setup and Deployment’ from the ‘Other Project Types’ category. From the Templates list choose ‘Setup Project’ as shown below. </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_2.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_2.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="320" alt="image" src="image_thumb.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb.png" width="561" border="0" /></a> </p>
+<p><b>Project Properties</b> </p>
+<p>Right after I create the new setup project I usually set all the properties for the setup project. These are all standard properties and do not relate specifically to Visio based add-ins, however I typically set… </p>
+<p><i>InstallAllUsers = False</i> – Make sure this is False as Office 2007 no longer support HKLM registered add-ins. See the X section below for more information. </p>
+<p><i>Version = x.x.x.x</i> – I always make sure this is updated and in sync with the version of the add-in assembly. The main reason for this is to update the ProductCode so that each new build can install over the old build. Visual Studio will detect that you changed this value and prompt you to update the ProductCode value. If you build your MSI via a script you will need to update the Version and ProductCode values manually after the MSI is generated. </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_4.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_4.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="308" alt="image" src="image_thumb_1.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_1.png" width="383" border="0" /></a> </p>
+<p><b>Adding Prerequisites</b> </p>
+<p>Prerequisites can be installed by the bootstrapper (setup.exe) if the target machine does not already have them installed. These are separate from Launch Conditions but I typically create Launch Conditions for each prerequisite in case the user launches the MSI without running the setup.exe bootstrapper. </p>
+<p>For a VSTO 3.0 based Add-In the following prerequisites are required </p>
+<ul>
+<li>.NET Framework 3.5 </li>
+<li>Windows Installer 3.1 </li>
+<li>VSTO 3.0 runtime </li>
+<li>2007 Microsoft Office Primary Interop Assemblies – specifically the Visio 2007 PIA</li>
+</ul>
+<p>Most of the prerequisites listed above are already available in the list of available prerequisites. The 2007 PIA prerequisite is probably not in your list but can be added. <a href="http://blogs.msdn.com/vsto/archive/2008/05/08/adding-the-office-primary-interop-assemblies-as-a-prerequisite-in-your-clickonce-installer-mary-lee.aspx" target="_blank">Check out this article</a> for steps to add this to your list. </p>
+<p><b>Launch Conditions</b> </p>
+<p>As I mentioned above, Launch Conditions are separate from Prerequisites but you should really use them together. It is possible for the user to run the MSI to install the application instead of using the setup.exe bootstrapper which might result in the application crashing or not even loading because of missing prerequisites. The most common situation for Visio add-ins is the add-in will not be loaded… </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_6.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_6.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="236" alt="image" src="image_thumb_2.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_2.png" width="549" border="0" /></a> </p>
+<p>You can prevent this support issue by adding appropriate launch conditions to keep your add-in from installing if your requirements are not met. Launch conditions also provide an InstallURL property so that if the launch condition is not met, the user can be directed to the location of an install package that will help them meet the condition. </p>
+<p>It is important to note that you cannot determine the order for the Launch Conditions. </p>
+<p><b>.NET Framework 3.5 launch condition</b> </p>
+<p>This launch condition is added to the setup project for you so don’t worry too much about this one. </p>
+<p><b>VSTO runtime launch condition</b> </p>
+<p>To search for the VSTO 3.0 runtime you can use either the registry method or the ComponentID method. </p>
+<p>Registry Search </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_8.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_8.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="140" alt="image" src="image_thumb_3.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_3.png" width="546" border="0" /></a> </p>
+<p>ComponentID Search </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_10.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_10.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="139" alt="image" src="image_thumb_4.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_4.png" width="546" border="0" /></a> </p>
+<p>RegKey = Software\Microsoft\vsto runtime Setup\v9.0.21022 </p>
+<p>ComponentID = {AF68A0DE-C0CD-43E1-96DD-CBD9726079FD} </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_12.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_12.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="128" alt="image" src="image_thumb_5.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_5.png" width="546" border="0" /></a> </p>
+<p>In this case we did not set the InstallUrl property, we provided a message to inform the user to run setup.exe: </p>
+<p><i>[ProductName] requires Visual Studio Tools for Office 3.0 runtime. Please run setup.exe to install the prerequisites for this application.</i> </p>
+<p>If we were to provide the InstallUrl property to take the user to the download location for the VSTO 3.0 Runtime we would set this property to:   <br /><a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=54EB3A5A-0E52-40F9-A2D1-EECD7A092DCB&amp;displaylang=en"><i>http://www.microsoft.com/downloads/details.aspx?FamilyId=54EB3A5A-0E52-40F9-A2D1-EECD7A092DCB&amp;displaylang=en</i></a> </p>
+<p><b>Office 2007 / Visio 2007 PIA launch condition</b><b></b> </p>
+<p>The Visio Primary Interop Assembly is needed for any Visio add-in created using .NET. </p>
+<p>The PIA for Visio may already be installed if the machine had .NET Framework installed on it prior to installing Visio. The Visio installation would have detected this and automatically installed the PIA. If .NET was installed to the machine after Visio, chances are that the PIA for Visio is not installed. </p>
+<p>For this launch condition we will use a ComponentID search item and search for the ComponentID for the Visio PIA. The Visio PIA is either installed by the installation of Visio or from the <a href="http://www.microsoft.com/downloads/details.aspx?familyid=59daebaa-bed4-4282-a28c-b864d8bfa513&amp;displaylang=en">Office 2007 PIA redistributable package</a>. </p>
+<p>Visio 2007 PIA Component ID = {C1F1028F-D91A-43E8-A117-4F7CAFD7A041} </p>
+<p><i>For a complete list of ComponentIDs for the PIAs for each Office application see this </i><a href="http://msdn.microsoft.com/en-us/library/cc563937.aspx"><i>article</i></a><i>. </i></p>
+<p>Again, if we were to provide the InstallURL property to take the user to the download location for the Office 2007 PIA redistributable we would set this property to:   <br /><a href="http://www.microsoft.com/downloads/details.aspx?familyid=59daebaa-bed4-4282-a28c-b864d8bfa513&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=59daebaa-bed4-4282-a28c-b864d8bfa513&amp;displaylang=en</a> </p>
+<p><b></b></p>
+<p><b>Visio 2007 launch condition</b> </p>
+<p>In addition to launch conditions that back up the prerequisites I also add a launch condition to check for the installed version of Visio on the target machine. Check out my <a href="http://blogs.msdn.com/chhopkin/archive/2008/08/14/visio-2007-standard-vs-professional-there-is-a-difference.aspx">blog article</a> for detail on this specific launch condition. </p>
+<p><b>File System</b> </p>
+<p>The file system is fairly straight forward. Define the location of the Application Folder for the target machine and add your project output to this folder. You can get more detailed for supporting files and content but this is up to you. </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_14.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_14.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="144" alt="image" src="image_thumb_6.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_6.png" width="387" border="0" /></a> </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_16.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_16.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="125" alt="image" src="image_thumb_7.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_7.png" width="550" border="0" /></a> </p>
+<p>If you added Visio templates, stencils and other content to the project you can simple use the ‘Content Files’ option to include those files in your setup project automatically. </p>
+<p>In addition to the project output and any additional content you have to make sure and install the application manifest (*.manifest) and the deployment manifest (*.vsto) files in the Application Folder with the project output. These files replace the old COM Add-In registry entries and tell the VSTO runtime about any dependencies. </p>
+<p><b>Registry</b> </p>
+<p>Above we mentioned that the manifest files were the replacement for the old COM Add-In registry keys so what gives? The add-in is no longer registered for COM but we still need to inform the VSTO runtime of our add-in so that it loads correctly, and this is done via the registry. </p>
+<p>As you can see in the sample below, all we care about is the Addins key. Description, FriendlyName and LoadBehavior are still used however for VSTO we add the additional key named ‘Manifest’ which points to the deployment manifest file (*.vsto). </p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_18.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_18.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="169" alt="image" src="image_thumb_8.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_8.png" width="547" border="0" /></a> </p>
+<p>It is important to note the ‘|vstolocal’ value appended to the end of the Manifest value. This informs the VSTO runtime that it is locally installed and to not invoke the ClickOnce installer. </p>
+<p><b>User Interface</b> </p>
+<p>The only item I want to discuss about the User Interface is the setting to disable the ‘Install for All Users’ option. In the registry section above we specifically put our settings in the User/Machine Hive section. Now we want to make sure that our add-in installs for only the current user because Office 2007 does not support add-ins installed for HKLM. </p>
+<p><b>To configure a single-user installation</b> </p>
+<ol>
+<li>In the <b>Solution Explorer</b>, right-click the <b>Setup</b> project, expand <b>View</b> and select <b>User</b> <b>Interface</b>. </li>
+<li>In the <b>User Interface (Setup)</b> editor, right-click <b>Installation</b> <b>Folder</b> and select <b>Properties</b> <b>Window</b>. </li>
+<li>In the <b>Properties</b> window, set the value of the <b>InstallAllUsersVisible</b> property to <b>False</b>.</li>
+</ol>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_20.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_20.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="215" alt="image" src="image_thumb_9.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_9.png" width="399" border="0" /></a> </p>
+<p><b>PublishComponents</b> </p>
+<p>Because this setup project produces an MSI we can use the Visio Solution Publishing tool (vissolpublish.exe) to update the MSI with additional information about the templates and stencils contained in our MSI so they become available on the Visio Getting Started task pane and menus. </p>
+<p>Check out my <a href="http://blogs.msdn.com/chhopkin/archive/2008/08/30/postbuildevent-for-visio-solution-publishing.aspx">blog article</a> on running the Visio Solution Publishing tool as a Post Build action on the Setup project. </p>
+	</div><!-- .entry-content -->
+<hr>
+
+</article><!-- #post-## -->
+</div><!-- #single-content -->
+</div><!-- #primary -->
+<!-- Before Navigation --></main><!-- #site-main -->
+
+<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a> 
+
+<div id=""secondary"" class=""sidebar col-sm-3"">
+	<div id=""sidebar-widget-area"" class=""sidebar-widget-area"" role=""complementary"">
+		<div class=""widget sfmsb_widget"">
+
+		</div>
+		<aside id="tag_cloud-2" class="widget widget_tag_cloud">
+</aside>
+<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>	
+	<li><a href='..\..\..\years\2014\index.htm'>All of 2014</a>&nbsp;(27)</li>
+	<li><a href='..\..\..\years\2013\index.htm'>All of 2013</a>&nbsp;(19)</li>
+	<li><a href='..\..\..\years\2012\index.htm'>All of 2012</a>&nbsp;(21)</li>
+	<li><a href='..\..\..\years\2011\index.htm'>All of 2011</a>&nbsp;(26)</li>
+	<li><a href='..\..\..\years\2010\index.htm'>All of 2010</a>&nbsp;(15)</li>
+	<li><a href='..\..\..\years\2009\index.htm'>All of 2009</a>&nbsp;(22)</li>
+	<li><a href='..\..\..\years\2008\index.htm'>All of 2008</a>&nbsp;(7)</li>
+</aside>
+</div><!-- #secondary -->
+</div><!-- .site-content -->
+</div>
+
+<footer id="site-footer" class="site-footer row" role="contentinfo">
+	<div id="site-info" class="site-info">
+		<div id="footer-text" class="col-sm-4 col-sm-offset-6">
+			<span>
+				<a href="https://privacy.microsoft.com" data-mscc-ic="false">Privacy</a>
+			</span>
+			<span>
+				<a href="https://msdn.microsoft.com/cc300389" data-mscc-ic="false">Terms of Use</a>
+			</span>
+			<span>
+				<a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-mscc-ic="false">Trademarks</a>
+			</span>
+		</div>
+		<div id="footer-far" class="col-sm-2">
+			<div id="footer-microsoft-logo">
+				<a href="https://www.microsoft.com" aria-label="Microsoft Logo">
+					<svg id="footer-microsoft-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 70.5" enable-background="new 0 0 347 70.5"><g fill="#fff"><path d="M39.5 44.6l-2.8 7.9h-.2c-.5-1.8-1.3-4.5-2.7-7.8l-15-37.7h-14.7v60h9.7v-37c0-2.3 0-5-.1-8.2-.1-1.6-.2-2.9-.3-3.8h.2c.5 2.3 1 4 1.4 5.1l18 43.8h6.8l17.9-44.2c.4-1 .8-3 1.2-4.7h.2c-.2 4.4-.4 8.4-.5 10.8v38.1h10.4v-60h-14.1l-15.4 37.7zM78.8 23.9h10.1v43h-10.1zM83.9 5.7c-1.7 0-3.1.6-4.3 1.7-1.2 1.1-1.8 2.5-1.8 4.2 0 1.6.6 3 1.8 4.1 1.2 1.1 2.6 1.6 4.3 1.6 1.7 0 3.2-.6 4.3-1.6 1.2-1.1 1.8-2.5 1.8-4.1 0-1.6-.6-3-1.8-4.2-1-1.2-2.5-1.7-4.3-1.7M124.7 23.5c-1.9-.4-3.8-.6-5.7-.6-4.6 0-8.8 1-12.3 3s-6.3 4.8-8.1 8.3c-1.9 3.6-2.8 7.7-2.8 12.4 0 4.1.9 7.8 2.7 11.1 1.8 3.3 4.3 5.9 7.6 7.7 3.2 1.8 6.9 2.7 11.1 2.7 4.8 0 8.9-1 12.2-2.9l.1-.1v-9.3l-.4.3c-1.5 1.1-3.2 2-4.9 2.6-1.8.6-3.4.9-4.8.9-4 0-7.2-1.2-9.5-3.7s-3.5-5.9-3.5-10.2c0-4.4 1.2-7.9 3.6-10.5 2.4-2.6 5.6-3.9 9.5-3.9 3.3 0 6.6 1.1 9.6 3.3l.4.3v-9.8l-.1-.1c-1.2-.6-2.8-1.1-4.7-1.5M158 23.2c-2.5 0-4.8.8-6.8 2.4-1.7 1.4-2.9 3.4-3.9 5.8h-.1v-7.4h-10.1v43h10.1v-22c0-3.7.8-6.8 2.5-9.1s3.9-3.5 6.5-3.5c.9 0 1.9.2 3 .4 1.1.3 1.9.6 2.4 1l.4.3v-10.2l-.2-.1c-.8-.4-2.1-.6-3.8-.6M185.5 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.7-3.9-9-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.6 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6M229.3 41.7c-3.2-1.3-5.2-2.3-6.1-3.2-.8-.8-1.2-1.9-1.2-3.3 0-1.2.5-2.3 1.6-3.1 1.1-.8 2.5-1.2 4.4-1.2 1.7 0 3.5.3 5.2.8 1.7.5 3.3 1.2 4.5 2.1l.4.3v-9.4l-.2-.1c-1.2-.5-2.7-.9-4.6-1.3-1.9-.3-3.6-.5-5-.5-4.8 0-8.8 1.2-11.9 3.7-3.1 2.4-4.6 5.7-4.6 9.5 0 2 .3 3.8 1 5.3s1.7 2.9 3.1 4c1.4 1.1 3.4 2.3 6.2 3.5 2.3 1 4.1 1.8 5.2 2.4 1.1.6 1.8 1.3 2.3 1.9.4.6.6 1.4.6 2.4 0 2.9-2.2 4.3-6.6 4.3-1.7 0-3.5-.3-5.6-1-2.1-.7-4-1.7-5.7-2.9l-.4-.3v9.9l.2.1c1.5.7 3.3 1.2 5.4 1.7 2.2.4 4.1.7 5.8.7 5.2 0 9.5-1.2 12.5-3.7 3.1-2.5 4.7-5.7 4.7-9.8 0-2.9-.8-5.4-2.5-7.4-1.8-2-4.7-3.8-8.7-5.4M267.6 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.8-3.9-9.1-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.5 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6"/><path d="M342.9 32.2v-8.2h-10.2v-12.9l-.3.1-9.6 2.9-.2.1v9.7h-15.2v-5.4c0-2.5.6-4.4 1.7-5.7 1.1-1.3 2.7-1.9 4.7-1.9 1.4 0 2.9.3 4.5 1l.4.2v-8.7l-.2-.1c-1.4-.5-3.3-.8-5.7-.8-3 0-5.7.7-8.1 1.9-2.4 1.3-4.2 3.1-5.5 5.5-1.3 2.3-2 5-2 8v6h-7.2v8.2h7.1v34.8h10.2v-34.7h15.2v22.1c0 9.1 4.3 13.7 12.8 13.7 1.4 0 2.9-.2 4.3-.5 1.5-.3 2.6-.7 3.2-1l.1-.1v-8.3l-.4.3c-.6.4-1.2.7-2.1.9-.8.2-1.5.3-2 .3-2 0-3.4-.5-4.4-1.6-.9-1.1-1.4-2.9-1.4-5.5v-20.3h10.3z"/></g></svg>
+				</a>
+			</div>
+			<div id="copyright">
+				© 2011 - 2018 Microsoft
+			</div>
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+</body>
+</html>

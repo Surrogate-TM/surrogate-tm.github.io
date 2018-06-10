@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+              <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>A Complete Solution for Visio 2010 and Visio Services &#8211; Chris Hopkins&#039; Blog &#8211; #makinitdostuff</title>
+<link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-parent-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft/style.css?ver=02092017' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-child-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft-msdn/style.css?ver=04152016' type='text/css' media='all' />
+	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
+<link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
+
+<link rel="canonical" href="https://blogs.msdn.microsoft.com/chhopkin/2010/05/28/a-complete-solution-for-visio-2010-and-visio-services/" />
+<!-- og:title -->
+<meta property="og:title" content="A Complete Solution for Visio 2010 and Visio Services" />
+<!-- og:description -->
+<meta property="og:description" content="For this article I created a simple solution (download link available at the end of this article) to provide complete guidance for Visio solution developers to understand all the tasks for building a VSTO based solution using Visual Studio 2008 for the Visio 2010 client application and deploying that solution to client machines, including publishing..." />
+</head>
+<body class="post-template-default single single-post postid-1183 single-format-standard">
+<div id="page" class="site container-fluid">
+	<header id="site-header" class="site-header row" role="banner">
+		<div id="site-header-global-wrapper" class="site-header-global-wrapper">
+			<div id="site-header-global" class="site-header-global">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-profile-menu" aria-label="toggle menu" tabindex="0" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="site-logo" class="col-sm-5 row navbar-header">
+					<div id="header-microsoft-logo">
+						<a id="home-link" href="https://www.microsoft.com/" tabindex="1" aria-label="Microsoft logo">
+							<img id="header-microsoft-logo-svg" src="https://blogs.msdn.microsoft.com/visio/wp-content/themes/microsoft/images/ms-logo-gray.svg" alt="Microsoft logo">
+							<span id="brand">
+								<span id="brand-separator">|</span>
+								<span id="brand-name"></span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div id="site-header-global-right" class="col-sm-7">
+				</div>
+			</div>
+
+		</div>
+		<div id="site-header-blog-wrapper" class="site-header-blog-wrapper ms-blog-header clear-both">
+			<div id="site-header-blog" class="site-header-blog">
+				<nav class="navbar navbar-inverse">
+					<div id="blog-logo-area" class="navbar-header">
+						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
+														<div id="blog-logo-text">
+<h1 class="site-title ms-blog-title">
+					<a href="https://blogs.msdn.microsoft.com/chhopkin" class="for-desktop">
+						Chris Hopkins&#039; Blog &#8211; #makinitdostuff					</a>
+					<a href="https://blogs.msdn.microsoft.com/chhopkin" class="for-mobile">
+						Chris Hopkins&#039; Blog &#8211; #makinitdostuff					</a>
+				</h1>
+<!-- blog description -->
+<p class="site-description ms-blog-description">The place where I post information about the products I manage; SharePoint, Yammer, Project and Visio and maybe from some that I don&#039;t!</p>
+			</div>
+									</div>
+					</div>
+									</nav>
+			</div>
+			
+		</div>
+		<div id="site-content" class="site-content row">
+
+	<div id="primary" class="content-area col-sm-9">
+	<main id="site-main" class="site-main" role="main">
+		<div id="single-content" class="div-content">
+<!-- Post start -->
+<article id="post-1183" class="post-1183 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+<h1 class="entry-title">A Complete Solution for Visio 2010 and Visio Services</h1>
+<div class="entry-meta">
+<span class="byline"><span class="author vcard"><a class="url fn n profile-usercard-hover" data-profile-userid="8269f8fdfe8043a0993263bbfc5f124b" href="https://social.msdn.microsoft.com/profile/Christopher+R+Hopkins">Christopher R Hopkins</a></span>
+</span><span class="posted-on posted-on-margin">
+			<span class="screen-reader-text"></span>
+<time class="entry-date published updated" datetime="2010-05-28T07:32:00+00:00">May 28, 2010</time>
+			</span>
+		</div>
+		<hr>
+	</header><!-- .entry-header -->
+<div class="entry-content single">
+		<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">For this article I created a simple solution (download link available at the end of this article) to provide complete guidance for Visio solution developers to understand all the tasks for building a <b>VSTO based solution</b> using Visual Studio 2008 for the Visio 2010 client application and deploying that solution to client machines, including publishing content to Visio&rsquo;s UI (new templates and stencils) using Windows Installer.&nbsp; </span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">To make this solution complete I also included new data adapter functionality to support data refresh in Visio Services for SharePoint 2010 for diagrams published from the client add-in to Visio Services.&nbsp; This documents the pattern that I use for all of my Visio VSTO based add-in projects and I hope it helps you to build some great Visio solutions.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></p>
+<p><b><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">IMPORTANT</span></i></b><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"> &ndash; The code in the client add-in project has a hard coded path to the sample XML file that this solution uses to pull the data into the Visio diagram.&nbsp; You will need to place the sample XML file in a location that is accessible from both the client and the SharePoint server in order for both the client add-in and the and you will need to update this path in the source code.</span></i></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></i><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 13.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">Client Add-in</span></b>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 13.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN"></span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">To prepare the client add-in I created a VSTO based add-in using the built in VSTO project template in Visual Studio 2008.&nbsp; For an overview and additional information about creating VSTO add-ins for Visio, take a look at this article, <a target="_blank" href="http://blogs.msdn.com/chhopkin/archive/2008/08/29/vsto-3-0-and-visio-essentials.aspx"><span style="COLOR: #0066dd; TEXT-DECORATION: none; text-underline: none">VSTO 3.0 and Visio 2007 Essentials</span></a>.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 10.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">Ribbon Development</span></p>
+<p class="MsoNormal"><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 10.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Visio 2010 now includes the popular Fluent UI or Ribbon interface.&nbsp; As a solution developer you can customize the Visio ribbon using either the Ribbon Designer or RibbonX.&nbsp; As you will see in the source code for the add-in project the source files for the ribbon designer exist as well as the files for RibbonX.</span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p>&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><img src="0815.1.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/0815.1.png" border="0" />&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The Ribbon Designer provides a visual interface for designing your ribbon based UI however the Ribbon Designer is not supported in the Visio add-in template for Visual Studio 2008.&nbsp; In order to add the Ribbon Designer files to your Visio add-in project you will need to generate them in a temporary Word add-in or Excel add-in project and simply copy those files to your Visio add-in project.<span style="font-family: Arial; color: #000000;">&nbsp;</span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Using the Ribbon Designer method is quick and easy but only provides a single event for your ribbon buttons, the click event.&nbsp; There are many other restrictions using this method which is the reason I recommend using the Designer only for building the layout of your ribbon.&nbsp; Once you are happy with the layout you can generate RibbonX from the Ribbon Designer by right-clicking on your ribbon and choosing the <strong>Export to Ribbon XML</strong> menu item.</span></p>
+<p><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="4786.2.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/4786.2.png" border="0" />&nbsp;</o:p></span> </p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 10.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">Shared Data Assembly</span>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="2781.3.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/2781.3.png" border="0" /></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Notice that this project uses code from a separate assembly in the project called <b>DataLinkedOrgChartAdapter</b> which provides support for the data refresh feature on the client side.&nbsp; This same project will also be used on the server side, this way we have a single code base to maintain that is responsible for delivering data to Visio and Visio Services.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 13.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">Client Deployment</span></b></p>
+<p class="MsoNormal"><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 13.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN"></span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Once you have your VSTO add-in project created and have verified that it is operating, you can then work on the details of your deployment project.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Before you begin you should answer the questions in the following flowchart:</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><img src="3365.4.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/3365.4.png" border="0" /></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">*1</span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"> &ndash; It is important to determine if you are going to publish content (templates, stencils, or add-ons) during your deployment to the Visio client as this answer will determine the deployment technology you can use for your solution.&nbsp; Publishing content to Visio requires the use of MSI deployment technology (Windows Installer).&nbsp; ClickOnce deployments <b>cannot</b> publish content to the Visio client.</span>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">For the purposes of this article and the accompanying solution we will publish content using an MSI based deployment.</span></i></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></i><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">*2</span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"> &ndash; Visio 2010, as well as Office 2010, can now be installed in either 32 bit or 64 bit versions.&nbsp; Luckily the VSTO runtime handles this for you so as an add-in developer using VSTO you do not have to worry about compiling and deploying 32 bit and 64 bit binaries for your add-in.&nbsp; However, you may need to provide specific behavior for both 32 bit and 64 bit within your MSI.</span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">VSTO is based on managed code so your code will JIT (just in time compile) based on the machine&rsquo;s processor and the version of VSTO that the client has installed.&nbsp; If you are building a COM based add-in (Shared add-in / COM add-in) you will need to to build 32bit and 64bit versions of your COM add-in to match the client installation for both Visio 32 or 64 bit.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><em>For the purposes of this article I have included both a 32 bit and 64 bit compatible MSI in the accompanying solution to help you understand both scenarios.</em></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Registry Settings</span></b>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Nothing has changed regarding the registry entries that you need to create in order for VSTO to recognize and launch your add-in, these settings are the same for both the 32 bit and 64 bit MSIs.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="8203.5.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/8203.5.png" border="0" /></o:p></span></p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 10.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">32bit MSI project details</span></b>&nbsp;</p>
+<p><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">It is important to note that the 32 bit version of your MSI can be run on both a 32bit and 64bit platform.&nbsp; It is also important to note that Visio 2010 32bit or Visio 2010 64bit may be installed.&nbsp; This makes the MSI a little more challenging to create as you have to account for both in the 32bit version of your MSI for any Launch Conditions that attempt to detect which version and edition of Visio 2010 is installed.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Launch Conditions</span></span></p>
+<p class="MsoNormal"><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">To handle both the 32 bit and 64 bit Visio 2010 scenarios you need to do the following as demonstrated in the attached solution:</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">1. Create a launch condition to search the registry for the 32 bit version of Visio 2010 <br />2. Create a launch condition to search the registry for the 64 bit version of Visio 2010 <br />3. Create a post-build script that updates the 64 bit launch condition&rsquo;s RegLocator type so that the MSI can look in the 64 bit registry.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="6320.6.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/6320.6.png" border="0" />&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">If you inspect the two launch conditions that I have created in the attached sample solution you will see that one has a name of <b>LicenseCache32</b> and the other has a name of <b>LicenseCache64</b>.&nbsp; If you look at the post-build script you will then notice that I used this naming convention so that my script can identify the 64 bit entry and update only it&rsquo;s RegLocator type, then renaming both the entries to the real &ldquo;LicenseCache&rdquo; key that exists in the registry.</span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Note: Visio 2010 uses the following key in the registry to identify the installed edition.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">This provides two functions;</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">1. if this key exists Visio 2010 is installed</span><br />2. The value of the key determines the installed edition:<span></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Key = SOFTWARE\Microsoft\Office\14.0\Visio\Application\LicenseCache</span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Values: <br />STD &ndash; Standard <br />PRO &ndash; Professional <br />PRM &ndash; Premium</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">64bit MSI project details</span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">In most cases you do not need to go through the effort to create and maintain both a 32bit and 64bit MSI.&nbsp; Because VSTO add-ins are compiled as &lsquo;Any CPU&rsquo; in Visual Studio, the VSTO Runtime and the JIT compiler take care of compiling for the target platform.&nbsp; I only created this project to show how it can be done if you need to or just wanted to market your add-in as supporting both the 32 bit and 64 bit platforms.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Set the TargetPlatform property to x64</span></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Setting this property to x64 provides two important features:<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">1. 32 bit user will get an error message telling them that they cannot install this package as their current platform is not supported.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="6327.7.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/6327.7.png" border="0" /></o:p></span><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">2. Allows you to specify the [ProgramFiles64Folder] variable can be used to target the 64 bit Program Files folder on the target machine.&nbsp; If this is not used the MSI will default to Program Files (x86) [ProgramFilesFolder].</span></p>
+<p>&nbsp;</p>
+<p><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="4111.8.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/4111.8.png" border="0" /></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Launch Conditions</span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">In this scenario you really only need a single launch condition because Visio 2010, if it is installed, can only be installed as 64 bit on a 64 bit platform.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">You still need to have a post-build script in this case to update the RegLocator type correctly because even though you marked this as a 64 bit installer, MSI is still 32 bit based.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Updated version of VisSolPublish.exe</span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">If you have created MSIs for your Visio add-ins and you have used the VisSolPublish tool you are probably already familiar with the PublishComponents issue when installing to Vista.&nbsp; The script that is added to an MSI by the VisSolPublish tool did not properly update the Type field for the custom action, thus you were forced to update this manually or with a script as shown below:<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Example: Set view = database.OpenView("UPDATE CustomAction SET CustomAction.Type = <b>'3622'</b> WHERE CustomAction.Action = 'VisSolPublish_BumpVisioChangeId'") </span></i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The good news is for the release of the Visio 2010 SDK this issue has been fixed and works properly on Vista and Win7 machines in both 32bit and 64 bit configurations.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 10.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">Additional information on building MSIs for 64 bit platforms</span></b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 10.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">I only covered issues for Launch Conditions and post-build scripts that are needed specifically for installing a VSTO add-in to Visio 2010.&nbsp; For more detailed information on building MSIs for 64bit platforms have a look at this article: <a target="_blank" href="http://msdn.microsoft.com/en-us/library/cd7a85k9(VS.80).aspx"><span style="COLOR: #0066dd; TEXT-DECORATION: none; text-underline: none">How to: Create a Windows Installer for a 64-bit Platform</span></a>&nbsp;<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 13.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN">Data module</span></b><span lang="EN" style="LINE-HEIGHT: 125%; FONT-FAMILY: 'Segoe UI Semibold','sans-serif'; COLOR: #3a3e43; FONT-SIZE: 13.5pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Segoe UI'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Visio Services in SharePoint 2010 provides extensibility allowing developers to create and deploy custom data adapters allowing Visio Services to refresh data that originated from a custom data source as determined by the solution developer.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">This article does not discuss the details of creating a custom data adapter for Visio Services however it does provide the source code for the sample data adapter that we are deploying in this solution. This article is focused on deployment for the data adapter to the SharePoint farm.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Data module deployment</span></b></p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The pattern that I have been using includes two deployment technologies, MSI and PowerShell.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">A Windows Installer project is created to allow the administrator to easily download and unpack the files necessary for deploying the data adapter to the farm.&nbsp; I could have also used .ZIP format however I used the MSI as it provides nice features for managing the install package and it also provides a mechanism to provide a license agreement to the user/administrator.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The PowerShell scripts do the actual work of deploying the data adapter to each machine in the farm.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span><strong>The CAB project</strong></span></p>
+<p class="MsoNormal"><span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">To create a deployment module for SharePoint 2010 in Visual Studio 2008 you need to start by creating a CAB Project.&nbsp; The compiled CAB file will contain the files that are to be deployed to the machines in the farm.</span><o:p></o:p></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><o:p><img src="2818.9.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/2818.9.png" border="0" />&nbsp;</o:p></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><o:p></o:p><span><strong>Add a Deployment Manifest</strong></span></p>
+<p class="MsoNormal"><span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">A deployment manifest is required to inform SharePoint of the content you are deploying to the farm.&nbsp; This is a simple XML file that you create and add to the CAB project.</span></p>
+<p>&nbsp;</p>
+<p><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></p>
+<p class="MsoNormal"><o:p><img src="3733.10.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/3733.10.png" border="0" />&nbsp;</o:p></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">To do this in Visual Studio 2008, choose to Add a New Item to the CAB project and choode the XML File template from the list of available templates.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">NOTE: make sure to name the file <b>manifest.xml</b></span></i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">This creates a new, blank XML file in your CAB project.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Use this XML for your deployment manifest:</span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">&lt;?xml version="1.0" encoding="utf-8"?&gt; <br />&lt;Solution xmlns="<a href="http://schemas.microsoft.com/sharepoint/%22"><span style="COLOR: #0066dd; TEXT-DECORATION: none; text-underline: none">http://schemas.microsoft.com/sharepoint/"</span></a> <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SolutionId="78E4D54B-A50D-48e8-AE98-923FE77DA45E" &gt; <br />&nbsp; &lt;Assemblies&gt; <br />&nbsp;&nbsp;&nbsp; &lt;Assembly DeploymentTarget="GlobalAssemblyCache" Location="DataLinkedOrgChartAdapter.dll"/&gt; <br />&nbsp; &lt;/Assemblies&gt; <br />&lt;/Solution&gt;<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">IMPORTANT - Replace the GUID with a new one from GUIDGEN.</span></i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">IMPORTANT &ndash; Each file that is to be deployed needs its own &lt;ASSEMBLY &hellip;/&gt; node in the XML.</span></i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">For additional information on deployment manifests, <a target="_blank" href="http://msdn.microsoft.com/en-us/library/ms468837.aspx"><span style="COLOR: #0066dd; TEXT-DECORATION: none; text-underline: none">see this article</span></a>.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span><strong>Add Files to the CAB project</strong>&nbsp;</span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">In this sample solution you can see that we have added the Project Output of the data adapter project.&nbsp; You can choose to link directly to the file if you prefer from the build folder.<o:p></o:p></span></p>
+<p><strong>&nbsp;</strong></p>
+<p class="MsoNormal"><o:p><img src="8562.11.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/8562.11.png" border="0" />&nbsp;</o:p></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Note: When adding the manifest also include the Strong Name Key file from the data adapter project.&nbsp; You are deploying the data adapter to the GAC so strong naming is a requirement.</span></i><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Post Build to rename and copy scripts</span></b></p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The last step to configuring our project includes adding a PostBuild script that will rename the compiled CAB file to the WSP extension o that it is recognized by SharePoint as a deployment package.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><span style="font-family: Arial; color: #000000;">&nbsp;</span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="0412.12.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/0412.12.png" border="0" />&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Here is the text that you can copy:</span></span>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">copy "$(BuiltOuputPath)" "$(ProjectDir)\$(Configuration)\DataLinkedOrgChartDataModule.wsp" <o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">del "$(ProjectDir)\$(Configuration)\*.cab" <o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">copy "$(ProjectDir)\*.ps1" "$(ProjectDir)\$(Configuration)"<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Deployment MSI</span></b></p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Now that we have the scripts and the deployment package we wrap these up in a nice little MSI.&nbsp; There is nothing special to the MSI in the attached sample solution.&nbsp; This MSI does not have any Launch Conditions or Registry entries.&nbsp; It simply copies the packaged files to the specified location.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">PowerShell Scripts</span></b></p>
+<p class="MsoNormal"><b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></b><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The attached sample solution contains two PowerShell scripts.&nbsp; One is responsible for installing the data module to the farm and the other is responsible for removing the data module from the farm.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Both of these tasks can be performed manually but if you manually deploy you will need to manually deploy to each machine in the farm.&nbsp; The scripts allow SharePoint to handle automatic deployment to each machine in the farm via the solution store.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><a target="_blank" href="http://technet.microsoft.com/en-us/library/ee524056.aspx"><span style="COLOR: #0066dd; TEXT-DECORATION: none; text-underline: none">FYI &ndash; click here to review the manual deployment details</span></a><o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Full deployment script &ndash; InstallDataModule.ps1<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Remove Only script &ndash; RemoveDataModule.ps1<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Installing and Executing the scripts</span></span></p>
+<p class="MsoNormal"><span style="text-decoration: underline;"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">After running the MSI to install the deployment package (.wsp) and PowerShell (.p1) scripts we can then run the scripts as an administrator to deploy the data adapter to the farm.<o:p></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">The first step is to log onto one of the machines in the farm as an administrator.&nbsp; Then you need to run the SharePoint 2010 Management Shell with Administrator privileges.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><span style="font-family: Arial; color: #000000;">&nbsp;</span></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="1856.13.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/1856.13.png" border="0" />&nbsp;</o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p></o:p></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">In the shell, change to the directory that was specified in the MSI as the location to install the deployment package and scripts.&nbsp; From this location you can run the InstallDataModule.ps1 PowerShell script to deploy the data module to the farm.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><img src="0312.14.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/0312.14.png" border="0" /></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #0066dd; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-no-proof: yes"></span></p>
+<p>&nbsp;</p>
+<p><span style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #0066dd; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-no-proof: yes"></span></p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><img src="1832.15.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/1832.15.png" border="0" /><span style="font-family: Arial; color: #000000;">&nbsp;</span></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><span style="font-family: Arial; color: #000000;"></span></o:p></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">This deployment script allows SharePoint to deploy the data adapter to each machine in the farm so the administrator does not have to manually configure each machine.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">NOTE: Included is also a script that uninstalls the data module from the farm.</span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN">Once the installation script has successfully executed you can see that the data adapter has been installed via the Trusted Data Providers list via the Central Administration site.&nbsp; You can now publish a diagram that is generated from this add-in and Visio Services will automatically refresh the diagram from the XML file.</span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><span style="font-family: Arial; color: #000000;">&nbsp;</span></o:p></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><o:p><span style="font-family: Arial; color: #000000;"></span></o:p></span><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><strong><span style="font-size: small;"><img src="6082.16.png" original-url="http://blogs.msdn.com/resized-image.ashx/__size/550x0/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-09-02/6082.16.png" border="0" /></span></strong></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><span lang="EN" style="FONT-FAMILY: 'Segoe UI','sans-serif'; COLOR: #333333; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN"><strong><span style="font-size: small;">Click here to download the complete solution. </span></strong></span></p>
+<p>&nbsp;</p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/10/01/69/11/sample%20solution.zip" original-url="http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-01-69-11/sample-solution.zip">sample solution.zip</a></p>
+	</div><!-- .entry-content -->
+<hr>
+
+</article><!-- #post-## -->
+</div><!-- #single-content -->
+</div><!-- #primary -->
+<!-- Before Navigation --></main><!-- #site-main -->
+
+<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a> 
+
+<div id=""secondary"" class=""sidebar col-sm-3"">
+	<div id=""sidebar-widget-area"" class=""sidebar-widget-area"" role=""complementary"">
+		<div class=""widget sfmsb_widget"">
+
+		</div>
+		<aside id="tag_cloud-2" class="widget widget_tag_cloud">
+</aside>
+<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>	
+	<li><a href='..\..\..\years\2014\index.htm'>All of 2014</a>&nbsp;(27)</li>
+	<li><a href='..\..\..\years\2013\index.htm'>All of 2013</a>&nbsp;(19)</li>
+	<li><a href='..\..\..\years\2012\index.htm'>All of 2012</a>&nbsp;(21)</li>
+	<li><a href='..\..\..\years\2011\index.htm'>All of 2011</a>&nbsp;(26)</li>
+	<li><a href='..\..\..\years\2010\index.htm'>All of 2010</a>&nbsp;(15)</li>
+	<li><a href='..\..\..\years\2009\index.htm'>All of 2009</a>&nbsp;(22)</li>
+	<li><a href='..\..\..\years\2008\index.htm'>All of 2008</a>&nbsp;(7)</li>
+</aside>
+</div><!-- #secondary -->
+</div><!-- .site-content -->
+</div>
+
+<footer id="site-footer" class="site-footer row" role="contentinfo">
+	<div id="site-info" class="site-info">
+		<div id="footer-text" class="col-sm-4 col-sm-offset-6">
+			<span>
+				<a href="https://privacy.microsoft.com" data-mscc-ic="false">Privacy</a>
+			</span>
+			<span>
+				<a href="https://msdn.microsoft.com/cc300389" data-mscc-ic="false">Terms of Use</a>
+			</span>
+			<span>
+				<a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-mscc-ic="false">Trademarks</a>
+			</span>
+		</div>
+		<div id="footer-far" class="col-sm-2">
+			<div id="footer-microsoft-logo">
+				<a href="https://www.microsoft.com" aria-label="Microsoft Logo">
+					<svg id="footer-microsoft-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 70.5" enable-background="new 0 0 347 70.5"><g fill="#fff"><path d="M39.5 44.6l-2.8 7.9h-.2c-.5-1.8-1.3-4.5-2.7-7.8l-15-37.7h-14.7v60h9.7v-37c0-2.3 0-5-.1-8.2-.1-1.6-.2-2.9-.3-3.8h.2c.5 2.3 1 4 1.4 5.1l18 43.8h6.8l17.9-44.2c.4-1 .8-3 1.2-4.7h.2c-.2 4.4-.4 8.4-.5 10.8v38.1h10.4v-60h-14.1l-15.4 37.7zM78.8 23.9h10.1v43h-10.1zM83.9 5.7c-1.7 0-3.1.6-4.3 1.7-1.2 1.1-1.8 2.5-1.8 4.2 0 1.6.6 3 1.8 4.1 1.2 1.1 2.6 1.6 4.3 1.6 1.7 0 3.2-.6 4.3-1.6 1.2-1.1 1.8-2.5 1.8-4.1 0-1.6-.6-3-1.8-4.2-1-1.2-2.5-1.7-4.3-1.7M124.7 23.5c-1.9-.4-3.8-.6-5.7-.6-4.6 0-8.8 1-12.3 3s-6.3 4.8-8.1 8.3c-1.9 3.6-2.8 7.7-2.8 12.4 0 4.1.9 7.8 2.7 11.1 1.8 3.3 4.3 5.9 7.6 7.7 3.2 1.8 6.9 2.7 11.1 2.7 4.8 0 8.9-1 12.2-2.9l.1-.1v-9.3l-.4.3c-1.5 1.1-3.2 2-4.9 2.6-1.8.6-3.4.9-4.8.9-4 0-7.2-1.2-9.5-3.7s-3.5-5.9-3.5-10.2c0-4.4 1.2-7.9 3.6-10.5 2.4-2.6 5.6-3.9 9.5-3.9 3.3 0 6.6 1.1 9.6 3.3l.4.3v-9.8l-.1-.1c-1.2-.6-2.8-1.1-4.7-1.5M158 23.2c-2.5 0-4.8.8-6.8 2.4-1.7 1.4-2.9 3.4-3.9 5.8h-.1v-7.4h-10.1v43h10.1v-22c0-3.7.8-6.8 2.5-9.1s3.9-3.5 6.5-3.5c.9 0 1.9.2 3 .4 1.1.3 1.9.6 2.4 1l.4.3v-10.2l-.2-.1c-.8-.4-2.1-.6-3.8-.6M185.5 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.7-3.9-9-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.6 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6M229.3 41.7c-3.2-1.3-5.2-2.3-6.1-3.2-.8-.8-1.2-1.9-1.2-3.3 0-1.2.5-2.3 1.6-3.1 1.1-.8 2.5-1.2 4.4-1.2 1.7 0 3.5.3 5.2.8 1.7.5 3.3 1.2 4.5 2.1l.4.3v-9.4l-.2-.1c-1.2-.5-2.7-.9-4.6-1.3-1.9-.3-3.6-.5-5-.5-4.8 0-8.8 1.2-11.9 3.7-3.1 2.4-4.6 5.7-4.6 9.5 0 2 .3 3.8 1 5.3s1.7 2.9 3.1 4c1.4 1.1 3.4 2.3 6.2 3.5 2.3 1 4.1 1.8 5.2 2.4 1.1.6 1.8 1.3 2.3 1.9.4.6.6 1.4.6 2.4 0 2.9-2.2 4.3-6.6 4.3-1.7 0-3.5-.3-5.6-1-2.1-.7-4-1.7-5.7-2.9l-.4-.3v9.9l.2.1c1.5.7 3.3 1.2 5.4 1.7 2.2.4 4.1.7 5.8.7 5.2 0 9.5-1.2 12.5-3.7 3.1-2.5 4.7-5.7 4.7-9.8 0-2.9-.8-5.4-2.5-7.4-1.8-2-4.7-3.8-8.7-5.4M267.6 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.8-3.9-9.1-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.5 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6"/><path d="M342.9 32.2v-8.2h-10.2v-12.9l-.3.1-9.6 2.9-.2.1v9.7h-15.2v-5.4c0-2.5.6-4.4 1.7-5.7 1.1-1.3 2.7-1.9 4.7-1.9 1.4 0 2.9.3 4.5 1l.4.2v-8.7l-.2-.1c-1.4-.5-3.3-.8-5.7-.8-3 0-5.7.7-8.1 1.9-2.4 1.3-4.2 3.1-5.5 5.5-1.3 2.3-2 5-2 8v6h-7.2v8.2h7.1v34.8h10.2v-34.7h15.2v22.1c0 9.1 4.3 13.7 12.8 13.7 1.4 0 2.9-.2 4.3-.5 1.5-.3 2.6-.7 3.2-1l.1-.1v-8.3l-.4.3c-.6.4-1.2.7-2.1.9-.8.2-1.5.3-2 .3-2 0-3.4-.5-4.4-1.6-.9-1.1-1.4-2.9-1.4-5.5v-20.3h10.3z"/></g></svg>
+				</a>
+			</div>
+			<div id="copyright">
+				© 2011 - 2018 Microsoft
+			</div>
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+</body>
+</html>

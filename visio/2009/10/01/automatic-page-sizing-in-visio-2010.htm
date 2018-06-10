@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+              <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>Automatic Page Sizing in Visio 2010 &#8211; Visio Insights</title>
+<link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-parent-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft/style.css?ver=02092017' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-child-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft-msdn/style.css?ver=04152016' type='text/css' media='all' />
+	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
+<link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
+
+<link rel="canonical" href="https://blogs.msdn.microsoft.com/visio/2009/10/01/automatic-page-sizing-in-visio-2010/" />
+<!-- og:title -->
+<meta property="og:title" content="Automatic Page Sizing in Visio 2010" />
+<!-- og:description -->
+<meta property="og:description" content="When you start a new diagram, you typically begin with a single drawing page that is the size of a standard piece of printer paper.&nbsp; Many diagrams grow beyond the size of a single printed sheet.&nbsp; Visio 2010 adds a dynamic page sizing capability that responds as you draw, so you no longer have to..." />
+</head>
+<body class="post-template-default single single-post postid-773 single-format-standard">
+<div id="page" class="site container-fluid">
+	<header id="site-header" class="site-header row" role="banner">
+		<div id="site-header-global-wrapper" class="site-header-global-wrapper">
+			<div id="site-header-global" class="site-header-global">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-profile-menu" aria-label="toggle menu" tabindex="0" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="site-logo" class="col-sm-5 row navbar-header">
+					<div id="header-microsoft-logo">
+						<a id="home-link" href="https://www.microsoft.com/" tabindex="1" aria-label="Microsoft logo">
+							<img id="header-microsoft-logo-svg" src="https://blogs.msdn.microsoft.com/visio/wp-content/themes/microsoft/images/ms-logo-gray.svg" alt="Microsoft logo">
+							<span id="brand">
+								<span id="brand-separator">|</span>
+								<span id="brand-name"></span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div id="site-header-global-right" class="col-sm-7">
+				</div>
+			</div>
+
+		</div>
+		<div id="site-header-blog-wrapper" class="site-header-blog-wrapper ms-blog-header clear-both">
+			<div id="site-header-blog" class="site-header-blog">
+				<nav class="navbar navbar-inverse">
+					<div id="blog-logo-area" class="navbar-header">
+						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
+														<div id="blog-logo-text">
+<h1 class="site-title ms-blog-title">
+					<a href="https://blogs.msdn.microsoft.com/visio" class="for-desktop">
+						Visio Insights					</a>
+					<a href="https://blogs.msdn.microsoft.com/visio" class="for-mobile">
+						Visio Insights					</a>
+				</h1>
+<!-- blog description -->
+<p class="site-description ms-blog-description">The official blog of the Microsoft Visio product team</p>
+			</div>
+									</div>
+					</div>
+									</nav>
+			</div>
+			
+		</div>
+		<div id="site-content" class="site-content row">
+
+	<div id="primary" class="content-area col-sm-9">
+	<main id="site-main" class="site-main" role="main">
+		<div id="single-content" class="div-content">
+<!-- Post start -->
+<article id="post-773" class="post-773 post type-post status-publish format-standard hentry category-uncategorized tag-all-posts tag-visio-2010">
+	<header class="entry-header">
+<h1 class="entry-title">Automatic Page Sizing in Visio 2010</h1>
+<div class="entry-meta">
+<span class="byline"><span class="author vcard"><a class="url fn n profile-usercard-hover" data-profile-userid="eb78383b108c4193a0a593011dd29f8e" href="https://social.msdn.microsoft.com/profile/Visio+Team">Visio Team</a></span>
+</span><span class="posted-on posted-on-margin">
+			<span class="screen-reader-text"></span>
+<time class="entry-date published updated" datetime="2009-10-01T11:02:00+00:00">October 1, 2009</time>
+			</span>
+		</div>
+		<hr>
+	</header><!-- .entry-header -->
+<div class="entry-content single">
+		<p><P>When you start a new diagram, you typically begin with a single drawing page that is the size of a standard piece of printer paper.&nbsp; Many diagrams grow beyond the size of a single printed sheet.&nbsp; Visio 2010 adds a dynamic page sizing capability that responds as you draw, so you no longer have to manually adjust your page size to your diagram.</P><br />
+<P>As you draw beyond the edge of the current page, Visio expands the page in that direction by one additional <EM>tile</EM>, or printer paper sheet.</P><br />
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_8.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_8.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_8.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_5.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_5.png" width=640 height=456 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_5.png"></A> </P><br />
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_20.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_20.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_20.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_7.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_7.png" width=640 height=456 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_7.png"></A> </P><br />
+<P>If you <A href="http://blogs.msdn.com/visio/archive/2009/09/15/themes-and-live-preview-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/15/themes-and-live-preview-in-visio-2010.aspx">live preview</A> adding a shape with <A href="http://blogs.msdn.com/visio/archive/2009/09/22/autoconnect-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/22/autoconnect-in-visio-2010.aspx">AutoConnect</A>, Visio also previews the tiles that will be added.&nbsp; As you drag shapes outside the current page or drag shapes from the Shapes window, Visio shows a translucent preview of the new tiles that will be added if the shape is dropped in its current location.</P><br />
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_19.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_19.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_19.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_2.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_2.png" width=640 height=267 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_2.png"></A>&nbsp;</P><br />
+<P>All sorts of things can affect the size of your diagram when printed, including adding shapes, deleting shapes, moving shapes, adding or removing text and changing text properties.&nbsp; Any of these will alert Visio to update the page larger or smaller to keep the drawing within full tiles.</P><br />
+<TABLE border=0 cellSpacing=0 cellPadding=2 width=641><br />
+<TBODY><br />
+<TR><br />
+<TD vAlign=top width=165>Start with this:</TD><br />
+<TD vAlign=top width=474><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_29.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_29.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_29.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_3.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_3.png" width=480 height=272 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_3.png"></A> </TD></TR><br />
+<TR><br />
+<TD vAlign=top width=165>Add more text:</TD><br />
+<TD vAlign=top width=474><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_49.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_49.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_49.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_14.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_14.png" width=480 height=272 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_14.png"></A> </TD></TR><br />
+<TR><br />
+<TD vAlign=top width=165>Delete the shape:</TD><br />
+<TD vAlign=top width=474><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_47.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_47.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_47.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_12.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_12.png" width=480 height=272 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_12.png"></A> </TD></TR></TBODY></TABLE><br />
+<P>You may also notice that the depiction of page breaks and margins is different than in Visio 2007.&nbsp; We simplified the look of page breaks and many people will find them similar to Excel’s.&nbsp; Margins are now a clear white area around the entire page.&nbsp; We think you will find this much more clear than the grey bars in past versions of Visio.&nbsp; We also enable showing page breaks and margins by default in new drawings, to help make it clear how Visio is adjusting your page.</P><br />
+<P>This auto sizing behavior is controlled using the Auto Size toggle button on the Design tab.&nbsp; If you click the dialog launcher and open the Page Setup dialog, you’ll see we replaced the now-defunct “Same as printer paper size” option with “Let Visio expand the page as needed”.&nbsp; The sharp-eyed Visio expert will notice that the “Size to fit drawing contents” option is also gone from the dialog.&nbsp; Since that item was more of a one-time action than a persistent state of tightly fitting the page to the diagram, we moved it to the Page Size dropdown and renamed it “Fit to Drawing”.</P><br />
+<TABLE border=0 cellSpacing=0 cellPadding=2 width=600><br />
+<TBODY><br />
+<TR><br />
+<TD vAlign=top width=300><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_24.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_24.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_24.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 280px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 155px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_11.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_11.png" width=328 height=180 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_11.png"></A></TD><br />
+<TD vAlign=top width=300><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_28.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_28.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_28.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 344px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 259px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_13.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_13.png" width=596 height=395 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_13.png"></A> </TD></TR></TBODY></TABLE><br />
+<P>Since we’re talking about page sizing, it’s also worth taking a quick look at manual page adjustments.&nbsp; The Orientation and Size dropdown buttons on the Design tab surface the most commonly-used items from the Page Setup dialog.</P><br />
+<TABLE border=0 cellSpacing=0 cellPadding=2 width=376><br />
+<TBODY><br />
+<TR><br />
+<TD vAlign=top width=133><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_46.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_46.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_46.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_22.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_22.png" width=163 height=161 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_22.png"></A> </TD><br />
+<TD vAlign=top width=241><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_34.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_34.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_34.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_16.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_16.png" width=234 height=559 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_16.png"></A> </TD></TR></TBODY></TABLE><br />
+<P>When Auto Size is enabled, these reflect the orientation and size of the <EM>printer paper </EM>(the tiles in the drawing page), because Auto Size controls the size of the page based on the printer paper settings.&nbsp; Changing them changes the orientation and size of the printer paper settings.&nbsp; If you change these, the number of tiles required to contain the diagram may also change, so your drawing page may change size.</P><br />
+<TABLE border=0 cellSpacing=0 cellPadding=2 width=851><br />
+<TBODY><br />
+<TR><br />
+<TD vAlign=top width=288>Size = Letter (8.5” x 11”) <BR>Orientation = Landscape</TD><br />
+<TD vAlign=top width=561><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_35.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_35.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_35.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 373px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 225px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_4.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_4.png" width=640 height=357 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_4.png"></A> </TD></TR><br />
+<TR><br />
+<TD vAlign=top width=288>Size = Letter (8.5” x 11”) <BR>Orientation = Portrait</TD><br />
+<TD vAlign=top width=561><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_37.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_37.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_37.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 370px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 241px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_6.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_6.png" width=640 height=357 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_6.png"></A> </TD></TR></TBODY></TABLE><br />
+<P>When Auto Size is disabled, these reflect the orientation and size of the <EM>drawing page</EM>, because you are controlling it, not Visio.&nbsp; Changing them sets both the drawing page and the printer paper settings, to keep them in sync.</P><br />
+<TABLE border=0 cellSpacing=0 cellPadding=2 width=851><br />
+<TBODY><br />
+<TR><br />
+<TD vAlign=top width=252>Size = Letter (8.5” x 11”) <BR>Orientation = Landscape</TD><br />
+<TD vAlign=top width=597><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_57.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_57.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_57.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 451px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 380px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_24.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_24.png" width=640 height=456 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_24.png"></A> </TD></TR><br />
+<TR><br />
+<TD vAlign=top width=252>Size = Letter (8.5” x 11”) <BR>Orientation = Portrait</TD><br />
+<TD vAlign=top width=597><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_59.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_59.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_59.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 448px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 362px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_25.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_25.png" width=640 height=456 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/AutomaticPageSizinginVisio2010_CC91/image_thumb_25.png"></A> </TD></TR></TBODY></TABLE><br />
+<P>Essentially, we made Orientation and Size work as expected depending on context – whether Auto Size is on or off.&nbsp; That is, whether you have Visio taking care of the page size or if you are doing it.</P><br />
+<P>We hope these additions will help you to more easily, and more fluidly, build and edit your diagrams.&nbsp; As usual, send us any feedback you have using <A href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx" mce_href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx">Send a Smile</A> or through a comment on the blog.</P></p>
+	</div><!-- .entry-content -->
+<hr>
+
+</article><!-- #post-## -->
+</div><!-- #single-content -->
+</div><!-- #primary -->
+<!-- Before Navigation --></main><!-- #site-main -->
+
+<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a> 
+
+<div id=""secondary"" class=""sidebar col-sm-3"">
+	<div id=""sidebar-widget-area"" class=""sidebar-widget-area"" role=""complementary"">
+		<div class=""widget sfmsb_widget"">
+
+		</div>
+		<aside id="tag_cloud-2" class="widget widget_tag_cloud">
+</aside>
+<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>	
+	<li><a href='..\..\..\years\2018\index.htm'>All of 2018</a>&nbsp;(5)</li>
+	<li><a href='..\..\..\years\2017\index.htm'>All of 2017</a>&nbsp;(8)</li>
+	<li><a href='..\..\..\years\2016\index.htm'>All of 2016</a>&nbsp;(3)</li>
+	<li><a href='..\..\..\years\2012\index.htm'>All of 2012</a>&nbsp;(2)</li>
+	<li><a href='..\..\..\years\2011\index.htm'>All of 2011</a>&nbsp;(11)</li>
+	<li><a href='..\..\..\years\2010\index.htm'>All of 2010</a>&nbsp;(35)</li>
+	<li><a href='..\..\..\years\2009\index.htm'>All of 2009</a>&nbsp;(50)</li>
+	<li><a href='..\..\..\years\2008\index.htm'>All of 2008</a>&nbsp;(11)</li>
+	<li><a href='..\..\..\years\2007\index.htm'>All of 2007</a>&nbsp;(26)</li>
+	<li><a href='..\..\..\years\2006\index.htm'>All of 2006</a>&nbsp;(46)</li>
+</aside>
+</div><!-- #secondary -->
+</div><!-- .site-content -->
+</div>
+
+<footer id="site-footer" class="site-footer row" role="contentinfo">
+	<div id="site-info" class="site-info">
+		<div id="footer-text" class="col-sm-4 col-sm-offset-6">
+			<span>
+				<a href="https://privacy.microsoft.com" data-mscc-ic="false">Privacy</a>
+			</span>
+			<span>
+				<a href="https://msdn.microsoft.com/cc300389" data-mscc-ic="false">Terms of Use</a>
+			</span>
+			<span>
+				<a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-mscc-ic="false">Trademarks</a>
+			</span>
+		</div>
+		<div id="footer-far" class="col-sm-2">
+			<div id="footer-microsoft-logo">
+				<a href="https://www.microsoft.com" aria-label="Microsoft Logo">
+					<svg id="footer-microsoft-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 70.5" enable-background="new 0 0 347 70.5"><g fill="#fff"><path d="M39.5 44.6l-2.8 7.9h-.2c-.5-1.8-1.3-4.5-2.7-7.8l-15-37.7h-14.7v60h9.7v-37c0-2.3 0-5-.1-8.2-.1-1.6-.2-2.9-.3-3.8h.2c.5 2.3 1 4 1.4 5.1l18 43.8h6.8l17.9-44.2c.4-1 .8-3 1.2-4.7h.2c-.2 4.4-.4 8.4-.5 10.8v38.1h10.4v-60h-14.1l-15.4 37.7zM78.8 23.9h10.1v43h-10.1zM83.9 5.7c-1.7 0-3.1.6-4.3 1.7-1.2 1.1-1.8 2.5-1.8 4.2 0 1.6.6 3 1.8 4.1 1.2 1.1 2.6 1.6 4.3 1.6 1.7 0 3.2-.6 4.3-1.6 1.2-1.1 1.8-2.5 1.8-4.1 0-1.6-.6-3-1.8-4.2-1-1.2-2.5-1.7-4.3-1.7M124.7 23.5c-1.9-.4-3.8-.6-5.7-.6-4.6 0-8.8 1-12.3 3s-6.3 4.8-8.1 8.3c-1.9 3.6-2.8 7.7-2.8 12.4 0 4.1.9 7.8 2.7 11.1 1.8 3.3 4.3 5.9 7.6 7.7 3.2 1.8 6.9 2.7 11.1 2.7 4.8 0 8.9-1 12.2-2.9l.1-.1v-9.3l-.4.3c-1.5 1.1-3.2 2-4.9 2.6-1.8.6-3.4.9-4.8.9-4 0-7.2-1.2-9.5-3.7s-3.5-5.9-3.5-10.2c0-4.4 1.2-7.9 3.6-10.5 2.4-2.6 5.6-3.9 9.5-3.9 3.3 0 6.6 1.1 9.6 3.3l.4.3v-9.8l-.1-.1c-1.2-.6-2.8-1.1-4.7-1.5M158 23.2c-2.5 0-4.8.8-6.8 2.4-1.7 1.4-2.9 3.4-3.9 5.8h-.1v-7.4h-10.1v43h10.1v-22c0-3.7.8-6.8 2.5-9.1s3.9-3.5 6.5-3.5c.9 0 1.9.2 3 .4 1.1.3 1.9.6 2.4 1l.4.3v-10.2l-.2-.1c-.8-.4-2.1-.6-3.8-.6M185.5 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.7-3.9-9-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.6 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6M229.3 41.7c-3.2-1.3-5.2-2.3-6.1-3.2-.8-.8-1.2-1.9-1.2-3.3 0-1.2.5-2.3 1.6-3.1 1.1-.8 2.5-1.2 4.4-1.2 1.7 0 3.5.3 5.2.8 1.7.5 3.3 1.2 4.5 2.1l.4.3v-9.4l-.2-.1c-1.2-.5-2.7-.9-4.6-1.3-1.9-.3-3.6-.5-5-.5-4.8 0-8.8 1.2-11.9 3.7-3.1 2.4-4.6 5.7-4.6 9.5 0 2 .3 3.8 1 5.3s1.7 2.9 3.1 4c1.4 1.1 3.4 2.3 6.2 3.5 2.3 1 4.1 1.8 5.2 2.4 1.1.6 1.8 1.3 2.3 1.9.4.6.6 1.4.6 2.4 0 2.9-2.2 4.3-6.6 4.3-1.7 0-3.5-.3-5.6-1-2.1-.7-4-1.7-5.7-2.9l-.4-.3v9.9l.2.1c1.5.7 3.3 1.2 5.4 1.7 2.2.4 4.1.7 5.8.7 5.2 0 9.5-1.2 12.5-3.7 3.1-2.5 4.7-5.7 4.7-9.8 0-2.9-.8-5.4-2.5-7.4-1.8-2-4.7-3.8-8.7-5.4M267.6 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.8-3.9-9.1-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.5 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6"/><path d="M342.9 32.2v-8.2h-10.2v-12.9l-.3.1-9.6 2.9-.2.1v9.7h-15.2v-5.4c0-2.5.6-4.4 1.7-5.7 1.1-1.3 2.7-1.9 4.7-1.9 1.4 0 2.9.3 4.5 1l.4.2v-8.7l-.2-.1c-1.4-.5-3.3-.8-5.7-.8-3 0-5.7.7-8.1 1.9-2.4 1.3-4.2 3.1-5.5 5.5-1.3 2.3-2 5-2 8v6h-7.2v8.2h7.1v34.8h10.2v-34.7h15.2v22.1c0 9.1 4.3 13.7 12.8 13.7 1.4 0 2.9-.2 4.3-.5 1.5-.3 2.6-.7 3.2-1l.1-.1v-8.3l-.4.3c-.6.4-1.2.7-2.1.9-.8.2-1.5.3-2 .3-2 0-3.4-.5-4.4-1.6-.9-1.1-1.4-2.9-1.4-5.5v-20.3h10.3z"/></g></svg>
+				</a>
+			</div>
+			<div id="copyright">
+				© 2011 - 2018 Microsoft
+			</div>
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+</body>
+</html>

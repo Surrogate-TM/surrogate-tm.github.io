@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+              <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>Container, List and Callout API in Visio 2010 &#8211; Visio Insights</title>
+<link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-parent-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft/style.css?ver=02092017' type='text/css' media='all' />
+<link rel='stylesheet' id='microsoft-child-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft-msdn/style.css?ver=04152016' type='text/css' media='all' />
+	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
+<link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
+
+<link rel="canonical" href="https://blogs.msdn.microsoft.com/visio/2010/01/27/container-list-and-callout-api-in-visio-2010/" />
+<!-- og:title -->
+<meta property="og:title" content="Container, List and Callout API in Visio 2010" />
+<!-- og:description -->
+<meta property="og:description" content="This post examines the programmability features for Containers, Lists and Callouts in Visio 2010.&#160; It supplements an earlier post that describes how these special shapes are constructed and how they can be customized.&#160; Collectively these shapes are known as Structured Diagram elements, and the part of the Visio API that manages these elements is known..." />
+</head>
+<body class="post-template-default single single-post postid-463 single-format-standard">
+<div id="page" class="site container-fluid">
+	<header id="site-header" class="site-header row" role="banner">
+		<div id="site-header-global-wrapper" class="site-header-global-wrapper">
+			<div id="site-header-global" class="site-header-global">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-profile-menu" aria-label="toggle menu" tabindex="0" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="site-logo" class="col-sm-5 row navbar-header">
+					<div id="header-microsoft-logo">
+						<a id="home-link" href="https://www.microsoft.com/" tabindex="1" aria-label="Microsoft logo">
+							<img id="header-microsoft-logo-svg" src="https://blogs.msdn.microsoft.com/visio/wp-content/themes/microsoft/images/ms-logo-gray.svg" alt="Microsoft logo">
+							<span id="brand">
+								<span id="brand-separator">|</span>
+								<span id="brand-name"></span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div id="site-header-global-right" class="col-sm-7">
+				</div>
+			</div>
+
+		</div>
+		<div id="site-header-blog-wrapper" class="site-header-blog-wrapper ms-blog-header clear-both">
+			<div id="site-header-blog" class="site-header-blog">
+				<nav class="navbar navbar-inverse">
+					<div id="blog-logo-area" class="navbar-header">
+						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
+														<div id="blog-logo-text">
+<h1 class="site-title ms-blog-title">
+					<a href="https://blogs.msdn.microsoft.com/visio" class="for-desktop">
+						Visio Insights					</a>
+					<a href="https://blogs.msdn.microsoft.com/visio" class="for-mobile">
+						Visio Insights					</a>
+				</h1>
+<!-- blog description -->
+<p class="site-description ms-blog-description">The official blog of the Microsoft Visio product team</p>
+			</div>
+									</div>
+					</div>
+									</nav>
+			</div>
+			
+		</div>
+		<div id="site-content" class="site-content row">
+
+	<div id="primary" class="content-area col-sm-9">
+	<main id="site-main" class="site-main" role="main">
+		<div id="single-content" class="div-content">
+<!-- Post start -->
+<article id="post-463" class="post-463 post type-post status-publish format-standard hentry category-uncategorized tag-all-posts tag-programming tag-visio-2010">
+	<header class="entry-header">
+<h1 class="entry-title">Container, List and Callout API in Visio 2010</h1>
+<div class="entry-meta">
+<span class="byline"><span class="author vcard"><a class="url fn n profile-usercard-hover" data-profile-userid="eb78383b108c4193a0a593011dd29f8e" href="https://social.msdn.microsoft.com/profile/Visio+Team">Visio Team</a></span>
+</span><span class="posted-on posted-on-margin">
+			<span class="screen-reader-text"></span>
+<time class="entry-date published updated" datetime="2010-01-27T10:23:36+00:00">January 27, 2010</time>
+			</span>
+		</div>
+		<hr>
+	</header><!-- .entry-header -->
+<div class="entry-content single">
+		<p>This post examines the programmability features for <a href="http://blogs.msdn.com/visio/archive/2009/08/25/organizing-diagrams-with-containers.aspx">Containers</a>, Lists and <a href="http://blogs.msdn.com/visio/archive/2009/10/06/annotating-diagrams-with-callouts-in-visio-2010.aspx">Callouts</a> in Visio 2010.&#160; It supplements an <a href="http://blogs.msdn.com/visio/archive/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.aspx">earlier post</a> that describes how these special shapes are constructed and how they can be customized.&#160; Collectively these shapes are known as Structured Diagram elements, and the part of the Visio API that manages these elements is known as the Structured Diagram API.&#160; This API enables developers to use Structured Diagram elements in their solutions.&#160; Developers can identify the relationships between these elements and other shapes, they can add or change the relationships with other shapes, and they can detect when the user makes changes to the relationships with other shapes.</p>
+<p>&#160;</p>
+<h2>Structured Diagram API Overview</h2>
+<p>Here are the key objects, properties and methods in the Structured Diagrams API:</p>
+<p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ContainerListandCalloutAPIinVisio2010_ABE6/image_6.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ContainerListandCalloutAPIinVisio2010_ABE6/image_6.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="image_thumb_2.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ContainerListandCalloutAPIinVisio2010_ABE6/image_thumb_2.png" width="653" height="749" /></a> </p>
+<p>There are two new objects in the API.&#160; <strong>ContainerProperties</strong> is an extension of the Shape object.&#160; It encapsulates the special properties and behaviors of containers and lists.&#160; <strong>RelatedShapePairEvent</strong> is an object used with the Structured Diagram API events, where Visio can describe a relationship being formed or broken between two shapes.&#160; The remaining parts of the API are additions to existing Visio objects.</p>
+<p>Note that lists are just another type of container as far as the API is concerned.&#160; Therefore, lists use all the same objects, properties and methods as containers; and lists have a few additional properties and methods as well (those with “List” in their name).</p>
+<p>&#160;</p>
+<h2>Enabling Structured Diagram Behaviors in Solutions</h2>
+<p>Visio 2010 introduces a new feature called Diagram Services that manages what diagramming behaviors are enabled in the document.&#160; There are diagram services that control the behavior of <a href="http://blogs.msdn.com/visio/archive/2009/10/01/automatic-page-sizing-in-visio-2010.aspx">Auto Size Page</a> and diagram services that control the behaviors of Containers, Lists and Callouts.&#160; These services are turned on and off at the document level.&#160; When a service is off, changes made in the diagram through automation will not trigger the diagramming behaviors related to that service.&#160; (Changes made through the user interface are not subject to the diagram service state.)</p>
+<p>For example, the Auto Size Page feature will normally grow the page size if a shape is placed outside the page boundary.&#160; However, when a shape is placed outside the page via automation, the Auto Size Page feature will only respond if the Auto Size Page diagram service is enabled.&#160; Similarly, dropping a shape on top of a container will normally make it a member of the container and cause the container to resize to fit it.&#160; However, when the shape is dropped via automation, the Containers feature will only respond if the Structured Diagram service is enabled.</p>
+<p>The reason Visio 2010 includes this capability is that solutions may not always want these diagramming behaviors to get triggered while they are manipulating shapes in the diagram.&#160; This may especially be true for existing solutions that have no knowledge of the new Visio 2010 behaviors and have expectations that shapes respond in ways consistent with Visio 2007.&#160; In order for existing solutions to work as originally designed, <strong>all diagram services in Visio 2010 are disabled by default.&#160; Solutions must opt the document in to the new diagramming behaviors.</strong>&#160; Note that diagram service states apply to automation properties and methods that existed in Visio 2007.&#160; When a new Visio 2010 automation method is explicitly invoked by a solution - such as any of the examples below – the service state is ignored.&#160; The presumption is that the solution wants the Visio 2010 behavior associated with that method.</p>
+<p>Diagram service states are checked or changed using the <strong>Document</strong>.<strong>DiagramServicesEnabled</strong> property.&#160; The value of this property is a mask of all the services currently enabled.&#160; Available services and values are listed in the table below.&#160; It is possible for a solution to opt into just one service, all the services supported in Visio 2010, or even all existing and future services.</p>
+<p><strong>VisDiagramServices</strong> values:</p>
+<p>
+<table border="1" cellspacing="0" cellpadding="2" width="600">
+<tbody>
+<tr>
+<td valign="top" width="184"><strong>Enum</strong></td>
+<td valign="top" width="52"><strong>Value</strong></td>
+<td valign="top" width="364"><strong>Description</strong></td>
+</tr>
+<tr>
+<td valign="top" width="184">visServiceAll</td>
+<td valign="top" width="52">-1</td>
+<td valign="top" width="364">All diagram services</td>
+</tr>
+<tr>
+<td valign="top" width="184">visServiceVersion140</td>
+<td valign="top" width="52">7</td>
+<td valign="top" width="364">Diagram services that exist in Visio 2010</td>
+</tr>
+<tr>
+<td valign="top" width="184">visServiceNone</td>
+<td valign="top" width="52">0</td>
+<td valign="top" width="364">No diagram services (default)</td>
+</tr>
+<tr>
+<td valign="top" width="184">visServiceAutoSizePage</td>
+<td valign="top" width="52">1</td>
+<td valign="top" width="364">AutoSize page behaviors</td>
+</tr>
+<tr>
+<td valign="top" width="184">visServiceStructureBasic</td>
+<td valign="top" width="52">2</td>
+<td valign="top" width="364">Behaviors that maintain existing Structured Diagram relationships but do not create new relationships</td>
+</tr>
+<tr>
+<td valign="top" width="184">visServiceStructureFull</td>
+<td valign="top" width="52">4</td>
+<td valign="top" width="364">Structured Diagram behaviors that match the behaviors in the user interface</td>
+</tr>
+</tbody>
+</table>
+<p>There are two services for Structured Diagram behaviors.&#160; The StructureBasic service maintains relationships but will not form new ones.&#160; This might be appropriate for a solution that wants to respect the user’s usage of Containers, Lists and Callouts but does not want the solution itself to inadvertently form relationships when shapes are moved around the page.&#160; The StructureFull service maintains relationships and will form new relationships as well.&#160; This matches the behaviors that are triggered in the user interface.&#160; If both services are enabled, then Visio uses the StructureFull set of behaviors.</p>
+<p>&#160;</p>
+<h2>Common Tasks with the Structured Diagram API</h2>
+<p>Let’s look at some typical Structured Diagram tasks to explore the API in greater detail.&#160; For a complete list of the special flags that can be passed into the methods, look at the Object Browser within the VBA editor in Visio.</p>
+<h1>Add a container to the page</h1>
+</p>
+<p>Containers can be added to a page by calling the traditional Page.Drop method, which will add the shape at coordinates you specify without affecting the membership of existing shapes on the page.&#160; However, there is a new Page method – <strong>Page.DropContainer</strong> - that will not only drop the container but will also size it around a set of shapes and make those shapes members of the container.&#160; This is the behavior in the UI when using Insert &gt; Container when a selection exists.&#160; DropContainer needs an object for the container shape.&#160; If you want to use one of the shapes in the Insert Container gallery, you can use the <strong>GetBuiltInStencilFile</strong> method to retrieve the hidden stencil where these containers are stored.</p>
+<blockquote><p>Dim vsoDoc1 As Visio.Document      <br />Set vsoDoc1 = Application.Documents.OpenEx(Application.<strong>GetBuiltInStencilFile</strong>(visBuiltInStencilContainers, visMSUS), visOpenHidden)       <br />Application.ActivePage.<strong>DropContainer</strong> vsoDoc1.Masters.ItemU(&quot;Container 1&quot;), Application.ActiveWindow.Selection       <br />vsoDoc1.Close</p>
+</blockquote>
+<h1>Add a shape to a container</h1>
+<p>Shapes are added to a container by moving or dropping them onto the container (if the StructureFull diagram service is enabled).&#160; Shapes can be explicitly added to a container using the <strong>AddMember</strong> method.&#160; This is useful when the shape already overlaps the container and is not yet a member.&#160; It is also helpful if you want to force the container to expand to encompass the new member.</p>
+<blockquote><p>vsoContainerShape.<strong>ContainerProperties</strong>.<strong>AddMember</strong> vsoShape, visMemberAddExpandContainer</p>
+</blockquote>
+<h1>Find the containers on a page</h1>
+<p>To discover what containers exist in a document, Visio provides a direct way to get the set of containers in a selection or on a page.&#160; The <strong>GetContainers</strong> method returns an array of Shape IDs for the containers.&#160; Containers nested within other containers can be included or excluded using flags.</p>
+<blockquote><p>For Each containerID In vsoPage.<strong>GetContainers</strong>(visContainerIncludeNested)       <br />&#160;&#160;&#160; Set vsoContainerShape = vsoPage.Shapes.ItemFromID(containerID)       <br />&#160;&#160;&#160; '...       <br />Next </p>
+</blockquote>
+<h1>Get the shapes in a container</h1>
+<p>Solutions can identify the members of a container using the <strong>GetMemberShapes</strong> method, which returns an array of Shape IDs for the member shapes.&#160; The flags allow certain kinds of member shapes to be filtered out of the array returned.</p>
+<blockquote><p>For Each memberID In vsoContainerShape.<strong>ContainerProperties</strong>.<strong>GetMemberShapes</strong>(visContainerFlagsDefault)       <br />&#160;&#160;&#160; Set vsoShape = vsoPage.Shapes.ItemFromID(memberID)       <br />&#160;&#160;&#160; '...       <br />Next </p>
+</blockquote>
+<h1>Reorder a list</h1>
+<p>Every member of a list is placed in a specific position, and that ordinal value can be retrieved with the <strong>ContainerProperties</strong>.<strong>GetListMemberPosition</strong> method.&#160; To reorder a member, you can call the <strong>ContainerProperties</strong>.<strong>ReorderListMember</strong> method.&#160; Both methods use 1 to indicate the first position in the list.</p>
+<blockquote><p>vsoListShape.<strong>ContainerProperties</strong>.<strong>ReorderListMember</strong> vsoShape, 2</p>
+</blockquote>
+<h1>Add a callout to the page</h1>
+<p>Callouts can be added to a page by calling the traditional Page.Drop method, which will add the shape at coordinates you specify.&#160; However, there is a new Page method – <strong>Page.DropCallout </strong>- that will not only drop the callout but will associate it with a target shape and position it near the target shape.&#160; This is the behavior in the UI when using Insert &gt; Callout when a selection exists.&#160; As with DropContainer, DropCallout needs an object for the callout shape.&#160; If you want to use one of the shapes in the Insert Callout gallery, you can use the <strong>GetBuiltInStencilFile</strong> method to retrieve the hidden stencil where these containers are stored.</p>
+<blockquote><p>Dim vsoDoc1 As Visio.Document      <br />Set vsoDoc1 = Application.Documents.OpenEx(Application.<strong>GetBuiltInStencilFile</strong>(visBuiltInStencilCallouts, visMSUS), visOpenHidden)       <br />Application.ActivePage.<strong>DropCallout</strong> vsoDoc1.Masters.ItemU(&quot;Callout 1&quot;), vsoTargetShape       <br />vsoDoc1.Close</p>
+</blockquote>
+<h1>Get the target shape for a callout</h1>
+<p>A shape can have multiple callouts, but a callout can have only one target shape at a time.&#160; The <strong>Shape</strong>.<strong>CalloutsAssociated</strong> property returns an array of callout shape IDs.&#160; You can get or set the target shape of a callout using the <strong>Shape</strong>.<strong>CalloutTarget</strong> property.</p>
+<blockquote><p>Set vsoShape = vsoCalloutShape.<strong>CalloutTarget</strong></p>
+</blockquote>
+<p><strong></strong></p>
+<p><strong></strong></p>
+<h1></h1>
+<h1></h1>
+<h2>Structured Diagram Events</h2>
+<p>In addition to manipulating the containers, lists and callouts in a document, you can also respond to user actions that relate to these shapes.&#160; Containers, lists and callouts work by establishing relationships with other shapes.&#160; Visio fires an event whenever one of these relationships is formed or broken.&#160; For example, adding a shape to a container forms a new relationship between the shape and the container.</p>
+<p>When a relationship event fires, Visio specifies the details in a RelatedShapePairEvent object.&#160; The <strong>FromShapeID</strong> property of this object indicates the container, list or callout involved in the relationship.&#160; The <strong>ToShapeID</strong> property indicates the other shape involved in the relationship.&#160; Thus when adding a shape to a container, the ToShapeID would refer to the new member shape, and when associating a callout with a target shape, the ToShapeID would refer to the target shape.</p>
+<p>The following events are available for Application, Documents, Pages and Page event lists:</p>
+<blockquote><p><strong>ContainerRelationshipAdded</strong></p>
+<p><strong>ContainerRelationshipDeleted</strong></p>
+<p><strong>CalloutRelationshipAdded</strong></p>
+<p><strong>CalloutRelationshipDeleted</strong></p>
+</blockquote>
+<p>Also the ShapeChanged event will now fire when members of a list shape are reordered.&#160; The event passes the list shape as an argument and includes the string “/ListReorder” in the EventInfo argument.</p>
+<p>&#160;</p>
+<p><strong></strong></p>
+<h2>Feedback</h2>
+<p>The Structured Diagrams feature set – Containers, Lists and Callouts – offers both end users and developers significant new diagramming capabilities in Visio 2010.&#160; We’re interested to hear what developers think of this API functionality, so please use the <a href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx">Send a Smile feedback tool</a> or leave a comment below.</p>
+	</div><!-- .entry-content -->
+<hr>
+
+</article><!-- #post-## -->
+</div><!-- #single-content -->
+</div><!-- #primary -->
+<!-- Before Navigation --></main><!-- #site-main -->
+
+<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a> 
+
+<div id=""secondary"" class=""sidebar col-sm-3"">
+	<div id=""sidebar-widget-area"" class=""sidebar-widget-area"" role=""complementary"">
+		<div class=""widget sfmsb_widget"">
+
+		</div>
+		<aside id="tag_cloud-2" class="widget widget_tag_cloud">
+</aside>
+<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>	
+	<li><a href='..\..\..\years\2018\index.htm'>All of 2018</a>&nbsp;(5)</li>
+	<li><a href='..\..\..\years\2017\index.htm'>All of 2017</a>&nbsp;(8)</li>
+	<li><a href='..\..\..\years\2016\index.htm'>All of 2016</a>&nbsp;(3)</li>
+	<li><a href='..\..\..\years\2012\index.htm'>All of 2012</a>&nbsp;(2)</li>
+	<li><a href='..\..\..\years\2011\index.htm'>All of 2011</a>&nbsp;(11)</li>
+	<li><a href='..\..\..\years\2010\index.htm'>All of 2010</a>&nbsp;(35)</li>
+	<li><a href='..\..\..\years\2009\index.htm'>All of 2009</a>&nbsp;(50)</li>
+	<li><a href='..\..\..\years\2008\index.htm'>All of 2008</a>&nbsp;(11)</li>
+	<li><a href='..\..\..\years\2007\index.htm'>All of 2007</a>&nbsp;(26)</li>
+	<li><a href='..\..\..\years\2006\index.htm'>All of 2006</a>&nbsp;(46)</li>
+</aside>
+</div><!-- #secondary -->
+</div><!-- .site-content -->
+</div>
+
+<footer id="site-footer" class="site-footer row" role="contentinfo">
+	<div id="site-info" class="site-info">
+		<div id="footer-text" class="col-sm-4 col-sm-offset-6">
+			<span>
+				<a href="https://privacy.microsoft.com" data-mscc-ic="false">Privacy</a>
+			</span>
+			<span>
+				<a href="https://msdn.microsoft.com/cc300389" data-mscc-ic="false">Terms of Use</a>
+			</span>
+			<span>
+				<a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-mscc-ic="false">Trademarks</a>
+			</span>
+		</div>
+		<div id="footer-far" class="col-sm-2">
+			<div id="footer-microsoft-logo">
+				<a href="https://www.microsoft.com" aria-label="Microsoft Logo">
+					<svg id="footer-microsoft-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 70.5" enable-background="new 0 0 347 70.5"><g fill="#fff"><path d="M39.5 44.6l-2.8 7.9h-.2c-.5-1.8-1.3-4.5-2.7-7.8l-15-37.7h-14.7v60h9.7v-37c0-2.3 0-5-.1-8.2-.1-1.6-.2-2.9-.3-3.8h.2c.5 2.3 1 4 1.4 5.1l18 43.8h6.8l17.9-44.2c.4-1 .8-3 1.2-4.7h.2c-.2 4.4-.4 8.4-.5 10.8v38.1h10.4v-60h-14.1l-15.4 37.7zM78.8 23.9h10.1v43h-10.1zM83.9 5.7c-1.7 0-3.1.6-4.3 1.7-1.2 1.1-1.8 2.5-1.8 4.2 0 1.6.6 3 1.8 4.1 1.2 1.1 2.6 1.6 4.3 1.6 1.7 0 3.2-.6 4.3-1.6 1.2-1.1 1.8-2.5 1.8-4.1 0-1.6-.6-3-1.8-4.2-1-1.2-2.5-1.7-4.3-1.7M124.7 23.5c-1.9-.4-3.8-.6-5.7-.6-4.6 0-8.8 1-12.3 3s-6.3 4.8-8.1 8.3c-1.9 3.6-2.8 7.7-2.8 12.4 0 4.1.9 7.8 2.7 11.1 1.8 3.3 4.3 5.9 7.6 7.7 3.2 1.8 6.9 2.7 11.1 2.7 4.8 0 8.9-1 12.2-2.9l.1-.1v-9.3l-.4.3c-1.5 1.1-3.2 2-4.9 2.6-1.8.6-3.4.9-4.8.9-4 0-7.2-1.2-9.5-3.7s-3.5-5.9-3.5-10.2c0-4.4 1.2-7.9 3.6-10.5 2.4-2.6 5.6-3.9 9.5-3.9 3.3 0 6.6 1.1 9.6 3.3l.4.3v-9.8l-.1-.1c-1.2-.6-2.8-1.1-4.7-1.5M158 23.2c-2.5 0-4.8.8-6.8 2.4-1.7 1.4-2.9 3.4-3.9 5.8h-.1v-7.4h-10.1v43h10.1v-22c0-3.7.8-6.8 2.5-9.1s3.9-3.5 6.5-3.5c.9 0 1.9.2 3 .4 1.1.3 1.9.6 2.4 1l.4.3v-10.2l-.2-.1c-.8-.4-2.1-.6-3.8-.6M185.5 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.7-3.9-9-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.6 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6M229.3 41.7c-3.2-1.3-5.2-2.3-6.1-3.2-.8-.8-1.2-1.9-1.2-3.3 0-1.2.5-2.3 1.6-3.1 1.1-.8 2.5-1.2 4.4-1.2 1.7 0 3.5.3 5.2.8 1.7.5 3.3 1.2 4.5 2.1l.4.3v-9.4l-.2-.1c-1.2-.5-2.7-.9-4.6-1.3-1.9-.3-3.6-.5-5-.5-4.8 0-8.8 1.2-11.9 3.7-3.1 2.4-4.6 5.7-4.6 9.5 0 2 .3 3.8 1 5.3s1.7 2.9 3.1 4c1.4 1.1 3.4 2.3 6.2 3.5 2.3 1 4.1 1.8 5.2 2.4 1.1.6 1.8 1.3 2.3 1.9.4.6.6 1.4.6 2.4 0 2.9-2.2 4.3-6.6 4.3-1.7 0-3.5-.3-5.6-1-2.1-.7-4-1.7-5.7-2.9l-.4-.3v9.9l.2.1c1.5.7 3.3 1.2 5.4 1.7 2.2.4 4.1.7 5.8.7 5.2 0 9.5-1.2 12.5-3.7 3.1-2.5 4.7-5.7 4.7-9.8 0-2.9-.8-5.4-2.5-7.4-1.8-2-4.7-3.8-8.7-5.4M267.6 22.9c-7.1 0-12.7 2.1-16.7 6.2s-6 9.8-6 16.9c0 6.7 2 12.1 5.9 16.1 3.9 3.9 9.2 5.9 15.8 5.9 6.9 0 12.4-2.1 16.4-6.3 4-4.2 6-9.8 6-16.7 0-6.8-1.9-12.3-5.7-16.2-3.8-3.9-9.1-5.9-15.7-5.9m8 33.1c-1.9 2.4-4.8 3.6-8.5 3.6s-6.6-1.2-8.7-3.7c-2.1-2.4-3.1-5.9-3.1-10.3 0-4.6 1.1-8.1 3.1-10.6 2.1-2.5 5-3.7 8.6-3.7 3.5 0 6.4 1.2 8.4 3.6 2 2.4 3.1 5.9 3.1 10.5s-1 8.2-2.9 10.6"/><path d="M342.9 32.2v-8.2h-10.2v-12.9l-.3.1-9.6 2.9-.2.1v9.7h-15.2v-5.4c0-2.5.6-4.4 1.7-5.7 1.1-1.3 2.7-1.9 4.7-1.9 1.4 0 2.9.3 4.5 1l.4.2v-8.7l-.2-.1c-1.4-.5-3.3-.8-5.7-.8-3 0-5.7.7-8.1 1.9-2.4 1.3-4.2 3.1-5.5 5.5-1.3 2.3-2 5-2 8v6h-7.2v8.2h7.1v34.8h10.2v-34.7h15.2v22.1c0 9.1 4.3 13.7 12.8 13.7 1.4 0 2.9-.2 4.3-.5 1.5-.3 2.6-.7 3.2-1l.1-.1v-8.3l-.4.3c-.6.4-1.2.7-2.1.9-.8.2-1.5.3-2 .3-2 0-3.4-.5-4.4-1.6-.9-1.1-1.4-2.9-1.4-5.5v-20.3h10.3z"/></g></svg>
+				</a>
+			</div>
+			<div id="copyright">
+				© 2011 - 2018 Microsoft
+			</div>
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+</body>
+</html>
