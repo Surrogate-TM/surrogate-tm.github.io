@@ -86,7 +86,7 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p>In a <a href="http://blogs.msdn.com/chhopkin/archive/2008/08/29/vsto-3-0-and-visio-essentials.aspx">previous post</a> I gave you a brief description of Click-Once vs. Windows Installer based deployment choices and how to choose between the two.</p>
+		<p>In a <a href="../../../../chhopkin/2008/08/29/vsto-3-0-and-visio-2007-essentials.htm" original-url="http://blogs.msdn.com/chhopkin/archive/2008/08/29/vsto-3-0-and-visio-essentials.aspx">previous post</a> I gave you a brief description of Click-Once vs. Windows Installer based deployment choices and how to choose between the two.</p>
 <p>In this post I will describe in detail how to setup a Windows Installer (MSI) based project for deploying your VSTO 3.0 Visio 2007 add-in. This MSDN <a href="http://msdn.microsoft.com/en-us/library/cc563937.aspx">article</a> has more detailed information for VSTO 3.0 Add-Ins using an Excel add-in as the example project. </p>
 <p><b>Creating the Setup project</b> </p>
 <p>I assume at this point you have a solution in Visual Studio that contains a VSTO 3.0 based add-in project for Visio 2007. </p>
@@ -135,7 +135,7 @@
 <p>Again, if we were to provide the InstallURL property to take the user to the download location for the Office 2007 PIA redistributable we would set this property to:   <br /><a href="http://www.microsoft.com/downloads/details.aspx?familyid=59daebaa-bed4-4282-a28c-b864d8bfa513&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=59daebaa-bed4-4282-a28c-b864d8bfa513&amp;displaylang=en</a> </p>
 <p><b></b></p>
 <p><b>Visio 2007 launch condition</b> </p>
-<p>In addition to launch conditions that back up the prerequisites I also add a launch condition to check for the installed version of Visio on the target machine. Check out my <a href="http://blogs.msdn.com/chhopkin/archive/2008/08/14/visio-2007-standard-vs-professional-there-is-a-difference.aspx">blog article</a> for detail on this specific launch condition. </p>
+<p>In addition to launch conditions that back up the prerequisites I also add a launch condition to check for the installed version of Visio on the target machine. Check out my <a href="../../../../chhopkin/2008/08/14/visio-2007-standard-vs-professional-there-is-a-difference.htm" original-url="http://blogs.msdn.com/chhopkin/archive/2008/08/14/visio-2007-standard-vs-professional-there-is-a-difference.aspx">blog article</a> for detail on this specific launch condition. </p>
 <p><b>File System</b> </p>
 <p>The file system is fairly straight forward. Define the location of the Application Folder for the target machine and add your project output to this folder. You can get more detailed for supporting files and content but this is up to you. </p>
 <p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_14.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_14.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="144" alt="image" src="image_thumb_6.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_6.png" width="387" border="0" /></a> </p>
@@ -158,7 +158,7 @@
 <p><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_20.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_20.png"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="215" alt="image" src="image_thumb_9.png" original-url="http://blogs.msdn.com/blogfiles/chhopkin/WindowsLiveWriter/Dep.0basedVisioaddinusingWindowsInstalle_D369/image_thumb_9.png" width="399" border="0" /></a> </p>
 <p><b>PublishComponents</b> </p>
 <p>Because this setup project produces an MSI we can use the Visio Solution Publishing tool (vissolpublish.exe) to update the MSI with additional information about the templates and stencils contained in our MSI so they become available on the Visio Getting Started task pane and menus. </p>
-<p>Check out my <a href="http://blogs.msdn.com/chhopkin/archive/2008/08/30/postbuildevent-for-visio-solution-publishing.aspx">blog article</a> on running the Visio Solution Publishing tool as a Post Build action on the Setup project. </p>
+<p>Check out my <a href="../../../../chhopkin/2008/08/29/postbuildevent-for-visio-solution-publishing.htm" original-url="http://blogs.msdn.com/chhopkin/archive/2008/08/30/postbuildevent-for-visio-solution-publishing.aspx">blog article</a> on running the Visio Solution Publishing tool as a Post Build action on the Setup project. </p>
 	</div><!-- .entry-content -->
 <hr>
 

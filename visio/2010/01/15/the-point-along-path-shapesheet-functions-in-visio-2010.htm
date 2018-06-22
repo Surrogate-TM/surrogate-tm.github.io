@@ -86,7 +86,7 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p mce_keep="true">In a previous blog post about <a href="http://blogs.msdn.com/visio/archive/2010/01/04/new-shapesheet-cells-and-functions-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2010/01/04/new-shapesheet-cells-and-functions-in-visio-2010.aspx">new ShapeSheet functions</a>, we introduced a set of new functions called the Point Along Path functions. These functions allow interactions with geometry paths of shapes. This post provides more detail about these new functions. </p>
+		<p mce_keep="true">In a previous blog post about <a href="../../../../visio/2010/01/04/new-shapesheet-cells-and-functions-in-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2010/01/04/new-shapesheet-cells-and-functions-in-visio-2010.aspx">new ShapeSheet functions</a>, we introduced a set of new functions called the Point Along Path functions. These functions allow interactions with geometry paths of shapes. This post provides more detail about these new functions. </p>
 <p>The following functions open up a broad set of shape interactions for shape and solution developers:</p>
 <table border="1" cellspacing="0" cellpadding="2" width="80%">
 <tbody>
@@ -207,7 +207,7 @@
 <p>As you change the curve of the timeline, the milestone shapes stay attached to the curve, which allows you to create a great looking visual.</p>
 <p>The main difference between this example and the previous one is that we’ve introduced a mechanism for automatically attaching adornments to the arc geometry. Here we turned the arc shape into a custom container to give the milestone shapes a universal reference. Since they are members of the container, we use the CONTAINERSHEETREF() function to reference the geometry of the arc. When you make multiple copies of the milestone shape, their reference to the timeline arc geometry is preserved as long as they are members of the container. (For more info on custom containers, see our <a href="http://blogs.msdn.com/visio/archive/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.aspx">previous post</a> ).</p>
 <p>To place the milestones accurately on the timeline arc, we used the POINTALONGPATH() function. Each timeline shape stores its own date. The timeline arc contains the “begin” and “end” dates of the timeline. </p>
-<p>The <a href="http://blogs.msdn.com/visio/attachment/9949230.ashx">attached VSD file</a> includes the curved timeline, and the other two examples, so you can take a look at the formulas and play around with them.</p>
+<p>The <a href="PointAlongPathFunctions.vsd">attached VSD file</a> includes the curved timeline, and the other two examples, so you can take a look at the formulas and play around with them.</p>
 <p>We think these new functions will open up a new set of scenarios for shape developers. Some things you might try to create with them are:</p>
 <ul>
 <li>Placing text or adornments at fixed distances from the beginning or end of a connector </li>

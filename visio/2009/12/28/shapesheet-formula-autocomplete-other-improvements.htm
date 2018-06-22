@@ -86,166 +86,166 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>In this post, we’ll be covering improvements to the ShapeSheet in Visio 2010 that make it easier for shape developers to create and modify existing Visio shapes. </P><br />
-<P>For those who don’t know, Visio shapes are more complex than they may seem at first; behind each shape is a ShapeSheet (you can get more details <A href="http://blogs.msdn.com/visio/archive/2006/06/16/624406.aspx" mce_href="http://blogs.msdn.com/visio/archive/2006/06/16/624406.aspx">here</A> and <A href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx" mce_href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx">here</A> if you're unfamiliar with the ShapeSheet). In Visio 2010, you can access a shape's ShapeSheet by selecting the shape in question and clicking the "Show ShapeSheet" button on the Developer tab. If you don’t have the Developer tab up already, learn how to turn it <A href="http://blogs.msdn.com/visio/archive/2009/09/02/the-developer-tab-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/02/the-developer-tab-in-visio-2010.aspx">here</A>. Once you’re in ShapeSheet mode you’ll see the following user interface:</P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_22.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_22.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_22.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_10.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_10.png" width=748 height=479 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_10.png"></A> </P><br />
-<P>As you navigate through the updated ShapeSheet experience you’ll quickly stumble on our improvements. In the ShapeSheet editing window (1 above), Visio 2010 now facilitates user input with a new feature called <STRONG>ShapeSheet Formula AutoComplete. </STRONG>The ShapeSheet user interface has also been simplified considerably by the creation of the <STRONG>ShapeSheet Contextual Tab</STRONG> (2 above)<STRONG>&nbsp;</STRONG>to facilitate common ShapeSheet actions.</P><br />
-<P>Let’s take a deeper look into each improvement.</P><br />
-<H4><STRONG>ShapeSheet Formula AutoComplete </STRONG></H4><br />
-<P>One key features of the ShapeSheet is that it enables Visio shape developers to create a dependency between one shape property (also known as a ShapeSheet cell) and another through a formula. For example a shape developer can set height = 2 * width.</P><br />
-<P>To this day, to become a proficient shape designer, you had to memorize all <A href="http://msdn.microsoft.com/en-us/library/bb267452.aspx" mce_href="http://msdn.microsoft.com/en-us/library/bb267452.aspx">345 cell names</A>, <A href="http://msdn.microsoft.com/en-us/library/aa431852.aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa431852.aspx">17 row names</A>, <A href="http://msdn.microsoft.com/en-us/library/aa431853.aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa431853.aspx">40 section names</A> and the syntax to <A href="http://msdn.microsoft.com/en-us/library/aa431851.aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa431851.aspx">181 ShapeSheet functions</A> – not an easy task!<A href="http://msdn.microsoft.com/en-us/library/aa173493(office.11).aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa173493(office.11).aspx"></A> Visio 2010 however makes your life much easier by introducing a new feature called ShapeSheet Formula AutoComplete. This feature helps you compose ShapeSheet formulas by: </P><br />
-<P><B>1. </B><B>Providing a context-sensitive list of ShapeSheet formula keywords as you type. </B>All ShapeSheet functions, section names, row names and most** cell names are accessible via ShapeSheet Formula AutoComplete (**Visio doesn’t surface cells in non-named rows such as the “X1” or “Y1” rows in the Geometry section). As you compose a formula in a cell, Visio scrolls a list of keywords that are appropriate for the current context and selects the keyword that most closely matches what you're typing. </P><br />
-<P><B></B></P><br />
-<P>Take a look below to see ShapeSheet Formula AutoComplete in action. As you type “P-R-O”, the list of keywords scrolls to the “Prop” section name which also gets selected as Visio’s best guess. After auto-completing the section name by using “.”, Visio replaces the keyword list with one that makes sense in this new context, in this case the shape data item “CostOfShape”.</P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_4.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_4.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_4.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_1.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_1.png" width=604 height=279 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_1.png"></A> </P><br />
-<P>Also notice that Visio helps you locate the keyword you’re looking for by sorting them alphabetically and tagging them with one of the icons below depending on what type of keyword it is. </P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_20.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_20.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_20.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_9.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_9.png" width=198 height=112 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_9.png"></A> </P><br />
-<P><B>2. </B><B>Providing a quick input mechanism for ShapeSheet formula elements.</B> Once you've typed enough letters to uniquely identify a ShapeSheet keyword, you can simply hit "Enter" or "Tab" to complete the keyword. Depending on context, the ",", ".", "!", “*”, “+”, “-”, “/”, “[”, “(“ and “)” symbols will also do the trick.</P><br />
-<P><B>3. </B><B>Providing a definition of the ShapeSheet items. </B>If you<B>'</B>re not sure<B> </B>of the definition of a ShapeSheet keyword, a tool tip appears next to the currently selected keyword in the AutoComplete list with a definition for it. For example, below, is a definition for the PATHSEGMENT function, one of the new ShapeSheet functions in Visio 2010. </P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_6.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_6.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_6.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_2.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_2.png" width=638 height=239 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_2.png"></A> </P><br />
-<P><B>4. </B><B>ShapeSheet function parameter browsing. </B>As you compose a ShapeSheet function, the function signature appears above the cell in a tooltip. The bolding in the tooltip changes as you progress through a function’s arguments. </P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_8.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_8.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_8.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_3.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_3.png" width=354 height=124 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_3.png"></A> </P><br />
-<P><B>5. </B><B>ShapeSheet formula parenthesis matching. </B>As you close a parenthesis pair with a ")" character, ShapeSheet Formula AutoComplete will highlight the matching open-parenthesis in red.</P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_10.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_10.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_10.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_4.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_4.png" width=456 height=135 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_4.png"></A> </P><br />
-<P>ShapeSheet Formula AutoComplete is available in the following textboxes, dialogs and windows throughout Visio 2010:</P><br />
-<UL><br />
-<LI>In a ShapeSheet cell </LI><br />
-<LI>In the ShapeSheet formula edit bar </LI><br />
-<LI>In the new “Edit Formula” dialog which you can launch from the ShapeSheet contextual tab </LI><br />
-<LI>In the “Insert Field” dialog, when typing in a custom ShapeSheet formula </LI><br />
-<LI>In the “Edit Data Graphics” dialog, wherever you have the opportunity to add a custom ShapeSheet formula. </LI></UL><br />
-<P>The ShapeShee Formula AutoComplete feature can be toggled off through one of these entry points: </P><br />
-<UL><br />
-<LI>Toggling the relevant option in the “Visio Options”&gt;“Advanced” dialog. </LI><br />
-<LI>Toggling the value of the Software\Policies\Microsoft\Office\14.0\Visio\Application\EnableFormulaAutoComplete registry key. </LI><br />
-<LI>Toggling the value of Application.Settings.EnableFormulaAutoComplete API property. </LI></UL><br />
-<H4>ShapeSheet Contextual Tab</H4><br />
-<P>Apart from ShapeSheet Formula AutoComplete, the ShapeSheet has gotten a facelift thanks to the Fluent UI – all ShapeSheet related commands are now in one place. Take a look at the ShapeSheet contextual tab below. </P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_12.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_12.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_12.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 631px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 88px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_5.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_5.png" width=782 height=154 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_5.png"></A> </P><br />
-<P>In more detail: </P><br />
-<P><br />
-<TABLE style="WIDTH: 634px; HEIGHT: 717px" border=1 cellSpacing=0 cellPadding=0 width=634><br />
-<TBODY><br />
-<TR><br />
-<TD vAlign=top width=76><br />
-<P>Chunk</P></TD><br />
-<TD vAlign=top width=45><br />
-<P>Button</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Functionality</P></TD></TR><br />
-<TR height=20><br />
-<TD vAlign=top width=76><br />
-<P>View</P></TD><br />
-<TD vAlign=top width=45><br />
-<P>Formulas</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Toggle the “formula” view of the ShapeSheet – all cell formulas are shown. </P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Values</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Toggle the “value” view of the ShapeSheet – all cell results are shown. </P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Sections</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Surfaces the “View Sections” dialog which lets you show or hide ShapeSheet sections.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Style Explorer</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Surfaces the “Style Explorer” pane that lets you view and edit styles in the current drawing.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76><br />
-<P>Section</P></TD><br />
-<TD vAlign=top width=45><br />
-<P>Insert</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Adds optional sections of your choice to the currently selected ShapeSheet.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Delete</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Deletes the optional section you have currently selected. </P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76><br />
-<P>Rows</P></TD><br />
-<TD vAlign=top width=45><br />
-<P>Insert</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Adds a row to the optional section you have currently selected. </P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Delete</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Deletes a row from the optional section you have currently selected.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76><br />
-<P>Editing</P></TD><br />
-<TD vAlign=top width=45><br />
-<P>Edit Formula</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Surfaces the “Edit Formula Dialog”, seen below, which gives you more room to enter long equations as well as the possibility of adding carriage returns to your formulas to improve legibility. As you can see below, ShapeSheet Formula AutoComplete is still active in this dialog. </P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_14.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_14.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_14.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 490px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 173px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_6.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_6.png" width=560 height=202 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_6.png"></A> </P><br />
-<P>Note that you can also open this dialog by using the “ctrl+e” key combination.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Shape Data</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Adds a ShapeData row to the currently selected ShapeSheet.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Hyperlink</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Adds a Hyperlink row to the currently selected ShapeSheet.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Shape Action</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Adds an Action Row to the currently selected “Actions” section.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76><br />
-<P>Formula Tracking</P></TD><br />
-<TD vAlign=top width=45><br />
-<P>Show windows</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Toggles the visibility of the “Formula Tracing” window.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Trace Precedents</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>List in the “formula tracing” window all the cells the currently selected cell depends on.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Trace Dependents</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>List in the “formula tracing” window all the cells that depend on the the currently selected cell.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Back</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Jumps to the previous cell in the formula tracing history.</P></TD></TR><br />
-<TR><br />
-<TD vAlign=top width=76>&nbsp;</TD><br />
-<TD vAlign=top width=45><br />
-<P>Forth</P></TD><br />
-<TD vAlign=top width=609><br />
-<P>Jumps to the next cell in the formula tracing history.</P></TD></TR></TBODY></TABLE></P><br />
-<P>Using the Fluent UI, Visio can now enable and disable interactively the ShapeSheet operations that you can take against a particular cell while you're editing it; this removes some of the right-click menu hunting you may have done in the past.</P><br />
-<H4>Also…</H4><br />
-<P>The final change we’ve made to the ShapeSheet experience in Visio 2010, is to enable shape designers to open one ShapeSheet window per shape instead of re-using the same window for all shapes, the latter behavior being the default in previous releases of Visio.</P><br />
-<H4>Try it out!</H4><br />
+		<p><P>In this post, we’ll be covering improvements to the ShapeSheet in Visio 2010 that make it easier for shape developers to create and modify existing Visio shapes. </P>
+<P>For those who don’t know, Visio shapes are more complex than they may seem at first; behind each shape is a ShapeSheet (you can get more details <A href="../../../../visio/2006/06/16/how-it-all-began.htm" mce_href="http://blogs.msdn.com/visio/archive/2006/06/16/624406.aspx">here</A> and <A href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx" mce_href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx">here</A> if you're unfamiliar with the ShapeSheet). In Visio 2010, you can access a shape's ShapeSheet by selecting the shape in question and clicking the "Show ShapeSheet" button on the Developer tab. If you don’t have the Developer tab up already, learn how to turn it <A href="../../../../visio/2009/09/02/the-developer-tab-in-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/09/02/the-developer-tab-in-visio-2010.aspx">here</A>. Once you’re in ShapeSheet mode you’ll see the following user interface:</P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_22.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_22.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_22.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_10.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_10.png" width=748 height=479 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_10.png"></A> </P>
+<P>As you navigate through the updated ShapeSheet experience you’ll quickly stumble on our improvements. In the ShapeSheet editing window (1 above), Visio 2010 now facilitates user input with a new feature called <STRONG>ShapeSheet Formula AutoComplete. </STRONG>The ShapeSheet user interface has also been simplified considerably by the creation of the <STRONG>ShapeSheet Contextual Tab</STRONG> (2 above)<STRONG>&nbsp;</STRONG>to facilitate common ShapeSheet actions.</P>
+<P>Let’s take a deeper look into each improvement.</P>
+<H4><STRONG>ShapeSheet Formula AutoComplete </STRONG></H4>
+<P>One key features of the ShapeSheet is that it enables Visio shape developers to create a dependency between one shape property (also known as a ShapeSheet cell) and another through a formula. For example a shape developer can set height = 2 * width.</P>
+<P>To this day, to become a proficient shape designer, you had to memorize all <A href="http://msdn.microsoft.com/en-us/library/bb267452.aspx" mce_href="http://msdn.microsoft.com/en-us/library/bb267452.aspx">345 cell names</A>, <A href="http://msdn.microsoft.com/en-us/library/aa431852.aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa431852.aspx">17 row names</A>, <A href="http://msdn.microsoft.com/en-us/library/aa431853.aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa431853.aspx">40 section names</A> and the syntax to <A href="http://msdn.microsoft.com/en-us/library/aa431851.aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa431851.aspx">181 ShapeSheet functions</A> – not an easy task!<A href="http://msdn.microsoft.com/en-us/library/aa173493(office.11).aspx" mce_href="http://msdn.microsoft.com/en-us/library/aa173493(office.11).aspx"></A> Visio 2010 however makes your life much easier by introducing a new feature called ShapeSheet Formula AutoComplete. This feature helps you compose ShapeSheet formulas by: </P>
+<P><B>1. </B><B>Providing a context-sensitive list of ShapeSheet formula keywords as you type. </B>All ShapeSheet functions, section names, row names and most** cell names are accessible via ShapeSheet Formula AutoComplete (**Visio doesn’t surface cells in non-named rows such as the “X1” or “Y1” rows in the Geometry section). As you compose a formula in a cell, Visio scrolls a list of keywords that are appropriate for the current context and selects the keyword that most closely matches what you're typing. </P>
+<P><B></B></P>
+<P>Take a look below to see ShapeSheet Formula AutoComplete in action. As you type “P-R-O”, the list of keywords scrolls to the “Prop” section name which also gets selected as Visio’s best guess. After auto-completing the section name by using “.”, Visio replaces the keyword list with one that makes sense in this new context, in this case the shape data item “CostOfShape”.</P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_4.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_4.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_4.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_1.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_1.png" width=604 height=279 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_1.png"></A> </P>
+<P>Also notice that Visio helps you locate the keyword you’re looking for by sorting them alphabetically and tagging them with one of the icons below depending on what type of keyword it is. </P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_20.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_20.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_20.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_9.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_9.png" width=198 height=112 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_9.png"></A> </P>
+<P><B>2. </B><B>Providing a quick input mechanism for ShapeSheet formula elements.</B> Once you've typed enough letters to uniquely identify a ShapeSheet keyword, you can simply hit "Enter" or "Tab" to complete the keyword. Depending on context, the ",", ".", "!", “*”, “+”, “-”, “/”, “[”, “(“ and “)” symbols will also do the trick.</P>
+<P><B>3. </B><B>Providing a definition of the ShapeSheet items. </B>If you<B>'</B>re not sure<B> </B>of the definition of a ShapeSheet keyword, a tool tip appears next to the currently selected keyword in the AutoComplete list with a definition for it. For example, below, is a definition for the PATHSEGMENT function, one of the new ShapeSheet functions in Visio 2010. </P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_6.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_6.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_6.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_2.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_2.png" width=638 height=239 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_2.png"></A> </P>
+<P><B>4. </B><B>ShapeSheet function parameter browsing. </B>As you compose a ShapeSheet function, the function signature appears above the cell in a tooltip. The bolding in the tooltip changes as you progress through a function’s arguments. </P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_8.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_8.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_8.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_3.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_3.png" width=354 height=124 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_3.png"></A> </P>
+<P><B>5. </B><B>ShapeSheet formula parenthesis matching. </B>As you close a parenthesis pair with a ")" character, ShapeSheet Formula AutoComplete will highlight the matching open-parenthesis in red.</P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_10.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_10.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_10.png"><img style="BORDER-RIGHT-WIDTH: 0px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_4.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_4.png" width=456 height=135 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_4.png"></A> </P>
+<P>ShapeSheet Formula AutoComplete is available in the following textboxes, dialogs and windows throughout Visio 2010:</P>
+<UL>
+<LI>In a ShapeSheet cell </LI>
+<LI>In the ShapeSheet formula edit bar </LI>
+<LI>In the new “Edit Formula” dialog which you can launch from the ShapeSheet contextual tab </LI>
+<LI>In the “Insert Field” dialog, when typing in a custom ShapeSheet formula </LI>
+<LI>In the “Edit Data Graphics” dialog, wherever you have the opportunity to add a custom ShapeSheet formula. </LI></UL>
+<P>The ShapeShee Formula AutoComplete feature can be toggled off through one of these entry points: </P>
+<UL>
+<LI>Toggling the relevant option in the “Visio Options”&gt;“Advanced” dialog. </LI>
+<LI>Toggling the value of the Software\Policies\Microsoft\Office\14.0\Visio\Application\EnableFormulaAutoComplete registry key. </LI>
+<LI>Toggling the value of Application.Settings.EnableFormulaAutoComplete API property. </LI></UL>
+<H4>ShapeSheet Contextual Tab</H4>
+<P>Apart from ShapeSheet Formula AutoComplete, the ShapeSheet has gotten a facelift thanks to the Fluent UI – all ShapeSheet related commands are now in one place. Take a look at the ShapeSheet contextual tab below. </P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_12.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_12.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_12.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 631px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 88px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_5.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_5.png" width=782 height=154 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_5.png"></A> </P>
+<P>In more detail: </P>
+<P>
+<TABLE style="WIDTH: 634px; HEIGHT: 717px" border=1 cellSpacing=0 cellPadding=0 width=634>
+<TBODY>
+<TR>
+<TD vAlign=top width=76>
+<P>Chunk</P></TD>
+<TD vAlign=top width=45>
+<P>Button</P></TD>
+<TD vAlign=top width=609>
+<P>Functionality</P></TD></TR>
+<TR height=20>
+<TD vAlign=top width=76>
+<P>View</P></TD>
+<TD vAlign=top width=45>
+<P>Formulas</P></TD>
+<TD vAlign=top width=609>
+<P>Toggle the “formula” view of the ShapeSheet – all cell formulas are shown. </P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Values</P></TD>
+<TD vAlign=top width=609>
+<P>Toggle the “value” view of the ShapeSheet – all cell results are shown. </P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Sections</P></TD>
+<TD vAlign=top width=609>
+<P>Surfaces the “View Sections” dialog which lets you show or hide ShapeSheet sections.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Style Explorer</P></TD>
+<TD vAlign=top width=609>
+<P>Surfaces the “Style Explorer” pane that lets you view and edit styles in the current drawing.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>
+<P>Section</P></TD>
+<TD vAlign=top width=45>
+<P>Insert</P></TD>
+<TD vAlign=top width=609>
+<P>Adds optional sections of your choice to the currently selected ShapeSheet.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Delete</P></TD>
+<TD vAlign=top width=609>
+<P>Deletes the optional section you have currently selected. </P></TD></TR>
+<TR>
+<TD vAlign=top width=76>
+<P>Rows</P></TD>
+<TD vAlign=top width=45>
+<P>Insert</P></TD>
+<TD vAlign=top width=609>
+<P>Adds a row to the optional section you have currently selected. </P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Delete</P></TD>
+<TD vAlign=top width=609>
+<P>Deletes a row from the optional section you have currently selected.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>
+<P>Editing</P></TD>
+<TD vAlign=top width=45>
+<P>Edit Formula</P></TD>
+<TD vAlign=top width=609>
+<P>Surfaces the “Edit Formula Dialog”, seen below, which gives you more room to enter long equations as well as the possibility of adding carriage returns to your formulas to improve legibility. As you can see below, ShapeSheet Formula AutoComplete is still active in this dialog. </P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_14.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_14.png" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_14.png"><img style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 490px; DISPLAY: inline; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 173px; BORDER-LEFT-WIDTH: 0px" title=image border=0 alt=image src="image_thumb_6.png" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_6.png" width=560 height=202 mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ShapeSheetFormulaAutoCompleteOtherImprov_9EB9/image_thumb_6.png"></A> </P>
+<P>Note that you can also open this dialog by using the “ctrl+e” key combination.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Shape Data</P></TD>
+<TD vAlign=top width=609>
+<P>Adds a ShapeData row to the currently selected ShapeSheet.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Hyperlink</P></TD>
+<TD vAlign=top width=609>
+<P>Adds a Hyperlink row to the currently selected ShapeSheet.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Shape Action</P></TD>
+<TD vAlign=top width=609>
+<P>Adds an Action Row to the currently selected “Actions” section.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>
+<P>Formula Tracking</P></TD>
+<TD vAlign=top width=45>
+<P>Show windows</P></TD>
+<TD vAlign=top width=609>
+<P>Toggles the visibility of the “Formula Tracing” window.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Trace Precedents</P></TD>
+<TD vAlign=top width=609>
+<P>List in the “formula tracing” window all the cells the currently selected cell depends on.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Trace Dependents</P></TD>
+<TD vAlign=top width=609>
+<P>List in the “formula tracing” window all the cells that depend on the the currently selected cell.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Back</P></TD>
+<TD vAlign=top width=609>
+<P>Jumps to the previous cell in the formula tracing history.</P></TD></TR>
+<TR>
+<TD vAlign=top width=76>&nbsp;</TD>
+<TD vAlign=top width=45>
+<P>Forth</P></TD>
+<TD vAlign=top width=609>
+<P>Jumps to the next cell in the formula tracing history.</P></TD></TR></TBODY></TABLE></P>
+<P>Using the Fluent UI, Visio can now enable and disable interactively the ShapeSheet operations that you can take against a particular cell while you're editing it; this removes some of the right-click menu hunting you may have done in the past.</P>
+<H4>Also…</H4>
+<P>The final change we’ve made to the ShapeSheet experience in Visio 2010, is to enable shape designers to open one ShapeSheet window per shape instead of re-using the same window for all shapes, the latter behavior being the default in previous releases of Visio.</P>
+<H4>Try it out!</H4>
 <P>Download <A href="http://www.microsoft.com/downloads/details.aspx?FamilyID=c2163171-4172-4d0a-9f14-2e6da16c027f&amp;displaylang=en" mce_href="http://www.microsoft.com/downloads/details.aspx?FamilyID=c2163171-4172-4d0a-9f14-2e6da16c027f&amp;displaylang=en">Visio 2010 Beta</A> and start building shapes with the 2010 ShapeSheet -- we're interested in hearing what you think of Visio's new and improved ShapeSheet experience. You can send us your feedback by either commenting on this blog post or sending us information via <A href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx" mce_href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx">Send a Smile</A>.</P></p>
 	</div><!-- .entry-content -->
 <hr>

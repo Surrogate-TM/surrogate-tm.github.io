@@ -86,282 +86,282 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>Diagram Validation is a new Visio 2010 feature that provides a way for users to check their diagrams for common errors and for companies to ensure that employees are following certain diagramming standards. The <A href="http://blogs.msdn.com/visio/archive/2009/09/08/diagram-validation-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/08/diagram-validation-in-visio-2010.aspx">basics of diagram validation</A> and <A href="http://blogs.msdn.com/visio/archive/2009/09/10/creating-custom-validation-rules-for-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/10/creating-custom-validation-rules-for-visio-2010.aspx">creating custom validation rules</A> have been previously discussed on this blog. In this post, we focus on the details of using the validation API to create validation rules, trigger validation, and manage validation issues.</P><br />
-<P>Visio provides an extensive Diagram Validation API that allows companies to develop custom validation rules based on their own needs. For example, you can build rules to check that a network diagram includes mandatory components, or that a process diagram complies with company policies. The ability to verify the correctness of a diagram and raise issues to end-users is also crucial for solutions that need a certain diagram structure to work. For example, Visio uses validation for Microsoft SharePoint Workflow diagrams to ensure that SharePoint workflows are structured correctly before exporting them. As a developer, you can leverage Diagram Validation to support diagram verification for the diagram types and the issues that are important to you.</P><br />
-<H2>Validation API overview</H2><br />
-<P>The key objects, methods and properties for validation are shown below.</P><br />
-<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_2.jpg" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_2.jpg" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_2.jpg"><img style="BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: inline; BORDER-TOP: 0px; BORDER-RIGHT: 0px" title="Validation API" border=0 alt="Validation API" src="ValidationAPI_thumb.jpg" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_thumb.jpg" width=650 height=301></A> </P><br />
-<P>The validation API is based on three main concepts: rule sets, rules and issues. A <I>validation rule</I>, or simply a<I> rule</I>, represents one type of error that can occur in your diagram. Each rule has some underlying business logic which determines when the rule has been broken. An <I>issue</I> is one case in your diagram where the validation rule has been broken. Depending on your diagram, there may be multiple issues associated with the same rule. For example, if the rule requires that all shapes be labeled, then validation will display an issue for each shape without a label. <I>Rule sets</I> are logical grouping of rules, such as the BPMN and flowchart rule sets.</P><br />
-<H2>Key validation objects and properties</H2><br />
-<P>Rules sets, rules and issues each have corresponding API objects, namely <B>ValidationRuleSet</B>, <B>ValidationRule</B> and <B>ValidationIssue</B>. Below we explain the key properties for each of these objects.</P><br />
-<H3>ValidationRuleSet</H3><br />
-<P>Every rule set has a unique <B>NameU</B> property representing the universal name of the rule set. You should also specify a <B>Description</B> for each rule set. Other properties are set by default, and only need to be modified if a different behavior is desired. The key properties of the <B>ValidationRuleSet</B> object are shown below.</P><br />
-<P><br />
-<TABLE border=1 cellSpacing=0 cellPadding=4 width="85%"><br />
-<TBODY><br />
-<TR bgColor=#e0e0e0><br />
-<TD vAlign=top width="15%"><B>Property</B> </TD><br />
-<TD vAlign=top width="85%"><B>Description</B> </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Description</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the description of the rule set. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Enabled</B> </TD><br />
-<TD vAlign=top width="85%">Determines whether the rule set is active or inactive. Only rules belonging to active rule sets are checked when validation is triggered. By default, rule sets are enabled. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Name</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the name of the rule set that appears in the UI. By default, it is the same as <STRONG>NameU</STRONG>.</TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>NameU</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the universal name of the rule set. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Rules</B> </TD><br />
-<TD vAlign=top width="85%">Itemizes the rules in the rule set. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>RuleSetFlags</B> </TD><br />
-<TD vAlign=top width="85%">Determines whether the rule set appears in the UI. By default, rule sets are visible through the UI. </TD></TR></TBODY></TABLE></P><br />
-<H3>ValidationRule</H3><br />
-<P>Every rule has a unique <B>NameU</B> property representing the universal name of the rule. You should also specify a <B>Category</B> and <B>Description</B> for each rule set, as these properties are used in the UI. The <B>Category</B> should inform the user about the type of issue, and may be used to identify the rule set that triggered the issue. The <B>Description</B> should be explicit enough to explain the issue so that a user can address it. </P><br />
-<P>The blog post on <A href="http://blogs.msdn.com/visio/archive/2009/09/10/creating-custom-validation-rules-for-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/10/creating-custom-validation-rules-for-visio-2010.aspx">creating custom validation rules</A> describes two approaches for creating custom validation rules: you can store validation logic in a Visio template, or you can express validation logic in code and deploy this logic as part of a Visio solution. If you decide to store validation logic in a Visio template, the <B>FilterExpression</B>, <B>TestExpression</B> and <B>TargetType</B> are the fundamental properties for detecting and reporting issues during validation. If you decide to write validation logic in code, these fields should be left blank. The <B>FilterExpression</B>, <B>TargetType</B> and <B>TestExpression</B> properties are described in more detail in the section titled <A href="http://blogs.msdn.com/controlpanel/blogs/posteditor.aspx?SelectedNavItem=Posts&amp;sectionid=6406&amp;postid=9945477#DefiningValidationRule" mce_href="http://blogs.msdn.com/controlpanel/blogs/posteditor.aspx?SelectedNavItem=Posts&amp;sectionid=6406&amp;postid=9945477#DefiningValidationRule">Defining ValidationRule.FilterExpression and ValidationRule.TestExpression</A>.</P><br />
-<P>The key properties of the <B>ValidationRule</B> object are shown below.</P><br />
-<P><br />
-<TABLE border=1 cellSpacing=0 cellPadding=4 width="85%"><br />
-<TBODY><br />
-<TR bgColor=#e0e0e0><br />
-<TD vAlign=top width="15%"><B>Property</B> </TD><br />
-<TD vAlign=top width="85%"><B>Description</B> </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Category</B> </TD><br />
-<TD vAlign=top width="85%">Represents the text displayed in the <B>Category</B> column of the <B>Issues</B> window. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Description</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the description of the rule that appears in the <B>Issues</B> window. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>FilterExpression</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the logical expression that determines whether the validation rule should be applied to a target object. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Ignored</B> </TD><br />
-<TD vAlign=top width="85%">Determines whether the validation rule is currently ignored. By default, rules are not ignored.</TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>NameU</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the universal name of the rule. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>RuleSet</B> </TD><br />
-<TD vAlign=top width="85%">Returns the rule set that contains the rule. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>TargetType</B> </TD><br />
-<TD vAlign=top width="85%">Determines the target type of the rule. A rule can target documents, pages, or shapes. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>TestExpression</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the logical expression that determines whether the target object satisfies the rule. </TD></TR></TBODY></TABLE></P><br />
-<H3>ValidationIssue</H3><br />
-<P>Every issue has an associated <B>Rule</B> which specifies the description and category that is displayed in <B>Issues</B> window. When a user clicks on an issue in the <B>Issues</B> window, Visio will navigate to the page of the issue (if the issue targets a page or shape) and will select the target shape (if the issue targets a shape).The <STRONG>TargetPage, TargetPageID </STRONG>and <B>TargetShape</B> properties are used determine the page to display and the shape to select.&nbsp;&nbsp;&nbsp; The key properties of the <B>ValidationIssue</B> object are shown below. </P><br />
-<P><br />
-<TABLE border=1 cellSpacing=0 cellPadding=4 width="85%"><br />
-<TBODY><br />
-<TR bgColor=#e0e0e0><br />
-<TD vAlign=top width="15%"><B>Property</B> </TD><br />
-<TD vAlign=top width="85%"><B>Description</B> </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Ignored</B> </TD><br />
-<TD vAlign=top width="85%">Determines whether the issue is currently ignored. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>Rule</B> </TD><br />
-<TD vAlign=top width="18%">Specifies the rule that generated the issue. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>TargetPage</B> </TD><br />
-<TD vAlign=top width="18%">Specifies the page that is associated with the issue. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>TargetPageID</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the ID of the page that is associated with the validation issue. </TD></TR><br />
-<TR><br />
-<TD vAlign=top width="15%"><B>TargetShape</B> </TD><br />
-<TD vAlign=top width="85%">Specifies the shape that is associated with the validation issue. </TD></TR></TBODY></TABLE></P><br />
-<H2>Validation methods for adding rule sets and rules</H2><br />
-<P>Validation methods can be divided into different groups. We will start by describing the first group of methods, which allows developers to add validation rule sets and rules to a document. Typically, these methods are executed once to populate a template or diagram with validation rules. In fact, the rules can be pre-populated in a template, and then the template can be deployed to end-users without any solution code.</P><br />
-<P>For each of the following API methods, we give a brief description on what the method does, along with an explanation of the method’s arguments. </P><br />
-<H3>ValidationRuleSets.Add(NameU)</H3><br />
-<P>Adds a new, empty <B>ValidationRuleSet</B> object to the <B>ValidationRuleSets</B> collection of the document.</P><br />
-<UL><br />
-<LI><I>NameU</I>: The universal name to assign to the new validation rule set. </LI></UL><br />
-<H3>ValidationRules.Add(NameU)</H3><br />
-<P>Adds a new, empty <B>ValidationRule</B> object to the <B>ValidationRules</B> collection of the document.</P><br />
-<P mce_keep="true">&nbsp;</P><br />
-<H3>Example</H3><br />
-<P>The following VBA code adds a rule set and a rule that targets a shape to the active document.</P><br />
-<P mce_keep="true">&nbsp;</P><br />
-<TABLE cellSpacing=0 cellPadding=0><br />
-<TBODY><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>Set vsoDocument = Visio.Activedocument</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>&nbsp;</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'Add a validation rule set to the document</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>Set vsoValidationRuleSet = vsoDocument.Validation.RuleSets.Add("Connectivity")</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRuleSet.Description = "Verify that shapes are correctly connected in the document."</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRuleSet.Enabled = True</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRuleSet.RuleSetFlags = Visio.VisRuleSetFlags.visRuleSetDefault</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>&nbsp;</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'Add a validation rule to the document</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>Set vsoValidationRule = vsoValidationRuleSet.Rules.Add(“Unglued2DShape”)</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRule.Category = "Shapes"</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRule.Description = "This 2-dimensional shape is not connected to any other shape."</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRule.Ignored = False</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRule.TargetType = Visio.VisRuleTargets.visRuleTargetShape</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>&nbsp;</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'The validation function Is1D() returns a Boolean value indicating whether the shape is</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'1D (True) or 2D (False)</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRule.FilterExpression = "NOT(Is1D())"</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>&nbsp;</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'The validation function GLUEDSHAPES returns a set of shapes glued to the shape.</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'It takes as input one parameter indicating the direction of the glue.</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'The direction values are equivalent to members of VisGluedShapesFlags:</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'0 = visGluedShapesAll1D and 3 = visGluedShapesAll2D</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'The validation function AGGCOUNT takes a set of shapes as its input, and returns</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'the number of shapes in the set.</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationRule.TestExpression = "AGGCOUNT(GLUEDSHAPES(0)) + AGGCOUNT(GLUEDSHAPES(3)) &gt; 0"</TD></TR></TBODY></TABLE><br />
-<H2>Validation methods for managing issues</H2><br />
-<P>When you set the <B>TargetType</B>, <B>FilterExpression</B> and <B>TestExpression</B> of a rule, Visio will manage issues associated with the rule for you. For very complex validation rules, it will be easier to omit these properties and write the validation logic in solution code. For this approach, the solution should listen for the appropriate <B>RuleSetValidated</B> event and use its own logic to determine the list of issues to add to the document.</P><br />
-<P>We give a brief description of the two key methods that you will use to manage issues, along with an explanation of the method’s arguments.</P><br />
-<H3>ValidationRule.AddIssue([TargetPage],[TargetShape])</H3><br />
-<P>Creates a new validation issue that is based on the validation rule, and adds it to the document.</P><br />
-<UL><br />
-<LI><I>TargetPage(Optional):</I> The page that either has the issue or has the shape with the issue. </LI><br />
-<LI><I>TargetShape(Optional):</I> The shape that has the issue. </LI></UL><br />
-<H3>ValidationIssue.Delete()</H3><br />
-<P>Deletes the <B>ValidationIssue</B> object from the document.</P><br />
-<P mce_keep="true">&nbsp;</P><br />
-<H3>Example</H3><br />
-<P>The following VBA code adds an issue to an existing rule. It assumes that vsoValidationRule is a valid <B>Visio.ValidationRule</B> object, vsoShape is a valid <B>Visio.Shape</B> object and vsoPage is a valid <B>Visio.Page</B> object.</P><br />
-<TABLE cellSpacing=0 cellPadding=0><br />
-<TBODY><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'Add a custom issue to the vsoValidationRule validation rule and associate it with </TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'shape vsoShape on page vsoPage</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>Set vsoValidationIssue = vsoValidationRule.AddIssue(vsoPage, vsoShape)</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>vsoValidationIssue.Ignored = False</TD></TR></TBODY></TABLE><br />
-<H2>Using the API to validate a document</H2><br />
-<P>If you have a custom solution that needs a certain diagram structure to function properly, you can use the <B>Validation.Validate</B> method to validate the diagram and raise issues to end-users. This method validates a particular validation rule set (if specified) and updates the <B>Validation. LastValidatedDate</B> property. It will also trigger the <B>RuleSetValidated</B> event. It is recommended that you omit the rule set parameter, and validate against all active rule sets. This gives end-users a clear and consistent view of the issues currently in their document.</P><br />
-<H3>Validation.Validate([RuleSet As ValidationRuleSet], [Flags As VisValidationFlags]) </H3><br />
-<P>Validates the specified validation rule set.</P><br />
-<UL><br />
-<LI><I>RuleSet (Optional):</I> The rule set to validate across the entire document. </LI><br />
-<LI><I>Flags (Optional)</I>: Whether to open the Issues window after validation. </LI></UL><br />
-<P mce_keep="true">&nbsp;</P><br />
-<H3>Example</H3><br />
-<P>The following VBA code validates all rule sets in the document and launches the <B>Issues</B> window.</P><br />
-<TABLE cellSpacing=0 cellPadding=0><br />
-<TBODY><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>'Validate the document</TD></TR><br />
-<TR><br />
-<TD width=20>&nbsp;</TD><br />
-<TD bgColor=#f0f0f0>Call Visio.Activedocument.Validation.Validate(, Visio.VisValidationFlags.visValidationDefault)</TD></TR></TBODY></TABLE><br />
-<H2><A title=DefiningValidationRule name=DefiningValidationRule></A>Defining ValidationRule.FilterExpression and ValidationRule.TestExpression</H2><br />
-<P>When you validate a diagram by calling the <B>Validation.Validate</B> method or by clicking <B>Check Diagram</B> on the <B>Process</B> tab, Visio will automatically use any validation logic stored in the document to detect errors. This validation logic is expressed in the <B>ValidationRule.TargetType</B>, <B>ValidationRule.FilterExpression</B> and <B>ValidationRule.TestExpression </B>properties. The FilterExpression and TestExpression should be written as Boolean expressions that can be evaluated on every object of type TargetType. During validation of a rule, for every object of type TargetType, Visio uses the FilterExpression to determine whether the object must satisfy the validation rule. If the filter expression evaluates to True, Visio uses the TestExpression to determine whether to generate an issue for the object. If the filter expression evaluates to False, Visio does not apply the validation rule to the object. </P><br />
-<P>The syntax for the FilterExpression and TestExpression properties are the same as that of a ShapeSheet expression (you can get more details <A href="http://blogs.msdn.com/visio/archive/2006/06/16/624406.aspx" mce_href="http://blogs.msdn.com/visio/archive/2006/06/16/624406.aspx">here</A> and <A href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx" mce_href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx">here</A> if you're unfamiliar with the ShapeSheet). For example, since NOT(IS1D()) is a valid Boolean expression for the ShapeSheet of a shape, "NOT(Is1D())" is a valid FilterExpression or TestExpression for a validation rule with TargetType = <B>Visio.VisRuleTargets.visRuleTargetShape</B>. In addition to the standard ShapeSheet functions, the following validation functions can be used in a FilterExpression or TestExpression.</P><br />
-<TABLE border=1 cellSpacing=0 cellPadding=4><br />
-<TBODY><br />
-<TR bgColor=#e0e0e0><br />
-<TD vAlign=top><B>Function</B> </TD><br />
-<TD vAlign=top><B>Description</B> </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>Role()</B> </TD><br />
-<TD vAlign=top>Returns an integer indicating the shape role: {Element = 0, Connector = 1, Container = 2, Callout = 4}. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>OnLayer(<I>LayerName</I>)</B> </TD><br />
-<TD vAlign=top>Returns a Boolean indicating whether the shape is a member of the specified layer. Returns a Boolean indicating whether layer exists on page if called on a Page. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>ConnectedShapes(<I>Direction</I>)</B> </TD><br />
-<TD vAlign=top>Returns the set of shapes, matching the Direction criteria, connected to the shape. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>GluedShapes(Direction)</B> </TD><br />
-<TD vAlign=top>Returns the set of shapes, matching the Direction criteria, glued to the shape. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>ContainerMembers()</B> </TD><br />
-<TD vAlign=top>Returns the set of shapes that are members of the <A href="http://blogs.msdn.com/visio/archive/2009/08/25/organizing-diagrams-with-containers.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/08/25/organizing-diagrams-with-containers.aspx">container</A> / list shape. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>ListMembers()</B> </TD><br />
-<TD vAlign=top>Returns the set of shapes that are members of the list shape. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>Callouts()</B> </TD><br />
-<TD vAlign=top>Returns the set of shapes that are <A href="http://blogs.msdn.com/visio/archive/2009/10/06/annotating-diagrams-with-callouts-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/10/06/annotating-diagrams-with-callouts-in-visio-2010.aspx">callouts</A> on the shape. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>ParentContainers()</B> </TD><br />
-<TD vAlign=top>Returns the set of containers that the shape belongs to. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>ShapesOnPage()</B> </TD><br />
-<TD vAlign=top>Returns the set of top-level shapes on page. If no page specifier precedes the function, the shape’s containing page is assumed. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>AggCount(<I>Set</I>)</B> </TD><br />
-<TD vAlign=top>Counts the number of shapes in a set. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>FilterSet(<I>Set,FilterExpression</I>)</B> </TD><br />
-<TD vAlign=top>Returns the subset of shapes in a set that match an expression. </TD></TR><br />
-<TR><br />
-<TD vAlign=top><B>OnBoundaryOf()</B> </TD><br />
-<TD vAlign=top>Returns the set of containers such that the shape is on the boundary of these containers. </TD></TR></TBODY></TABLE><br />
-<P>The validation expression functions <STRONG>ConnectedShapes</STRONG> and <STRONG>GluedShapes</STRONG> correspond to <A href="http://blogs.msdn.com/visio/archive/2009/09/22/the-visio-2010-connectivity-api.aspx" mce_href="http://blogs.msdn.com/visio/archive/2009/09/22/the-visio-2010-connectivity-api.aspx">connectivity API</A> functions with the same names. Similarly, the possible values of the <I>Direction</I> input parameter for <STRONG>ConnectedShapes</STRONG> and <STRONG>GluedShapes</STRONG> correspond to the <STRONG>VisConnectedShapesFlags</STRONG> and <STRONG>VisGluedShapesFlags</STRONG> enumerations, respectively.</P><br />
-<H2>Feedback welcome!</H2><br />
-<P>We hope that this overview of the validation API provides the necessary details to start writing your own validation rules. We’re interested to hear what developers think of this API functionality, so please use the <A href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx" mce_href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx">Send a Smile feedback tool</A> or leave a comment below.</P></p>
+		<p><P>Diagram Validation is a new Visio 2010 feature that provides a way for users to check their diagrams for common errors and for companies to ensure that employees are following certain diagramming standards. The <A href="../../../../visio//2009/09/08/diagram-validation-in-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/09/08/diagram-validation-in-visio-2010.aspx">basics of diagram validation</A> and <A href="../../../../visio//2009/09/10/creating-custom-validation-rules-for-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/09/10/creating-custom-validation-rules-for-visio-2010.aspx">creating custom validation rules</A> have been previously discussed on this blog. In this post, we focus on the details of using the validation API to create validation rules, trigger validation, and manage validation issues.</P>
+<P>Visio provides an extensive Diagram Validation API that allows companies to develop custom validation rules based on their own needs. For example, you can build rules to check that a network diagram includes mandatory components, or that a process diagram complies with company policies. The ability to verify the correctness of a diagram and raise issues to end-users is also crucial for solutions that need a certain diagram structure to work. For example, Visio uses validation for Microsoft SharePoint Workflow diagrams to ensure that SharePoint workflows are structured correctly before exporting them. As a developer, you can leverage Diagram Validation to support diagram verification for the diagram types and the issues that are important to you.</P>
+<H2>Validation API overview</H2>
+<P>The key objects, methods and properties for validation are shown below.</P>
+<P><A href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_2.jpg" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_2.jpg" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_2.jpg"><img style="BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: inline; BORDER-TOP: 0px; BORDER-RIGHT: 0px" title="Validation API" border=0 alt="Validation API" src="ValidationAPI_thumb.jpg" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/TheDiagramValidationAPI_E77C/Validation%20API_thumb.jpg" width=650 height=301></A> </P>
+<P>The validation API is based on three main concepts: rule sets, rules and issues. A <I>validation rule</I>, or simply a<I> rule</I>, represents one type of error that can occur in your diagram. Each rule has some underlying business logic which determines when the rule has been broken. An <I>issue</I> is one case in your diagram where the validation rule has been broken. Depending on your diagram, there may be multiple issues associated with the same rule. For example, if the rule requires that all shapes be labeled, then validation will display an issue for each shape without a label. <I>Rule sets</I> are logical grouping of rules, such as the BPMN and flowchart rule sets.</P>
+<H2>Key validation objects and properties</H2>
+<P>Rules sets, rules and issues each have corresponding API objects, namely <B>ValidationRuleSet</B>, <B>ValidationRule</B> and <B>ValidationIssue</B>. Below we explain the key properties for each of these objects.</P>
+<H3>ValidationRuleSet</H3>
+<P>Every rule set has a unique <B>NameU</B> property representing the universal name of the rule set. You should also specify a <B>Description</B> for each rule set. Other properties are set by default, and only need to be modified if a different behavior is desired. The key properties of the <B>ValidationRuleSet</B> object are shown below.</P>
+<P>
+<TABLE border=1 cellSpacing=0 cellPadding=4 width="85%">
+<TBODY>
+<TR bgColor=#e0e0e0>
+<TD vAlign=top width="15%"><B>Property</B> </TD>
+<TD vAlign=top width="85%"><B>Description</B> </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Description</B> </TD>
+<TD vAlign=top width="85%">Specifies the description of the rule set. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Enabled</B> </TD>
+<TD vAlign=top width="85%">Determines whether the rule set is active or inactive. Only rules belonging to active rule sets are checked when validation is triggered. By default, rule sets are enabled. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Name</B> </TD>
+<TD vAlign=top width="85%">Specifies the name of the rule set that appears in the UI. By default, it is the same as <STRONG>NameU</STRONG>.</TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>NameU</B> </TD>
+<TD vAlign=top width="85%">Specifies the universal name of the rule set. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Rules</B> </TD>
+<TD vAlign=top width="85%">Itemizes the rules in the rule set. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>RuleSetFlags</B> </TD>
+<TD vAlign=top width="85%">Determines whether the rule set appears in the UI. By default, rule sets are visible through the UI. </TD></TR></TBODY></TABLE></P>
+<H3>ValidationRule</H3>
+<P>Every rule has a unique <B>NameU</B> property representing the universal name of the rule. You should also specify a <B>Category</B> and <B>Description</B> for each rule set, as these properties are used in the UI. The <B>Category</B> should inform the user about the type of issue, and may be used to identify the rule set that triggered the issue. The <B>Description</B> should be explicit enough to explain the issue so that a user can address it. </P>
+<P>The blog post on <A href="../../../../visio//2009/09/10/creating-custom-validation-rules-for-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/09/10/creating-custom-validation-rules-for-visio-2010.aspx">creating custom validation rules</A> describes two approaches for creating custom validation rules: you can store validation logic in a Visio template, or you can express validation logic in code and deploy this logic as part of a Visio solution. If you decide to store validation logic in a Visio template, the <B>FilterExpression</B>, <B>TestExpression</B> and <B>TargetType</B> are the fundamental properties for detecting and reporting issues during validation. If you decide to write validation logic in code, these fields should be left blank. The <B>FilterExpression</B>, <B>TargetType</B> and <B>TestExpression</B> properties are described in more detail in the section titled <A href="http://blogs.msdn.com/controlpanel/blogs/posteditor.aspx?SelectedNavItem=Posts&amp;sectionid=6406&amp;postid=9945477#DefiningValidationRule" mce_href="http://blogs.msdn.com/controlpanel/blogs/posteditor.aspx?SelectedNavItem=Posts&amp;sectionid=6406&amp;postid=9945477#DefiningValidationRule">Defining ValidationRule.FilterExpression and ValidationRule.TestExpression</A>.</P>
+<P>The key properties of the <B>ValidationRule</B> object are shown below.</P>
+<P>
+<TABLE border=1 cellSpacing=0 cellPadding=4 width="85%">
+<TBODY>
+<TR bgColor=#e0e0e0>
+<TD vAlign=top width="15%"><B>Property</B> </TD>
+<TD vAlign=top width="85%"><B>Description</B> </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Category</B> </TD>
+<TD vAlign=top width="85%">Represents the text displayed in the <B>Category</B> column of the <B>Issues</B> window. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Description</B> </TD>
+<TD vAlign=top width="85%">Specifies the description of the rule that appears in the <B>Issues</B> window. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>FilterExpression</B> </TD>
+<TD vAlign=top width="85%">Specifies the logical expression that determines whether the validation rule should be applied to a target object. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Ignored</B> </TD>
+<TD vAlign=top width="85%">Determines whether the validation rule is currently ignored. By default, rules are not ignored.</TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>NameU</B> </TD>
+<TD vAlign=top width="85%">Specifies the universal name of the rule. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>RuleSet</B> </TD>
+<TD vAlign=top width="85%">Returns the rule set that contains the rule. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>TargetType</B> </TD>
+<TD vAlign=top width="85%">Determines the target type of the rule. A rule can target documents, pages, or shapes. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>TestExpression</B> </TD>
+<TD vAlign=top width="85%">Specifies the logical expression that determines whether the target object satisfies the rule. </TD></TR></TBODY></TABLE></P>
+<H3>ValidationIssue</H3>
+<P>Every issue has an associated <B>Rule</B> which specifies the description and category that is displayed in <B>Issues</B> window. When a user clicks on an issue in the <B>Issues</B> window, Visio will navigate to the page of the issue (if the issue targets a page or shape) and will select the target shape (if the issue targets a shape).The <STRONG>TargetPage, TargetPageID </STRONG>and <B>TargetShape</B> properties are used determine the page to display and the shape to select.&nbsp;&nbsp;&nbsp; The key properties of the <B>ValidationIssue</B> object are shown below. </P>
+<P>
+<TABLE border=1 cellSpacing=0 cellPadding=4 width="85%">
+<TBODY>
+<TR bgColor=#e0e0e0>
+<TD vAlign=top width="15%"><B>Property</B> </TD>
+<TD vAlign=top width="85%"><B>Description</B> </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Ignored</B> </TD>
+<TD vAlign=top width="85%">Determines whether the issue is currently ignored. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>Rule</B> </TD>
+<TD vAlign=top width="18%">Specifies the rule that generated the issue. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>TargetPage</B> </TD>
+<TD vAlign=top width="18%">Specifies the page that is associated with the issue. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>TargetPageID</B> </TD>
+<TD vAlign=top width="85%">Specifies the ID of the page that is associated with the validation issue. </TD></TR>
+<TR>
+<TD vAlign=top width="15%"><B>TargetShape</B> </TD>
+<TD vAlign=top width="85%">Specifies the shape that is associated with the validation issue. </TD></TR></TBODY></TABLE></P>
+<H2>Validation methods for adding rule sets and rules</H2>
+<P>Validation methods can be divided into different groups. We will start by describing the first group of methods, which allows developers to add validation rule sets and rules to a document. Typically, these methods are executed once to populate a template or diagram with validation rules. In fact, the rules can be pre-populated in a template, and then the template can be deployed to end-users without any solution code.</P>
+<P>For each of the following API methods, we give a brief description on what the method does, along with an explanation of the method’s arguments. </P>
+<H3>ValidationRuleSets.Add(NameU)</H3>
+<P>Adds a new, empty <B>ValidationRuleSet</B> object to the <B>ValidationRuleSets</B> collection of the document.</P>
+<UL>
+<LI><I>NameU</I>: The universal name to assign to the new validation rule set. </LI></UL>
+<H3>ValidationRules.Add(NameU)</H3>
+<P>Adds a new, empty <B>ValidationRule</B> object to the <B>ValidationRules</B> collection of the document.</P>
+<P mce_keep="true">&nbsp;</P>
+<H3>Example</H3>
+<P>The following VBA code adds a rule set and a rule that targets a shape to the active document.</P>
+<P mce_keep="true">&nbsp;</P>
+<TABLE cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>Set vsoDocument = Visio.Activedocument</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>&nbsp;</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'Add a validation rule set to the document</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>Set vsoValidationRuleSet = vsoDocument.Validation.RuleSets.Add("Connectivity")</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRuleSet.Description = "Verify that shapes are correctly connected in the document."</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRuleSet.Enabled = True</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRuleSet.RuleSetFlags = Visio.VisRuleSetFlags.visRuleSetDefault</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>&nbsp;</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'Add a validation rule to the document</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>Set vsoValidationRule = vsoValidationRuleSet.Rules.Add(“Unglued2DShape”)</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRule.Category = "Shapes"</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRule.Description = "This 2-dimensional shape is not connected to any other shape."</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRule.Ignored = False</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRule.TargetType = Visio.VisRuleTargets.visRuleTargetShape</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>&nbsp;</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'The validation function Is1D() returns a Boolean value indicating whether the shape is</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'1D (True) or 2D (False)</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRule.FilterExpression = "NOT(Is1D())"</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>&nbsp;</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'The validation function GLUEDSHAPES returns a set of shapes glued to the shape.</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'It takes as input one parameter indicating the direction of the glue.</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'The direction values are equivalent to members of VisGluedShapesFlags:</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'0 = visGluedShapesAll1D and 3 = visGluedShapesAll2D</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'The validation function AGGCOUNT takes a set of shapes as its input, and returns</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'the number of shapes in the set.</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationRule.TestExpression = "AGGCOUNT(GLUEDSHAPES(0)) + AGGCOUNT(GLUEDSHAPES(3)) &gt; 0"</TD></TR></TBODY></TABLE>
+<H2>Validation methods for managing issues</H2>
+<P>When you set the <B>TargetType</B>, <B>FilterExpression</B> and <B>TestExpression</B> of a rule, Visio will manage issues associated with the rule for you. For very complex validation rules, it will be easier to omit these properties and write the validation logic in solution code. For this approach, the solution should listen for the appropriate <B>RuleSetValidated</B> event and use its own logic to determine the list of issues to add to the document.</P>
+<P>We give a brief description of the two key methods that you will use to manage issues, along with an explanation of the method’s arguments.</P>
+<H3>ValidationRule.AddIssue([TargetPage],[TargetShape])</H3>
+<P>Creates a new validation issue that is based on the validation rule, and adds it to the document.</P>
+<UL>
+<LI><I>TargetPage(Optional):</I> The page that either has the issue or has the shape with the issue. </LI>
+<LI><I>TargetShape(Optional):</I> The shape that has the issue. </LI></UL>
+<H3>ValidationIssue.Delete()</H3>
+<P>Deletes the <B>ValidationIssue</B> object from the document.</P>
+<P mce_keep="true">&nbsp;</P>
+<H3>Example</H3>
+<P>The following VBA code adds an issue to an existing rule. It assumes that vsoValidationRule is a valid <B>Visio.ValidationRule</B> object, vsoShape is a valid <B>Visio.Shape</B> object and vsoPage is a valid <B>Visio.Page</B> object.</P>
+<TABLE cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'Add a custom issue to the vsoValidationRule validation rule and associate it with </TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'shape vsoShape on page vsoPage</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>Set vsoValidationIssue = vsoValidationRule.AddIssue(vsoPage, vsoShape)</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>vsoValidationIssue.Ignored = False</TD></TR></TBODY></TABLE>
+<H2>Using the API to validate a document</H2>
+<P>If you have a custom solution that needs a certain diagram structure to function properly, you can use the <B>Validation.Validate</B> method to validate the diagram and raise issues to end-users. This method validates a particular validation rule set (if specified) and updates the <B>Validation. LastValidatedDate</B> property. It will also trigger the <B>RuleSetValidated</B> event. It is recommended that you omit the rule set parameter, and validate against all active rule sets. This gives end-users a clear and consistent view of the issues currently in their document.</P>
+<H3>Validation.Validate([RuleSet As ValidationRuleSet], [Flags As VisValidationFlags]) </H3>
+<P>Validates the specified validation rule set.</P>
+<UL>
+<LI><I>RuleSet (Optional):</I> The rule set to validate across the entire document. </LI>
+<LI><I>Flags (Optional)</I>: Whether to open the Issues window after validation. </LI></UL>
+<P mce_keep="true">&nbsp;</P>
+<H3>Example</H3>
+<P>The following VBA code validates all rule sets in the document and launches the <B>Issues</B> window.</P>
+<TABLE cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>'Validate the document</TD></TR>
+<TR>
+<TD width=20>&nbsp;</TD>
+<TD bgColor=#f0f0f0>Call Visio.Activedocument.Validation.Validate(, Visio.VisValidationFlags.visValidationDefault)</TD></TR></TBODY></TABLE>
+<H2><A title=DefiningValidationRule name=DefiningValidationRule></A>Defining ValidationRule.FilterExpression and ValidationRule.TestExpression</H2>
+<P>When you validate a diagram by calling the <B>Validation.Validate</B> method or by clicking <B>Check Diagram</B> on the <B>Process</B> tab, Visio will automatically use any validation logic stored in the document to detect errors. This validation logic is expressed in the <B>ValidationRule.TargetType</B>, <B>ValidationRule.FilterExpression</B> and <B>ValidationRule.TestExpression </B>properties. The FilterExpression and TestExpression should be written as Boolean expressions that can be evaluated on every object of type TargetType. During validation of a rule, for every object of type TargetType, Visio uses the FilterExpression to determine whether the object must satisfy the validation rule. If the filter expression evaluates to True, Visio uses the TestExpression to determine whether to generate an issue for the object. If the filter expression evaluates to False, Visio does not apply the validation rule to the object. </P>
+<P>The syntax for the FilterExpression and TestExpression properties are the same as that of a ShapeSheet expression (you can get more details <A href="../../../../visio/2006/06/16/how-it-all-began.htm" mce_href="http://blogs.msdn.com/visio/archive/2006/06/16/624406.aspx">here</A> and <A href="http://office.microsoft.com/en-us/visio/HP850503091033.htm" mce_href="http://office.microsoft.com/en-us/visio/HP850503091033.aspx">here</A> if you're unfamiliar with the ShapeSheet). For example, since NOT(IS1D()) is a valid Boolean expression for the ShapeSheet of a shape, "NOT(Is1D())" is a valid FilterExpression or TestExpression for a validation rule with TargetType = <B>Visio.VisRuleTargets.visRuleTargetShape</B>. In addition to the standard ShapeSheet functions, the following validation functions can be used in a FilterExpression or TestExpression.</P>
+<TABLE border=1 cellSpacing=0 cellPadding=4>
+<TBODY>
+<TR bgColor=#e0e0e0>
+<TD vAlign=top><B>Function</B> </TD>
+<TD vAlign=top><B>Description</B> </TD></TR>
+<TR>
+<TD vAlign=top><B>Role()</B> </TD>
+<TD vAlign=top>Returns an integer indicating the shape role: {Element = 0, Connector = 1, Container = 2, Callout = 4}. </TD></TR>
+<TR>
+<TD vAlign=top><B>OnLayer(<I>LayerName</I>)</B> </TD>
+<TD vAlign=top>Returns a Boolean indicating whether the shape is a member of the specified layer. Returns a Boolean indicating whether layer exists on page if called on a Page. </TD></TR>
+<TR>
+<TD vAlign=top><B>ConnectedShapes(<I>Direction</I>)</B> </TD>
+<TD vAlign=top>Returns the set of shapes, matching the Direction criteria, connected to the shape. </TD></TR>
+<TR>
+<TD vAlign=top><B>GluedShapes(Direction)</B> </TD>
+<TD vAlign=top>Returns the set of shapes, matching the Direction criteria, glued to the shape. </TD></TR>
+<TR>
+<TD vAlign=top><B>ContainerMembers()</B> </TD>
+<TD vAlign=top>Returns the set of shapes that are members of the <A href="../../../../visio//2009/08/25/organizing-diagrams-with-containers.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/08/25/organizing-diagrams-with-containers.aspx">container</A> / list shape. </TD></TR>
+<TR>
+<TD vAlign=top><B>ListMembers()</B> </TD>
+<TD vAlign=top>Returns the set of shapes that are members of the list shape. </TD></TR>
+<TR>
+<TD vAlign=top><B>Callouts()</B> </TD>
+<TD vAlign=top>Returns the set of shapes that are <A href="../../../../visio//2009/10/06/annotating-diagrams-with-callouts-in-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/10/06/annotating-diagrams-with-callouts-in-visio-2010.aspx">callouts</A> on the shape. </TD></TR>
+<TR>
+<TD vAlign=top><B>ParentContainers()</B> </TD>
+<TD vAlign=top>Returns the set of containers that the shape belongs to. </TD></TR>
+<TR>
+<TD vAlign=top><B>ShapesOnPage()</B> </TD>
+<TD vAlign=top>Returns the set of top-level shapes on page. If no page specifier precedes the function, the shape’s containing page is assumed. </TD></TR>
+<TR>
+<TD vAlign=top><B>AggCount(<I>Set</I>)</B> </TD>
+<TD vAlign=top>Counts the number of shapes in a set. </TD></TR>
+<TR>
+<TD vAlign=top><B>FilterSet(<I>Set,FilterExpression</I>)</B> </TD>
+<TD vAlign=top>Returns the subset of shapes in a set that match an expression. </TD></TR>
+<TR>
+<TD vAlign=top><B>OnBoundaryOf()</B> </TD>
+<TD vAlign=top>Returns the set of containers such that the shape is on the boundary of these containers. </TD></TR></TBODY></TABLE>
+<P>The validation expression functions <STRONG>ConnectedShapes</STRONG> and <STRONG>GluedShapes</STRONG> correspond to <A href="../../../../visio/2009/09/23/the-visio-2010-connectivity-api.htm" mce_href="http://blogs.msdn.com/visio/archive/2009/09/22/the-visio-2010-connectivity-api.htm">connectivity API</A> functions with the same names. Similarly, the possible values of the <I>Direction</I> input parameter for <STRONG>ConnectedShapes</STRONG> and <STRONG>GluedShapes</STRONG> correspond to the <STRONG>VisConnectedShapesFlags</STRONG> and <STRONG>VisGluedShapesFlags</STRONG> enumerations, respectively.</P>
+<H2>Feedback welcome!</H2>
+<P>We hope that this overview of the validation API provides the necessary details to start writing your own validation rules. We’re interested to hear what developers think of this API functionality, so please use the <A href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.htm" mce_href="http://blogs.technet.com/office2010/archive/2009/07/15/tell-us-what-you-think-about-office-2010-technical-preview.aspx">Send a Smile feedback tool</A> or leave a comment below.</P></p>
 	</div><!-- .entry-content -->
 <hr>
 
