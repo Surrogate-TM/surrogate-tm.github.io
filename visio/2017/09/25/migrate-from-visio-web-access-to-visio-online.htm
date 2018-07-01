@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-<title>Migrate from Visio Web Access to Visio Online &#8211; Visio Insights</title>
+<title>Migrate from Visio Web Access to Visio Online &#8211; Archive of Visio Insights blog (2006-2018)</title>
 <link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/visio/2017/09/25/migrate-from-visio-web-access-to-visio-online/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/visio/2017/09/25/migrate-from-visio-web-access-to-visio-online/' />
 <!-- og:title -->
 <meta property="og:title" content="Migrate from Visio Web Access to Visio Online" />
 <!-- og:description -->
@@ -53,10 +53,9 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-desktop">
-						Visio Insights					</a>
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-mobile">
-						Visio Insights					</a>
+					
+						Archive of Visio Insights blog (2006-2018)
+					
 				</h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description">The official blog of the Microsoft Visio product team</p>
@@ -93,7 +92,6 @@
 <h2 style="color: darkblue">Decide on a migration path</h2>
 <p>This flowchart helps you plan how to migrate and choose which sections are most relevant to your particular situation.<br />
 <a href="https://msdnshared.blob.core.windows.net/media/2017/09/Migration-Flow2.png"><img width="480" height="512" class="size-large wp-image-2355 aligncenter" alt="Migration flow from Visio Web Access to Visio Online" src="Migration-Flow2-971x1024.png" /></a></p>
-<p>&nbsp;</p>
 <h2 style="color: darkblue">Migrate VDW files to work with Visio Online</h2>
 <p>Visio Online supports VSD, VSDX and VSDM file extensions for viewing Visio files in SharePoint Online. For your VDW files to continue to work, open them in Visio Desktop and save them as VSD or VSDX files to view them with Visio Online. If you want to edit VDW files on the web, we recommend you save them as VSDX.</p>
 <h2 style="color: darkblue">Embed Visio drawing in a modern SharePoint page</h2>
@@ -109,23 +107,10 @@
 3. In the Embed dialog box, copy the Embed code.<br />
 4. On a modern SharePoint page, add the Embed Code Web Part, and then add the embed code to it.</p>
 <p>For more information, see <a href="https://support.office.com/en-us/article/Use-the-Embed-web-part-on-a-modern-page-721f3b2f-437f-45ef-ac4e-df29dba74de8">Use the Embed web part on a modern page</a>.</p>
-<p>&nbsp;</p>
 <h2 style="color: darkblue">Embed a Visio drawing in a classic SharePoint page with key properties</h2>
 <p>This section covers scenarios where you want to embed the Visio drawing and set some key properties by default.</p>
 <p>1. Open the document library where the Visio drawing is stored and click it to open in Visio Online. From there, open the Embed dialog and copy the Embed URL of the drawing.</p>
 <p><a href="https://msdnshared.blob.core.windows.net/media/2017/09/Visio-embed-url.png"><img width="427" height="304" class="alignleft wp-image-3125" alt="" src="Visio-embed-url-1024x730.png" /></a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;<br />
-&nbsp;<br />
-&nbsp;</p>
-<p>&nbsp;<br />
-&nbsp;<br />
-&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <h6><i>If you are using Visio Online in Edit mode, open the Embed dialog by clicking on File &gt; Share &gt; Embed. If you are using Visio Online in View mode, open the Embed dialog by clicking on '...' and then 'Embed'.</i></h6>
 <p>2. Create a classic SharePoint page where you wish to embed the Visio drawing. (Select Pages &gt; New &gt; Web Part Page. Enter a name, choose Site Pages under Document Library, and then click Create.)<br />
 3. Add a script editor web part to it and choose the code snippet from below cases, that suits your need.<br />
@@ -173,7 +158,6 @@ document.write("&lt;div id='iframeHost' /&gt;");
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
 <h4>Page Name</h4>
 <p>Change the URL and page name in the following code sample to embed a drawing and select the page to open by default. This is useful if your drawing has multiple pages and you want to open to a particular page by default.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -241,7 +225,6 @@ document.write("&lt;div id='iframeHost' /&gt;");
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
 <h4>Toolbars</h4>
 <p>Change the URL in the following code sample to embed a drawing and hide various toolbars such as navigation bar, status bar, and so on by default.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -314,7 +297,6 @@ function initEmbeddedFrame()
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
 <h4>Basic Interactivity</h4>
 <p>Change the URL and interactivity parameters in the following code sample to embed a drawing and enable/disable panning, zooming and hyperlinks by default.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -384,7 +366,6 @@ function updateInteractions()
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
 <h4>Periodic data refresh</h4>
 <p>For data connected drawings, enable periodic refresh to keep the drawing up-to-date. Change the URL and periodic refresh frequency in the below code to suit your needs.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -446,7 +427,7 @@ function periodicDataRefresh()
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
+
 <h2 style="color: darkblue">Create interactive mashups with Visio Online similar to those built using Web Part connections in Visio Web Access web part</h2>
 <p>Visio Web Access supported connecting to other web parts through <a href="../../../../visio/2010/02/05/no-code-mashups-with-visio-services-and-web-part-connections.htm" original-url="https://blogs.msdn.microsoft.com/visio/2010/02/05/no-code-mashups-with-visio-services-and-web-part-connections/">web part connections</a>. The following section describes how to migrate some of your interactive mashups to Visio Online through equivalent JavaScript APIs.</p>
 <p><a href="https://msdnshared.blob.core.windows.net/media/2017/09/webpart.png"><img width="512" height="182" class="size-large wp-image-2366 aligncenter" alt="" src="webpart-1024x364.png" /></a></p>
@@ -521,7 +502,7 @@ function SendShapeData(<span style="color: blue">shapeName</span>)
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
+
 <h4>Get Web Drawing URL and Page Name From</h4>
 <p>This web part connection action allowed you to load a web drawing or switch the displayed page. You can use the following code sample to get the same functionality with Visio Online.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -690,7 +671,7 @@ function onSelectionChangedHandler(pageName)
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
+
 <h4>Get Shapes to Highlight From</h4>
 <p>This web part connection action allowed you to highlight a list of shapes in a diagram. You can use the following sample code to get the same functionality with Visio Online.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -760,7 +741,7 @@ function highlightShape(<span style="color: blue">shapeName</span>)
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
+
 <h4>Get Shape to View From</h4>
 <p>This web part connection action allowed you to center the view on a particular shape and change the zoom percentage of the diagram. You can use the following sample code to get the same functionality with Visio Online.</p>
 <div style="border: silver 1px solid;max-height: 200px;overflow: auto;background-color: f4f4f4">
@@ -829,7 +810,7 @@ function bringShapeInViewPort(<span style="color: blue">shapeName</span>)
 &lt;/script&gt;
 </pre>
 </div>
-<p>&nbsp;</p>
+
 <h2 style="color: darkblue">Create rich interactive mashups with Visio Online similar to those built using Visio Services JavaScript mashup API</h2>
 <p>The Visio Services JavaScript Mashup API enabled developers to access and manipulate the Visio web drawing. The new Visio JavaScript APIs fill some gaps that were in Visio Web Access, are more aligned with Office Extensibility, and provide solution-building capabilities on par with existing APIs, and more. For more information, see <a href="https://dev.office.com/blogs/visio-javascript-apis-preview">Benefits of using the Visio JavaScript APIs over Visio Web Access APIs</a>.</p>
 <h4>High level class diagram for new Visio JavaScript APIs</h4>

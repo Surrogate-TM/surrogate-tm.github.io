@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/01/27/introduction-to-the-shapesheet/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/01/27/introduction-to-the-shapesheet/' />
 <!-- og:title -->
 <meta property="og:title" content="Introduction to the ShapeSheet" />
 <!-- og:description -->
@@ -53,9 +53,9 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
-					
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
+
 				</h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description">Visio and Data Visualization.</p>
@@ -64,7 +64,7 @@
 					</div>
 									</nav>
 			</div>
-			
+
 		</div>
 		<div id="site-content" class="site-content row">
 
@@ -85,16 +85,16 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>The ShapeSheet is probably the most overlooked part of Visio. The amount of power that you can get by using the ShapeSheet without any programming is pretty amazing. The basic idea is that behind every shape in Visio there is a spreadsheet that defines the shape in terms of its appearance and many other shape characteristics like data, connection points, and events/actions. There is an <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/devref/HTML/DVS_04_Visio_Formulas_564.asp">introduction to the ShapeSheet</A> in the Developing Visio Solutions book and more comprehensive documentation is <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/viconAboutSSRef_HV01045900.asp">available in Visio help</A>. Another good place for information on this topic is in the microsoft.public.visio.developer.shapesheet newsgroup.</P><br />
-<P>The ShapeSheet is very similar to a normal spreadsheet like Excel. It is made up primarily of cells and formulas. The formulas perform mathematical and other operations and can refer to other cells. In turn, the results of these formulas drive the shape properties.</P><br />
-<P>To get to the ShapeSheet for any shape, select the shape and go to "Window&gt;Show ShapeSheet."&nbsp; The ShapeSheet window looks like this: </P><br />
-<P>&nbsp;&nbsp;&nbsp;<img src="shapesheet.png"></P><br />
-<P>A couple key points about what you see: </P><br />
-<UL><br />
-<LI>One of the key differences between the ShapeSheet and a regular spreadsheet is that the ShapeSheet is more structured -- most cells have specific purposes so that values calculated for that cell drives a particular shape characteristic. For example, the cells in the Shape Transform section contains basic information about the shape width/height, location (PinX and PinY), rotation, etc.<br />
-<LI>Cells are colored blue or black. Black cells inherit their values from the original master (i.e. shape in the stencil) that they were created from, while blue cells have been locally overridden for this particular shape instance. In the above example, the only cells that have been overridden are the PinX and PinY cells. If the master is changed those changes will propagate to all the individual shapes based on that master, unless the changes are to overridden cells.<br />
-<LI>Note that some cells (e.g. width) have units like mm or inches associated with them. These units are meaningful.</LI></UL><br />
-<P>One of the best ways to learn about what is possible with the ShapeSheet is to take a look at some of the shapes that ship with Visio. Some intersting ones include "Flowchart shapes" and "Auto-height box" from the Basic Flowchart Shapes stencil, the Rack Diagram shapes, and the Marketing Charts and Diagrams. Drop these shapes out on the page and then view the ShapeSheet.</P><br />
+		<p><P>The ShapeSheet is probably the most overlooked part of Visio. The amount of power that you can get by using the ShapeSheet without any programming is pretty amazing. The basic idea is that behind every shape in Visio there is a spreadsheet that defines the shape in terms of its appearance and many other shape characteristics like data, connection points, and events/actions. There is an <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/devref/HTML/DVS_04_Visio_Formulas_564.asp">introduction to the ShapeSheet</A> in the Developing Visio Solutions book and more comprehensive documentation is <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/viconAboutSSRef_HV01045900.asp">available in Visio help</A>. Another good place for information on this topic is in the microsoft.public.visio.developer.shapesheet newsgroup.</P>
+<P>The ShapeSheet is very similar to a normal spreadsheet like Excel. It is made up primarily of cells and formulas. The formulas perform mathematical and other operations and can refer to other cells. In turn, the results of these formulas drive the shape properties.</P>
+<P>To get to the ShapeSheet for any shape, select the shape and go to "Window&gt;Show ShapeSheet."&nbsp; The ShapeSheet window looks like this: </P>
+<P>&nbsp;&nbsp;&nbsp;<img src="shapesheet.png"></P>
+<P>A couple key points about what you see: </P>
+<UL>
+<LI>One of the key differences between the ShapeSheet and a regular spreadsheet is that the ShapeSheet is more structured -- most cells have specific purposes so that values calculated for that cell drives a particular shape characteristic. For example, the cells in the Shape Transform section contains basic information about the shape width/height, location (PinX and PinY), rotation, etc.
+<LI>Cells are colored blue or black. Black cells inherit their values from the original master (i.e. shape in the stencil) that they were created from, while blue cells have been locally overridden for this particular shape instance. In the above example, the only cells that have been overridden are the PinX and PinY cells. If the master is changed those changes will propagate to all the individual shapes based on that master, unless the changes are to overridden cells.
+<LI>Note that some cells (e.g. width) have units like mm or inches associated with them. These units are meaningful.</LI></UL>
+<P>One of the best ways to learn about what is possible with the ShapeSheet is to take a look at some of the shapes that ship with Visio. Some intersting ones include "Flowchart shapes" and "Auto-height box" from the Basic Flowchart Shapes stencil, the Rack Diagram shapes, and the Marketing Charts and Diagrams. Drop these shapes out on the page and then view the ShapeSheet.</P>
 <P>For the next post, I'll walk through the process of creating a shape from scratch and using the ShapeSheet to give it some interesting characteristics.</P></p>
 	</div><!-- .entry-content -->
 <hr>
@@ -104,7 +104,7 @@
 </div><!-- #primary -->
 <!-- Before Navigation --></main><!-- #site-main -->
 
-<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a> 
+<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a>
 
 <div id=""secondary"" class=""sidebar col-sm-3"">
 	<div id=""sidebar-widget-area"" class=""sidebar-widget-area"" role=""complementary"">
@@ -113,7 +113,7 @@
 		</div>
 		<aside id="tag_cloud-2" class="widget widget_tag_cloud">
 </aside>
-<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>	
+<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>
 <li><a href='..\..\..\years\2009\index.htm'>All of 2009</a>&nbsp;(1)</li>
 <li><a href='..\..\..\years\2008\index.htm'>All of 2008</a>&nbsp;(2)</li>
 <li><a href='..\..\..\years\2007\index.htm'>All of 2007</a>&nbsp;(31)</li>

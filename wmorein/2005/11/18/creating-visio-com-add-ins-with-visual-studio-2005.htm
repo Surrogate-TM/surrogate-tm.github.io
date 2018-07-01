@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2005/11/18/creating-visio-com-add-ins-with-visual-studio-2005/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2005/11/18/creating-visio-com-add-ins-with-visual-studio-2005/' />
 <!-- og:title -->
 <meta property="og:title" content="Creating Visio COM Add-ins with Visual Studio 2005" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,25 +85,25 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P align=left>The Add-in/Add-on wizards that shipped with the Visio 2003 SDK are designed for Visual Studio 2003. They don’t work with Visual Studio 2005. You can still easily create Visio COM add-ins in VS2005 with just a couple extra steps by using the Shared Add-in Wizard:</P><br />
-<OL><br />
-<P align=left><br />
-<LI>Select File&gt;New&gt;Project.<br />
-<P></P><br />
-<LI>For Project types, choose the Extensibility category under "Other Project Types," then choose "Shared Add-in:" <BR><BR>&nbsp;&nbsp;&nbsp;<img src="New.png">&nbsp;<br />
-<P></P><br />
-<LI>Click next on the welcome screen, then choose the language you want to use: <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz1.png">&nbsp;<br />
-<P></P><br />
-<LI>On the next page, uncheck everything except for "Microsoft Visio." <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz2.png">&nbsp;<br />
-<P></P><br />
-<LI>You can give your Add-in a name and description that will show up in Visio: <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz3.png">&nbsp;<br />
-<P></P><br />
-<LI>Check the first box to have the Add-in load when Visio loads. If you check the second option, the user still has the option at install time to make it available to everyone or just themselves. <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz4.png">&nbsp;<br />
-<P></P><br />
-<LI>Click finish on the last page. You’ll end up with two projects – the Add-in itself and an installation project. <BR><BR>&nbsp;&nbsp;&nbsp;<img src="proj.png">&nbsp;<br />
-<P></P><br />
-<LI>Right click on the References section under the Add-in project and select "Add Reference…" Then, click on the COM tab in the dialog and select "Microsoft Visio 11.0 Type Library" from the list. You may want to import the Microsoft.Office.Interop.Visio namespace as well. For more details about developing COM Add-ins for Visio, you might want to check out the <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/Visio2003ManagedCodeTutorial_HV01092950.asp">Managed Code Tutorial</A> in the <A href="http://www.microsoft.com/downloads/details.aspx?familyid=557120bd-b0bb-46e7-936a-b8539898d44d&amp;displaylang=en">Visio 2003 SDK</A>.<br />
-<P></P></LI></OL><br />
+		<p><P align=left>The Add-in/Add-on wizards that shipped with the Visio 2003 SDK are designed for Visual Studio 2003. They don’t work with Visual Studio 2005. You can still easily create Visio COM add-ins in VS2005 with just a couple extra steps by using the Shared Add-in Wizard:</P>
+<OL>
+<P align=left>
+<LI>Select File&gt;New&gt;Project.
+<P></P>
+<LI>For Project types, choose the Extensibility category under "Other Project Types," then choose "Shared Add-in:" <BR>&nbsp;&nbsp;&nbsp;<img src="New.png">&nbsp;
+<P></P>
+<LI>Click next on the welcome screen, then choose the language you want to use: <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz1.png">&nbsp;
+<P></P>
+<LI>On the next page, uncheck everything except for "Microsoft Visio." <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz2.png">&nbsp;
+<P></P>
+<LI>You can give your Add-in a name and description that will show up in Visio: <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz3.png">&nbsp;
+<P></P>
+<LI>Check the first box to have the Add-in load when Visio loads. If you check the second option, the user still has the option at install time to make it available to everyone or just themselves. <BR><BR>&nbsp;&nbsp;&nbsp;<img src="wiz4.png">&nbsp;
+<P></P>
+<LI>Click finish on the last page. You’ll end up with two projects – the Add-in itself and an installation project. <BR><BR>&nbsp;&nbsp;&nbsp;<img src="proj.png">&nbsp;
+<P></P>
+<LI>Right click on the References section under the Add-in project and select "Add Reference…" Then, click on the COM tab in the dialog and select "Microsoft Visio 11.0 Type Library" from the list. You may want to import the Microsoft.Office.Interop.Visio namespace as well. For more details about developing COM Add-ins for Visio, you might want to check out the <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/Visio2003ManagedCodeTutorial_HV01092950.asp">Managed Code Tutorial</A> in the <A href="http://www.microsoft.com/downloads/details.aspx?familyid=557120bd-b0bb-46e7-936a-b8539898d44d&amp;displaylang=en">Visio 2003 SDK</A>.
+<P></P></LI></OL>
 <P align=left>If you want to create a Visio Add-on (DLL or EXE), the best method of doing so right now is to create a project in Visual Studio 2003 and then open it in Visual Studio 2005 – you will be given the chance to upgrade the project.</P></p>
 	</div><!-- .entry-content -->
 <hr>

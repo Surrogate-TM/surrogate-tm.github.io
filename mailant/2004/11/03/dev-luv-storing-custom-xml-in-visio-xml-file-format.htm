@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/mailant/2004/11/03/dev-luv-storing-custom-xml-in-visio-xml-file-format/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/mailant/2004/11/03/dev-luv-storing-custom-xml-in-visio-xml-file-format/' />
 <!-- og:title -->
 <meta property="og:title" content="Dev Luv: Storing Custom XML in Visio XML File Format" />
 <!-- og:description -->
@@ -53,7 +53,7 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-	<a href="https://blogs.msdn.microsoft.com/mailant" class="for-desktop">Archive of Mai-lan's Visio Blog (2004-2005)</a>
+	Archive of Mai-lan's Visio Blog (2004-2005)
 </h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description"></p>
@@ -83,7 +83,7 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 1"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Arial Unicode MS'; mso-bidi-font-family: 'Arial Unicode MS'"><font face="Arial Unicode MS" size="2">The Visio XML file format, as discussed </font><a href="http://weblogs.asp.net/mailant/archive/2004/10/26/248369.aspx"><font face="Arial Unicode MS" size="2">earlier</font></a><font size="2"><font face="Arial Unicode MS">, is a physical file format with all the information that Visio needs to render the diagram with the same fidelity as the binary file format. Let’s consider the case in which a developer wants to use the data stored in shapes in a Visio business process diagram. Each process shape has information about status, owner, due dates, and a notes description. The geometry of the shapes isn’t important to the developer, since the developer just wants to take the shape&nbsp;data and update a database or a server-side component that manages workflow shape information. </font></font></span></p>
+		<p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 1"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Arial Unicode MS'; mso-bidi-font-family: 'Arial Unicode MS'"><font face="Arial Unicode MS" size="2">The Visio XML file format, as discussed </font><a href="../../../../mailant/2004/10/26/dev-luv-visios-xml-file-format.htm" original-url="http://weblogs.asp.net/mailant/archive/2004/10/26/248369.aspx"><font face="Arial Unicode MS" size="2">earlier</font></a><font size="2"><font face="Arial Unicode MS">, is a physical file format with all the information that Visio needs to render the diagram with the same fidelity as the binary file format. Let’s consider the case in which a developer wants to use the data stored in shapes in a Visio business process diagram. Each process shape has information about status, owner, due dates, and a notes description. The geometry of the shapes isn’t important to the developer, since the developer just wants to take the shape&nbsp;data and update a database or a server-side component that manages workflow shape information. </font></font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 1"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Arial Unicode MS'; mso-bidi-font-family: 'Arial Unicode MS'"><font size="2"><font face="Arial Unicode MS"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></font></font></span>&nbsp;</p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 1"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Arial Unicode MS'; mso-bidi-font-family: 'Arial Unicode MS'"><font size="2"><font face="Arial Unicode MS">In this scenario, the developer can write a transform of VDX to that XML schema. This can be a little work or a lot of work, depending on the target XML schema. But if the developer only cares about the shape&nbsp;<strong>data</strong> and potentially&nbsp;some shape relationship information (like other connected shapes), I’d recommend using SolutionXML.</font></font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 1"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Arial Unicode MS'; mso-bidi-font-family: 'Arial Unicode MS'"><font size="2"><font face="Arial Unicode MS"><o:p></o:p></font></font></span>&nbsp;</p>

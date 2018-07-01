@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/06/15/visio-2007-customizing-data-graphic-items/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/06/15/visio-2007-customizing-data-graphic-items/' />
 <!-- og:title -->
 <meta property="og:title" content="Visio 2007: Customizing Data Graphic Items" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,43 +85,43 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>After spending a couple days chatting with people here at TechEd, I am amazed at how many people have already downloaded and have been playing around with Visio 2007 Beta 2. If you don’t have it yet, <A href="http://www.microsoft.com/office/preview/default.mspx">you can check it out here</A>. In particular, a lot of people have&nbsp;seen the Data Graphics feature and have started to do really interesting things with it. </P><br />
-<P>One of the most common questions I have gotten is around how to customize Data Graphic callouts. For example, people want to be able to add a thinner data bar, a new text callout that has different text or a different look from the built in ones, or a icon set that is customized for their particular domain. We’re putting together full documentation on how to do this, but while we’re waiting for that I’d like to give the more adventurous a primer to get going. For this post I’ll assume that you have some understanding of Masters in Visio and the ShapeSheet. </P><br />
-<P>First, make sure to check out <A href="http://blogs.msdn.com/eric_rockey/archive/2005/12/14/503483.aspx">Eric’s post on the basics of using Data Graphics</A>. The Data Graphic that you apply to a shape is made up of multiple graphic items, each of which are just a Visio master with some special properties. In order to create new graphic items, the easiest thing to do is copy an existing one. </P><br />
-<P>To copy a graphic item, do the following: </P><br />
-<OL><br />
-<LI><br />
-<DIV>Drop a shape containing shape data (for example, a network shape) on the page. </DIV><br />
-<LI><br />
-<DIV>Select the shape and go to “Data&gt;Display Data on Shapes…” </DIV><br />
-<LI><br />
-<DIV>In the task pane that appears, click on the Data Graphic below the “None” Data Graphic (should be called “Data Graphic 2”). You should see something like the below:<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="dg1.png"><BR></DIV><br />
-<LI><br />
-<DIV>Go to “View&gt;Drawing Explorer Window” </DIV><br />
-<LI><br />
-<DIV>Expand the “Masters” section and then right click on the “Heading 3” master and select “Duplicate” from the context menu. :<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="dg2.png"><BR></DIV><br />
-<LI><br />
-<DIV>This will result in a new master, called something like “Heading3.13”. Rename that new master to something recognizable like “My Heading”.</DIV><br />
-<LI><br />
-<DIV>Right click on “My Heading” and select “Edit Master Shape” from the context menu. </DIV><br />
-<LI><br />
-<DIV>You are now in master editing mode. You can modify the shape. For example, increase the font size to 12 point and change the color to Orange from Blue. </DIV><br />
-<LI><br />
-<DIV>Close the window and click “Yes” to update the shape. </DIV></LI></OL><br />
-<P>The new text callout type is now there and ready to use in this document. You can use it just as you do any of the built in graphic items. Just edit the Data Graphic you are using (Data Graphic 2), edit the first existing text box, then select “My Heading” from the dropdown list of available callouts: :<BR>&nbsp;&nbsp;<img src="dg3.png"></P><br />
-<P>Now that you have created this graphic item, you can move it from document to document and it will then be available in both the UI and programmatically. Editing other item types (data bars and icon sets) can be accomplished in a similar way. </P><br />
-<P>A couple more tips to get you started: </P><br />
-<UL><br />
-<LI><br />
-<DIV>The master name for the default Data Graphic item will match up with its name in the Data Graphic dialog. Just make sure that you use the item first to make sure that it is added to that particular document.</DIV><br />
-<LI><br />
-<DIV>Data Graphic items essentially conform to an interface for their particular item type. </DIV><br />
-<LI><br />
-<DIV>Check out the User cells in the ShapeSheet to see what is involved. </DIV><br />
-<LI><br />
-<DIV>Icon sets usually use multiple geometry sections to represent the various possible states. </DIV></LI></UL><br />
-<P>That’s it for now. When we have more documentation I’ll update this post to point to it, but hopefully this will be enough to get people started.</P><br />
-<P>Update: I've added some information specifically on <A href="http://blogs.msdn.com/wmorein/archive/2006/07/14/665997.aspx">customizing icon sets</A>.</P></p>
+		<p><P>After spending a couple days chatting with people here at TechEd, I am amazed at how many people have already downloaded and have been playing around with Visio 2007 Beta 2. If you don’t have it yet, <a href="http://www.microsoft.com/office/preview/default.mspx">you can check it out here</a>. In particular, a lot of people have&nbsp;seen the Data Graphics feature and have started to do really interesting things with it. </P>
+<P>One of the most common questions I have gotten is around how to customize Data Graphic callouts. For example, people want to be able to add a thinner data bar, a new text callout that has different text or a different look from the built in ones, or a icon set that is customized for their particular domain. We’re putting together full documentation on how to do this, but while we’re waiting for that I’d like to give the more adventurous a primer to get going. For this post I’ll assume that you have some understanding of Masters in Visio and the ShapeSheet. </P>
+<P>First, make sure to check out <a href="../../../../eric_rockey/2005/12/13/data-graphics-visualizing-data-on-your-diagram.htm" target="_blank" original-url="http://blogs.msdn.com/eric_rockey/archive/2005/12/14/503483.aspx">Eric’s post on the basics of using Data Graphics</a>. The Data Graphic that you apply to a shape is made up of multiple graphic items, each of which are just a Visio master with some special properties. In order to create new graphic items, the easiest thing to do is copy an existing one. </P>
+<P>To copy a graphic item, do the following: </P>
+<OL>
+<LI>
+<DIV>Drop a shape containing shape data (for example, a network shape) on the page. </DIV>
+<LI>
+<DIV>Select the shape and go to “Data&gt;Display Data on Shapes…” </DIV>
+<LI>
+<DIV>In the task pane that appears, click on the Data Graphic below the “None” Data Graphic (should be called “Data Graphic 2”). You should see something like the below:<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="dg1.png"><BR></DIV>
+<LI>
+<DIV>Go to “View&gt;Drawing Explorer Window” </DIV>
+<LI>
+<DIV>Expand the “Masters” section and then right click on the “Heading 3” master and select “Duplicate” from the context menu. :<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="dg2.png"><BR></DIV>
+<LI>
+<DIV>This will result in a new master, called something like “Heading3.13”. Rename that new master to something recognizable like “My Heading”.</DIV>
+<LI>
+<DIV>Right click on “My Heading” and select “Edit Master Shape” from the context menu. </DIV>
+<LI>
+<DIV>You are now in master editing mode. You can modify the shape. For example, increase the font size to 12 point and change the color to Orange from Blue. </DIV>
+<LI>
+<DIV>Close the window and click “Yes” to update the shape. </DIV></LI></OL>
+<P>The new text callout type is now there and ready to use in this document. You can use it just as you do any of the built in graphic items. Just edit the Data Graphic you are using (Data Graphic 2), edit the first existing text box, then select “My Heading” from the dropdown list of available callouts: :<BR>&nbsp;&nbsp;<img src="dg3.png"></P>
+<P>Now that you have created this graphic item, you can move it from document to document and it will then be available in both the UI and programmatically. Editing other item types (data bars and icon sets) can be accomplished in a similar way. </P>
+<P>A couple more tips to get you started: </P>
+<UL>
+<LI>
+<DIV>The master name for the default Data Graphic item will match up with its name in the Data Graphic dialog. Just make sure that you use the item first to make sure that it is added to that particular document.</DIV>
+<LI>
+<DIV>Data Graphic items essentially conform to an interface for their particular item type. </DIV>
+<LI>
+<DIV>Check out the User cells in the ShapeSheet to see what is involved. </DIV>
+<LI>
+<DIV>Icon sets usually use multiple geometry sections to represent the various possible states. </DIV></LI></UL>
+<P>That’s it for now. When we have more documentation I’ll update this post to point to it, but hopefully this will be enough to get people started.</P>
+<P>Update: I've added some information specifically on <a href="../../../../wmorein/2006/07/14/visio-2007-more-on-customizing-data-graphic-items-icon-sets.htm" original-url="http://blogs.msdn.com/wmorein/archive/2006/07/14/665997.aspx">customizing icon sets</a>.</P></p>
 	</div><!-- .entry-content -->
 <hr>
 

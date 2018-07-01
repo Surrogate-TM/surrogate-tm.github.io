@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/08/09/meet-a-shapesheet-function-setf/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/08/09/meet-a-shapesheet-function-setf/' />
 <!-- og:title -->
 <meta property="og:title" content="Meet a ShapeSheet Function: SETF" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,30 +85,30 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>With this post I'll start a new series designed to give a little more detail behind some of the more interesting ShapeSheet functions. </P><br />
-<P>As the <A href="http://msdn.microsoft.com/library/en-us/vissdk11/html/DSS_Functions_(Q-Z)_1496_HV82251496.asp">documentation for SETF says</A>, this function is designed to let you set the value for a specific cell in the ShapeSheet from any other cell. This is one of the most powerful tools for creating shapes that have smart behavior without any code. </P><br />
-<H2>The Basics </H2><br />
-<P>The SETF function takes two parameters: the cell to be changed and the new value for that cell. </P><br />
-<P>To specify the cell to be changed, the best practice is to use the GETREF function. You can also use the cell name you want enclosed by quotation marks, but this is less reliable, particularly when you are doing things across shapes. For instance, if you reference another shape just using quotation marks and then add that shape to a group, the reference will no longer be valid. If you use the GETREF approach, Visio will fix up the references for you automatically. Unless you have very specific needs I'd highly recommend always using GETREF. </P><br />
-<P>The second argument, for the value, can be any Visio formula. One thing to note here is that the formula will be evaluated before being placed in the cell unless you enclose it in quotes. This means that if you place 5+Prop.Cost as the argument, you'll get the evaluated value of that formula placed in the cell (i.e. 7 if Prop.Cost is 2) – a fixed value is inserted. If you want an actual formula to be placed in the cell, you need to enclose it in quotes: "5+Prop.Cost". If you need quotes in your formula (usually for text) you can escape them using double quotes. </P><br />
-<H2>Some Example Uses </H2><br />
-<H3>Changing Multishapes </H3><br />
-<P>In the flowchart multishape ("Flowchart Shapes" on the Basic Flowchart shapes stencil) that comes with Visio, SETF is used to let users toggle between shapes using a right click context menu. In the picture below, the four possible states of the shape are shown, with the menu dropped down for one of the shapes. </P><br />
-<P><img height=163 alt="" src="setf-1.png"> </P><br />
-<P>Each of the menu items is created using an action row in the ShapeSheet: </P><br />
-<P><img height=108 alt="" src="setf-2.png" width=442> </P><br />
-<P>The action column specifies what should happen when the user clicks on that menu item. In this case, we are setting a scratch cell to a value of 1 through 4, which we then use to drive what geometry is shown. </P><br />
-<H3>Doing an Action Just Once </H3><br />
-<P>Let's say you want to make sure that a user is given the chance to fill in the Shape Data (formerly Custom Properties) of a shape when it is first dropped on the page, but you don't want to have that Shape Data dialog show up every single time they copy or duplicate that shape as well. To do this, add the following formula to the EventDrop cell in the Events section of the ShapeSheet for the master: =DOCMD(1312)+SETF("EventDrop",0) </P><br />
-<P>When the EventDrop event is triggered (when the shape is first dropped from the stencil). It will pop up the Shape Data dialog (this is what DOCMD(1312) does) and then SETF will set the entire formula for that cell to 0 so that the action is not repeated when the dropped shape is copied. This is one case where you can't use GETREF because of the circular reference, so you will need to quote the cell reference. </P><br />
-<P>This is a great technique that has a lot of possible uses given all the actions you can take by using the ShapeSheet through DoCmd or other formulas. </P><br />
-<H3>Choosing Teams in a Bracket </H3><br />
-<P>During the NCAA basketball tournament this spring, we put together a bracket that let you pick the team you expected to win each by double clicking on your choice. We then used Data Link and Data Graphics to let you automatically update your diagram and see how you were doing. Green meant that your pick was correct (red was wrong) and the exclamation icon set denoted an upset. </P><br />
-<P>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="setf-3.png"> </P><br />
-<P>Using double clicking to set the picks was accomplished using SETF. To simplify creating the diagram I set up my SETF formula to pull the first argument (shape/cell to be changed) from a Shape Data item in that shape. This let me just use one master and update the Shape Data for each shape to set up the proper links. Here is the formula I used: </P><br />
-<P>&nbsp;&nbsp;&nbsp;&nbsp;=SETF(Prop.NextGameShape&amp;"!Prop.Pick",""""&amp;Prop.Pick&amp;"""") </P><br />
-<P>The first argument is Prop.NextGameShape&amp;"!Prop.Pick". I'm dynamically pulling the value of a Shape Data cell (Prop.NextGameShape) and then specifying the ShapeSheet cell in that shape that I want to use. The ! is the delimiter between the shape and the cell name. </P><br />
-<P>The second argument will set the formula in that cell to be "Prop.Pick". The two sets of quotes send an escaped quote each, and the &amp; concatenates them with the text I want inserted into the cell (pulled from the "Pick" Shape Data item in the current shape). </P><br />
+		<p><P>With this post I'll start a new series designed to give a little more detail behind some of the more interesting ShapeSheet functions. </P>
+<P>As the <A href="http://msdn.microsoft.com/library/en-us/vissdk11/html/DSS_Functions_(Q-Z)_1496_HV82251496.asp">documentation for SETF says</A>, this function is designed to let you set the value for a specific cell in the ShapeSheet from any other cell. This is one of the most powerful tools for creating shapes that have smart behavior without any code. </P>
+<H2>The Basics </H2>
+<P>The SETF function takes two parameters: the cell to be changed and the new value for that cell. </P>
+<P>To specify the cell to be changed, the best practice is to use the GETREF function. You can also use the cell name you want enclosed by quotation marks, but this is less reliable, particularly when you are doing things across shapes. For instance, if you reference another shape just using quotation marks and then add that shape to a group, the reference will no longer be valid. If you use the GETREF approach, Visio will fix up the references for you automatically. Unless you have very specific needs I'd highly recommend always using GETREF. </P>
+<P>The second argument, for the value, can be any Visio formula. One thing to note here is that the formula will be evaluated before being placed in the cell unless you enclose it in quotes. This means that if you place 5+Prop.Cost as the argument, you'll get the evaluated value of that formula placed in the cell (i.e. 7 if Prop.Cost is 2) – a fixed value is inserted. If you want an actual formula to be placed in the cell, you need to enclose it in quotes: "5+Prop.Cost". If you need quotes in your formula (usually for text) you can escape them using double quotes. </P>
+<H2>Some Example Uses </H2>
+<H3>Changing Multishapes </H3>
+<P>In the flowchart multishape ("Flowchart Shapes" on the Basic Flowchart shapes stencil) that comes with Visio, SETF is used to let users toggle between shapes using a right click context menu. In the picture below, the four possible states of the shape are shown, with the menu dropped down for one of the shapes. </P>
+<P><img height=163 alt="" src="setf-1.png"> </P>
+<P>Each of the menu items is created using an action row in the ShapeSheet: </P>
+<P><img height=108 alt="" src="setf-2.png" width=442> </P>
+<P>The action column specifies what should happen when the user clicks on that menu item. In this case, we are setting a scratch cell to a value of 1 through 4, which we then use to drive what geometry is shown. </P>
+<H3>Doing an Action Just Once </H3>
+<P>Let's say you want to make sure that a user is given the chance to fill in the Shape Data (formerly Custom Properties) of a shape when it is first dropped on the page, but you don't want to have that Shape Data dialog show up every single time they copy or duplicate that shape as well. To do this, add the following formula to the EventDrop cell in the Events section of the ShapeSheet for the master: =DOCMD(1312)+SETF("EventDrop",0) </P>
+<P>When the EventDrop event is triggered (when the shape is first dropped from the stencil). It will pop up the Shape Data dialog (this is what DOCMD(1312) does) and then SETF will set the entire formula for that cell to 0 so that the action is not repeated when the dropped shape is copied. This is one case where you can't use GETREF because of the circular reference, so you will need to quote the cell reference. </P>
+<P>This is a great technique that has a lot of possible uses given all the actions you can take by using the ShapeSheet through DoCmd or other formulas. </P>
+<H3>Choosing Teams in a Bracket </H3>
+<P>During the NCAA basketball tournament this spring, we put together a bracket that let you pick the team you expected to win each by double clicking on your choice. We then used Data Link and Data Graphics to let you automatically update your diagram and see how you were doing. Green meant that your pick was correct (red was wrong) and the exclamation icon set denoted an upset. </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="setf-3.png"> </P>
+<P>Using double clicking to set the picks was accomplished using SETF. To simplify creating the diagram I set up my SETF formula to pull the first argument (shape/cell to be changed) from a Shape Data item in that shape. This let me just use one master and update the Shape Data for each shape to set up the proper links. Here is the formula I used: </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;=SETF(Prop.NextGameShape&amp;"!Prop.Pick",""""&amp;Prop.Pick&amp;"""") </P>
+<P>The first argument is Prop.NextGameShape&amp;"!Prop.Pick". I'm dynamically pulling the value of a Shape Data cell (Prop.NextGameShape) and then specifying the ShapeSheet cell in that shape that I want to use. The ! is the delimiter between the shape and the cell name. </P>
+<P>The second argument will set the formula in that cell to be "Prop.Pick". The two sets of quotes send an escaped quote each, and the &amp; concatenates them with the text I want inserted into the cell (pulled from the "Pick" Shape Data item in the current shape). </P>
 <P>A little more complicated, but it gets the job done nicely.</P></p>
 	</div><!-- .entry-content -->
 <hr>

@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2007/04/17/developer-behavior-change-in-visio-2007-additional-guard-functions-in-shapes/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2007/04/17/developer-behavior-change-in-visio-2007-additional-guard-functions-in-shapes/' />
 <!-- og:title -->
 <meta property="og:title" content="Developer Behavior Change in Visio 2007: Additional &ldquo;GUARD&rdquo; functions in Shapes" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,13 +85,13 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>Some developers have noticed a change that we made in Visio 2007: more of the shapes we ship with Visio contain the <A href="http://msdn2.microsoft.com/en-us/library/ms406702.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/ms406702.aspx">GUARD</A> ShapeSheet function. This was done to make some shapes work better with our new Themes feature and often just to take formatting more effectively in the first place. Here is an example of a networking shape colored red in Visio 2003 and in Visio 2007: </P><img src="guard-shapes.png"><br />
-<P>You can probably see why we thought that this was an important change to make. On the other hand, this newfound reliance on GUARD can cause problems for developers who expect that formula changes they make programmatically just work. With the new shapes (or any ShapeSheet cell containing a GUARD function), trying to set a guarded formula using <A href="http://msdn2.microsoft.com/en-us/library/ms367597.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/ms367597.aspx">FormulaU</A> (note that we strongly recommend that you use FormulaU rather than Formula) will raise an exception. If the solution does not handle the exception properly (86db0528: "Cell is guarded.") it can crash or end up in an inconsistent state. </P><br />
-<P>There are several ways to deal with this issue. The first is to change your code to simply handle the exception and take no further action. This will mean that the behavior that you get will be what the shape designer intended. </P><br />
-<P>Another way is to change your uses of FormulaU that might run into this problem to <A href="http://msdn2.microsoft.com/en-us/library/ms367595.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/ms367595.aspx">FormulaForceU</A>. This will essentially ignore the GUARD in the cell and set the cell to the specified value. This is not ideal (since those GUARDs are there for a reason) but will get around any possible exceptions. </P><br />
-<P>If you don't have access to the source of the solution (or don't want to have to deploy a new version) we have created a new registry key to change the behavior of all existing uses of FormulaU to FormulaForceU (or Formula to FormulaForce). The key to use is: </P><br />
-<UL><br />
-<LI>HKEY_CURRENT_USER/Software/Microsoft/Office/12.0/Visio/Application/OverrideGuardedFormulas </LI></UL><br />
+		<p><P>Some developers have noticed a change that we made in Visio 2007: more of the shapes we ship with Visio contain the <A href="http://msdn2.microsoft.com/en-us/library/ms406702.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/ms406702.aspx">GUARD</A> ShapeSheet function. This was done to make some shapes work better with our new Themes feature and often just to take formatting more effectively in the first place. Here is an example of a networking shape colored red in Visio 2003 and in Visio 2007: </P><img src="guard-shapes.png">
+<P>You can probably see why we thought that this was an important change to make. On the other hand, this newfound reliance on GUARD can cause problems for developers who expect that formula changes they make programmatically just work. With the new shapes (or any ShapeSheet cell containing a GUARD function), trying to set a guarded formula using <A href="http://msdn2.microsoft.com/en-us/library/ms367597.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/ms367597.aspx">FormulaU</A> (note that we strongly recommend that you use FormulaU rather than Formula) will raise an exception. If the solution does not handle the exception properly (86db0528: "Cell is guarded.") it can crash or end up in an inconsistent state. </P>
+<P>There are several ways to deal with this issue. The first is to change your code to simply handle the exception and take no further action. This will mean that the behavior that you get will be what the shape designer intended. </P>
+<P>Another way is to change your uses of FormulaU that might run into this problem to <A href="http://msdn2.microsoft.com/en-us/library/ms367595.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/ms367595.aspx">FormulaForceU</A>. This will essentially ignore the GUARD in the cell and set the cell to the specified value. This is not ideal (since those GUARDs are there for a reason) but will get around any possible exceptions. </P>
+<P>If you don't have access to the source of the solution (or don't want to have to deploy a new version) we have created a new registry key to change the behavior of all existing uses of FormulaU to FormulaForceU (or Formula to FormulaForce). The key to use is: </P>
+<UL>
+<LI>HKEY_CURRENT_USER/Software/Microsoft/Office/12.0/Visio/Application/OverrideGuardedFormulas </LI></UL>
 <P>We don't recommend this as a longer term solution, but it should work well for existing solutions that are hitting this problem. </P></p>
 	</div><!-- .entry-content -->
 <hr>

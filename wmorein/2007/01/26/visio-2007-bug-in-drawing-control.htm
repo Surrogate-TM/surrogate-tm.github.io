@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2007/01/26/visio-2007-bug-in-drawing-control/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2007/01/26/visio-2007-bug-in-drawing-control/' />
 <!-- og:title -->
 <meta property="og:title" content="Visio 2007: Bug in Drawing Control" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -95,119 +95,119 @@
 </ul>
 <p>We've provided code below for most of the major languages we support. I've highlighted in <span style="color:red">red</span> in each case the actual fix, but we wanted to provide a little bit of the context of the code since you need to make sure to call the SendMessage fix <strong>after</strong> you have set the SRC property of the control.
 </p>
-<h2>VBA<br />
+<h2>VBA
 </h2>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">' declare win32 function<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">' declare win32 function
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long<br />
-</span></p>
-<p style="margin-left: 36pt">
- </p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">Private Sub LoadDocument()<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">       ' assign source file<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Src = "C:\Drawing1.vsd"<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">       ' send private message to Visio to invoke workaround<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">        SendMessage DrawingControl1.Window.WindowHandle32, 2100, 0, 0<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">       ' add page<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Document.Pages.Add<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">End Sub<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
 </span></p>
 <p style="margin-left: 36pt">
  </p>
-<h2>VB6<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">Private Sub LoadDocument()
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">       ' assign source file
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Src = "C:\Drawing1.vsd"
+</span></p>
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">       ' send private message to Visio to invoke workaround
+</span></p>
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">        SendMessage DrawingControl1.Window.WindowHandle32, 2100, 0, 0
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">       ' add page
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Document.Pages.Add
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">End Sub
+</span></p>
+<p style="margin-left: 36pt">
+ </p>
+<h2>VB6
 </h2>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
 </span></p>
 <p style="margin-left: 36pt">
  </p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">Private Sub LoadDocument()<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">Private Sub LoadDocument()
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">       'assign source file<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">       'assign source file
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Src = "C:\Drawing1.vsd"<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Src = "C:\Drawing1.vsd"
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">       'send private message to Visio to invoke workaround<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">       'send private message to Visio to invoke workaround
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">        SendMessage DrawingControl1.Window.WindowHandle32, 2100, 0, 0<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">        SendMessage DrawingControl1.Window.WindowHandle32, 2100, 0, 0
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">       'add page<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">       'add page
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Document.Pages.Add<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">        DrawingControl1.Document.Pages.Add
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">End Sub<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">End Sub
 </span></p>
 <p style="margin-left: 36pt">
  </p>
 <p style="margin-left: 36pt">
  </p>
-<h2>VB.NET<br />
+<h2>VB.NET
 </h2>
 <p style="margin-left: 36pt"> (need to Import System and System.Runtime.InteropServices)
 </p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">'Declare win32 function<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">'Declare win32 function
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">&lt;DllImport("User32.dll")&gt;<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">&lt;DllImport("User32.dll")&gt;
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">Private Shared Function SendMessage(ByVal Handle As Int32, _<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">Private Shared Function SendMessage(ByVal Handle As Int32, _
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">       ByVal wMsg As Int32, ByVal wParam As Int32, ByVal lParam As Int32) As Int32<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">       ByVal wMsg As Int32, ByVal wParam As Int32, ByVal lParam As Int32) As Int32
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">End Function<br />
-</span></p>
-<p style="margin-left: 36pt">
- </p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">Private Sub LoadDocument()<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">        AxDrawingControl1.Src = "c:\\Drawing1.vsd"<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">        SendMessage(AxDrawingControl1.Window.WindowHandle32, 2100, 0, 0)<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">        AxDrawingControl1.Document.Pages.Add()<br />
-</span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">End Sub<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">End Function
 </span></p>
 <p style="margin-left: 36pt">
  </p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">Private Sub LoadDocument()
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">        AxDrawingControl1.Src = "c:\\Drawing1.vsd"
+</span></p>
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">        SendMessage(AxDrawingControl1.Window.WindowHandle32, 2100, 0, 0)
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">        AxDrawingControl1.Document.Pages.Add()
+</span></p>
+<p style="margin-left: 36pt"><span style="font-family:Courier New">End Sub
+</span></p>
 <p style="margin-left: 36pt">
  </p>
-<h2>C#<br />
+<p style="margin-left: 36pt">
+ </p>
+<h2>C#
 </h2>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">// declare win32 function<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">// declare win32 function
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">[DllImport("user32.dll", EntryPoint="SendMessageA")]<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">[DllImport("user32.dll", EntryPoint="SendMessageA")]
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New"><span style="color:red">public static extern int SendMessage(int windowHandle, uint message, int wparam, int lparam);</span><br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New"><span style="color:red">public static extern int SendMessage(int windowHandle, uint message, int wparam, int lparam);</span>
 		</span></p>
 <p style="margin-left: 36pt">
  </p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">private void LoadDocument ()<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">private void LoadDocument ()
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">{<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">{
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">   // assign source file<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">   // assign source file
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">   axDrawingControl1.Src = "C:\\Drawing1.vsd";<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">   axDrawingControl1.Src = "C:\\Drawing1.vsd";
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">   // send private message to Visio to invoke workaround<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">   // send private message to Visio to invoke workaround
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">   SendMessage(axDrawingControl1.Window.WindowHandle32, // drawing window<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">   SendMessage(axDrawingControl1.Window.WindowHandle32, // drawing window
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">               2100,                                   // private Visio message<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">               2100,                                   // private Visio message
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">               0,<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">               0,
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">               0);<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">               0);
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">   // add page<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">   // add page
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">   axDrawingControl1.Document.Pages.Add();<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">   axDrawingControl1.Document.Pages.Add();
 </span></p>
 <p style="margin-left: 36pt"><span style="font-family:Courier New">}</span>
 	</p>
@@ -215,31 +215,31 @@
  </p>
 <p style="margin-left: 36pt">
  </p>
-<h2>C++<br />
+<h2>C++
 </h2>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">void  LoadDocument()<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">void  LoadDocument()
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">{<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">{
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">// assign source file<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">// assign source file
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">drawingControl-&gt;Src("C:\\Drawing1.vsd");<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">drawingControl-&gt;Src("C:\\Drawing1.vsd");
 </span></p>
 <p style="margin-left: 36pt">
  </p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">// send private message to Visio to invoke workaround<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">// send private message to Visio to invoke workaround
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">::SendMessage( (HWND) drawingControl-&gt;GetWindow()-&gt;GetWindowHandle32(),       // drawing window<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">::SendMessage( (HWND) drawingControl-&gt;GetWindow()-&gt;GetWindowHandle32(),       // drawing window
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">                                                2100,                                                                                                                    // private Visio message<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">                                                2100,                                                                                                                    // private Visio message
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">                                                0,<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">                                                0,
 </span></p>
-<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">                                                0);<br />
+<p style="margin-left: 36pt"><span style="color:red; font-family:Courier New">                                                0);
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">// add page<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">// add page
 </span></p>
-<p style="margin-left: 36pt"><span style="font-family:Courier New">drawingControl-&gt;GetDocument()-&gt;GetPages()-&gt;Add();<br />
+<p style="margin-left: 36pt"><span style="font-family:Courier New">drawingControl-&gt;GetDocument()-&gt;GetPages()-&gt;Add();
 </span></p>
 <p style="margin-left: 36pt"><span style="font-family:Courier New">}</span></p>
 	</div><!-- .entry-content -->

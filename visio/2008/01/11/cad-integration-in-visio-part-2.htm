@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-<title>CAD Integration in Visio &#8211; Part 2 &#8211; Visio Insights</title>
+<title>CAD Integration in Visio &#8211; Part 2 &#8211; Archive of Visio Insights blog (2006-2018)</title>
 <link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/visio/2008/01/11/cad-integration-in-visio-part-2/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/visio/2008/01/11/cad-integration-in-visio-part-2/' />
 <!-- og:title -->
 <meta property="og:title" content="CAD Integration in Visio &#8211; Part 2" />
 <!-- og:description -->
@@ -53,10 +53,9 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-desktop">
-						Visio Insights					</a>
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-mobile">
-						Visio Insights					</a>
+					
+						Archive of Visio Insights blog (2006-2018)
+					
 				</h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description">The official blog of the Microsoft Visio product team</p>
@@ -86,56 +85,33 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">In the <a class="" href="http://blogs.msdn.com/visio/archive/2008/01/08/cad-integration-in-visio-part-1.aspx" mce_href="http://blogs.msdn.com/visio/archive/2008/01/08/cad-integration-in-visio-part-1.aspx">previous post</a> we reviewed the problems users were encountering with the CAD Integration feature set in Visio 2003 and the fixes that were made in Visio 2007.<span style="mso-spacerun: yes">&nbsp; </span>In this post we look at the remaining issues with CAD and Visio.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" />
+		<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">In the <a class="" href="../../../../visio/2008/01/08/cad-integration-in-visio-part-1.htm" mce_href="http://blogs.msdn.com/visio/archive/2008/01/08/cad-integration-in-visio-part-1.aspx">previous post</a> we reviewed the problems users were encountering with the CAD Integration feature set in Visio 2003 and the fixes that were made in Visio 2007.<span style="mso-spacerun: yes">&nbsp; </span>In this post we look at the remaining issues with CAD and Visio.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" />
 </p>
 <p></font></font></span>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri"></font></font></span>&nbsp;</p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"></span>&nbsp;</p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri"><strong>Converting CAD drawings to Visio shapes</strong></font></font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">Visio 2003 changed the way that CAD drawings are converted to Visio shapes.<span style="mso-spacerun: yes">&nbsp; </span>Instead of converting each entity and adding it as a Visio shape, the entities are converted in bulk to an intermediate document and then the entire document is merged into the current drawing in one big Paste operation.<span style="mso-spacerun: yes">&nbsp; </span>This change makes conversion up to 10 times faster &ndash; a significant improvement.<span style="mso-spacerun: yes">&nbsp; </span>However, Visio now requires quite a bit more memory to accomplish the task.&nbsp; On PCs without sufficient memory, performance degrades because Visio must page memory to disk.<span style="mso-spacerun: yes">&nbsp; </span>
-</p>
-<p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">&nbsp;
 </p>
 <p></font></font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">Additionally we have found that some really large CAD files fail to convert.<span style="mso-spacerun: yes">&nbsp; </span>There is a limit to the number of entities that can be converted at once, though this limit is not easily expressed as a quantifiable number.<span style="mso-spacerun: yes">&nbsp; </span>Unfortunately the failure comes near the end of the lengthy operation rather than at the beginning.<span style="mso-spacerun: yes">&nbsp; </span>Visio 2007 does not remedy this situation.<span style="mso-spacerun: yes">&nbsp; </span>Your best bet is to divide up the diagram into more layers and then convert the layers individually.<span style="mso-spacerun: yes">&nbsp; </span>While Visio should handle this situation better, keep in mind that CAD programs are designed to deal with hundreds of thousands of simple entities and Visio is designed to deal with thousands of complex entities.<span style="mso-spacerun: yes">&nbsp; </span>It's difficult to scale up to support the largest CAD drawings out there.<span style="mso-spacerun: yes">&nbsp; </span>Simplifying the drawing before bringing it into Visio is recommended.
 </p>
 <p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri"></font></font></span>&nbsp;</p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"></span>&nbsp;</p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><font size="3"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font face="Calibri"><strong>DWG file formats supported by Visio</strong></font></span></font></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">A frequent complaint from users is that Visio refuses to open a DWG file because it was saved in a newer format.<span style="mso-spacerun: yes">&nbsp; </span>Visio 2003 and 2007 do not support the latest file formats used in AutoCAD programs.<span style="mso-spacerun: yes">&nbsp; </span>That means CAD files must be saved back to a compatible version before they can be used with Visio.<span style="mso-spacerun: yes">&nbsp; </span><b>Visio 2003 and 2007 support the R15 version of the DWG format.<span style="mso-spacerun: yes">&nbsp; </span>This was the default format used by AutoCAD 2000 and AutoCAD 2002.<span style="mso-spacerun: yes">&nbsp; </span></b>Newer versions of AutoCAD save to newer versions of the DWG format by default.
-</p>
-<p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">&nbsp;
 </p>
 <p></font></font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">Additionally, Visio does not support all the entities defined in the R15 version of the DWG format.<span style="mso-spacerun: yes">&nbsp; </span>In terms of entity support, Visio handles the entities defined in the R14 version of the DWG format with a few exceptions.<span style="mso-spacerun: yes">&nbsp; </span>A specific entity list is beyond the scope of this blog post.<span style="mso-spacerun: yes">&nbsp; </span>The point is that the level of entity support and the version of the file format supported are not identical.
 </p>
 <p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'">
-<p><font face="Calibri" size="3">&nbsp;</font></p>
-<p></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">Note that there was a specific problem where files saved out from AutoCAD 2007 would not open in Visio 2007 even when saved back to the R15 format.<span style="mso-spacerun: yes">&nbsp; </span>This was corrected in Visio 2007 SP1.
 </p>
 <p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">
-</p>
-<p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri"></font></font></span>&nbsp;</p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"></span>&nbsp;</p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri"><strong>What's next for CAD integration</strong>&nbsp;
 </p>
 <p></font></font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"><font size="3"><font face="Calibri">It's too soon to announce our plans for the next release.<span style="mso-spacerun: yes">&nbsp; </span>We continue to gather information from customers about their needs for CAD with Visio.<span style="mso-spacerun: yes">&nbsp; </span>Your input on specific issues or the overall importance of CAD integration to your Visio usage is encouraged.
 </p>
 <p></font></font></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'">
-<p><font face="Calibri" size="3">&nbsp;</font></p>
-<p></span></p>
-<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'">
-<p><font face="Calibri" size="3"></font></p>
-<p></span>&nbsp;</p></p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt 1.45pt; LINE-HEIGHT: normal"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'"></p>
 	</div><!-- .entry-content -->
 <hr>
 

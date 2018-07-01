@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/07/29/visio-2007-pivotdiagram-tips-and-tricks-part-3/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/07/29/visio-2007-pivotdiagram-tips-and-tricks-part-3/' />
 <!-- og:title -->
 <meta property="og:title" content="Visio 2007: PivotDiagram Tips and Tricks, part 3" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,24 +85,24 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>The default PivotDiagram layout is a hierarchy with spacing of 9.5 mm (or 0.375 in) between shapes. This works pretty seamlessly for a lot of data out there, but one of the powerful aspects of the PivotDiagram feature is your control over how your shapes are laid out. PivotDiagrams use the standard Visio layout feature available in all diagrams (Shape&gt;Configure Layout…) </P><br />
-<H2>Tightening the Spacing Between Shapes </H2><br />
-<P>This is an example of the default spacing for a new PivotDiagram: </P><br />
-<P><img src="dg3-1.png"> </P><br />
-<P>The quickest way to decrease the space between shapes is to change the page default for layout spacing. To do this, go to "Shape&gt;Configure Layout…" and change the Spacing value (here I changed it to 4 mm). Since the breakdown shape (the one that tells you which category you added – in the above diagram it is the shape with "Animal" in it) gets in the way at these tighter spacings, you can turn it off by going to "PivotDiagram&gt;Options…" and unchecking "Show breakdown shapes". </P><br />
-<P><img src="dg3-2.png"> </P><br />
-<P>The PivotDiagram shapes have the title bars (the ones holding Cat, Dog, etc. in the example above) offset slightly to up and to the left. Although I think this normally looks great, that offset causes the shapes to look wider to layout and therefore has the effect of making the diagram take up additional space. If you don't need the default look, you can change the offset get back that space. To do this, go to "PivotDiagram&gt;Edit Data Graphic…" and click on "Edit Item…" for the field "=User.visDDTitle". Change the Horizontal and Vertical Offsets to None and optionally change the Border Type to None. You'll get the diagram below: </P><br />
-<P><img src="dg3-3.png"> </P><br />
-<H2>Removing Titles and Data Legends </H2><br />
-<P>The default title and data legend can also be turned off if you have labeled your diagram in another way or feel that they are taking up space. The easiest way to do this is to just delete them. If you want to add them back, you can go into the PivotDiagram options dialog and check the relevant options.</P><br />
-<H2>Working With Page Sizes</H2><br />
-<P>PivotDiagrams resize the page automatically to fit the diagram onto the drawing page. If you don't like this behavior and want to resize the page yourself, you can use "Shape&gt;Configure Layout..." and uncheck "Enlarge page to fit drawing...". Once you have the page set up correctly, you can use "Print zoom" in the "File&gt;Page Setup..." dialog to determine how much is printed on each paper page.</P><br />
-<P>&nbsp;</P><br />
-<P>These should usually get you the space you need. There are a couple more advanced tricks that I can share if there is interest. Next time I'll cover a little more about how you can deeply customize the layout.</P><br />
-<P>Previous PivotDiagram tip posts:</P><br />
-<UL><br />
-<LI><A href="http://blogs.msdn.com/wmorein/archive/2006/06/22/643198.aspx">Creating PivotDiagrams</A><br />
-<LI><A href="http://blogs.msdn.com/wmorein/archive/2006/07/10/660756.aspx">Filtering</A></LI></UL></p>
+		<p><P>The default PivotDiagram layout is a hierarchy with spacing of 9.5 mm (or 0.375 in) between shapes. This works pretty seamlessly for a lot of data out there, but one of the powerful aspects of the PivotDiagram feature is your control over how your shapes are laid out. PivotDiagrams use the standard Visio layout feature available in all diagrams (Shape&gt;Configure Layout…) </P>
+<H2>Tightening the Spacing Between Shapes </H2>
+<P>This is an example of the default spacing for a new PivotDiagram: </P>
+<P><img src="dg3-1.png"> </P>
+<P>The quickest way to decrease the space between shapes is to change the page default for layout spacing. To do this, go to "Shape&gt;Configure Layout…" and change the Spacing value (here I changed it to 4 mm). Since the breakdown shape (the one that tells you which category you added – in the above diagram it is the shape with "Animal" in it) gets in the way at these tighter spacings, you can turn it off by going to "PivotDiagram&gt;Options…" and unchecking "Show breakdown shapes". </P>
+<P><img src="dg3-2.png"> </P>
+<P>The PivotDiagram shapes have the title bars (the ones holding Cat, Dog, etc. in the example above) offset slightly to up and to the left. Although I think this normally looks great, that offset causes the shapes to look wider to layout and therefore has the effect of making the diagram take up additional space. If you don't need the default look, you can change the offset get back that space. To do this, go to "PivotDiagram&gt;Edit Data Graphic…" and click on "Edit Item…" for the field "=User.visDDTitle". Change the Horizontal and Vertical Offsets to None and optionally change the Border Type to None. You'll get the diagram below: </P>
+<P><img src="dg3-3.png"> </P>
+<H2>Removing Titles and Data Legends </H2>
+<P>The default title and data legend can also be turned off if you have labeled your diagram in another way or feel that they are taking up space. The easiest way to do this is to just delete them. If you want to add them back, you can go into the PivotDiagram options dialog and check the relevant options.</P>
+<H2>Working With Page Sizes</H2>
+<P>PivotDiagrams resize the page automatically to fit the diagram onto the drawing page. If you don't like this behavior and want to resize the page yourself, you can use "Shape&gt;Configure Layout..." and uncheck "Enlarge page to fit drawing...". Once you have the page set up correctly, you can use "Print zoom" in the "File&gt;Page Setup..." dialog to determine how much is printed on each paper page.</P>
+<P>&nbsp;</P>
+<P>These should usually get you the space you need. There are a couple more advanced tricks that I can share if there is interest. Next time I'll cover a little more about how you can deeply customize the layout.</P>
+<P>Previous PivotDiagram tip posts:</P>
+<UL>
+<LI><A href="../../../../wmorein/2006/06/22/visio-2007-pivotdiagram-tips-and-tricks-part-1.htm" original-url="http://blogs.msdn.com/wmorein/archive/2006/06/22/643198.aspx">Creating PivotDiagrams</A>
+<LI><A href="../../../../wmorein/2006/07/10/visio-2007-pivotdiagram-tips-and-tricks-part-2.htm" original-url="http://blogs.msdn.com/wmorein/archive/2006/07/10/660756.aspx">Filtering</A></LI></UL></p>
 	</div><!-- .entry-content -->
 <hr>
 

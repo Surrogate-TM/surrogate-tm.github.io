@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-<title>Make Your Own Bubble Chart, part 3 &#8211; Visio Insights</title>
+<title>Make Your Own Bubble Chart, part 3 &#8211; Archive of Visio Insights blog (2006-2018)</title>
 <link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/visio/2007/02/16/make-your-own-bubble-chart-part-3/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/visio/2007/02/16/make-your-own-bubble-chart-part-3/' />
 <!-- og:title -->
 <meta property="og:title" content="Make Your Own Bubble Chart, part 3" />
 <!-- og:description -->
@@ -53,10 +53,9 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-desktop">
-						Visio Insights					</a>
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-mobile">
-						Visio Insights					</a>
+					
+						Archive of Visio Insights blog (2006-2018)
+					
 				</h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description">The official blog of the Microsoft Visio product team</p>
@@ -86,34 +85,22 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">This post is part of a series examining Bubble Chart diagrams.<span style="mso-spacerun: yes">&nbsp; </span>We are building a Bubble Chart stencil from scratch to make diagram creation easy for the user.<span style="mso-spacerun: yes">&nbsp; </span>You can get the completed stencil from the <a class="" href="http://blogs.msdn.com/visio/archive/2007/02/06/introducing-the-bubble-chart.aspx" mce_href="http://blogs.msdn.com/visio/archive/2007/02/06/introducing-the-bubble-chart.aspx">first post</a> in the series.<span style="mso-spacerun: yes">&nbsp; </span>In the <a class="" href="http://blogs.msdn.com/visio/archive/2007/02/13/make-your-own-bubble-chart-part-2.aspx" mce_href="http://blogs.msdn.com/visio/archive/2007/02/13/make-your-own-bubble-chart-part-2.aspx">previous post</a>, we completed the Bubble Chart master shape.<span style="mso-spacerun: yes">&nbsp; </span>This shape is the background for the chart.<span style="mso-spacerun: yes">&nbsp; </span>In this post we will build the Bubble Data master shape.<span style="mso-spacerun: yes">&nbsp; </span>Bubble Data shapes are placed on top of the chart to display information.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" />
+		<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">This post is part of a series examining Bubble Chart diagrams.<span style="mso-spacerun: yes">&nbsp; </span>We are building a Bubble Chart stencil from scratch to make diagram creation easy for the user.<span style="mso-spacerun: yes">&nbsp; </span>You can get the completed stencil from the <a class="" href="../../../../visio/2007/02/06/introducing-the-bubble-chart.htm" mce_href="http://blogs.msdn.com/visio/archive/2007/02/06/introducing-the-bubble-chart.aspx">first post</a> in the series.<span style="mso-spacerun: yes">&nbsp; </span>In the <a class="" href="../../../../visio/2007/02/13/make-your-own-bubble-chart-part-2.htm" mce_href="http://blogs.msdn.com/visio/archive/2007/02/13/make-your-own-bubble-chart-part-2.aspx">previous post</a>, we completed the Bubble Chart master shape.<span style="mso-spacerun: yes">&nbsp; </span>This shape is the background for the chart.<span style="mso-spacerun: yes">&nbsp; </span>In this post we will build the Bubble Data master shape.<span style="mso-spacerun: yes">&nbsp; </span>Bubble Data shapes are placed on top of the chart to display information.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" />
 </p>
 <p></span>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img title="Bubble chart" style="WIDTH: 580px; HEIGHT: 376px" height="376" alt="Bubble chart" src="Bubble40-021607.png" width="580" mce_src="Bubble40-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">The Bubble Data shape will hold the data provided by the data source (via Visio 2007's Data Link feature).<span style="mso-spacerun: yes">&nbsp; </span>The data will define the X and Y position for the shape.<span style="mso-spacerun: yes">&nbsp; </span>It will also define the Size of the shape.&nbsp; We will use a circle as the basic geometry for the shape and set the diameter of the circle according to the Size property.<span style="mso-spacerun: yes">&nbsp; </span>The shape will also display a Label and the Size as text using Visio 2007's Data Graphics feature.
-</p>
-<p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">&nbsp;
 </p>
 <p></span></p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">The final location for a Bubble Data shape is dependent on its own data plus information about the size and position of the Bubble Chart shape on the page.<span style="mso-spacerun: yes">&nbsp; </span>Without resorting to code, the Bubble Data shape does not have an explicit reference to the Bubble Chart shape.<span style="mso-spacerun: yes">&nbsp; </span>We are using the page itself as an intermediary.<span style="mso-spacerun: yes">&nbsp; </span>The Bubble Chart shape pushes its settings to the page, and the Bubble Data shape will reference those settings.<span style="mso-spacerun: yes">&nbsp; </span>We need to add the same User-defined cells from the Bubble Chart's Pagesheet to the Pagesheet of the Bubble Data shape.<span style="mso-spacerun: yes">&nbsp; </span>There is a quick way to copy this information over.<span style="mso-spacerun: yes">&nbsp; </span>Double-click on the Bubble Chart master shape to edit it.<span style="mso-spacerun: yes">&nbsp; </span>Select the rectangle shape and copy it to the clipboard.<span style="mso-spacerun: yes">&nbsp; </span>Close the edit window and double-click on the Bubble Data shape.<span style="mso-spacerun: yes">&nbsp; </span>Paste the rectangle shape and then delete it.<span style="mso-spacerun: yes">&nbsp; </span>What did this accomplish?<span style="mso-spacerun: yes">&nbsp; </span>Go to Window &gt; Show Shapesheet to look at the Pagesheet for the Bubble Data master.<span style="mso-spacerun: yes">&nbsp; </span>All the User-defined cells were copied over from the Bubble Chart master.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble41-021607.png" mce_src="Bubble41-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">Next draw a circle on the page and go to Window &gt; Show Shapesheet.<span style="mso-spacerun: yes">&nbsp; </span>The circle shape will use Shape Data to store the linked data and User-defined cells to calculate the actual position on the page.<span style="mso-spacerun: yes">&nbsp; </span>Go to Insert &gt; Section, check Shape Data and User-defined cells, then click OK.<span style="mso-spacerun: yes">&nbsp; </span>We need four Shape Data properties, so right-click in the Shape Data row and choose Insert &gt; Row three times.<span style="mso-spacerun: yes">&nbsp; </span>Create named rows for BubbleX, BubbleY, BubbleSize and BubbleLabel.<span style="mso-spacerun: yes">&nbsp; </span>The row names will be referenced in the position calculations.<span style="mso-spacerun: yes">&nbsp; </span>The Label cell in each row must match the field name used in the data source.<span style="mso-spacerun: yes">&nbsp; </span>In our example, we are standardizing on the field names X, Y, Size and Label.<span style="mso-spacerun: yes">&nbsp; </span>If you want to use different names in the data source, change the Label strings here.<span style="mso-spacerun: yes">&nbsp; </span>Set Type = 2 for the first three rows to identify the Shape Data as numeric.<span style="mso-spacerun: yes">&nbsp; </span>The final row is left as 0 for a string type.<span style="mso-spacerun: yes">&nbsp; </span>Then enter some initial values to see the bubble work while you build it.<span style="mso-spacerun: yes">&nbsp; </span>The values will be overwritten by real data in the diagram.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble42-021607.png" mce_src="Bubble42-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">Three User-defined cells are needed to calculate the page coordinates for the X, Y and Size properties.<span style="mso-spacerun: yes">&nbsp; </span>Right-click in the User-defined row and choose Insert &gt; Row twice.<span style="mso-spacerun: yes">&nbsp; </span>Create named rows for BubbleXPage, BubbleYPage and BubbleSizePage.<span style="mso-spacerun: yes">&nbsp; </span>The formulas for these cells are lengthy, so they are listed here:
-</p>
-<p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">&nbsp;
 </p>
 <p></span></p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">BubbleXPage =
@@ -122,16 +109,10 @@
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">ThePage!User.ChartMinXPage+(ThePage!User.ChartMaxXPage-ThePage!User.ChartMinXPage)*(Prop.BubbleX-ThePage!User.ChartMinX)/(ThePage!User.ChartMaxX-ThePage!User.ChartMinX)
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">&nbsp;
-</p>
-<p></span></p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">BubbleYPage =
 </p>
 <p></span></p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">ThePage!User.ChartMinYPage+(ThePage!User.ChartMaxYPage-ThePage!User.ChartMinYPage)*(Prop.BubbleY-ThePage!User.ChartMinY)/(ThePage!User.ChartMaxY-ThePage!User.ChartMinY)
-</p>
-<p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">&nbsp;
 </p>
 <p></span></p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">BubbleSizePage =
@@ -146,51 +127,34 @@
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">What's going on?<span style="mso-spacerun: yes">&nbsp; </span>We are using a ratio to calculate the position of the bubble shape.<span style="mso-spacerun: yes">&nbsp; </span>Given the ratio of the data value between the chart min and max, we can apply the same ratio to the page coordinates of the chart min and max.<span style="mso-spacerun: yes">&nbsp; </span>The result is the page coordinates for the shape.<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>A simpler ratio is used to calculate the size of the bubble in page units.<span style="mso-spacerun: yes">&nbsp; </span>Once we know the coordinates, we can reference them from the Shape Transform section as shown below.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble44-021607.png" mce_src="Bubble44-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">This completes the functional part of the Bubble Data shape.<span style="mso-spacerun: yes">&nbsp; </span>Next we turn to the data displayed using Data Graphics.<span style="mso-spacerun: yes">&nbsp; </span>Right-click on the shape on the page and go to Data &gt; Edit Data Graphic.<span style="mso-spacerun: yes">&nbsp; </span>Click on New Item and choose Text.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble45-021607.png" mce_src="Bubble45-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">In the New Text dialog, choose Label from the field list.<span style="mso-spacerun: yes">&nbsp; </span>Then choose the Heading 2 callout.<span style="mso-spacerun: yes">&nbsp; </span>Set the Border Type to None to display just the text.<span style="mso-spacerun: yes">&nbsp; </span>Click OK to close the dialog.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble46-021607.png" mce_src="Bubble46-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">We want the Label field to appear below the bubble shape.<span style="mso-spacerun: yes">&nbsp; </span>In the New Data Graphic dialog set the default position to Center, Below Shape.<span style="mso-spacerun: yes">&nbsp; </span>Now add a second text callout using New Item &gt; Text.<span style="mso-spacerun: yes">&nbsp; </span>Choose Size for the field and Circle callout for the callout.<span style="mso-spacerun: yes">&nbsp; </span>Set the border and fill to None.<span style="mso-spacerun: yes">&nbsp; </span>Also set the Value Length to 0.<span style="mso-spacerun: yes">&nbsp; </span>This eliminates truncation of the displayed values.<span style="mso-spacerun: yes">&nbsp; </span>Finally we want this field to be displayed in the middle of the bubble shape.<span style="mso-spacerun: yes">&nbsp; </span>Uncheck the Use default position box and set the callout position to Center, Middle.<span style="mso-spacerun: yes">&nbsp; </span>Click OK to close the dialog.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble47-021607.png" mce_src="Bubble47-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">This completes the data graphic for our Bubble Data shape.<span style="mso-spacerun: yes">&nbsp; </span>Click OK to close the dialog.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img src="Bubble48-021607.png" mce_src="Bubble48-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">As a final touch, apply a fill color to the circle to make it work with the Theme feature in Visio 2007.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"><img style="WIDTH: 112px; HEIGHT: 139px" height="139" src="Bubble49-021607.png" width="112" mce_src="Bubble49-021607.png">&nbsp;</span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'"></span>&nbsp;</p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">Our Bubble Chart and Bubble Data shapes are now finished.<span style="mso-spacerun: yes">&nbsp; </span>All that remains is to create a data source with real data in it.<span style="mso-spacerun: yes">&nbsp; </span>Excel is a great choice.<span style="mso-spacerun: yes">&nbsp; </span>Place the Label, X, Y and Size heading at the top and fill in the data.<span style="mso-spacerun: yes">&nbsp; </span>You can add other columns as well.<span style="mso-spacerun: yes">&nbsp; </span>These will be linked as Shape Data and can be displayed if you further customize the data graphic on the Bubble Data shape.<span style="mso-spacerun: yes">&nbsp; </span>Refer to the first post in the series for a walkthrough from the user's perspective.
-</p>
-<p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">&nbsp;
 </p>
 <p></span></p>
 <p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">Hopefully you've gotten a good insight into the data connectivity and visualization features in Visio 2007.<span style="mso-spacerun: yes">&nbsp; </span>We combined these features with some intelligent shape design to create a new diagram type for Visio.<span style="mso-spacerun: yes">&nbsp; </span>We can automatically build a diagram from data, and we didn't have to write any code to do it.
 </p>
 <p></span></p>
-<p style="MARGIN: 0in 0in 0pt 1.45pt"><span style="FONT-SIZE: 11pt; FONT-FAMILY: 'Calibri','sans-serif'">&nbsp;
-</p>
-<p></span></p></p>
+
 	</div><!-- .entry-content -->
 <hr>
 

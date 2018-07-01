@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/01/31/shapesheet-tutorial-part-1/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/01/31/shapesheet-tutorial-part-1/' />
 <!-- og:title -->
 <meta property="og:title" content="ShapeSheet tutorial, part 1" />
 <!-- og:description -->
@@ -53,9 +53,9 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
-					
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
+
 				</h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description">Visio and Data Visualization.</p>
@@ -64,7 +64,7 @@
 					</div>
 									</nav>
 			</div>
-			
+
 		</div>
 		<div id="site-content" class="site-content row">
 
@@ -85,15 +85,15 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>For this post, I'll walk through the process of building up a shape from scratch and editing it using the ShapeSheet. The shape itself won't be too complex, but we'll cover a few of the interesting features of the ShapeSheet.</P><br />
-<P>To get started, create a new blank drawing (File&gt;New&gt;New Drawing). If you are a US user, you'll have the option of creating it in US Units or Metric. For this example, I'll use metric units. Using the Rectangle Tool on the Drawing Toolbar (you can add the toolbar by going to View&gt;Toolbars if you don't see it), create a simple rectangle like this:</P><img src="ss2-1.PNG"><br />
-<P>Now, select the shape and click on the "Window&gt;Show ShapeSheet" menu item. This opens up the ShapeSheet window for the shape we just created. Next, tile the two open windows (drawing and ShapeSheet) so that you can see both at the same time. This will let you see the effects of the actions you take in the ShapeSheet window on the drawing page.</P><img src="ss2-2.PNG"><br />
-<P>Just to get the hand of working with the ShapeSheet, try a few things:</P><br />
-<OL><br />
-<LI>In the Shape Transform section, change the Width value from its current value (65 mm in my case) to double that value. Note the shape in the page window changing width.<BR></LI><br />
-<LI>In the Fill Format section, change the FillForegnd cell from 1 to 9. This should color the shape green. You can also play around with other colors by entering in an RGB value using the formula RGB(255,0,0). <BR></LI><br />
-<LI>Add a Guard function to the PinX cell in the Shape Transform section. This will mean that you are no longer able to move the shape horizontally along the page.<BR></LI><br />
-<LI>To get a feel for formulas referencing other cells, add the following formula to the FillForegnd cell: =IF(Width&gt;Height,2,4). Now resize the shape vertically and horizontally to see it change color when it is wider than it is high or vice versa.</LI></OL><br />
+		<p><P>For this post, I'll walk through the process of building up a shape from scratch and editing it using the ShapeSheet. The shape itself won't be too complex, but we'll cover a few of the interesting features of the ShapeSheet.</P>
+<P>To get started, create a new blank drawing (File&gt;New&gt;New Drawing). If you are a US user, you'll have the option of creating it in US Units or Metric. For this example, I'll use metric units. Using the Rectangle Tool on the Drawing Toolbar (you can add the toolbar by going to View&gt;Toolbars if you don't see it), create a simple rectangle like this:</P><img src="ss2-1.PNG">
+<P>Now, select the shape and click on the "Window&gt;Show ShapeSheet" menu item. This opens up the ShapeSheet window for the shape we just created. Next, tile the two open windows (drawing and ShapeSheet) so that you can see both at the same time. This will let you see the effects of the actions you take in the ShapeSheet window on the drawing page.</P><img src="ss2-2.PNG">
+<P>Just to get the hand of working with the ShapeSheet, try a few things:</P>
+<OL>
+<LI>In the Shape Transform section, change the Width value from its current value (65 mm in my case) to double that value. Note the shape in the page window changing width.<BR></LI>
+<LI>In the Fill Format section, change the FillForegnd cell from 1 to 9. This should color the shape green. You can also play around with other colors by entering in an RGB value using the formula RGB(255,0,0). <BR></LI>
+<LI>Add a Guard function to the PinX cell in the Shape Transform section. This will mean that you are no longer able to move the shape horizontally along the page.<BR></LI>
+<LI>To get a feel for formulas referencing other cells, add the following formula to the FillForegnd cell: =IF(Width&gt;Height,2,4). Now resize the shape vertically and horizontally to see it change color when it is wider than it is high or vice versa.</LI></OL>
 <P>One other tip: if you expect to use the ShapeSheet a lot, run in developer mode. Among other things, this lets you get to the ShapeSheet by right clicking on a given shape. To use developer mode, go to Tools&gt;Options&gt;Advanced and check "Run in Developer Mode."</P></p>
 	</div><!-- .entry-content -->
 <hr>
@@ -103,7 +103,7 @@
 </div><!-- #primary -->
 <!-- Before Navigation --></main><!-- #site-main -->
 
-<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a> 
+<a class=""""screen-reader-shortcut"""" href=""""#primary"""" tabindex=""""1""""></a>
 
 <div id=""secondary"" class=""sidebar col-sm-3"">
 	<div id=""sidebar-widget-area"" class=""sidebar-widget-area"" role=""complementary"">
@@ -112,7 +112,7 @@
 		</div>
 		<aside id="tag_cloud-2" class="widget widget_tag_cloud">
 </aside>
-<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>	
+<aside id="msdn-archive-widget-2" class="widget msdn-archive-widget"><h2 class="widget-title">Archives</h2>
 <li><a href='..\..\..\years\2009\index.htm'>All of 2009</a>&nbsp;(1)</li>
 <li><a href='..\..\..\years\2008\index.htm'>All of 2008</a>&nbsp;(2)</li>
 <li><a href='..\..\..\years\2007\index.htm'>All of 2007</a>&nbsp;(31)</li>

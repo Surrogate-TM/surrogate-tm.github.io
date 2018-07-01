@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/07/10/visio-2007-pivotdiagram-tips-and-tricks-part-2/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/07/10/visio-2007-pivotdiagram-tips-and-tricks-part-2/' />
 <!-- og:title -->
 <meta property="og:title" content="Visio 2007: PivotDiagram Tips and Tricks, part 2" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,38 +85,38 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>In <A href="http://blogs.msdn.com/wmorein/archive/2006/06/22/643198.aspx">the first PivotDiagram tips post</A>, I talked about some of the alternate ways to create a new PivotDiagram. In this post, I’ll cover an alternate way to filter your data.<br />
-<H2>Filtering by Using “Promote”</H2><br />
-<P></P><br />
-<P>After creating your diagram and hooking up your data source, the most frequent first step we see is filtering down the data set to include just the information you want. It is possible to filter by using a dialog (drop down any of the menus in the PivotDiagram window, then click on “Configure Column”) but I find that to be a bit of a pain. It is much easier to just use “Add Categories” to set up a grouping that includes the data you want, then select the shape you want and use the “Promote” command to make that shape the root shape. This effectively filters the data quickly and easily. </P><br />
-<P>For an example, I’ll connect up to a data source containing some simple animal data and filter the data down to only the horses. This is the data I’ll use (I've also attached it to this post): </P><br />
-<P><img src="pd2-1.png"></P><br />
-<P>Here’s the step by step: </P><br />
-<OL><br />
-<LI><br />
-<DIV>Create the PivotDiagram. </DIV><br />
-<LI><br />
-<DIV>Use “Add Category” to break the data down by the category by which you want to filter (in this case, Animal).<BR></DIV><br />
-<LI><br />
-<DIV>Select the shape containing the specific data you want (in this case, Horse). <img src="pd2-2.png"></DIV><br />
-<LI><br />
-<DIV>Use the “Promote” command (under “Other Actions” in the PivotDiagram window). </DIV><br />
-<LI><br />
-<DIV>Now the data has been filtered down to only the horses in the data set (note that the count below in the totals is only 4).<BR><img src="pd2-3.png"></DIV><br />
-<LI><br />
-<DIV>Now your data set is filtered and you can continue working normally. Here I add the Name category. <BR><img src="pd2-4.png"></DIV></LI></OL><br />
-<P><br />
-<H2>More Filtering by Using “Promote” and “Merge” </H2><br />
-<P>Following the above steps does a simple filter to one value in one column in the original data source. </P><br />
-<P>You can also filter by multiple columns by adding multiple categories to the PivotDiagram, then selecting and promoting a single shape on a lower level. If you are familiar with SQL or another query language, think of this as creating an AND filter for the values that shape represents. In the diagram below, if you promote the highlighted shape you’ll have a filter that is “WHERE Animal=’Horse’ AND Gender=’Male’”. </P><br />
-<P><img src="pd2-5.png"></P><br />
-<P>Sometimes you also want to be able to allow two or more values from a single column in your filter. You can do this as well, by using the “Merge” command before you “Promote”. “Merge” is a great feature by itself (I’ll cover it in more detail in a later post) but it is particularly useful when doing this type of filtering. Using the same example, now we’ll filter the data down to include both cats and dogs. </P><br />
-<OL><br />
-<LI><br />
-<DIV>Again, create the PivotDiagram and add the Animal category. </DIV><br />
-<LI><br />
-<DIV>Now, select the Cat and Dog shapes and select “Merge” under “Other Actions” in the PivotDiagram window. This will create a merged shape representing all of the cats and dogs in the data set. <img src="pd2-6.png"> </DIV><br />
-<LI><br />
+		<p><P>In <a href="../../../../wmorein/2006/06/22/visio-2007-pivotdiagram-tips-and-tricks-part-1.htm">the first PivotDiagram tips post</a>, I talked about some of the alternate ways to create a new PivotDiagram. In this post, I’ll cover an alternate way to filter your data.
+<H2>Filtering by Using “Promote”</H2>
+<P></P>
+<P>After creating your diagram and hooking up your data source, the most frequent first step we see is filtering down the data set to include just the information you want. It is possible to filter by using a dialog (drop down any of the menus in the PivotDiagram window, then click on “Configure Column”) but I find that to be a bit of a pain. It is much easier to just use “Add Categories” to set up a grouping that includes the data you want, then select the shape you want and use the “Promote” command to make that shape the root shape. This effectively filters the data quickly and easily. </P>
+<P>For an example, I’ll connect up to a data source containing some simple animal data and filter the data down to only the horses. This is the data I’ll use (I've also attached it to this post): </P>
+<P><img src="pd2-1.png"></P>
+<P>Here’s the step by step: </P>
+<OL>
+<LI>
+<DIV>Create the PivotDiagram. </DIV>
+<LI>
+<DIV>Use “Add Category” to break the data down by the category by which you want to filter (in this case, Animal).<BR></DIV>
+<LI>
+<DIV>Select the shape containing the specific data you want (in this case, Horse). <img src="pd2-2.png"></DIV>
+<LI>
+<DIV>Use the “Promote” command (under “Other Actions” in the PivotDiagram window). </DIV>
+<LI>
+<DIV>Now the data has been filtered down to only the horses in the data set (note that the count below in the totals is only 4).<BR><img src="pd2-3.png"></DIV>
+<LI>
+<DIV>Now your data set is filtered and you can continue working normally. Here I add the Name category. <BR><img src="pd2-4.png"></DIV></LI></OL>
+<P>
+<H2>More Filtering by Using “Promote” and “Merge” </H2>
+<P>Following the above steps does a simple filter to one value in one column in the original data source. </P>
+<P>You can also filter by multiple columns by adding multiple categories to the PivotDiagram, then selecting and promoting a single shape on a lower level. If you are familiar with SQL or another query language, think of this as creating an AND filter for the values that shape represents. In the diagram below, if you promote the highlighted shape you’ll have a filter that is “WHERE Animal=’Horse’ AND Gender=’Male’”. </P>
+<P><img src="pd2-5.png"></P>
+<P>Sometimes you also want to be able to allow two or more values from a single column in your filter. You can do this as well, by using the “Merge” command before you “Promote”. “Merge” is a great feature by itself (I’ll cover it in more detail in a later post) but it is particularly useful when doing this type of filtering. Using the same example, now we’ll filter the data down to include both cats and dogs. </P>
+<OL>
+<LI>
+<DIV>Again, create the PivotDiagram and add the Animal category. </DIV>
+<LI>
+<DIV>Now, select the Cat and Dog shapes and select “Merge” under “Other Actions” in the PivotDiagram window. This will create a merged shape representing all of the cats and dogs in the data set. <img src="pd2-6.png"> </DIV>
+<LI>
 <DIV>Select the newly created shape (“Dog, Cat”) and Promote it. <BR><img src="pd2-7.png"></DIV></LI></OL></p>
 <p><a href="Animals.xls">Animals.xls</a></p>
 	</div><!-- .entry-content -->

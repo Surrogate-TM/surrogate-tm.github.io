@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-<title>The Point Along Path ShapeSheet Functions in Visio 2010 &#8211; Visio Insights</title>
+<title>The Point Along Path ShapeSheet Functions in Visio 2010 &#8211; Archive of Visio Insights blog (2006-2018)</title>
 <link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/visio/2010/01/15/the-point-along-path-shapesheet-functions-in-visio-2010/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/visio/2010/01/15/the-point-along-path-shapesheet-functions-in-visio-2010/' />
 <!-- og:title -->
 <meta property="og:title" content="The Point Along Path ShapeSheet Functions in Visio 2010" />
 <!-- og:description -->
@@ -53,10 +53,9 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-desktop">
-						Visio Insights					</a>
-					<a href="https://blogs.msdn.microsoft.com/visio" class="for-mobile">
-						Visio Insights					</a>
+					
+						Archive of Visio Insights blog (2006-2018)
+					
 				</h1>
 <!-- blog description -->
 <p class="site-description ms-blog-description">The official blog of the Microsoft Visio product team</p>
@@ -205,7 +204,7 @@
 <h3>Curved Timelines</h3>
 <p>The above two examples illustrate how you can use the Point Along Path functions. As an application of the same concepts above, we built a curved timeline:    <br /><a href="https://msdnshared.blob.core.windows.net/media/TNBlogsFS/BlogFileStorage/blogs_msdn/visio/WindowsLiveWriter/ThePointAlongPathShapeSheetFunctionsinVi_DD4B/curvy%20timeline_2.jpg" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ThePointAlongPathShapeSheetFunctionsinVi_DD4B/curvy%20timeline_2.jpg" mce_href="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ThePointAlongPathShapeSheetFunctionsinVi_DD4B/curvy%20timeline_2.jpg"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="curvy timeline" border="0" alt="curvy timeline" src="curvytimeline_thumb.jpg" original-url="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ThePointAlongPathShapeSheetFunctionsinVi_DD4B/curvy%20timeline_thumb.jpg" width="486" height="484" mce_src="http://blogs.msdn.com/blogfiles/visio/WindowsLiveWriter/ThePointAlongPathShapeSheetFunctionsinVi_DD4B/curvy%20timeline_thumb.jpg" /></a> </p>
 <p>As you change the curve of the timeline, the milestone shapes stay attached to the curve, which allows you to create a great looking visual.</p>
-<p>The main difference between this example and the previous one is that we’ve introduced a mechanism for automatically attaching adornments to the arc geometry. Here we turned the arc shape into a custom container to give the milestone shapes a universal reference. Since they are members of the container, we use the CONTAINERSHEETREF() function to reference the geometry of the arc. When you make multiple copies of the milestone shape, their reference to the timeline arc geometry is preserved as long as they are members of the container. (For more info on custom containers, see our <a href="http://blogs.msdn.com/visio/archive/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.aspx" mce_href="http://blogs.msdn.com/visio/archive/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.aspx">previous post</a> ).</p>
+<p>The main difference between this example and the previous one is that we’ve introduced a mechanism for automatically attaching adornments to the arc geometry. Here we turned the arc shape into a custom container to give the milestone shapes a universal reference. Since they are members of the container, we use the CONTAINERSHEETREF() function to reference the geometry of the arc. When you make multiple copies of the milestone shape, their reference to the timeline arc geometry is preserved as long as they are members of the container. (For more info on custom containers, see our <a href="../../../../visio/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.htm" mce_href="http://blogs.msdn.com/visio/archive/2010/01/12/custom-containers-lists-and-callouts-in-visio-2010.aspx">previous post</a> ).</p>
 <p>To place the milestones accurately on the timeline arc, we used the POINTALONGPATH() function. Each timeline shape stores its own date. The timeline arc contains the “begin” and “end” dates of the timeline. </p>
 <p>The <a href="PointAlongPathFunctions.vsd">attached VSD file</a> includes the curved timeline, and the other two examples, so you can take a look at the formulas and play around with them.</p>
 <p>We think these new functions will open up a new set of scenarios for shape developers. Some things you might try to create with them are:</p>

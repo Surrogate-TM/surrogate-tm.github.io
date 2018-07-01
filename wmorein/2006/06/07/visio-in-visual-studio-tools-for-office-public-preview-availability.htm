@@ -14,7 +14,7 @@
 	<div id='msccBanner' dir='ltr' data-site-name='uhf-TechNetBlogs' data-mscc-version='0.4.0' data-nver='aspnet-2.0.7' data-sver='0.1.2' class='cc-banner' role='alert'>
 <link rel=""shortcut icon"" href=""https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico"">
 
-<link rel="canonical" href="https://blogs.msdn.microsoft.com/wmorein/2006/06/07/visio-in-visual-studio-tools-for-office-public-preview-availability/" />
+<link rel='canonical' href='https://blogs.msdn.microsoft.com/wmorein/2006/06/07/visio-in-visual-studio-tools-for-office-public-preview-availability/' />
 <!-- og:title -->
 <meta property="og:title" content="Visio in Visual Studio Tools for Office &#8211; Public Preview Availability" />
 <!-- og:description -->
@@ -53,8 +53,8 @@
 						<div id="blog-logo" data-toggle="collapse" data-target="#blog-menu" tabindex="0" aria-label="blog logo">
 														<div id="blog-logo-text">
 <h1 class="site-title ms-blog-title">
-					<a href="https://blogs.msdn.microsoft.com/wmorein" class="for-desktop">
-						Archive of Bill Morein&#039;s Weblog (2005-2009)					</a>
+
+						Archive of Bill Morein&#039;s Weblog (2005-2009)
 					
 				</h1>
 <!-- blog description -->
@@ -85,18 +85,18 @@
 		<hr>
 	</header><!-- .entry-header -->
 <div class="entry-content single">
-		<p><P>I mentioned earlier the release of VSTO for Visio Beta 1 users. Now that Beta 2 is available, I’m happy to announce that anyone can try this out. To download the CTP of VSTO “v3”, go <A href="http://www.microsoft.com/downloads/details.aspx?familyid=68978824-CA55-4208-A55E-5C4858183B31&amp;displaylang=en">here</A>. Note that you need to install Visual Studio first, then <A href="http://www.microsoft.com/office/preview/default.mspx">Visio 2007 Beta 2</A>, and finally VSTO. </P><br />
-<P>The main Visio-related functionality that you get when you use VSTO are the wizards for creating C# and VB.Net add-in projects. Although the basic idea is similar to the wizards that ship with the Visio SDK, there are a couple key advantages to using the ones in VSTO: </P><br />
-<UL><br />
-<LI><br />
-<DIV>The programming model is somewhat simpler in that the full COM interop interface (IDTExtensibility2) is hidden. You basically just get a Visio application object, a Startup event, and a Shutdown event to work with. This makes the add-in a lot cleaner and easier to manage. </DIV><br />
-<LI><br />
-<DIV>They automatically handle the creation of the COM shims (read <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dno2k3ta/html/ODC_Office_COM_Shim_Wizards.asp">this article</A> if you don’t know what that means). This means, among other things, that it is a lot simpler to sign your add-in and if your add-in goes down it doesn't bring down all of the other add-ins. </DIV></LI></UL><br />
-<P>In playing around with this, one thing that I have noticed is that by default objects you create are not COMVisible (whereas they are in add-ins created using the Visio SDK wizards). This means that you need to set this explicitly for any objects that you need to be COMVisible. I first saw this when creating and working with Event Sinks - if you see COM exception 0x86DB0898 when you do an AddAdvise this is your issue. To fix it, add the following lines above the relevant object: </P><br />
-<UL><br />
-<LI><br />
-<DIV>For VB.Net:<SPAN style="FONT-FAMILY: Courier New"> &lt;ComVisibleAttribute(<SPAN style="COLOR: blue">True</SPAN>)&gt; </SPAN></DIV><br />
-<LI><br />
+		<p><P>I mentioned earlier the release of VSTO for Visio Beta 1 users. Now that Beta 2 is available, I’m happy to announce that anyone can try this out. To download the CTP of VSTO “v3”, go <A href="http://www.microsoft.com/downloads/details.aspx?familyid=68978824-CA55-4208-A55E-5C4858183B31&amp;displaylang=en">here</A>. Note that you need to install Visual Studio first, then <A href="http://www.microsoft.com/office/preview/default.mspx">Visio 2007 Beta 2</A>, and finally VSTO. </P>
+<P>The main Visio-related functionality that you get when you use VSTO are the wizards for creating C# and VB.Net add-in projects. Although the basic idea is similar to the wizards that ship with the Visio SDK, there are a couple key advantages to using the ones in VSTO: </P>
+<UL>
+<LI>
+<DIV>The programming model is somewhat simpler in that the full COM interop interface (IDTExtensibility2) is hidden. You basically just get a Visio application object, a Startup event, and a Shutdown event to work with. This makes the add-in a lot cleaner and easier to manage. </DIV>
+<LI>
+<DIV>They automatically handle the creation of the COM shims (read <A href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dno2k3ta/html/ODC_Office_COM_Shim_Wizards.asp">this article</A> if you don’t know what that means). This means, among other things, that it is a lot simpler to sign your add-in and if your add-in goes down it doesn't bring down all of the other add-ins. </DIV></LI></UL>
+<P>In playing around with this, one thing that I have noticed is that by default objects you create are not COMVisible (whereas they are in add-ins created using the Visio SDK wizards). This means that you need to set this explicitly for any objects that you need to be COMVisible. I first saw this when creating and working with Event Sinks - if you see COM exception 0x86DB0898 when you do an AddAdvise this is your issue. To fix it, add the following lines above the relevant object: </P>
+<UL>
+<LI>
+<DIV>For VB.Net:<SPAN style="FONT-FAMILY: Courier New"> &lt;ComVisibleAttribute(<SPAN style="COLOR: blue">True</SPAN>)&gt; </SPAN></DIV>
+<LI>
 <DIV>For C#:<SPAN style="FONT-FAMILY: Courier New"> [ComVisible(<SPAN style="COLOR: blue">true</SPAN>)]</SPAN></DIV></LI></UL></p>
 	</div><!-- .entry-content -->
 <hr>
