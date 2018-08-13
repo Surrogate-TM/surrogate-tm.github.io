@@ -1,0 +1,218 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>Использование программ в Visio</title>
+</head>
+
+<body bgcolor="#DDEEFF">
+<font FACE="Arial">
+
+<p ALIGN="JUSTIFY">Использование программ в Visio</p>
+</font><font FACE="Times New Roman"><i><b>
+
+<p ALIGN="CENTER"><a name="B1"></a>Visio и OLE автоматизация</p>
+</b></i></font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Для управления шейпами и рисунками Visio
+вы можете использовать язык программирования,
+поддерживающий OLE автоматизацию, типа Visual Basic.
+Программа может использовать OLE автоматизацию
+для включения рисунков и диаграмм Visio или
+автоматизации простых задач. Например, программа
+могла бы генерировать схему организации по
+списку названий и позиций или печатать все
+мастер-шейпы на трафарете.</p>
+
+<p ALIGN="JUSTIFY">Программа управляет Visio, обращаясь к
+его объектам и затем используя их свойства и
+методы.</p>
+
+<p ALIGN="JUSTIFY">Объектами являются элементы, с
+которыми вы работаете в Visio, такие как документ,
+страница рисунка, шейпы и формулы.</p>
+
+<p ALIGN="JUSTIFY">Методы – это действия, которые могут
+быть выполнены с объектом. Например, программа
+может использовать метод Copy объекта Window для
+копирования выбранного шейпа в буфер. Этот метод
+эквивалентен выбору формы на странице рисунка и
+использование команды Copy меню Edit Visio.</p>
+
+<p ALIGN="JUSTIFY">Свойства – это признаки, которые
+определяют появление или поведение объектов.
+Например, объект Shape имеет свойство Name, которая
+представляет название шейпа.</p>
+
+<p ALIGN="JUSTIFY">Для подробной информации по
+разработке программ для управления Visio, см. Developing
+Visio Solutions (изданный Visio Corporation). Для информации по
+объектам Visio, методам, и свойствам, смотри
+справочные материалы по OLE автоматизации,
+поддерживаемые Visio Technical, а также диск,
+прилагаемый к Developing Visio Solutions.</p>
+</font><font FACE="Times New Roman"><i><b>
+
+<p ALIGN="CENTER"><a name="B2"></a>Вызов расширений</p>
+</b></i></font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Расширение (add-on) – это программа,
+добавляющая функциональные возможности к Visio.
+Способ вызова расширения зависит от контекста,
+для которого оно разработано. Если расширение
+разработано как внешняя по отношению к Visio
+программа, оно запускается как любая программа
+Windows. Подробнее смотри документацию на Windows.</p>
+
+<p ALIGN="JUSTIFY">Если программа предназначена для
+запуска из Visio, вы можете запустить ее одним из
+следующих способов:</p>
+
+<p ALIGN="JUSTIFY">- Выбором расширения в подменю или
+диалоговом окне Run Add-on. Чтобы появиться в этом
+подменю или в диалоговом окне, EXE файл программы
+должен находиться в папке Add-ons Visio.</p>
+
+<p ALIGN="JUSTIFY">- Двойным щелчком на шейпе, связанном с
+данным расширением. Программа должны быть
+выбрана в установке Run Add-on диалогового окна
+Double-Click данного шейпа.</p>
+
+<p ALIGN="JUSTIFY">Для вызова расширения из меню Visio:</p>
+
+<p ALIGN="JUSTIFY">1. В меню Tools выберите Run Add-on.</p>
+
+<p ALIGN="JUSTIFY">2. В подменю Run Add-on выберите запускаемую
+программу. Если программы нет в подменю, выберите
+Add-ons и выберите программу в диалоговом окне,
+затем щелкните OK.</p>
+
+<p ALIGN="JUSTIFY">Чтобы связать расширение с шейпом и
+вызвать его:</p>
+
+<p ALIGN="JUSTIFY">1. Выберите шейп.</p>
+
+<p ALIGN="JUSTIFY">2. В меню Format выберите </font><font SIZE="3">Double-Click.</p>
+</font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">3. В диалоговом окне Double-Click установите
+флаг Run Add-on.</p>
+
+<p ALIGN="JUSTIFY">4. Из списка расширений выберите то,
+которое нужно запустить.</p>
+
+<p ALIGN="JUSTIFY">5. Щелкните OK.</p>
+
+<p ALIGN="JUSTIFY">6. Двойным щелчком на шейпе запустите
+программу.</p>
+
+<p ALIGN="JUSTIFY">Вы можете также ассоциировать
+расширение с шейпом вводом формулы, использующей
+функции RUNADDON или RUNADDONWARGS, в ячейку EventDblClick в
+шейп-листе.</p>
+</font><font FACE="Times New Roman"><i><b>
+
+<p ALIGN="CENTER"><a name="B3"></a>Рассмотрение типовой
+программы </p>
+</b></i></font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Приведенный ниже пример на Visual Basic
+просматривает открытые рисунки в Visio и печатает
+имя каждого файла рисунка, сопровождаемого
+названиями страниц в рисунке. </p>
+
+<p ALIGN="JUSTIFY">Программа делает следующее:</p>
+
+<p ALIGN="JUSTIFY">1. Находит файл рисунка, открытого в Visio.</p>
+
+<p ALIGN="JUSTIFY">2. Печатает путь к файла рисунка. </p>
+
+<p ALIGN="JUSTIFY">3. Печатает название каждой страницы в
+файле рисунка.</p>
+
+<p ALIGN="JUSTIFY">4. Повторяет шаги 1 до 3, пока все
+открытые файлы рисунка не будут внесены в список.</p>
+
+<p ALIGN="JUSTIFY">Программа выглядит примерно так:</p>
+
+<p ALIGN="JUSTIFY">Код Visual Basic Назначение</p>
+<i>
+
+<p ALIGN="JUSTIFY">Sub ShowNames() Декларация переменных</p>
+</font><font SIZE="3">
+
+<p ALIGN="JUSTIFY">Dim iDoc As Integer, iPag As Integer </p>
+
+<p ALIGN="JUSTIFY">Dim appVisio As Object </p>
+
+<p ALIGN="JUSTIFY">Dim pagObj As Object, docObj As Object </p>
+
+<p ALIGN="JUSTIFY">Dim docsObj As Object </p>
+
+<p ALIGN="JUSTIFY">Set appVisio = GetObject(“visio.application”) </p>
+</font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Set docsObj = appVisio.Documents Получает все
+открытые рисунки</p>
+</font><font SIZE="3">
+
+<p ALIGN="JUSTIFY">For iDoc = 1 To docsObj.Count </p>
+</font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Set docObj = docsObj(iDoc) Получает рисунок</p>
+
+<p ALIGN="JUSTIFY">Printer.Print docObj.Name Печатает имя</p>
+</font><font SIZE="3">
+
+<p ALIGN="JUSTIFY">For iPag = 1 To docObj.Pages.Count </p>
+</font><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Set pag = docObj.Pages(iPag) Получает страницу</p>
+
+<p ALIGN="JUSTIFY">Printer.Print Tab(5); pagObj.Name Печатает название </p>
+</font><font SIZE="3">
+
+<p ALIGN="JUSTIFY">Next iPag </p>
+
+<p ALIGN="JUSTIFY">Next iDoc </p>
+
+<p ALIGN="JUSTIFY">Printer.EndDoc </p>
+
+<p ALIGN="JUSTIFY">End Sub </p>
+</font></i><font FACE="Times New Roman" SIZE="3">
+
+<p ALIGN="JUSTIFY">Пример вывода программы:</p>
+
+<p ALIGN="JUSTIFY">Вывод Описание </p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">c:\drawings\pages.vsd </i></font><font FACE="Times New Roman" SIZE="3">Название
+первого рисунка</p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">Background-1</i></font><font FACE="Times New Roman" SIZE="3">
+Название страницы 1</p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">Background-2</i></font><font FACE="Times New Roman" SIZE="3">
+Название страницы 2</p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">c:\drawings\recycle.vsd</i></font><font FACE="Times New Roman" SIZE="3">
+Название второго рисунка</p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">Page-1 </i></font><font FACE="Times New Roman" SIZE="3">Название
+страницы 1</p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">Page-2 </i></font><font FACE="Times New Roman" SIZE="3">Название
+страницы 2 </p>
+</font><font SIZE="3"><i>
+
+<p ALIGN="JUSTIFY">Page-3 </i></font><font FACE="Times New Roman" SIZE="3">Название
+страницы 3</p>
+</font>
+</body>
+</html>
