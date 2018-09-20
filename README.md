@@ -5,7 +5,6 @@
 
 [Chris Castillo's WebLog](https://surrogate-tm.github.io/chcast/)  
 
-<a href="/chhopkin/index.htm" target="_blank" ></a><br>
 [Chris Hopkins' Blog – #makinitdostuff ](https://surrogate-tm.github.io/chhopkin/)  
 
 [Visio 12 – Eric Rockey's blog](https://surrogate-tm.github.io/eric_rockey/)  
@@ -17,6 +16,4 @@
 
 ## На русском  
 [Зеркало сайта visio.artberg.ru](https://surrogate-tm.github.io/visio-artberg-ru/)  
-[Зеркало сайта visio.artberg.ru](https://surrogate-tm.github.io/visio-artberg-ru/)  
-
 [Зеркало сайта Digitall](https://surrogate-tm.github.io/digitall/index.html)
