@@ -1,11 +1,11 @@
-﻿# Полезные сайты о Microsoft Visio  
-##Blogs on MSDN/Technet platform
+# Useful resources about Microsoft Visio  
+## Blogs on MSDN/Technet platform
 
 [Visio Insights blog](https://surrogate-tm.github.io//visio/)  
 
 [Chris Castillo's WebLog](https://surrogate-tm.github.io/chcast/)  
 
-[Chris Hopkins' Blog – #makinitdostuff ](https://surrogate-tm.github.io/chhopkin/)  
+[Chris Hopkins' Blog – #makinitdostuff](https://surrogate-tm.github.io/chhopkin/)  
 
 [Visio 12 – Eric Rockey's blog](https://surrogate-tm.github.io/eric_rockey/)  
 
