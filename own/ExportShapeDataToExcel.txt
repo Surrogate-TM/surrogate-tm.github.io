@@ -1,45 +1,45 @@
 Sub ExportShapeDataToExcel()
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
-End Sub
+Dim ea As Object, ew As Object, es As Object
+Dim sl As Visio.Shape, sc As Section, rw As Row
+' check is any shape selected
+If ActiveWindow.Selection.Count = 0 Then MsgBox "You need select ONE shape": Exit Sub
+' create new copy excel application
+Set ea = CreateObject("excel.application")
+' set this copy of application visible
+ea.Visible = True
+' create new workbook
+Set ew = ea.Workbooks.Add
+' define es variable
+Set es = ew.sheets(1)
+' report when user selected more than one shape
+If ActiveWindow.Selection.Count > 1 Then MsgBox "You select more than ONE shape, this code will export ShapeData only for primary selected shape"
+' define active shape
+Set sl = ActiveWindow.Selection.PrimaryItem
+' define ShapeData section
+Set sc = sl.Section(visSectionProp)
+' check how many rows contain ShapeData section
+If sc.Count = 0 Then
+MsgBox "This shape haven't ShapeData"
+Else
+' iterate all ShapeData rows
+For i = 0 To sc.Count - 1
+' define current ShapeData row
+Set rw = sc.Row(i)
+' set text data type in cell
+es.Cells(i + 1, 2).NumberFormat = "@"
+' set row's name in first column
+es.Cells(i + 1, 1) = rw.Name
+' check Number type
+If rw.Cell(5).Formula = 2 Then
+' set row's value in second column as number
+es.Cells(i + 1, 2) = rw.Cell(0).Result(32)
+Else
+' set row's value in second column
+es.Cells(i + 1, 2) = rw.Cell(0).ResultStr(1)
+End If
+Next
+End If
+Set es = Nothing
+Set ew = Nothing
+Set ea = Nothing
 End Sub
