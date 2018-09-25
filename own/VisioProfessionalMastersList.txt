@@ -1,3 +1,5 @@
+' This report prepared for question in topic: 
+' https://answers.microsoft.com/en-us/msoffice/forum/msoffice_visio-mso_win10-mso_o365b/library-of-all-visio-professional-stencils/edf7335a-6967-49ea-b51c-7ec34bb0638d
 Searching for Stencil files (VSS, VSSX)
 Found 267 stencil files
 Starting Visio Application
