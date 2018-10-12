@@ -1,4 +1,4 @@
-' This report prepared for question in topic: 
+' This report prepared for question in topic:
 ' https://answers.microsoft.com/en-us/msoffice/forum/msoffice_visio-mso_win10-mso_o365b/library-of-all-visio-professional-stencils/edf7335a-6967-49ea-b51c-7ec34bb0638d
 Searching for Stencil files (VSS, VSSX)
 Found 267 stencil files
@@ -6,8 +6,6 @@ Starting Visio Application
 Loading "ADO_M.VSSX"
 Creating output folder
     master Domain
-Creating output folder
-Creating output folder
     master Computer
     master User
     master Group
@@ -32,8 +30,6 @@ Closing stencil doc
 Loading "ADS_M.VSSX"
 Creating output folder
     master Site or subnet
-Creating output folder
-Creating output folder
     master Site link 3D
     master Site link bridge 3D
     master WAN
@@ -52,8 +48,6 @@ Closing stencil doc
 Loading "ALARM_M.VSSX"
 Creating output folder
     master Card access
-Creating output folder
-Creating output folder
     master Biometric access
     master Keypad device
     master Card reader with keypad
@@ -72,8 +66,6 @@ Closing stencil doc
 Loading "ANALYTICS_M.VSSX"
 Creating output folder
     master Bar chart
-Creating output folder
-Creating output folder
     master Bullseye
     master Calculator
     master Database
@@ -97,8 +89,6 @@ Closing stencil doc
 Loading "ANIMALS_M.VSSX"
 Creating output folder
     master Bats
-Creating output folder
-Creating output folder
     master Bug
     master Cat
     master Chicken
@@ -124,8 +114,6 @@ Closing stencil doc
 Loading "ANNOT_M.VSSX"
 Creating output folder
     master Callout - curved
-Creating output folder
-Creating output folder
     master Callout - bent
     master Callout - straight
     master Circle callout
@@ -168,8 +156,6 @@ Closing stencil doc
 Loading "APPAREL_M.VSSX"
 Creating output folder
     master Boot
-Creating output folder
-Creating output folder
     master Crown
     master Dress
     master Glasses
@@ -193,8 +179,6 @@ Closing stencil doc
 Loading "APPL_M.VSSX"
 Creating output folder
     master Refrigerator
-Creating output folder
-Creating output folder
     master Range
     master Washer and dryer
     master Air conditioner
@@ -219,8 +203,6 @@ Closing stencil doc
 Loading "APPL_VISIO2013_M.VSSX"
 Creating output folder
     master Refrg. 1
-Creating output folder
-Creating output folder
     master Refrg. 3
     master Stacked W/D
     master Combo W/D
@@ -248,8 +230,6 @@ Closing stencil doc
 Loading "ARROWS2_M.VSSX"
 Creating output folder
     master Line Outline Clockwise curve
-Creating output folder
-Creating output folder
     master Line Outline Counterclockwise curve
     master Line Outline Rotate left
     master Line Outline Rotate right
@@ -269,8 +249,6 @@ Closing stencil doc
 Loading "ARROWS_M.VSSX"
 Creating output folder
     master Simple Arrow
-Creating output folder
-Creating output folder
     master Simple Double Arrow
     master Modern Arrow
     master Flexible Arrow
@@ -294,8 +272,6 @@ Closing stencil doc
 Loading "ARTS_M.VSSX"
 Creating output folder
     master Clapper board
-Creating output folder
-Creating output folder
     master Drama
     master Drum
     master Easel
@@ -317,8 +293,6 @@ Closing stencil doc
 Loading "AUDIT_M.VSSX"
 Creating output folder
     master Tagged process
-Creating output folder
-Creating output folder
     master Decision
     master Tagged document
     master I/O
@@ -355,8 +329,6 @@ Closing stencil doc
 Loading "BASFLO_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Decision
     master Subprocess
     master Start/End
@@ -375,8 +347,6 @@ Closing stencil doc
 Loading "BASIC_M.VSSX"
 Creating output folder
     master Rectangle
-Creating output folder
-Creating output folder
     master Square
     master Ellipse
     master Circle
@@ -428,8 +398,6 @@ Closing stencil doc
 Loading "BA_DEC_M.VSSX"
 Creating output folder
     master Folded Corner
-Creating output folder
-Creating output folder
     master Smiling Face
     master Neutral Face
     master Frowning Face
@@ -450,8 +418,6 @@ Closing stencil doc
 Loading "BA_GRP_M.VSSX"
 Creating output folder
     master Venn Diagram Shape
-Creating output folder
-Creating output folder
     master Pie Slice
     master Pie Arc
     master Multi-Line
@@ -464,9 +430,7 @@ Creating output folder
 Closing stencil doc
 Loading "BCKGRN_M.VSSX"
 Creating output folder
-    master None 
-Creating output folder
-Creating output folder
+    master None
     master Solid
     master Vertical Gradient
     master Horizontal Gradient
@@ -481,8 +445,6 @@ Closing stencil doc
 Loading "BLDCOR_VISIO2013_M.VSSX"
 Creating output folder
     master Straight staircase
-Creating output folder
-Creating output folder
     master Stair landing
     master Escalator
     master Elevator
@@ -511,8 +473,6 @@ Closing stencil doc
 Loading "BLDCOR_M.VSSX"
 Creating output folder
     master Straight staircase
-Creating output folder
-Creating output folder
     master Stair landing
     master Escalator
     master Elevator
@@ -542,8 +502,6 @@ Closing stencil doc
 Loading "BLOCK3_M.VSSX"
 Creating output folder
     master Square block
-Creating output folder
-Creating output folder
     master Circle
     master Horizontal bar
     master Vertical bar
@@ -566,8 +524,6 @@ Closing stencil doc
 Loading "BLOCKP_M.VSSX"
 Creating output folder
     master Block
-Creating output folder
-Creating output folder
     master Circle
     master Arrow, left
     master Arrow, right
@@ -590,8 +546,6 @@ Closing stencil doc
 Loading "BLOCK_M.VSSX"
 Creating output folder
     master Box
-Creating output folder
-Creating output folder
     master Circle
     master Diamond
     master Arrow box
@@ -631,9 +585,7 @@ Creating output folder
 Closing stencil doc
 Loading "BORDRS_M.VSSX"
 Creating output folder
-    master None 
-Creating output folder
-Creating output folder
+    master None
     master Tiles
     master Urban
     master Alphabet
@@ -652,8 +604,6 @@ Closing stencil doc
 Loading "BPMN_M.VSSX"
 Creating output folder
     master Task
-Creating output folder
-Creating output folder
     master Gateway
     master Intermediate Event
     master End Event
@@ -678,8 +628,6 @@ Closing stencil doc
 Loading "BPRES_M.VSSX"
 Creating output folder
     master Space
-Creating output folder
-Creating output folder
     master Boundary
     master Asset
     master Person
@@ -692,8 +640,6 @@ Closing stencil doc
 Loading "BSTORM_M.VSSX"
 Creating output folder
     master Main topic
-Creating output folder
-Creating output folder
     master Topic
     master Multiple topic
     master Dynamic connector
@@ -702,8 +648,6 @@ Closing stencil doc
 Loading "BTHKT_VISIO2013_M.VSSX"
 Creating output folder
     master Sink 1
-Creating output folder
-Creating output folder
     master Sink 2
     master Shower
     master Bath 1
@@ -729,8 +673,6 @@ Closing stencil doc
 Loading "BTHKT_M.VSSX"
 Creating output folder
     master Sink 1
-Creating output folder
-Creating output folder
     master Sink 2
     master Shower
     master Bathtub 1
@@ -761,8 +703,6 @@ Closing stencil doc
 Loading "BUILDINGS_M.VSSX"
 Creating output folder
     master Bank
-Creating output folder
-Creating output folder
     master Barn
     master Building
     master City
@@ -778,8 +718,6 @@ Closing stencil doc
 Loading "BUSINESS_M.VSSX"
 Creating output folder
     master Briefcase
-Creating output folder
-Creating output folder
     master Checklist
     master Clipboard
     master Contract
@@ -801,8 +739,6 @@ Closing stencil doc
 Loading "CABNT_M.VSSX"
 Creating output folder
     master Base 1
-Creating output folder
-Creating output folder
     master Base 2
     master Base end-shelf
     master Base corner
@@ -831,12 +767,10 @@ Closing stencil doc
 Loading "CABNT_VISIO2013_M.VSSX"
 Creating output folder
     master Base 1
-Creating output folder
-Creating output folder
     master Base 2
     master Base end-shelf
     master Base corner
-    master Base blind corner 
+    master Base blind corner
     master Base end angle
     master Peninsula end-shelf
     master Base peninsula 1
@@ -853,7 +787,7 @@ Creating output folder
     master Wall angle cabinet
     master Wall peninsula 1
     master Wall peninsula 2
-    master Wall blind peninsula 
+    master Wall blind peninsula
     master Track end-bevel
     master Track corner
     master Track 45 deg.
@@ -863,8 +797,6 @@ Closing stencil doc
 Loading "CALNDR_M.VSSX"
 Creating output folder
     master Month
-Creating output folder
-Creating output folder
     master Week
     master Multiple week
     master Thumbnail month
@@ -908,8 +840,6 @@ Closing stencil doc
 Loading "CALOUT_M.VSSX"
 Creating output folder
     master Side box callout
-Creating output folder
-Creating output folder
     master Side line callout
     master Side text callout
     master Mid box callout
@@ -951,8 +881,6 @@ Closing stencil doc
 Loading "CAUSEF_M.VSSX"
 Creating output folder
     master Effect
-Creating output folder
-Creating output folder
     master Category 1
     master Category 2
     master Fish frame
@@ -968,8 +896,6 @@ Closing stencil doc
 Loading "CELEBRATION_M.VSSX"
 Creating output folder
     master Balloons
-Creating output folder
-Creating output folder
     master Cake
     master Dance
     master Diploma
@@ -988,8 +914,6 @@ Closing stencil doc
 Loading "CHART_M.VSSX"
 Creating output folder
     master Bar graph    1
-Creating output folder
-Creating output folder
     master Bar graph    2
     master 3-D bar graph
     master 3-D axis
@@ -1033,8 +957,6 @@ Closing stencil doc
 Loading "COMMERCE_M.VSSX"
 Creating output folder
     master Bank Check
-Creating output folder
-Creating output folder
     master Barcode
     master Box trolley
     master Box
@@ -1054,8 +976,6 @@ Closing stencil doc
 Loading "COMMUNICATION_M.VSSX"
 Creating output folder
     master Call center
-Creating output folder
-Creating output folder
     master Chat
     master Download from cloud
     master Download
@@ -1081,8 +1001,6 @@ Closing stencil doc
 Loading "COMOLE_M.VSSX"
 Creating output folder
     master COM object
-Creating output folder
-Creating output folder
     master Reference
     master Weak reference
     master Vtable
@@ -1102,8 +1020,6 @@ Closing stencil doc
 Loading "COMPLN_M.VSSX"
 Creating output folder
     master Risk
-Creating output folder
-Creating output folder
     master Control
     master Input
     master Output
@@ -1114,8 +1030,6 @@ Closing stencil doc
 Loading "COMPME_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Virtual PC
     master Terminal
     master Wavelength-division Multiplexer (WDM)
@@ -1131,8 +1045,6 @@ Closing stencil doc
 Loading "COMPS_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Laptop computer
     master LCD monitor
     master Terminal
@@ -1146,8 +1058,6 @@ Closing stencil doc
 Loading "CONNEC_M.VSSX"
 Creating output folder
     master Dynamic connector
-Creating output folder
-Creating output folder
     master Line-arc connector
     master Curve connect 1
     master Curve connect 2
@@ -1220,8 +1130,6 @@ Closing stencil doc
 Loading "CUBICL_VISIO2013_M.VSSX"
 Creating output folder
     master Cube workstation
-Creating output folder
-Creating output folder
     master L workstation
     master Straight workstation
     master Council workstation
@@ -1243,8 +1151,6 @@ Closing stencil doc
 Loading "CUBICL_M.VSSX"
 Creating output folder
     master Cube workstation
-Creating output folder
-Creating output folder
     master Small L-shaped workstation
     master Straight workstation
     master Council workstation
@@ -1264,8 +1170,6 @@ Closing stencil doc
 Loading "CYCLEDIAG_M.VSSX"
 Creating output folder
     master Circular Arrow
-Creating output folder
-Creating output folder
     master 4-Phase Circular Motion
     master Pie Arc
     master Partial layer 1
@@ -1289,24 +1193,18 @@ Closing stencil doc
 Loading "DATAVISUALIZER_M.VSSX"
 Creating output folder
     master BF Data Visualizer
-Creating output folder
-Creating output folder
     master CFF Data Visualizer
     master Audit Data Visualizer
 Closing stencil doc
 Loading "DATAVISUALIZERPREVIEW_M.VSSX"
 Creating output folder
     master Basic Flow Chart
-Creating output folder
-Creating output folder
     master CFF Horizontal
     master CFF Vertical
 Closing stencil doc
 Loading "DATFLO_M.VSSX"
 Creating output folder
     master Data process
-Creating output folder
-Creating output folder
     master External interactor
     master Data store
     master Object
@@ -1331,8 +1229,6 @@ Closing stencil doc
 Loading "DBCHEN_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Relationship
     master Attribute
     master Relationship Connector
@@ -1340,8 +1236,6 @@ Closing stencil doc
 Loading "DBCROW_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Primary Key Attribute
     master Primary Key Separator
     master Attribute
@@ -1350,8 +1244,6 @@ Closing stencil doc
 Loading "DBIDEF1X_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Primary Key Attribute
     master Primary Key Separator
     master Attribute
@@ -1360,8 +1252,6 @@ Closing stencil doc
 Loading "DBUML_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Primary Key Attribute
     master Primary Key Separator
     master Attribute
@@ -1370,8 +1260,6 @@ Closing stencil doc
 Loading "DGICON_M.VSSX"
 Creating output folder
     master Trend arrows 1
-Creating output folder
-Creating output folder
     master Trend arrows 2
     master Flags
     master Status icons
@@ -1389,8 +1277,6 @@ Closing stencil doc
 Loading "DIMENG_M.VSSX"
 Creating output folder
     master Horizontal baseline
-Creating output folder
-Creating output folder
     master Vertical baseline
     master Horizontal outside
     master Horizontal
@@ -1420,8 +1306,6 @@ Closing stencil doc
 Loading "DRAWTL_M.VSSX"
 Creating output folder
     master Measure tool
-Creating output folder
-Creating output folder
     master Horizontal measure
     master Vertical measure
     master Circle, ellipse
@@ -1456,8 +1340,6 @@ Closing stencil doc
 Loading "DRILLD_M.VSSX"
 Creating output folder
     master Pivot Node
-Creating output folder
-Creating output folder
     master Pivot Breakdown
     master Pivot Title
     master Pivot Info
@@ -1466,8 +1348,6 @@ Closing stencil doc
 Loading "DTLNET_M.VSSX"
 Creating output folder
     master A/B switchbox
-Creating output folder
-Creating output folder
     master Biometric reader
     master Data
     master Diagnostic device
@@ -1487,8 +1367,6 @@ Closing stencil doc
 Loading "DTLNME_M.VSSX"
 Creating output folder
     master A/B Switch
-Creating output folder
-Creating output folder
     master Repeater
     master Diagnostic Device
     master Smart Card Reader
@@ -1507,8 +1385,6 @@ Closing stencil doc
 Loading "DVCALL_M.VSSX"
 Creating output folder
     master Text callout
-Creating output folder
-Creating output folder
     master Text callout 3
     master Mobile callout
     master Email callout
@@ -1569,8 +1445,6 @@ Closing stencil doc
 Loading "EDUCATION_M.VSSX"
 Creating output folder
     master Atom
-Creating output folder
-Creating output folder
     master Backpack
     master Beaker
     master Bell
@@ -1596,8 +1470,6 @@ Closing stencil doc
 Loading "EECHIP_M.VSSX"
 Creating output folder
     master 4X Building block-complete
-Creating output folder
-Creating output folder
     master Negative logic dot
     master MUX 4
     master 4-bit counter
@@ -1636,8 +1508,6 @@ Closing stencil doc
 Loading "EECOMP_M.VSSX"
 Creating output folder
     master Amplifier
-Creating output folder
-Creating output folder
     master Rectifier
     master 1-way repeater
     master 2-way repeater
@@ -1669,8 +1539,6 @@ Closing stencil doc
 Loading "EEFUND_VISIO2013_M.VSSX"
 Creating output folder
     master Resistor
-Creating output folder
-Creating output folder
     master Capacitor
     master AC source
     master DC source
@@ -1724,8 +1592,6 @@ Closing stencil doc
 Loading "EEFUND_M.VSSX"
 Creating output folder
     master Resistor
-Creating output folder
-Creating output folder
     master Capacitor
     master AC source
     master DC source
@@ -1786,8 +1652,6 @@ Closing stencil doc
 Loading "EEMAIN_M.VSSX"
 Creating output folder
     master Signal generator
-Creating output folder
-Creating output folder
     master Linear element
     master Relay contacts
     master Relay coil
@@ -1804,8 +1668,6 @@ Closing stencil doc
 Loading "EEMAPS_M.VSSX"
 Creating output folder
     master Radio  station 1
-Creating output folder
-Creating output folder
     master Radio  station 2
     master Portable station
     master Mobile station
@@ -1845,8 +1707,6 @@ Closing stencil doc
 Loading "EEMECH_M.VSSX"
 Creating output folder
     master Rotating machine
-Creating output folder
-Creating output folder
     master Armature
     master Brush
     master Field
@@ -1869,8 +1729,6 @@ Closing stencil doc
 Loading "EEPATH_VISIO2013_M.VSSX"
 Creating output folder
     master Bus width
-Creating output folder
-Creating output folder
     master Straight bus
     master 2-line bus
     master 2-line bus elbow
@@ -1899,8 +1757,6 @@ Closing stencil doc
 Loading "EEPATH_M.VSSX"
 Creating output folder
     master Bus width
-Creating output folder
-Creating output folder
     master Straight bus
     master Line concentrator
     master Cable group
@@ -1929,8 +1785,6 @@ Closing stencil doc
 Loading "EEQUAL_VISIO2013_M.VSSX"
 Creating output folder
     master 3-phase  zigzag
-Creating output folder
-Creating output folder
     master 4-phase
     master Radiation
     master Positive polarity
@@ -1959,8 +1813,6 @@ Closing stencil doc
 Loading "EEQUAL_M.VSSX"
 Creating output folder
     master 3-phase  zigzag
-Creating output folder
-Creating output folder
     master 4-phase
     master Radiation
     master Positive polarity
@@ -1989,8 +1841,6 @@ Closing stencil doc
 Loading "EESEMI_M.VSSX"
 Creating output folder
     master Bipolar
-Creating output folder
-Creating output folder
     master Diode
     master Photodiode
     master MOSFET N-Type
@@ -2024,8 +1874,6 @@ Closing stencil doc
 Loading "EESEMI_VISIO2013_M.VSSX"
 Creating output folder
     master Bipolar
-Creating output folder
-Creating output folder
     master Diode
     master Photodiode
     master MOSFET
@@ -2056,8 +1904,6 @@ Closing stencil doc
 Loading "EESWCH_M.VSSX"
 Creating output folder
     master Relay
-Creating output folder
-Creating output folder
     master Relay contacts
     master Switch disconnector
     master Fuse
@@ -2111,8 +1957,6 @@ Closing stencil doc
 Loading "EESWCH_VISIO2013_M.VSSX"
 Creating output folder
     master Relay
-Creating output folder
-Creating output folder
     master Relay contacts
     master Switch disconnector
     master Fuse
@@ -2166,8 +2010,6 @@ Closing stencil doc
 Loading "EETCOM_M.VSSX"
 Creating output folder
     master Frequency band
-Creating output folder
-Creating output folder
     master Frequency spectrum element
     master Connecting stage
     master Marking stage
@@ -2199,8 +2041,6 @@ Closing stencil doc
 Loading "EETERM_M.VSSX"
 Creating output folder
     master Adapter
-Creating output folder
-Creating output folder
     master Circuit terminal
     master M/F contact
     master M/F contact 2
@@ -2232,8 +2072,6 @@ Closing stencil doc
 Loading "EETRAN_M.VSSX"
 Creating output folder
     master Transformer
-Creating output folder
-Creating output folder
     master Magnetic core
     master Inductor
     master Choke
@@ -2258,8 +2096,6 @@ Closing stencil doc
 Loading "EEVHF_M.VSSX"
 Creating output folder
     master Discontinuity
-Creating output folder
-Creating output folder
     master Equivalent series
     master Capacitive reactance
     master Inductive reactance
@@ -2295,8 +2131,6 @@ Closing stencil doc
 Loading "ELETEL_M.VSSX"
 Creating output folder
     master Lum. ceiling mount
-Creating output folder
-Creating output folder
     master Encl ceiling lum
     master Switches
     master Socket outlet
@@ -2331,8 +2165,6 @@ Closing stencil doc
 Loading "EMBELL_M.VSSX"
 Creating output folder
     master Wave section
-Creating output folder
-Creating output folder
     master Wave corner
     master Braid section
     master Braid corner
@@ -2377,8 +2209,6 @@ Closing stencil doc
 Loading "ENTAPP_M.VSSX"
 Creating output folder
     master Server
-Creating output folder
-Creating output folder
     master Mainframe
     master Workstation
     master User
@@ -2430,8 +2260,6 @@ Closing stencil doc
 Loading "EPC_M.VSSX"
 Creating output folder
     master Event
-Creating output folder
-Creating output folder
     master Function
     master Process path
     master Organizational unit
@@ -2448,8 +2276,6 @@ Closing stencil doc
 Loading "EXCOBJ_M.VSSX"
 Creating output folder
     master Exchange organization
-Creating output folder
-Creating output folder
     master Message formats
     master Exchange server
     master Exchange servers
@@ -2470,8 +2296,6 @@ Closing stencil doc
 Loading "FACES_M.VSSX"
 Creating output folder
     master Angry Face with No Fill
-Creating output folder
-Creating output folder
     master Angry Face with Solid Fill
     master Confused Face with No Fill
     master Confused Face with Solid Fill
@@ -2495,8 +2319,6 @@ Closing stencil doc
 Loading "FASTN1_M.VSSX"
 Creating output folder
     master Square  head
-Creating output folder
-Creating output folder
     master Square head top
     master Square nut
     master Hex head
@@ -2536,8 +2358,6 @@ Closing stencil doc
 Loading "FASTN2_M.VSSX"
 Creating output folder
     master Square   head set
-Creating output folder
-Creating output folder
     master Square set top
     master Round head rivet
     master Slotted head set
@@ -2568,8 +2388,6 @@ Closing stencil doc
 Loading "FAULT_M.VSSX"
 Creating output folder
     master AND gate
-Creating output folder
-Creating output folder
     master OR gate
     master Basic event
     master Undeveloped event
@@ -2586,8 +2404,6 @@ Closing stencil doc
 Loading "FLOSHP_M.VSSX"
 Creating output folder
     master Divided process 2
-Creating output folder
-Creating output folder
     master Tagged process
     master Process (circle)
     master Data store 3
@@ -2638,7 +2454,7 @@ Creating output folder
     master Branch: no return
     master Vertical XOR
     master Interrupt
-    master Vertical P And 
+    master Vertical P And
     master External control
     master Ellipsis
     master Dynamic connector
@@ -2647,8 +2463,6 @@ Closing stencil doc
 Loading "FOODDRINKS_M.VSSX"
 Creating output folder
     master Apple
-Creating output folder
-Creating output folder
     master Baby bottle
     master Beer
     master Bottle
@@ -2681,8 +2495,6 @@ Closing stencil doc
 Loading "FPASSM_M.VSSX"
 Creating output folder
     master 2 position 2,3,4 port
-Creating output folder
-Creating output folder
     master 2 position    5 port
     master 3 position 2,3,4 port
     master 3 position   5-port
@@ -2707,11 +2519,11 @@ Creating output folder
     master Plunger
     master Roller
     master Manual override
-    master Pull/push button 
+    master Pull/push button
     master Lever
     master Pedal/ treadle
     master  Electric  rotor
-    master Electric (linear) 
+    master Electric (linear)
     master Pilot- operated
     master Detent
     master  Junction  dot
@@ -2738,15 +2550,13 @@ Closing stencil doc
 Loading "FPEQP_M.VSSX"
 Creating output folder
     master Pump/motor (simple)
-Creating output folder
-Creating output folder
     master   Pump/ motor 1
     master   Pump/ motor 2
     master Air compressor
     master Actuator (semi-rotary)
     master Drive unit
     master Single-  acting
-    master Double- acting 
+    master Double- acting
     master Double-act. magnetic
     master Double- ended
     master Telescopic
@@ -2778,8 +2588,6 @@ Closing stencil doc
 Loading "FPVALV_M.VSSX"
 Creating output folder
     master 2/2 valve
-Creating output folder
-Creating output folder
     master 3/2 valve
     master 4/2 valve
     master 5/2 valve
@@ -2804,8 +2612,6 @@ Closing stencil doc
 Loading "FREEQP_M.VSSX"
 Creating output folder
     master Server
-Creating output folder
-Creating output folder
     master Monitor
     master Laptop
     master Printer
@@ -2818,8 +2624,6 @@ Closing stencil doc
 Loading "FURN_M.VSSX"
 Creating output folder
     master Sofa
-Creating output folder
-Creating output folder
     master Chair
     master Oblong dining table
     master Oval dining table
@@ -2856,8 +2660,6 @@ Closing stencil doc
 Loading "FURN_VISIO2013_M.VSSX"
 Creating output folder
     master Sofa
-Creating output folder
-Creating output folder
     master Chair
     master Oblong dining table
     master Oval dining table
@@ -2886,8 +2688,6 @@ Closing stencil doc
 Loading "GANESA_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Interface
     master Data Store
     master Data Flow
@@ -2895,8 +2695,6 @@ Closing stencil doc
 Loading "GANTT_M.VSSX"
 Creating output folder
     master Gantt Chart frame
-Creating output folder
-Creating output folder
     master Column
     master Row
     master Task bar
@@ -2918,8 +2716,6 @@ Closing stencil doc
 Loading "GARDEN_VISIO2013_M.VSSX"
 Creating output folder
     master Wood fence
-Creating output folder
-Creating output folder
     master Chain link fence
     master Concrete pathway
     master Brick pathway
@@ -2940,8 +2736,6 @@ Closing stencil doc
 Loading "GARDEN_M.VSSX"
 Creating output folder
     master Wood fence
-Creating output folder
-Creating output folder
     master Chain link fence
     master Concrete pathway
     master Brick Pathway 1
@@ -2987,8 +2781,6 @@ Closing stencil doc
 Loading "GDT_M.VSSX"
 Creating output folder
     master Datum symbol
-Creating output folder
-Creating output folder
     master Datum (old)
     master Datum (new)
     master Datum targets
@@ -3029,15 +2821,11 @@ Closing stencil doc
 Loading "GENERAL_M.VSSX"
 Creating output folder
     master Slide Snippet
-Creating output folder
-Creating output folder
     master StencilResult Master
 Closing stencil doc
 Loading "HOME_M.VSSX"
 Creating output folder
     master Alarm Clock
-Creating output folder
-Creating output folder
     master Bathtub
     master Bed
     master Candle
@@ -3065,8 +2853,6 @@ Closing stencil doc
 Loading "HVACCE_M.VSSX"
 Creating output folder
     master Duct
-Creating output folder
-Creating output folder
     master Return duct
     master Supply duct
     master Duct extension
@@ -3102,8 +2888,6 @@ Closing stencil doc
 Loading "HVACC_M.VSSX"
 Creating output folder
     master Temperature
-Creating output folder
-Creating output folder
     master Humidity
     master Connection line
     master Wire note
@@ -3131,8 +2915,6 @@ Closing stencil doc
 Loading "HVACD_M.VSSX"
 Creating output folder
     master Straight duct
-Creating output folder
-Creating output folder
     master Branch duct
     master Variable bend
     master Miter bend
@@ -3156,8 +2938,6 @@ Closing stencil doc
 Loading "HVACEQ_M.VSSX"
 Creating output folder
     master Rotary pump
-Creating output folder
-Creating output folder
     master Pump
     master Centrifugal pump
     master Fan blades
@@ -3180,8 +2960,6 @@ Closing stencil doc
 Loading "IDEF0_M.VSSX"
 Creating output folder
     master Activity box
-Creating output folder
-Creating output folder
     master Label
     master Title block
     master Text block 8pt
@@ -3194,8 +2972,6 @@ Closing stencil doc
 Loading "INTANN_M.VSSX"
 Creating output folder
     master Multiplex panel
-Creating output folder
-Creating output folder
     master Control panel
     master CPU
     master Keyboard
@@ -3208,8 +2984,6 @@ Closing stencil doc
 Loading "INTERFACE_M.VSSX"
 Creating output folder
     master Add
-Creating output folder
-Creating output folder
     master Back
     master Beginning
     master Checkmark
@@ -3233,8 +3007,6 @@ Closing stencil doc
 Loading "IRRIG_M.VSSX"
 Creating output folder
     master Var. circ. spray head
-Creating output folder
-Creating output folder
     master Var. rect. spray head
     master Lateral line
     master Main line
@@ -3249,8 +3021,6 @@ Closing stencil doc
 Loading "ITIL_M.VSSX"
 Creating output folder
     master Incident
-Creating output folder
-Creating output folder
     master Service request
     master Person
     master Service desk
@@ -3265,8 +3035,6 @@ Closing stencil doc
 Loading "LANGLV_M.VSSX"
 Creating output folder
     master Function / subroutine
-Creating output folder
-Creating output folder
     master Function w / invocation
     master Switch
     master Cloud
@@ -3282,8 +3050,6 @@ Closing stencil doc
 Loading "LDAPOB_M.VSSX"
 Creating output folder
     master Country / Region
-Creating output folder
-Creating output folder
     master Organization
     master Organizational unit
     master Locality
@@ -3308,8 +3074,6 @@ Closing stencil doc
 Loading "LEGEND_M.VSSX"
 Creating output folder
     master Outer list
-Creating output folder
-Creating output folder
     master Field container
     master Inner list
     master CBV item
@@ -3319,8 +3083,6 @@ Closing stencil doc
 Loading "LGND_M.VSSX"
 Creating output folder
     master To do
-Creating output folder
-Creating output folder
     master Done
     master Idea
     master Needs follow up
@@ -3348,8 +3110,6 @@ Closing stencil doc
 Loading "LINPAT_M.VSSX"
 Creating output folder
     master Pattern help
-Creating output folder
-Creating output folder
     master Phantom2
     master Divide2
     master Border
@@ -3378,8 +3138,6 @@ Closing stencil doc
 Loading "LNDMRK_M.VSSX"
 Creating output folder
     master Airport
-Creating output folder
-Creating output folder
     master Train station
     master Building 1
     master Gas station
@@ -3415,8 +3173,6 @@ Closing stencil doc
 Loading "LOCATION_M.VSSX"
 Creating output folder
     master Bookmark
-Creating output folder
-Creating output folder
     master Compass
     master Direction
     master Earth Globe Americas
@@ -3434,8 +3190,6 @@ Closing stencil doc
 Loading "LOGIC_M.VSSX"
 Creating output folder
     master Logic gate 2
-Creating output folder
-Creating output folder
     master Inverter
     master Flip-flop
     master Negative logic dot
@@ -3465,8 +3219,6 @@ Closing stencil doc
 Loading "MAP3D_M.VSSX"
 Creating output folder
     master Road 1
-Creating output folder
-Creating output folder
     master Road 2
     master Road 3
     master Elevated 1
@@ -3509,8 +3261,6 @@ Closing stencil doc
 Loading "MATRIXDIAGRAMSHAPES_M.VSSX"
 Creating output folder
     master Basic Matrix 2x2
-Creating output folder
-Creating output folder
     master Matrix 1
     master Matrix 2
     master Matrix 3
@@ -3529,8 +3279,6 @@ Closing stencil doc
 Loading "MEDICAL_M.VSSX"
 Creating output folder
     master Brain in head
-Creating output folder
-Creating output folder
     master Brain
     master DNA
     master Eye dropper
@@ -3545,8 +3293,6 @@ Closing stencil doc
 Loading "MEMOBJ_M.VSSX"
 Creating output folder
     master 3D stack top
-Creating output folder
-Creating output folder
     master 3D stack middle
     master Array
     master Pointer
@@ -3564,8 +3310,6 @@ Closing stencil doc
 Loading "METRO_M.VSSX"
 Creating output folder
     master Metro line
-Creating output folder
-Creating output folder
     master Rounded metro
     master Flexible metro
     master Station
@@ -3577,8 +3321,6 @@ Closing stencil doc
 Loading "MRKTDG_M.VSSX"
 Creating output folder
     master Matrix
-Creating output folder
-Creating output folder
     master SWOT
     master Step chart
     master Add-on step
@@ -3612,8 +3354,6 @@ Closing stencil doc
 Loading "MSFLOW_M.VSSX"
 Creating output folder
     master Trigger
-Creating output folder
-Creating output folder
     master Action
     master Condition
     master Switch
@@ -3625,11 +3365,9 @@ Closing stencil doc
 Loading "MWFCONCTRL_M.VSSX"
 Creating output folder
     master Container
-Creating output folder
-Creating output folder
     master 3:2 Frame
     master 5:3 Frame
-    master 16:9 Frame 
+    master 16:9 Frame
     master List Item
     master List Item with Icon
     master List Item with Button
@@ -3652,8 +3390,6 @@ Closing stencil doc
 Loading "MWFCTRL_M.VSSX"
 Creating output folder
     master Button
-Creating output folder
-Creating output folder
     master Color Picker
     master Combo Box
     master Percentage Range Slider
@@ -3677,8 +3413,6 @@ Closing stencil doc
 Loading "MWFECTRL_M.VSSX"
 Creating output folder
     master Icon
-Creating output folder
-Creating output folder
     master Image
     master Circular Image
     master Carousel
@@ -3695,8 +3429,6 @@ Closing stencil doc
 Loading "MWFNAVCTRL_M.VSSX"
 Creating output folder
     master Pagination 1
-Creating output folder
-Creating output folder
     master Pagination 2
     master Bread Crumb
     master Divider (Horizontal and Vertical)
@@ -3715,8 +3447,6 @@ Closing stencil doc
 Loading "MWFTEXTCTRL_M.VSSX"
 Creating output folder
     master Separator
-Creating output folder
-Creating output folder
     master Paragraph Text
     master Tag Cloud
     master Text Box
@@ -3739,8 +3469,6 @@ Closing stencil doc
 Loading "NATUREOUTDOORS_M.VSSX"
 Creating output folder
     master Anchor
-Creating output folder
-Creating output folder
     master Beach ball
     master Binoculars
     master Boat Launch
@@ -3772,8 +3500,6 @@ Closing stencil doc
 Loading "NETLME_M.VSSX"
 Creating output folder
     master Data Center
-Creating output folder
-Creating output folder
     master Cloud
     master Government Building
     master Building
@@ -3785,8 +3511,6 @@ Closing stencil doc
 Loading "NETLOC_M.VSSX"
 Creating output folder
     master Cloud
-Creating output folder
-Creating output folder
     master City
     master Building
     master House
@@ -3798,8 +3522,6 @@ Closing stencil doc
 Loading "NETRM_M.VSSX"
 Creating output folder
     master Door
-Creating output folder
-Creating output folder
     master Window
     master Chair
     master Table
@@ -3807,8 +3529,6 @@ Closing stencil doc
 Loading "NETSME_M.VSSX"
 Creating output folder
     master Comm server
-Creating output folder
-Creating output folder
     master Key
     master Workgroup switch
     master Lock
@@ -3836,8 +3556,6 @@ Closing stencil doc
 Loading "NETSYM_M.VSSX"
 Creating output folder
     master Router
-Creating output folder
-Creating output folder
     master ATM router
     master ISDN switch
     master ATM switch
@@ -3897,8 +3615,6 @@ Closing stencil doc
 Loading "OFFACC_VISIO2013_M.VSSX"
 Creating output folder
     master Small plant
-Creating output folder
-Creating output folder
     master Large plant
     master Marker board
     master Desk lamp
@@ -3913,8 +3629,6 @@ Closing stencil doc
 Loading "OFFACC_M.VSSX"
 Creating output folder
     master Palm plant
-Creating output folder
-Creating output folder
     master Large palm plant
     master Marker board
     master Desk lamp
@@ -3941,14 +3655,12 @@ Creating output folder
     master Foliage
     master Flowering
     master Cactus plant
-    master Large Flowering 
-    master Large Foliage 
+    master Large Flowering
+    master Large Foliage
 Closing stencil doc
 Loading "OFFEQP_VISIO2013_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Telephone
     master Printer
     master Fax machine
@@ -3976,8 +3688,6 @@ Closing stencil doc
 Loading "OFFEQP_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Telephone
     master Printer
     master Fax machine
@@ -4006,8 +3716,6 @@ Closing stencil doc
 Loading "OFFFRN_VISIO2013_M.VSSX"
 Creating output folder
     master Desk
-Creating output folder
-Creating output folder
     master Table
     master File
     master Lateral file
@@ -4046,8 +3754,6 @@ Closing stencil doc
 Loading "OFFFRN_M.VSSX"
 Creating output folder
     master Table
-Creating output folder
-Creating output folder
     master Desk chair
     master Drawer
     master Storage unit
@@ -4080,8 +3786,6 @@ Closing stencil doc
 Loading "ORGBLT_M.VSSX"
 Creating output folder
     master Executive Belt
-Creating output folder
-Creating output folder
     master Manager Belt
     master Position Belt
     master Assistant Belt
@@ -4100,8 +3804,6 @@ Closing stencil doc
 Loading "ORGBND_M.VSSX"
 Creating output folder
     master Executive Bound
-Creating output folder
-Creating output folder
     master Manager Bound
     master Position Bound
     master Assistant Bound
@@ -4120,8 +3822,6 @@ Closing stencil doc
 Loading "ORGCH_M.VSSX"
 Creating output folder
     master Executive
-Creating output folder
-Creating output folder
     master Manager
     master Position
     master Consultant
@@ -4139,8 +3839,6 @@ Closing stencil doc
 Loading "ORGCNS_M.VSSX"
 Creating output folder
     master Executive Coin
-Creating output folder
-Creating output folder
     master Manager Coin
     master Position Coin
     master Assistant Coin
@@ -4159,8 +3857,6 @@ Closing stencil doc
 Loading "orgico_m.vssx"
 Creating output folder
     master Position Belt
-Creating output folder
-Creating output folder
     master Position Notch
     master Position Pip
     master Position Shapetacular
@@ -4174,8 +3870,6 @@ Closing stencil doc
 Loading "ORGNCH_M.VSSX"
 Creating output folder
     master Executive Notch
-Creating output folder
-Creating output folder
     master Manager Notch
     master Position Notch
     master Assistant Notch
@@ -4194,8 +3888,6 @@ Closing stencil doc
 Loading "ORGPAN_M.VSSX"
 Creating output folder
     master Executive Panel
-Creating output folder
-Creating output folder
     master Manager Panel
     master Position Panel
     master Assistant Panel
@@ -4214,8 +3906,6 @@ Closing stencil doc
 Loading "ORGPER_M.VSSX"
 Creating output folder
     master Executive Perspective
-Creating output folder
-Creating output folder
     master Manager Perspective
     master Position Perspective
     master Assistant Perspective
@@ -4234,8 +3924,6 @@ Closing stencil doc
 Loading "ORGPET_M.VSSX"
 Creating output folder
     master Executive Petals
-Creating output folder
-Creating output folder
     master Manager Petals
     master Position Petals
     master Assistant Petals
@@ -4254,8 +3942,6 @@ Closing stencil doc
 Loading "ORGPIP_M.VSSX"
 Creating output folder
     master Executive Pip
-Creating output folder
-Creating output folder
     master Manager Pip
     master Position Pip
     master Assistant Pip
@@ -4274,8 +3960,6 @@ Closing stencil doc
 Loading "ORGSTO_M.VSSX"
 Creating output folder
     master Executive Stone
-Creating output folder
-Creating output folder
     master Manager Stone
     master Position Stone
     master Assistant Stone
@@ -4294,8 +3978,6 @@ Closing stencil doc
 Loading "ORGTAC_M.VSSX"
 Creating output folder
     master Executive Shapetacular
-Creating output folder
-Creating output folder
     master Manager Shapetacular
     master Position Shapetacular
     master Assistant Shapetacular
@@ -4314,8 +3996,6 @@ Closing stencil doc
 Loading "PEANNT_M.VSSX"
 Creating output folder
     master Interface Point 1
-Creating output folder
-Creating output folder
     master Interface Point 2
     master Slope
     master Off-Sheet Label 1
@@ -4341,8 +4021,6 @@ Closing stencil doc
 Loading "PEEQP_M.VSSX"
 Creating output folder
     master Breaker
-Creating output folder
-Creating output folder
     master Crusher
     master Mixer
     master Cyclone 1
@@ -4386,8 +4064,6 @@ Closing stencil doc
 Loading "PEHEAT_M.VSSX"
 Creating output folder
     master Heat exchanger1
-Creating output folder
-Creating output folder
     master Boiler
     master Cooling tower 1
     master Condenser
@@ -4419,8 +4095,6 @@ Closing stencil doc
 Loading "PEINST_M.VSSX"
 Creating output folder
     master Indicator
-Creating output folder
-Creating output folder
     master Indicator 2
     master Pressure gauges
     master Thermometers
@@ -4493,8 +4167,6 @@ Closing stencil doc
 Loading "PEOPLE_M.VSSX"
 Creating output folder
     master Baby Crawling
-Creating output folder
-Creating output folder
     master Baby
     master Children
     master Crawl
@@ -4523,8 +4195,6 @@ Closing stencil doc
 Loading "PEPIPE_M.VSSX"
 Creating output folder
     master Major PipelineR
-Creating output folder
-Creating output folder
     master Minor PipelineR
     master Major Pipeline
     master Major PipelineL
@@ -4534,8 +4204,6 @@ Closing stencil doc
 Loading "PEPUMP_M.VSSX"
 Creating output folder
     master In-line pump
-Creating output folder
-Creating output folder
     master Centrifugal pump
     master Selectable compressor1
     master Selectable fan 1
@@ -4565,8 +4233,6 @@ Closing stencil doc
 Loading "PERIME_M.VSSX"
 Creating output folder
     master Wireless access point
-Creating output folder
-Creating output folder
     master Ring network
     master Ethernet
     master Server
@@ -4602,8 +4268,6 @@ Closing stencil doc
 Loading "PERIPH_M.VSSX"
 Creating output folder
     master Ring network
-Creating output folder
-Creating output folder
     master Ethernet
     master Server
     master Mainframe
@@ -4636,8 +4300,6 @@ Closing stencil doc
 Loading "PERT_M.VSSX"
 Creating output folder
     master PERT 1
-Creating output folder
-Creating output folder
     master PERT 2
     master Dynamic connector
     master Line connector
@@ -4650,8 +4312,6 @@ Closing stencil doc
 Loading "PEVALV_M.VSSX"
 Creating output folder
     master Gate valve
-Creating output folder
-Creating output folder
     master Globe valve
     master Check valve
     master Powered valve
@@ -4705,8 +4365,6 @@ Closing stencil doc
 Loading "PEVESS_M.VSSX"
 Creating output folder
     master Vessel
-Creating output folder
-Creating output folder
     master Column
     master Autoclave
     master Tank
@@ -4733,8 +4391,6 @@ Closing stencil doc
 Loading "PIPE1_M.VSSX"
 Creating output folder
     master Crossings
-Creating output folder
-Creating output folder
     master Junctions
     master Cross
     master Elbow 45
@@ -4780,8 +4436,6 @@ Closing stencil doc
 Loading "PIPE2_M.VSSX"
 Creating output folder
     master General joint
-Creating output folder
-Creating output folder
     master Butt welds
     master Soldered/ Solvent
     master Screwed joints
@@ -4813,8 +4467,6 @@ Closing stencil doc
 Loading "PLANT_VISIO2013_M.VSSX"
 Creating output folder
     master Conifer tree  A
-Creating output folder
-Creating output folder
     master Decid. tree A
     master Conifer shrub a
     master Decid. shrub a
@@ -4848,8 +4500,6 @@ Closing stencil doc
 Loading "PLANT_M.VSSX"
 Creating output folder
     master Conifer tree  A
-Creating output folder
-Creating output folder
     master Decid. tree A
     master Conifer shrub a
     master Decid. shrub a
@@ -4878,8 +4528,6 @@ Closing stencil doc
 Loading "PLUMB_M.VSSX"
 Creating output folder
     master Boiler
-Creating output folder
-Creating output folder
     master Heating / cooling coil
     master Pump
     master Radiator
@@ -4905,8 +4553,6 @@ Closing stencil doc
 Loading "PRKRD_VISIO2013_M.VSSX"
 Creating output folder
     master Parking strip 1
-Creating output folder
-Creating output folder
     master Parking strip 2
     master Radial strip 1
     master Parking stall 1
@@ -4930,8 +4576,6 @@ Closing stencil doc
 Loading "PRKRD_M.VSSX"
 Creating output folder
     master Parking strip 1
-Creating output folder
-Creating output folder
     master Parking strip 2
     master Radial strip 1
     master Parking stall 1
@@ -4960,8 +4604,6 @@ Closing stencil doc
 Loading "PTSCLD_M.VSSX"
 Creating output folder
     master Pattern help
-Creating output folder
-Creating output folder
     master Ar-hbone
     master Ar-Brelm
     master Brstone
@@ -4975,8 +4617,6 @@ Closing stencil doc
 Loading "PTSINT_VISIO2013_M.VSSX"
 Creating output folder
     master You are here 1
-Creating output folder
-Creating output folder
     master Toilets
     master No smoking
     master Exit
@@ -5033,8 +4673,6 @@ Closing stencil doc
 Loading "PTSINT_M.VSSX"
 Creating output folder
     master You are here
-Creating output folder
-Creating output folder
     master Toilets
     master No smoking
     master Exit
@@ -5113,8 +4751,6 @@ Closing stencil doc
 Loading "PTUSCL_M.VSSX"
 Creating output folder
     master Pattern help
-Creating output folder
-Creating output folder
     master Stars
     master Ar-parq1
     master Triangle
@@ -5164,8 +4800,6 @@ Closing stencil doc
 Loading "PYRAMID_SHAPES_M.VSSX"
 Creating output folder
     master Basic Pyramid
-Creating output folder
-Creating output folder
     master Inverted Pyramid
     master Layered Pyramid
     master Inverted cone
@@ -5180,8 +4814,6 @@ Closing stencil doc
 Loading "RCKEQP_M.VSSX"
 Creating output folder
     master Rack
-Creating output folder
-Creating output folder
     master Cabinet
     master Server
     master RAID array
@@ -5204,8 +4836,6 @@ Closing stencil doc
 Loading "RCKSME_M.VSSX"
 Creating output folder
     master Web server
-Creating output folder
-Creating output folder
     master File server
     master Application server
     master Certificate server
@@ -5226,8 +4856,6 @@ Closing stencil doc
 Loading "RCKSVR_M.VSSX"
 Creating output folder
     master Application server
-Creating output folder
-Creating output folder
     master Content management server
     master Database server
     master Directory server
@@ -5248,8 +4876,6 @@ Closing stencil doc
 Loading "RECRT_M.VSSX"
 Creating output folder
     master Rectangular pool
-Creating output folder
-Creating output folder
     master Spa
     master Soccer field
     master Tennis court
@@ -5277,8 +4903,6 @@ Closing stencil doc
 Loading "RECRT_VISIO2013_M.VSSX"
 Creating output folder
     master Rectangular pool
-Creating output folder
-Creating output folder
     master Spa
     master Soccer field
     master Tennis court
@@ -5301,8 +4925,6 @@ Closing stencil doc
 Loading "RECSHP_M.VSSX"
 Creating output folder
     master Restroom
-Creating output folder
-Creating output folder
     master Parking
     master Potable water
     master Campground
@@ -5334,8 +4956,6 @@ Closing stencil doc
 Loading "REGSTR_M.VSSX"
 Creating output folder
     master Supply diffuser
-Creating output folder
-Creating output folder
     master Return diffuser
     master Grille diffuser
     master Linear diffuser
@@ -5345,8 +4965,6 @@ Closing stencil doc
 Loading "ROAD_M.VSSX"
 Creating output folder
     master Road square
-Creating output folder
-Creating output folder
     master Road round
     master Flexible road
     master Curve 1
@@ -5364,8 +4982,6 @@ Closing stencil doc
 Loading "SDCALL_M.VSSX"
 Creating output folder
     master Text Callout
-Creating output folder
-Creating output folder
     master Reverse
     master Sled
     master Orthogonal
@@ -5383,8 +4999,6 @@ Closing stencil doc
 Loading "SDCONT_M.VSSX"
 Creating output folder
     master Plain
-Creating output folder
-Creating output folder
     master Notch
     master Waves
     master Wire
@@ -5402,8 +5016,6 @@ Closing stencil doc
 Loading "SDL_M.VSSX"
 Creating output folder
     master Start
-Creating output folder
-Creating output folder
     master Variable start
     master Procedure
     master Variable procedure
@@ -5431,8 +5043,6 @@ Closing stencil doc
 Loading "SECURITYJUSTICE_M.VSSX"
 Creating output folder
     master Gavel
-Creating output folder
-Creating output folder
     master Handcuffs
     master Jail
     master Key
@@ -5448,8 +5058,6 @@ Closing stencil doc
 Loading "SERVER_M.VSSX"
 Creating output folder
     master Server
-Creating output folder
-Creating output folder
     master File server
     master Email server
     master Web server
@@ -5470,8 +5078,6 @@ Closing stencil doc
 Loading "SERVME_M.VSSX"
 Creating output folder
     master Web server
-Creating output folder
-Creating output folder
     master File server
     master Application server
     master Certificate server
@@ -5492,8 +5098,6 @@ Closing stencil doc
 Loading "SHPMCH_M.VSSX"
 Creating output folder
     master CNC lathe
-Creating output folder
-Creating output folder
     master Centre lathe
     master Horz. band saw
     master Vert. band saw
@@ -5522,8 +5126,6 @@ Closing stencil doc
 Loading "SHPREC_M.VSSX"
 Creating output folder
     master Loading bay
-Creating output folder
-Creating output folder
     master Loading dock
     master Swing door 1
     master Swing door 2
@@ -5546,8 +5148,6 @@ Closing stencil doc
 Loading "SHPSTR_M.VSSX"
 Creating output folder
     master Electric forklift
-Creating output folder
-Creating output folder
     master Manual pallet truck
     master Diesel forklift
     master Rising cab forklift
@@ -5578,8 +5178,6 @@ Closing stencil doc
 Loading "SIGNS_M.VSSX"
 Creating output folder
     master Female
-Creating output folder
-Creating output folder
     master Fire
     master Forbidden
     master Heart
@@ -5590,7 +5188,7 @@ Creating output folder
     master No sign
     master Radioactive
     master Raised Hand
-    master Right Pointing Backhand Index 
+    master Right Pointing Backhand Index
     master Smoking
     master Thumbs Up Sign
     master Warning
@@ -5599,8 +5197,6 @@ Closing stencil doc
 Loading "SITACC_VISIO2013_M.VSSX"
 Creating output folder
     master Lamp post
-Creating output folder
-Creating output folder
     master Dumpster
     master Trash can
     master Fire hydrant
@@ -5630,8 +5226,6 @@ Closing stencil doc
 Loading "SITACC_M.VSSX"
 Creating output folder
     master Lamp post
-Creating output folder
-Creating output folder
     master Dumpster
     master Trash can
     master Fire hydrant
@@ -5670,8 +5264,6 @@ Closing stencil doc
 Loading "SPORTS_M.VSSX"
 Creating output folder
     master Baseball bat and ball
-Creating output folder
-Creating output folder
     master Baseball
     master Basketball
     master Bike
@@ -5703,8 +5295,6 @@ Closing stencil doc
 Loading "SPRBR_M.VSSX"
 Creating output folder
     master General
-Creating output folder
-Creating output folder
     master Deep  groove
     master Angular contact
     master Angular  cont. (dbl.)
@@ -5735,8 +5325,6 @@ Closing stencil doc
 Loading "SPWA2_M.VSSX"
 Creating output folder
     master Do calculation
-Creating output folder
-Creating output folder
     master Send an email
     master Set field in current item
     master Assign a task
@@ -5783,8 +5371,6 @@ Closing stencil doc
 Loading "SPWA_M.VSSX"
 Creating output folder
     master Assign a to-do item
-Creating output folder
-Creating output folder
     master Collect data from a user
     master Start approval process
     master Start custom task process
@@ -5825,8 +5411,6 @@ Closing stencil doc
 Loading "SPWC2_M.VSSX"
 Creating output folder
     master If any value equals value
-Creating output folder
-Creating output folder
     master Created by a specific person
     master Created in a specific date span
     master Modified in a specific date span
@@ -5839,8 +5423,6 @@ Closing stencil doc
 Loading "SPWC_M.VSSX"
 Creating output folder
     master Compare data source
-Creating output folder
-Creating output folder
     master Compare document field
     master Title contains keywords
     master Created by
@@ -5857,8 +5439,6 @@ Closing stencil doc
 Loading "SPWT2_M.VSSX"
 Creating output folder
     master Stage
-Creating output folder
-Creating output folder
     master Loop with condition
     master Step
     master Loop n times
@@ -5874,15 +5454,11 @@ Closing stencil doc
 Loading "SPWT_M.VSSX"
 Creating output folder
     master Start
-Creating output folder
-Creating output folder
     master Terminate
 Closing stencil doc
 Loading "SSFLOW_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Decision
     master Subprocess
     master Start/End
@@ -5901,8 +5477,6 @@ Closing stencil doc
 Loading "SSHOQ_M.VSSX"
 Creating output folder
     master Ratings
-Creating output folder
-Creating output folder
     master Value
     master Correlations
     master Complete
@@ -5920,8 +5494,6 @@ Closing stencil doc
 Loading "SYMBOL_M.VSSX"
 Creating output folder
     master Zone
-Creating output folder
-Creating output folder
     master "NO" sign
     master No smoking
     master Warning sign
@@ -5959,8 +5531,6 @@ Closing stencil doc
 Loading "TECHELEC_M.VSSX"
 Creating output folder
     master Camera
-Creating output folder
-Creating output folder
     master Computer
     master Disk
     master DVD player
@@ -5991,8 +5561,6 @@ Closing stencil doc
 Loading "Theme_m.vssx"
 Creating output folder
     master Theme
-Creating output folder
-Creating output folder
     master ThemeIcon
     master ColorScheme
     master ColorSchemeIcon
@@ -6009,8 +5577,6 @@ Closing stencil doc
 Loading "TIMELN_M.VSSX"
 Creating output folder
     master Block timeline
-Creating output folder
-Creating output folder
     master Line timeline
     master Cylindrical timeline
     master Line milestone
@@ -6041,8 +5607,6 @@ Closing stencil doc
 Loading "TITLE_M.VSSX"
 Creating output folder
     master Zones - 4
-Creating output folder
-Creating output folder
     master Zones - 8
     master Frame
     master Projection symbol
@@ -6075,8 +5639,6 @@ Closing stencil doc
 Loading "TOOLSBUILDING_M.VSSX"
 Creating output folder
     master Crane
-Creating output folder
-Creating output folder
     master Flashlight
     master Hammer
     master Jack hammer
@@ -6095,8 +5657,6 @@ Closing stencil doc
 Loading "TQM_M.VSSX"
 Creating output folder
     master Transportation
-Creating output folder
-Creating output folder
     master Inbound goods
     master Storage
     master Procedure
@@ -6152,8 +5712,6 @@ Closing stencil doc
 Loading "TRANSP_M.VSSX"
 Creating output folder
     master Traffic light
-Creating output folder
-Creating output folder
     master Stop
     master Give way
     master Route number 1
@@ -6186,8 +5744,6 @@ Closing stencil doc
 Loading "UACTME_M.VSSX"
 Creating output folder
     master Action
-Creating output folder
-Creating output folder
     master Decision
     master Merge Node
     master Initial node
@@ -6206,8 +5762,6 @@ Closing stencil doc
 Loading "UCMNME_M.VSSX"
 Creating output folder
     master Lifeline
-Creating output folder
-Creating output folder
     master Actor
     master Message
     master Return Message
@@ -6216,8 +5770,6 @@ Closing stencil doc
 Loading "UCOMME_M.VSSX"
 Creating output folder
     master Component
-Creating output folder
-Creating output folder
     master Provided Interface
     master Required Interface
     master Association
@@ -6232,8 +5784,6 @@ Closing stencil doc
 Loading "UDEPME_M.VSSX"
 Creating output folder
     master Node
-Creating output folder
-Creating output folder
     master Node Instance
     master Artifact
     master Artifact Instance
@@ -6258,8 +5808,6 @@ Closing stencil doc
 Loading "USEQME_M.VSSX"
 Creating output folder
     master Activation
-Creating output folder
-Creating output folder
     master Object lifeline
     master Actor lifeline
     master Loop fragment
@@ -6275,8 +5823,6 @@ Closing stencil doc
 Loading "USTAME_M.VSSX"
 Creating output folder
     master State
-Creating output folder
-Creating output folder
     master State with internal behavior
     master Composite state
     master Submachine state
@@ -6288,8 +5834,6 @@ Closing stencil doc
 Loading "USTRME_M.VSSX"
 Creating output folder
     master Class
-Creating output folder
-Creating output folder
     master Member
     master Separator
     master Interface
@@ -6309,8 +5853,6 @@ Closing stencil doc
 Loading "UUSEME_M.VSSX"
 Creating output folder
     master Actor
-Creating output folder
-Creating output folder
     master Use Case
     master Subsystem
     master Association
@@ -6322,8 +5864,6 @@ Closing stencil doc
 Loading "VALVE1_M.VSSX"
 Creating output folder
     master In-line valves
-Creating output folder
-Creating output folder
     master Screw-down valves
     master Relief  valves
     master Angle valves
@@ -6348,8 +5888,6 @@ Closing stencil doc
 Loading "VALVE2_M.VSSX"
 Creating output folder
     master In-line valves
-Creating output folder
-Creating output folder
     master Manual isolation
     master Power signal
     master Statically loaded
@@ -6370,8 +5908,6 @@ Closing stencil doc
 Loading "VEHICLES_M.VSSX"
 Creating output folder
     master Airplane
-Creating output folder
-Creating output folder
     master Bulldozer
     master Bus
     master Car
@@ -6389,8 +5925,6 @@ Closing stencil doc
 Loading "VEHICL_VISIO2013_M.VSSX"
 Creating output folder
     master Compact car
-Creating output folder
-Creating output folder
     master Mid-size car
     master Box van
     master Large semitrailer
@@ -6406,7 +5940,7 @@ Creating output folder
     master Small semitrailer
     master Truck
     master Semi trailer
-    master Metro bus 
+    master Metro bus
     master Articulated metro bus
     master Tour bus
     master School bus
@@ -6421,8 +5955,6 @@ Closing stencil doc
 Loading "VEHICL_M.VSSX"
 Creating output folder
     master Compact car
-Creating output folder
-Creating output folder
     master Mid-size car
     master Small semitrailer
     master Large semitrailer
@@ -6454,8 +5986,6 @@ Closing stencil doc
 Loading "VENNDIAG_M.VSSX"
 Creating output folder
     master Venn Diagram Shape
-Creating output folder
-Creating output folder
     master Square Venn diagram
     master 2-sets Square Venn diagram
     master 2-sets Venn diagram
@@ -6471,8 +6001,6 @@ Closing stencil doc
 Loading "VIDSUR_M.VSSX"
 Creating output folder
     master Camera
-Creating output folder
-Creating output folder
     master Motion detector
     master Glass break sensor
     master Screening device
@@ -6496,8 +6024,6 @@ Closing stencil doc
 Loading "VSM_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Inventory
     master Push arrow
     master VSM
@@ -6531,8 +6057,6 @@ Closing stencil doc
 Loading "WADOWI_M.VSSX"
 Creating output folder
     master Room
-Creating output folder
-Creating output folder
     master Wall
     master Door
     master Window
@@ -6551,8 +6075,6 @@ Closing stencil doc
 Loading "WALL_M.VSSX"
 Creating output folder
     master Room
-Creating output folder
-Creating output folder
     master Wall
     master Window
     master Door
@@ -6571,7 +6093,7 @@ Creating output folder
     master Uneven
     master Opposing
     master Revolving
-    master Pocket 
+    master Pocket
     master Double pocket
     master By-pass
     master Bi-fold
@@ -6597,8 +6119,6 @@ Closing stencil doc
 Loading "WEATHERSEASONS_M.VSSX"
 Creating output folder
     master Beach umbrella
-Creating output folder
-Creating output folder
     master Cloud
     master Leaf
     master Lightning
@@ -6618,8 +6138,6 @@ Closing stencil doc
 Loading "WEBMAP_M.VSSX"
 Creating output folder
     master HTML
-Creating output folder
-Creating output folder
     master Graphic (bitmap)
     master Text
     master Style sheet
@@ -6702,8 +6220,6 @@ Closing stencil doc
 Loading "WEBSIT_M.VSSX"
 Creating output folder
     master Group
-Creating output folder
-Creating output folder
     master Main object
     master Web page
     master Page group
@@ -6726,8 +6242,6 @@ Closing stencil doc
 Loading "WELD_M.VSSX"
 Creating output folder
     master Spot
-Creating output folder
-Creating output folder
     master Resistance seam
     master Slot/plug
     master Stud
@@ -6758,8 +6272,6 @@ Closing stencil doc
 Loading "WFCICN_M.VSSX"
 Creating output folder
     master Back
-Creating output folder
-Creating output folder
     master Forward
     master Expand
     master Collapse
@@ -6785,8 +6297,6 @@ Closing stencil doc
 Loading "WFCRS_M.VSSX"
 Creating output folder
     master Select
-Creating output folder
-Creating output folder
     master Move
     master Busy
     master Link select
@@ -6804,8 +6314,6 @@ Closing stencil doc
 Loading "WFCTRL_M.VSSX"
 Creating output folder
     master Label
-Creating output folder
-Creating output folder
     master Text box
     master Hyperlink
     master Button
@@ -6825,8 +6333,6 @@ Closing stencil doc
 Loading "WFDEME_M.VSSX"
 Creating output folder
     master Accounting
-Creating output folder
-Creating output folder
     master Accounts Payable
     master Accounts Receivable
     master Auditing
@@ -6873,8 +6379,6 @@ Closing stencil doc
 Loading "WFDEP_M.VSSX"
 Creating output folder
     master Accounting
-Creating output folder
-Creating output folder
     master Accounts payable
     master Accounts receivable
     master Auditing
@@ -6921,8 +6425,6 @@ Closing stencil doc
 Loading "WFDLGS_M.VSSX"
 Creating output folder
     master Dialog form
-Creating output folder
-Creating output folder
     master Application form
     master Panel
     master Dialog button
@@ -6944,8 +6446,6 @@ Closing stencil doc
 Loading "WFOBJ_M.VSSX"
 Creating output folder
     master Person
-Creating output folder
-Creating output folder
     master Person - torso
     master Customer
     master User
@@ -6975,8 +6475,6 @@ Closing stencil doc
 Loading "WFOBME_M.VSSX"
 Creating output folder
     master Person
-Creating output folder
-Creating output folder
     master Data
     master Customer
     master User
@@ -7005,8 +6503,6 @@ Closing stencil doc
 Loading "WFSTEP_M.VSSX"
 Creating output folder
     master Task
-Creating output folder
-Creating output folder
     master Issue
     master Submit
     master Request
@@ -7025,8 +6521,6 @@ Closing stencil doc
 Loading "WFSTME_M.VSSX"
 Creating output folder
     master Task
-Creating output folder
-Creating output folder
     master Issue
     master Submit
     master Request
@@ -7052,8 +6546,6 @@ Closing stencil doc
 Loading "WFTLBR_M.VSSX"
 Creating output folder
     master Menu bar
-Creating output folder
-Creating output folder
     master Menu bar item
     master Drop-down menu
     master Menu item
@@ -7076,8 +6568,6 @@ Closing stencil doc
 Loading "WFWICN_M.VSSX"
 Creating output folder
     master Search
-Creating output folder
-Creating output folder
     master Favorite
     master Shopping cart
     master RSS
@@ -7117,8 +6607,6 @@ Closing stencil doc
 Loading "WRKFLO_M.VSSX"
 Creating output folder
     master Accounting
-Creating output folder
-Creating output folder
     master Accounts payable
     master Accounts receivable
     master Bank
@@ -7164,8 +6652,6 @@ Closing stencil doc
 Loading "WWFCICN_M.VSSX"
 Creating output folder
     master Back
-Creating output folder
-Creating output folder
     master Forward
     master Expand
     master Collapse
@@ -7248,8 +6734,6 @@ Closing stencil doc
 Loading "WWFCONCTRL_M.VSSX"
 Creating output folder
     master Container
-Creating output folder
-Creating output folder
     master Window
     master Dialog Box
     master Alert Box
@@ -7260,7 +6744,7 @@ Creating output folder
     master Video Clip container 1
     master Video Clip container 2
     master Login Page Container
-    master Product description container 
+    master Product description container
     master Contact details container
     master Image and text Container
     master Payment Gateway Container
@@ -7268,8 +6752,6 @@ Closing stencil doc
 Loading "WWFCRS_M.VSSX"
 Creating output folder
     master Select
-Creating output folder
-Creating output folder
     master Move
     master Busy
     master Link select
@@ -7299,8 +6781,6 @@ Closing stencil doc
 Loading "WWFCTRL_M.VSSX"
 Creating output folder
     master Button
-Creating output folder
-Creating output folder
     master Color Picker
     master Combo Box
     master Percentage Range Slider
@@ -7324,8 +6804,6 @@ Closing stencil doc
 Loading "WWFMECTRL_M.VSSX"
 Creating output folder
     master Icon
-Creating output folder
-Creating output folder
     master Image
     master Circular Image
     master Carousel
@@ -7341,8 +6819,6 @@ Closing stencil doc
 Loading "WWFNAVCTRL_M.VSSX"
 Creating output folder
     master Pagination 1
-Creating output folder
-Creating output folder
     master Pagination 2
     master Bread Crumb
     master Divider (Horizontal and Vertical)
@@ -7358,8 +6834,6 @@ Closing stencil doc
 Loading "WWFTEXTCTRL_M.VSSX"
 Creating output folder
     master Separator
-Creating output folder
-Creating output folder
     master Paragraph Text
     master Tag Cloud
     master Text Box
@@ -7380,8 +6854,6 @@ Closing stencil doc
 Loading "WWFWICN_M.VSSX"
 Creating output folder
     master Power
-Creating output folder
-Creating output folder
     master Play
     master Pause
     master Stop
@@ -7411,8 +6883,6 @@ Closing stencil doc
 Loading "XFUNC_M.VSSX"
 Creating output folder
     master Swimlane
-Creating output folder
-Creating output folder
     master Separator
     master Swimlane (vertical)
     master Separator (vertical)
@@ -7425,8 +6895,6 @@ Starting Visio Application
 Loading "ADO_M.VSSX"
 Creating output folder
     master Domain
-Creating output folder
-Creating output folder
     master Computer
     master User
     master Group
@@ -7451,8 +6919,6 @@ Closing stencil doc
 Loading "ADS_M.VSSX"
 Creating output folder
     master Site or subnet
-Creating output folder
-Creating output folder
     master Site link 3D
     master Site link bridge 3D
     master WAN
@@ -7471,8 +6937,6 @@ Closing stencil doc
 Loading "ALARM_M.VSSX"
 Creating output folder
     master Card access
-Creating output folder
-Creating output folder
     master Biometric access
     master Keypad device
     master Card reader with keypad
@@ -7491,8 +6955,6 @@ Closing stencil doc
 Loading "ANALYTICS_M.VSSX"
 Creating output folder
     master Bar chart
-Creating output folder
-Creating output folder
     master Bullseye
     master Calculator
     master Database
@@ -7516,8 +6978,6 @@ Closing stencil doc
 Loading "ANIMALS_M.VSSX"
 Creating output folder
     master Bats
-Creating output folder
-Creating output folder
     master Bug
     master Cat
     master Chicken
@@ -7543,8 +7003,6 @@ Closing stencil doc
 Loading "ANNOT_M.VSSX"
 Creating output folder
     master Callout - curved
-Creating output folder
-Creating output folder
     master Callout - bent
     master Callout - straight
     master Circle callout
@@ -7587,8 +7045,6 @@ Closing stencil doc
 Loading "APPAREL_M.VSSX"
 Creating output folder
     master Boot
-Creating output folder
-Creating output folder
     master Crown
     master Dress
     master Glasses
@@ -7612,8 +7068,6 @@ Closing stencil doc
 Loading "APPL_M.VSSX"
 Creating output folder
     master Refrigerator
-Creating output folder
-Creating output folder
     master Range
     master Washer and dryer
     master Air conditioner
@@ -7638,8 +7092,6 @@ Closing stencil doc
 Loading "APPL_VISIO2013_M.VSSX"
 Creating output folder
     master Refrg. 1
-Creating output folder
-Creating output folder
     master Refrg. 3
     master Stacked W/D
     master Combo W/D
@@ -7667,8 +7119,6 @@ Closing stencil doc
 Loading "ARROWS2_M.VSSX"
 Creating output folder
     master Line Outline Clockwise curve
-Creating output folder
-Creating output folder
     master Line Outline Counterclockwise curve
     master Line Outline Rotate left
     master Line Outline Rotate right
@@ -7688,8 +7138,6 @@ Closing stencil doc
 Loading "ARROWS_M.VSSX"
 Creating output folder
     master Simple Arrow
-Creating output folder
-Creating output folder
     master Simple Double Arrow
     master Modern Arrow
     master Flexible Arrow
@@ -7713,8 +7161,6 @@ Closing stencil doc
 Loading "ARTS_M.VSSX"
 Creating output folder
     master Clapper board
-Creating output folder
-Creating output folder
     master Drama
     master Drum
     master Easel
@@ -7736,8 +7182,6 @@ Closing stencil doc
 Loading "AUDIT_M.VSSX"
 Creating output folder
     master Tagged process
-Creating output folder
-Creating output folder
     master Decision
     master Tagged document
     master I/O
@@ -7774,8 +7218,6 @@ Closing stencil doc
 Loading "BASFLO_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Decision
     master Subprocess
     master Start/End
@@ -7794,8 +7236,6 @@ Closing stencil doc
 Loading "BASIC_M.VSSX"
 Creating output folder
     master Rectangle
-Creating output folder
-Creating output folder
     master Square
     master Ellipse
     master Circle
@@ -7847,8 +7287,6 @@ Closing stencil doc
 Loading "BA_DEC_M.VSSX"
 Creating output folder
     master Folded Corner
-Creating output folder
-Creating output folder
     master Smiling Face
     master Neutral Face
     master Frowning Face
@@ -7869,8 +7307,6 @@ Closing stencil doc
 Loading "BA_GRP_M.VSSX"
 Creating output folder
     master Venn Diagram Shape
-Creating output folder
-Creating output folder
     master Pie Slice
     master Pie Arc
     master Multi-Line
@@ -7883,9 +7319,7 @@ Creating output folder
 Closing stencil doc
 Loading "BCKGRN_M.VSSX"
 Creating output folder
-    master None 
-Creating output folder
-Creating output folder
+    master None
     master Solid
     master Vertical Gradient
     master Horizontal Gradient
@@ -7900,8 +7334,6 @@ Closing stencil doc
 Loading "BLDCOR_VISIO2013_M.VSSX"
 Creating output folder
     master Straight staircase
-Creating output folder
-Creating output folder
     master Stair landing
     master Escalator
     master Elevator
@@ -7930,8 +7362,6 @@ Closing stencil doc
 Loading "BLDCOR_M.VSSX"
 Creating output folder
     master Straight staircase
-Creating output folder
-Creating output folder
     master Stair landing
     master Escalator
     master Elevator
@@ -7961,8 +7391,6 @@ Closing stencil doc
 Loading "BLOCK3_M.VSSX"
 Creating output folder
     master Square block
-Creating output folder
-Creating output folder
     master Circle
     master Horizontal bar
     master Vertical bar
@@ -7985,8 +7413,6 @@ Closing stencil doc
 Loading "BLOCKP_M.VSSX"
 Creating output folder
     master Block
-Creating output folder
-Creating output folder
     master Circle
     master Arrow, left
     master Arrow, right
@@ -8009,8 +7435,6 @@ Closing stencil doc
 Loading "BLOCK_M.VSSX"
 Creating output folder
     master Box
-Creating output folder
-Creating output folder
     master Circle
     master Diamond
     master Arrow box
@@ -8050,9 +7474,7 @@ Creating output folder
 Closing stencil doc
 Loading "BORDRS_M.VSSX"
 Creating output folder
-    master None 
-Creating output folder
-Creating output folder
+    master None
     master Tiles
     master Urban
     master Alphabet
@@ -8071,8 +7493,6 @@ Closing stencil doc
 Loading "BPMN_M.VSSX"
 Creating output folder
     master Task
-Creating output folder
-Creating output folder
     master Gateway
     master Intermediate Event
     master End Event
@@ -8097,8 +7517,6 @@ Closing stencil doc
 Loading "BPRES_M.VSSX"
 Creating output folder
     master Space
-Creating output folder
-Creating output folder
     master Boundary
     master Asset
     master Person
@@ -8111,8 +7529,6 @@ Closing stencil doc
 Loading "BSTORM_M.VSSX"
 Creating output folder
     master Main topic
-Creating output folder
-Creating output folder
     master Topic
     master Multiple topic
     master Dynamic connector
@@ -8121,8 +7537,6 @@ Closing stencil doc
 Loading "BTHKT_VISIO2013_M.VSSX"
 Creating output folder
     master Sink 1
-Creating output folder
-Creating output folder
     master Sink 2
     master Shower
     master Bath 1
@@ -8148,8 +7562,6 @@ Closing stencil doc
 Loading "BTHKT_M.VSSX"
 Creating output folder
     master Sink 1
-Creating output folder
-Creating output folder
     master Sink 2
     master Shower
     master Bathtub 1
@@ -8180,8 +7592,6 @@ Closing stencil doc
 Loading "BUILDINGS_M.VSSX"
 Creating output folder
     master Bank
-Creating output folder
-Creating output folder
     master Barn
     master Building
     master City
@@ -8197,8 +7607,6 @@ Closing stencil doc
 Loading "BUSINESS_M.VSSX"
 Creating output folder
     master Briefcase
-Creating output folder
-Creating output folder
     master Checklist
     master Clipboard
     master Contract
@@ -8220,8 +7628,6 @@ Closing stencil doc
 Loading "CABNT_M.VSSX"
 Creating output folder
     master Base 1
-Creating output folder
-Creating output folder
     master Base 2
     master Base end-shelf
     master Base corner
@@ -8250,12 +7656,10 @@ Closing stencil doc
 Loading "CABNT_VISIO2013_M.VSSX"
 Creating output folder
     master Base 1
-Creating output folder
-Creating output folder
     master Base 2
     master Base end-shelf
     master Base corner
-    master Base blind corner 
+    master Base blind corner
     master Base end angle
     master Peninsula end-shelf
     master Base peninsula 1
@@ -8272,7 +7676,7 @@ Creating output folder
     master Wall angle cabinet
     master Wall peninsula 1
     master Wall peninsula 2
-    master Wall blind peninsula 
+    master Wall blind peninsula
     master Track end-bevel
     master Track corner
     master Track 45 deg.
@@ -8282,8 +7686,6 @@ Closing stencil doc
 Loading "CALNDR_M.VSSX"
 Creating output folder
     master Month
-Creating output folder
-Creating output folder
     master Week
     master Multiple week
     master Thumbnail month
@@ -8327,8 +7729,6 @@ Closing stencil doc
 Loading "CALOUT_M.VSSX"
 Creating output folder
     master Side box callout
-Creating output folder
-Creating output folder
     master Side line callout
     master Side text callout
     master Mid box callout
@@ -8370,8 +7770,6 @@ Closing stencil doc
 Loading "CAUSEF_M.VSSX"
 Creating output folder
     master Effect
-Creating output folder
-Creating output folder
     master Category 1
     master Category 2
     master Fish frame
@@ -8387,8 +7785,6 @@ Closing stencil doc
 Loading "CELEBRATION_M.VSSX"
 Creating output folder
     master Balloons
-Creating output folder
-Creating output folder
     master Cake
     master Dance
     master Diploma
@@ -8407,8 +7803,6 @@ Closing stencil doc
 Loading "CHART_M.VSSX"
 Creating output folder
     master Bar graph    1
-Creating output folder
-Creating output folder
     master Bar graph    2
     master 3-D bar graph
     master 3-D axis
@@ -8452,8 +7846,6 @@ Closing stencil doc
 Loading "COMMERCE_M.VSSX"
 Creating output folder
     master Bank Check
-Creating output folder
-Creating output folder
     master Barcode
     master Box trolley
     master Box
@@ -8473,8 +7865,6 @@ Closing stencil doc
 Loading "COMMUNICATION_M.VSSX"
 Creating output folder
     master Call center
-Creating output folder
-Creating output folder
     master Chat
     master Download from cloud
     master Download
@@ -8500,8 +7890,6 @@ Closing stencil doc
 Loading "COMOLE_M.VSSX"
 Creating output folder
     master COM object
-Creating output folder
-Creating output folder
     master Reference
     master Weak reference
     master Vtable
@@ -8521,8 +7909,6 @@ Closing stencil doc
 Loading "COMPLN_M.VSSX"
 Creating output folder
     master Risk
-Creating output folder
-Creating output folder
     master Control
     master Input
     master Output
@@ -8533,8 +7919,6 @@ Closing stencil doc
 Loading "COMPME_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Virtual PC
     master Terminal
     master Wavelength-division Multiplexer (WDM)
@@ -8550,8 +7934,6 @@ Closing stencil doc
 Loading "COMPS_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Laptop computer
     master LCD monitor
     master Terminal
@@ -8565,8 +7947,6 @@ Closing stencil doc
 Loading "CONNEC_M.VSSX"
 Creating output folder
     master Dynamic connector
-Creating output folder
-Creating output folder
     master Line-arc connector
     master Curve connect 1
     master Curve connect 2
@@ -8639,8 +8019,6 @@ Closing stencil doc
 Loading "CUBICL_VISIO2013_M.VSSX"
 Creating output folder
     master Cube workstation
-Creating output folder
-Creating output folder
     master L workstation
     master Straight workstation
     master Council workstation
@@ -8662,8 +8040,6 @@ Closing stencil doc
 Loading "CUBICL_M.VSSX"
 Creating output folder
     master Cube workstation
-Creating output folder
-Creating output folder
     master Small L-shaped workstation
     master Straight workstation
     master Council workstation
@@ -8683,8 +8059,6 @@ Closing stencil doc
 Loading "CYCLEDIAG_M.VSSX"
 Creating output folder
     master Circular Arrow
-Creating output folder
-Creating output folder
     master 4-Phase Circular Motion
     master Pie Arc
     master Partial layer 1
@@ -8708,24 +8082,18 @@ Closing stencil doc
 Loading "DATAVISUALIZER_M.VSSX"
 Creating output folder
     master BF Data Visualizer
-Creating output folder
-Creating output folder
     master CFF Data Visualizer
     master Audit Data Visualizer
 Closing stencil doc
 Loading "DATAVISUALIZERPREVIEW_M.VSSX"
 Creating output folder
     master Basic Flow Chart
-Creating output folder
-Creating output folder
     master CFF Horizontal
     master CFF Vertical
 Closing stencil doc
 Loading "DATFLO_M.VSSX"
 Creating output folder
     master Data process
-Creating output folder
-Creating output folder
     master External interactor
     master Data store
     master Object
@@ -8750,8 +8118,6 @@ Closing stencil doc
 Loading "DBCHEN_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Relationship
     master Attribute
     master Relationship Connector
@@ -8759,8 +8125,6 @@ Closing stencil doc
 Loading "DBCROW_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Primary Key Attribute
     master Primary Key Separator
     master Attribute
@@ -8769,8 +8133,6 @@ Closing stencil doc
 Loading "DBIDEF1X_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Primary Key Attribute
     master Primary Key Separator
     master Attribute
@@ -8779,8 +8141,6 @@ Closing stencil doc
 Loading "DBUML_M.VSSX"
 Creating output folder
     master Entity
-Creating output folder
-Creating output folder
     master Primary Key Attribute
     master Primary Key Separator
     master Attribute
@@ -8789,8 +8149,6 @@ Closing stencil doc
 Loading "DGICON_M.VSSX"
 Creating output folder
     master Trend arrows 1
-Creating output folder
-Creating output folder
     master Trend arrows 2
     master Flags
     master Status icons
@@ -8808,8 +8166,6 @@ Closing stencil doc
 Loading "DIMENG_M.VSSX"
 Creating output folder
     master Horizontal baseline
-Creating output folder
-Creating output folder
     master Vertical baseline
     master Horizontal outside
     master Horizontal
@@ -8839,8 +8195,6 @@ Closing stencil doc
 Loading "DRAWTL_M.VSSX"
 Creating output folder
     master Measure tool
-Creating output folder
-Creating output folder
     master Horizontal measure
     master Vertical measure
     master Circle, ellipse
@@ -8875,8 +8229,6 @@ Closing stencil doc
 Loading "DRILLD_M.VSSX"
 Creating output folder
     master Pivot Node
-Creating output folder
-Creating output folder
     master Pivot Breakdown
     master Pivot Title
     master Pivot Info
@@ -8885,8 +8237,6 @@ Closing stencil doc
 Loading "DTLNET_M.VSSX"
 Creating output folder
     master A/B switchbox
-Creating output folder
-Creating output folder
     master Biometric reader
     master Data
     master Diagnostic device
@@ -8906,8 +8256,6 @@ Closing stencil doc
 Loading "DTLNME_M.VSSX"
 Creating output folder
     master A/B Switch
-Creating output folder
-Creating output folder
     master Repeater
     master Diagnostic Device
     master Smart Card Reader
@@ -8926,8 +8274,6 @@ Closing stencil doc
 Loading "DVCALL_M.VSSX"
 Creating output folder
     master Text callout
-Creating output folder
-Creating output folder
     master Text callout 3
     master Mobile callout
     master Email callout
@@ -8988,8 +8334,6 @@ Closing stencil doc
 Loading "EDUCATION_M.VSSX"
 Creating output folder
     master Atom
-Creating output folder
-Creating output folder
     master Backpack
     master Beaker
     master Bell
@@ -9015,8 +8359,6 @@ Closing stencil doc
 Loading "EECHIP_M.VSSX"
 Creating output folder
     master 4X Building block-complete
-Creating output folder
-Creating output folder
     master Negative logic dot
     master MUX 4
     master 4-bit counter
@@ -9055,8 +8397,6 @@ Closing stencil doc
 Loading "EECOMP_M.VSSX"
 Creating output folder
     master Amplifier
-Creating output folder
-Creating output folder
     master Rectifier
     master 1-way repeater
     master 2-way repeater
@@ -9088,8 +8428,6 @@ Closing stencil doc
 Loading "EEFUND_VISIO2013_M.VSSX"
 Creating output folder
     master Resistor
-Creating output folder
-Creating output folder
     master Capacitor
     master AC source
     master DC source
@@ -9143,8 +8481,6 @@ Closing stencil doc
 Loading "EEFUND_M.VSSX"
 Creating output folder
     master Resistor
-Creating output folder
-Creating output folder
     master Capacitor
     master AC source
     master DC source
@@ -9205,8 +8541,6 @@ Closing stencil doc
 Loading "EEMAIN_M.VSSX"
 Creating output folder
     master Signal generator
-Creating output folder
-Creating output folder
     master Linear element
     master Relay contacts
     master Relay coil
@@ -9223,8 +8557,6 @@ Closing stencil doc
 Loading "EEMAPS_M.VSSX"
 Creating output folder
     master Radio  station 1
-Creating output folder
-Creating output folder
     master Radio  station 2
     master Portable station
     master Mobile station
@@ -9264,8 +8596,6 @@ Closing stencil doc
 Loading "EEMECH_M.VSSX"
 Creating output folder
     master Rotating machine
-Creating output folder
-Creating output folder
     master Armature
     master Brush
     master Field
@@ -9288,8 +8618,6 @@ Closing stencil doc
 Loading "EEPATH_VISIO2013_M.VSSX"
 Creating output folder
     master Bus width
-Creating output folder
-Creating output folder
     master Straight bus
     master 2-line bus
     master 2-line bus elbow
@@ -9318,8 +8646,6 @@ Closing stencil doc
 Loading "EEPATH_M.VSSX"
 Creating output folder
     master Bus width
-Creating output folder
-Creating output folder
     master Straight bus
     master Line concentrator
     master Cable group
@@ -9348,8 +8674,6 @@ Closing stencil doc
 Loading "EEQUAL_VISIO2013_M.VSSX"
 Creating output folder
     master 3-phase  zigzag
-Creating output folder
-Creating output folder
     master 4-phase
     master Radiation
     master Positive polarity
@@ -9378,8 +8702,6 @@ Closing stencil doc
 Loading "EEQUAL_M.VSSX"
 Creating output folder
     master 3-phase  zigzag
-Creating output folder
-Creating output folder
     master 4-phase
     master Radiation
     master Positive polarity
@@ -9408,8 +8730,6 @@ Closing stencil doc
 Loading "EESEMI_M.VSSX"
 Creating output folder
     master Bipolar
-Creating output folder
-Creating output folder
     master Diode
     master Photodiode
     master MOSFET N-Type
@@ -9443,8 +8763,6 @@ Closing stencil doc
 Loading "EESEMI_VISIO2013_M.VSSX"
 Creating output folder
     master Bipolar
-Creating output folder
-Creating output folder
     master Diode
     master Photodiode
     master MOSFET
@@ -9475,8 +8793,6 @@ Closing stencil doc
 Loading "EESWCH_M.VSSX"
 Creating output folder
     master Relay
-Creating output folder
-Creating output folder
     master Relay contacts
     master Switch disconnector
     master Fuse
@@ -9530,8 +8846,6 @@ Closing stencil doc
 Loading "EESWCH_VISIO2013_M.VSSX"
 Creating output folder
     master Relay
-Creating output folder
-Creating output folder
     master Relay contacts
     master Switch disconnector
     master Fuse
@@ -9585,8 +8899,6 @@ Closing stencil doc
 Loading "EETCOM_M.VSSX"
 Creating output folder
     master Frequency band
-Creating output folder
-Creating output folder
     master Frequency spectrum element
     master Connecting stage
     master Marking stage
@@ -9618,8 +8930,6 @@ Closing stencil doc
 Loading "EETERM_M.VSSX"
 Creating output folder
     master Adapter
-Creating output folder
-Creating output folder
     master Circuit terminal
     master M/F contact
     master M/F contact 2
@@ -9651,8 +8961,6 @@ Closing stencil doc
 Loading "EETRAN_M.VSSX"
 Creating output folder
     master Transformer
-Creating output folder
-Creating output folder
     master Magnetic core
     master Inductor
     master Choke
@@ -9677,8 +8985,6 @@ Closing stencil doc
 Loading "EEVHF_M.VSSX"
 Creating output folder
     master Discontinuity
-Creating output folder
-Creating output folder
     master Equivalent series
     master Capacitive reactance
     master Inductive reactance
@@ -9714,8 +9020,6 @@ Closing stencil doc
 Loading "ELETEL_M.VSSX"
 Creating output folder
     master Lum. ceiling mount
-Creating output folder
-Creating output folder
     master Encl ceiling lum
     master Switches
     master Socket outlet
@@ -9750,8 +9054,6 @@ Closing stencil doc
 Loading "EMBELL_M.VSSX"
 Creating output folder
     master Wave section
-Creating output folder
-Creating output folder
     master Wave corner
     master Braid section
     master Braid corner
@@ -9796,8 +9098,6 @@ Closing stencil doc
 Loading "ENTAPP_M.VSSX"
 Creating output folder
     master Server
-Creating output folder
-Creating output folder
     master Mainframe
     master Workstation
     master User
@@ -9849,8 +9149,6 @@ Closing stencil doc
 Loading "EPC_M.VSSX"
 Creating output folder
     master Event
-Creating output folder
-Creating output folder
     master Function
     master Process path
     master Organizational unit
@@ -9867,8 +9165,6 @@ Closing stencil doc
 Loading "EXCOBJ_M.VSSX"
 Creating output folder
     master Exchange organization
-Creating output folder
-Creating output folder
     master Message formats
     master Exchange server
     master Exchange servers
@@ -9889,8 +9185,6 @@ Closing stencil doc
 Loading "FACES_M.VSSX"
 Creating output folder
     master Angry Face with No Fill
-Creating output folder
-Creating output folder
     master Angry Face with Solid Fill
     master Confused Face with No Fill
     master Confused Face with Solid Fill
@@ -9914,8 +9208,6 @@ Closing stencil doc
 Loading "FASTN1_M.VSSX"
 Creating output folder
     master Square  head
-Creating output folder
-Creating output folder
     master Square head top
     master Square nut
     master Hex head
@@ -9955,8 +9247,6 @@ Closing stencil doc
 Loading "FASTN2_M.VSSX"
 Creating output folder
     master Square   head set
-Creating output folder
-Creating output folder
     master Square set top
     master Round head rivet
     master Slotted head set
@@ -9987,8 +9277,6 @@ Closing stencil doc
 Loading "FAULT_M.VSSX"
 Creating output folder
     master AND gate
-Creating output folder
-Creating output folder
     master OR gate
     master Basic event
     master Undeveloped event
@@ -10005,8 +9293,6 @@ Closing stencil doc
 Loading "FLOSHP_M.VSSX"
 Creating output folder
     master Divided process 2
-Creating output folder
-Creating output folder
     master Tagged process
     master Process (circle)
     master Data store 3
@@ -10057,7 +9343,7 @@ Creating output folder
     master Branch: no return
     master Vertical XOR
     master Interrupt
-    master Vertical P And 
+    master Vertical P And
     master External control
     master Ellipsis
     master Dynamic connector
@@ -10066,8 +9352,6 @@ Closing stencil doc
 Loading "FOODDRINKS_M.VSSX"
 Creating output folder
     master Apple
-Creating output folder
-Creating output folder
     master Baby bottle
     master Beer
     master Bottle
@@ -10100,8 +9384,6 @@ Closing stencil doc
 Loading "FPASSM_M.VSSX"
 Creating output folder
     master 2 position 2,3,4 port
-Creating output folder
-Creating output folder
     master 2 position    5 port
     master 3 position 2,3,4 port
     master 3 position   5-port
@@ -10126,11 +9408,11 @@ Creating output folder
     master Plunger
     master Roller
     master Manual override
-    master Pull/push button 
+    master Pull/push button
     master Lever
     master Pedal/ treadle
     master  Electric  rotor
-    master Electric (linear) 
+    master Electric (linear)
     master Pilot- operated
     master Detent
     master  Junction  dot
@@ -10157,15 +9439,13 @@ Closing stencil doc
 Loading "FPEQP_M.VSSX"
 Creating output folder
     master Pump/motor (simple)
-Creating output folder
-Creating output folder
     master   Pump/ motor 1
     master   Pump/ motor 2
     master Air compressor
     master Actuator (semi-rotary)
     master Drive unit
     master Single-  acting
-    master Double- acting 
+    master Double- acting
     master Double-act. magnetic
     master Double- ended
     master Telescopic
@@ -10197,8 +9477,6 @@ Closing stencil doc
 Loading "FPVALV_M.VSSX"
 Creating output folder
     master 2/2 valve
-Creating output folder
-Creating output folder
     master 3/2 valve
     master 4/2 valve
     master 5/2 valve
@@ -10223,8 +9501,6 @@ Closing stencil doc
 Loading "FREEQP_M.VSSX"
 Creating output folder
     master Server
-Creating output folder
-Creating output folder
     master Monitor
     master Laptop
     master Printer
@@ -10237,8 +9513,6 @@ Closing stencil doc
 Loading "FURN_M.VSSX"
 Creating output folder
     master Sofa
-Creating output folder
-Creating output folder
     master Chair
     master Oblong dining table
     master Oval dining table
@@ -10275,8 +9549,6 @@ Closing stencil doc
 Loading "FURN_VISIO2013_M.VSSX"
 Creating output folder
     master Sofa
-Creating output folder
-Creating output folder
     master Chair
     master Oblong dining table
     master Oval dining table
@@ -10305,8 +9577,6 @@ Closing stencil doc
 Loading "GANESA_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Interface
     master Data Store
     master Data Flow
@@ -10314,8 +9584,6 @@ Closing stencil doc
 Loading "GANTT_M.VSSX"
 Creating output folder
     master Gantt Chart frame
-Creating output folder
-Creating output folder
     master Column
     master Row
     master Task bar
@@ -10337,8 +9605,6 @@ Closing stencil doc
 Loading "GARDEN_VISIO2013_M.VSSX"
 Creating output folder
     master Wood fence
-Creating output folder
-Creating output folder
     master Chain link fence
     master Concrete pathway
     master Brick pathway
@@ -10359,8 +9625,6 @@ Closing stencil doc
 Loading "GARDEN_M.VSSX"
 Creating output folder
     master Wood fence
-Creating output folder
-Creating output folder
     master Chain link fence
     master Concrete pathway
     master Brick Pathway 1
@@ -10406,8 +9670,6 @@ Closing stencil doc
 Loading "GDT_M.VSSX"
 Creating output folder
     master Datum symbol
-Creating output folder
-Creating output folder
     master Datum (old)
     master Datum (new)
     master Datum targets
@@ -10448,15 +9710,11 @@ Closing stencil doc
 Loading "GENERAL_M.VSSX"
 Creating output folder
     master Slide Snippet
-Creating output folder
-Creating output folder
     master StencilResult Master
 Closing stencil doc
 Loading "HOME_M.VSSX"
 Creating output folder
     master Alarm Clock
-Creating output folder
-Creating output folder
     master Bathtub
     master Bed
     master Candle
@@ -10484,8 +9742,6 @@ Closing stencil doc
 Loading "HVACCE_M.VSSX"
 Creating output folder
     master Duct
-Creating output folder
-Creating output folder
     master Return duct
     master Supply duct
     master Duct extension
@@ -10521,8 +9777,6 @@ Closing stencil doc
 Loading "HVACC_M.VSSX"
 Creating output folder
     master Temperature
-Creating output folder
-Creating output folder
     master Humidity
     master Connection line
     master Wire note
@@ -10550,8 +9804,6 @@ Closing stencil doc
 Loading "HVACD_M.VSSX"
 Creating output folder
     master Straight duct
-Creating output folder
-Creating output folder
     master Branch duct
     master Variable bend
     master Miter bend
@@ -10575,8 +9827,6 @@ Closing stencil doc
 Loading "HVACEQ_M.VSSX"
 Creating output folder
     master Rotary pump
-Creating output folder
-Creating output folder
     master Pump
     master Centrifugal pump
     master Fan blades
@@ -10599,8 +9849,6 @@ Closing stencil doc
 Loading "IDEF0_M.VSSX"
 Creating output folder
     master Activity box
-Creating output folder
-Creating output folder
     master Label
     master Title block
     master Text block 8pt
@@ -10613,8 +9861,6 @@ Closing stencil doc
 Loading "INTANN_M.VSSX"
 Creating output folder
     master Multiplex panel
-Creating output folder
-Creating output folder
     master Control panel
     master CPU
     master Keyboard
@@ -10627,8 +9873,6 @@ Closing stencil doc
 Loading "INTERFACE_M.VSSX"
 Creating output folder
     master Add
-Creating output folder
-Creating output folder
     master Back
     master Beginning
     master Checkmark
@@ -10652,8 +9896,6 @@ Closing stencil doc
 Loading "IRRIG_M.VSSX"
 Creating output folder
     master Var. circ. spray head
-Creating output folder
-Creating output folder
     master Var. rect. spray head
     master Lateral line
     master Main line
@@ -10668,8 +9910,6 @@ Closing stencil doc
 Loading "ITIL_M.VSSX"
 Creating output folder
     master Incident
-Creating output folder
-Creating output folder
     master Service request
     master Person
     master Service desk
@@ -10684,8 +9924,6 @@ Closing stencil doc
 Loading "LANGLV_M.VSSX"
 Creating output folder
     master Function / subroutine
-Creating output folder
-Creating output folder
     master Function w / invocation
     master Switch
     master Cloud
@@ -10701,8 +9939,6 @@ Closing stencil doc
 Loading "LDAPOB_M.VSSX"
 Creating output folder
     master Country / Region
-Creating output folder
-Creating output folder
     master Organization
     master Organizational unit
     master Locality
@@ -10727,8 +9963,6 @@ Closing stencil doc
 Loading "LEGEND_M.VSSX"
 Creating output folder
     master Outer list
-Creating output folder
-Creating output folder
     master Field container
     master Inner list
     master CBV item
@@ -10738,8 +9972,6 @@ Closing stencil doc
 Loading "LGND_M.VSSX"
 Creating output folder
     master To do
-Creating output folder
-Creating output folder
     master Done
     master Idea
     master Needs follow up
@@ -10767,8 +9999,6 @@ Closing stencil doc
 Loading "LINPAT_M.VSSX"
 Creating output folder
     master Pattern help
-Creating output folder
-Creating output folder
     master Phantom2
     master Divide2
     master Border
@@ -10797,8 +10027,6 @@ Closing stencil doc
 Loading "LNDMRK_M.VSSX"
 Creating output folder
     master Airport
-Creating output folder
-Creating output folder
     master Train station
     master Building 1
     master Gas station
@@ -10834,8 +10062,6 @@ Closing stencil doc
 Loading "LOCATION_M.VSSX"
 Creating output folder
     master Bookmark
-Creating output folder
-Creating output folder
     master Compass
     master Direction
     master Earth Globe Americas
@@ -10853,8 +10079,6 @@ Closing stencil doc
 Loading "LOGIC_M.VSSX"
 Creating output folder
     master Logic gate 2
-Creating output folder
-Creating output folder
     master Inverter
     master Flip-flop
     master Negative logic dot
@@ -10884,8 +10108,6 @@ Closing stencil doc
 Loading "MAP3D_M.VSSX"
 Creating output folder
     master Road 1
-Creating output folder
-Creating output folder
     master Road 2
     master Road 3
     master Elevated 1
@@ -10928,8 +10150,6 @@ Closing stencil doc
 Loading "MATRIXDIAGRAMSHAPES_M.VSSX"
 Creating output folder
     master Basic Matrix 2x2
-Creating output folder
-Creating output folder
     master Matrix 1
     master Matrix 2
     master Matrix 3
@@ -10948,8 +10168,6 @@ Closing stencil doc
 Loading "MEDICAL_M.VSSX"
 Creating output folder
     master Brain in head
-Creating output folder
-Creating output folder
     master Brain
     master DNA
     master Eye dropper
@@ -10964,8 +10182,6 @@ Closing stencil doc
 Loading "MEMOBJ_M.VSSX"
 Creating output folder
     master 3D stack top
-Creating output folder
-Creating output folder
     master 3D stack middle
     master Array
     master Pointer
@@ -10983,8 +10199,6 @@ Closing stencil doc
 Loading "METRO_M.VSSX"
 Creating output folder
     master Metro line
-Creating output folder
-Creating output folder
     master Rounded metro
     master Flexible metro
     master Station
@@ -10996,8 +10210,6 @@ Closing stencil doc
 Loading "MRKTDG_M.VSSX"
 Creating output folder
     master Matrix
-Creating output folder
-Creating output folder
     master SWOT
     master Step chart
     master Add-on step
@@ -11031,8 +10243,6 @@ Closing stencil doc
 Loading "MSFLOW_M.VSSX"
 Creating output folder
     master Trigger
-Creating output folder
-Creating output folder
     master Action
     master Condition
     master Switch
@@ -11044,11 +10254,9 @@ Closing stencil doc
 Loading "MWFCONCTRL_M.VSSX"
 Creating output folder
     master Container
-Creating output folder
-Creating output folder
     master 3:2 Frame
     master 5:3 Frame
-    master 16:9 Frame 
+    master 16:9 Frame
     master List Item
     master List Item with Icon
     master List Item with Button
@@ -11071,8 +10279,6 @@ Closing stencil doc
 Loading "MWFCTRL_M.VSSX"
 Creating output folder
     master Button
-Creating output folder
-Creating output folder
     master Color Picker
     master Combo Box
     master Percentage Range Slider
@@ -11096,8 +10302,6 @@ Closing stencil doc
 Loading "MWFECTRL_M.VSSX"
 Creating output folder
     master Icon
-Creating output folder
-Creating output folder
     master Image
     master Circular Image
     master Carousel
@@ -11114,8 +10318,6 @@ Closing stencil doc
 Loading "MWFNAVCTRL_M.VSSX"
 Creating output folder
     master Pagination 1
-Creating output folder
-Creating output folder
     master Pagination 2
     master Bread Crumb
     master Divider (Horizontal and Vertical)
@@ -11134,8 +10336,6 @@ Closing stencil doc
 Loading "MWFTEXTCTRL_M.VSSX"
 Creating output folder
     master Separator
-Creating output folder
-Creating output folder
     master Paragraph Text
     master Tag Cloud
     master Text Box
@@ -11158,8 +10358,6 @@ Closing stencil doc
 Loading "NATUREOUTDOORS_M.VSSX"
 Creating output folder
     master Anchor
-Creating output folder
-Creating output folder
     master Beach ball
     master Binoculars
     master Boat Launch
@@ -11191,8 +10389,6 @@ Closing stencil doc
 Loading "NETLME_M.VSSX"
 Creating output folder
     master Data Center
-Creating output folder
-Creating output folder
     master Cloud
     master Government Building
     master Building
@@ -11204,8 +10400,6 @@ Closing stencil doc
 Loading "NETLOC_M.VSSX"
 Creating output folder
     master Cloud
-Creating output folder
-Creating output folder
     master City
     master Building
     master House
@@ -11217,8 +10411,6 @@ Closing stencil doc
 Loading "NETRM_M.VSSX"
 Creating output folder
     master Door
-Creating output folder
-Creating output folder
     master Window
     master Chair
     master Table
@@ -11226,8 +10418,6 @@ Closing stencil doc
 Loading "NETSME_M.VSSX"
 Creating output folder
     master Comm server
-Creating output folder
-Creating output folder
     master Key
     master Workgroup switch
     master Lock
@@ -11255,8 +10445,6 @@ Closing stencil doc
 Loading "NETSYM_M.VSSX"
 Creating output folder
     master Router
-Creating output folder
-Creating output folder
     master ATM router
     master ISDN switch
     master ATM switch
@@ -11316,8 +10504,6 @@ Closing stencil doc
 Loading "OFFACC_VISIO2013_M.VSSX"
 Creating output folder
     master Small plant
-Creating output folder
-Creating output folder
     master Large plant
     master Marker board
     master Desk lamp
@@ -11332,8 +10518,6 @@ Closing stencil doc
 Loading "OFFACC_M.VSSX"
 Creating output folder
     master Palm plant
-Creating output folder
-Creating output folder
     master Large palm plant
     master Marker board
     master Desk lamp
@@ -11360,14 +10544,12 @@ Creating output folder
     master Foliage
     master Flowering
     master Cactus plant
-    master Large Flowering 
-    master Large Foliage 
+    master Large Flowering
+    master Large Foliage
 Closing stencil doc
 Loading "OFFEQP_VISIO2013_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Telephone
     master Printer
     master Fax machine
@@ -11395,8 +10577,6 @@ Closing stencil doc
 Loading "OFFEQP_M.VSSX"
 Creating output folder
     master PC
-Creating output folder
-Creating output folder
     master Telephone
     master Printer
     master Fax machine
@@ -11425,8 +10605,6 @@ Closing stencil doc
 Loading "OFFFRN_VISIO2013_M.VSSX"
 Creating output folder
     master Desk
-Creating output folder
-Creating output folder
     master Table
     master File
     master Lateral file
@@ -11465,8 +10643,6 @@ Closing stencil doc
 Loading "OFFFRN_M.VSSX"
 Creating output folder
     master Table
-Creating output folder
-Creating output folder
     master Desk chair
     master Drawer
     master Storage unit
@@ -11499,8 +10675,6 @@ Closing stencil doc
 Loading "ORGBLT_M.VSSX"
 Creating output folder
     master Executive Belt
-Creating output folder
-Creating output folder
     master Manager Belt
     master Position Belt
     master Assistant Belt
@@ -11519,8 +10693,6 @@ Closing stencil doc
 Loading "ORGBND_M.VSSX"
 Creating output folder
     master Executive Bound
-Creating output folder
-Creating output folder
     master Manager Bound
     master Position Bound
     master Assistant Bound
@@ -11539,8 +10711,6 @@ Closing stencil doc
 Loading "ORGCH_M.VSSX"
 Creating output folder
     master Executive
-Creating output folder
-Creating output folder
     master Manager
     master Position
     master Consultant
@@ -11558,8 +10728,6 @@ Closing stencil doc
 Loading "ORGCNS_M.VSSX"
 Creating output folder
     master Executive Coin
-Creating output folder
-Creating output folder
     master Manager Coin
     master Position Coin
     master Assistant Coin
@@ -11578,8 +10746,6 @@ Closing stencil doc
 Loading "orgico_m.vssx"
 Creating output folder
     master Position Belt
-Creating output folder
-Creating output folder
     master Position Notch
     master Position Pip
     master Position Shapetacular
@@ -11593,8 +10759,6 @@ Closing stencil doc
 Loading "ORGNCH_M.VSSX"
 Creating output folder
     master Executive Notch
-Creating output folder
-Creating output folder
     master Manager Notch
     master Position Notch
     master Assistant Notch
@@ -11613,8 +10777,6 @@ Closing stencil doc
 Loading "ORGPAN_M.VSSX"
 Creating output folder
     master Executive Panel
-Creating output folder
-Creating output folder
     master Manager Panel
     master Position Panel
     master Assistant Panel
@@ -11633,8 +10795,6 @@ Closing stencil doc
 Loading "ORGPER_M.VSSX"
 Creating output folder
     master Executive Perspective
-Creating output folder
-Creating output folder
     master Manager Perspective
     master Position Perspective
     master Assistant Perspective
@@ -11653,8 +10813,6 @@ Closing stencil doc
 Loading "ORGPET_M.VSSX"
 Creating output folder
     master Executive Petals
-Creating output folder
-Creating output folder
     master Manager Petals
     master Position Petals
     master Assistant Petals
@@ -11673,8 +10831,6 @@ Closing stencil doc
 Loading "ORGPIP_M.VSSX"
 Creating output folder
     master Executive Pip
-Creating output folder
-Creating output folder
     master Manager Pip
     master Position Pip
     master Assistant Pip
@@ -11693,8 +10849,6 @@ Closing stencil doc
 Loading "ORGSTO_M.VSSX"
 Creating output folder
     master Executive Stone
-Creating output folder
-Creating output folder
     master Manager Stone
     master Position Stone
     master Assistant Stone
@@ -11713,8 +10867,6 @@ Closing stencil doc
 Loading "ORGTAC_M.VSSX"
 Creating output folder
     master Executive Shapetacular
-Creating output folder
-Creating output folder
     master Manager Shapetacular
     master Position Shapetacular
     master Assistant Shapetacular
@@ -11733,8 +10885,6 @@ Closing stencil doc
 Loading "PEANNT_M.VSSX"
 Creating output folder
     master Interface Point 1
-Creating output folder
-Creating output folder
     master Interface Point 2
     master Slope
     master Off-Sheet Label 1
@@ -11760,8 +10910,6 @@ Closing stencil doc
 Loading "PEEQP_M.VSSX"
 Creating output folder
     master Breaker
-Creating output folder
-Creating output folder
     master Crusher
     master Mixer
     master Cyclone 1
@@ -11805,8 +10953,6 @@ Closing stencil doc
 Loading "PEHEAT_M.VSSX"
 Creating output folder
     master Heat exchanger1
-Creating output folder
-Creating output folder
     master Boiler
     master Cooling tower 1
     master Condenser
@@ -11838,8 +10984,6 @@ Closing stencil doc
 Loading "PEINST_M.VSSX"
 Creating output folder
     master Indicator
-Creating output folder
-Creating output folder
     master Indicator 2
     master Pressure gauges
     master Thermometers
@@ -11912,8 +11056,6 @@ Closing stencil doc
 Loading "PEOPLE_M.VSSX"
 Creating output folder
     master Baby Crawling
-Creating output folder
-Creating output folder
     master Baby
     master Children
     master Crawl
@@ -11942,8 +11084,6 @@ Closing stencil doc
 Loading "PEPIPE_M.VSSX"
 Creating output folder
     master Major PipelineR
-Creating output folder
-Creating output folder
     master Minor PipelineR
     master Major Pipeline
     master Major PipelineL
@@ -11953,8 +11093,6 @@ Closing stencil doc
 Loading "PEPUMP_M.VSSX"
 Creating output folder
     master In-line pump
-Creating output folder
-Creating output folder
     master Centrifugal pump
     master Selectable compressor1
     master Selectable fan 1
@@ -11984,8 +11122,6 @@ Closing stencil doc
 Loading "PERIME_M.VSSX"
 Creating output folder
     master Wireless access point
-Creating output folder
-Creating output folder
     master Ring network
     master Ethernet
     master Server
@@ -12021,8 +11157,6 @@ Closing stencil doc
 Loading "PERIPH_M.VSSX"
 Creating output folder
     master Ring network
-Creating output folder
-Creating output folder
     master Ethernet
     master Server
     master Mainframe
@@ -12055,8 +11189,6 @@ Closing stencil doc
 Loading "PERT_M.VSSX"
 Creating output folder
     master PERT 1
-Creating output folder
-Creating output folder
     master PERT 2
     master Dynamic connector
     master Line connector
@@ -12069,8 +11201,6 @@ Closing stencil doc
 Loading "PEVALV_M.VSSX"
 Creating output folder
     master Gate valve
-Creating output folder
-Creating output folder
     master Globe valve
     master Check valve
     master Powered valve
@@ -12124,8 +11254,6 @@ Closing stencil doc
 Loading "PEVESS_M.VSSX"
 Creating output folder
     master Vessel
-Creating output folder
-Creating output folder
     master Column
     master Autoclave
     master Tank
@@ -12152,8 +11280,6 @@ Closing stencil doc
 Loading "PIPE1_M.VSSX"
 Creating output folder
     master Crossings
-Creating output folder
-Creating output folder
     master Junctions
     master Cross
     master Elbow 45
@@ -12199,8 +11325,6 @@ Closing stencil doc
 Loading "PIPE2_M.VSSX"
 Creating output folder
     master General joint
-Creating output folder
-Creating output folder
     master Butt welds
     master Soldered/ Solvent
     master Screwed joints
@@ -12232,8 +11356,6 @@ Closing stencil doc
 Loading "PLANT_VISIO2013_M.VSSX"
 Creating output folder
     master Conifer tree  A
-Creating output folder
-Creating output folder
     master Decid. tree A
     master Conifer shrub a
     master Decid. shrub a
@@ -12267,8 +11389,6 @@ Closing stencil doc
 Loading "PLANT_M.VSSX"
 Creating output folder
     master Conifer tree  A
-Creating output folder
-Creating output folder
     master Decid. tree A
     master Conifer shrub a
     master Decid. shrub a
@@ -12297,8 +11417,6 @@ Closing stencil doc
 Loading "PLUMB_M.VSSX"
 Creating output folder
     master Boiler
-Creating output folder
-Creating output folder
     master Heating / cooling coil
     master Pump
     master Radiator
@@ -12324,8 +11442,6 @@ Closing stencil doc
 Loading "PRKRD_VISIO2013_M.VSSX"
 Creating output folder
     master Parking strip 1
-Creating output folder
-Creating output folder
     master Parking strip 2
     master Radial strip 1
     master Parking stall 1
@@ -12349,8 +11465,6 @@ Closing stencil doc
 Loading "PRKRD_M.VSSX"
 Creating output folder
     master Parking strip 1
-Creating output folder
-Creating output folder
     master Parking strip 2
     master Radial strip 1
     master Parking stall 1
@@ -12379,8 +11493,6 @@ Closing stencil doc
 Loading "PTSCLD_M.VSSX"
 Creating output folder
     master Pattern help
-Creating output folder
-Creating output folder
     master Ar-hbone
     master Ar-Brelm
     master Brstone
@@ -12394,8 +11506,6 @@ Closing stencil doc
 Loading "PTSINT_VISIO2013_M.VSSX"
 Creating output folder
     master You are here 1
-Creating output folder
-Creating output folder
     master Toilets
     master No smoking
     master Exit
@@ -12452,8 +11562,6 @@ Closing stencil doc
 Loading "PTSINT_M.VSSX"
 Creating output folder
     master You are here
-Creating output folder
-Creating output folder
     master Toilets
     master No smoking
     master Exit
@@ -12532,8 +11640,6 @@ Closing stencil doc
 Loading "PTUSCL_M.VSSX"
 Creating output folder
     master Pattern help
-Creating output folder
-Creating output folder
     master Stars
     master Ar-parq1
     master Triangle
@@ -12583,8 +11689,6 @@ Closing stencil doc
 Loading "PYRAMID_SHAPES_M.VSSX"
 Creating output folder
     master Basic Pyramid
-Creating output folder
-Creating output folder
     master Inverted Pyramid
     master Layered Pyramid
     master Inverted cone
@@ -12599,8 +11703,6 @@ Closing stencil doc
 Loading "RCKEQP_M.VSSX"
 Creating output folder
     master Rack
-Creating output folder
-Creating output folder
     master Cabinet
     master Server
     master RAID array
@@ -12623,8 +11725,6 @@ Closing stencil doc
 Loading "RCKSME_M.VSSX"
 Creating output folder
     master Web server
-Creating output folder
-Creating output folder
     master File server
     master Application server
     master Certificate server
@@ -12645,8 +11745,6 @@ Closing stencil doc
 Loading "RCKSVR_M.VSSX"
 Creating output folder
     master Application server
-Creating output folder
-Creating output folder
     master Content management server
     master Database server
     master Directory server
@@ -12667,8 +11765,6 @@ Closing stencil doc
 Loading "RECRT_M.VSSX"
 Creating output folder
     master Rectangular pool
-Creating output folder
-Creating output folder
     master Spa
     master Soccer field
     master Tennis court
@@ -12696,8 +11792,6 @@ Closing stencil doc
 Loading "RECRT_VISIO2013_M.VSSX"
 Creating output folder
     master Rectangular pool
-Creating output folder
-Creating output folder
     master Spa
     master Soccer field
     master Tennis court
@@ -12720,8 +11814,6 @@ Closing stencil doc
 Loading "RECSHP_M.VSSX"
 Creating output folder
     master Restroom
-Creating output folder
-Creating output folder
     master Parking
     master Potable water
     master Campground
@@ -12753,8 +11845,6 @@ Closing stencil doc
 Loading "REGSTR_M.VSSX"
 Creating output folder
     master Supply diffuser
-Creating output folder
-Creating output folder
     master Return diffuser
     master Grille diffuser
     master Linear diffuser
@@ -12764,8 +11854,6 @@ Closing stencil doc
 Loading "ROAD_M.VSSX"
 Creating output folder
     master Road square
-Creating output folder
-Creating output folder
     master Road round
     master Flexible road
     master Curve 1
@@ -12783,8 +11871,6 @@ Closing stencil doc
 Loading "SDCALL_M.VSSX"
 Creating output folder
     master Text Callout
-Creating output folder
-Creating output folder
     master Reverse
     master Sled
     master Orthogonal
@@ -12802,8 +11888,6 @@ Closing stencil doc
 Loading "SDCONT_M.VSSX"
 Creating output folder
     master Plain
-Creating output folder
-Creating output folder
     master Notch
     master Waves
     master Wire
@@ -12821,8 +11905,6 @@ Closing stencil doc
 Loading "SDL_M.VSSX"
 Creating output folder
     master Start
-Creating output folder
-Creating output folder
     master Variable start
     master Procedure
     master Variable procedure
@@ -12850,8 +11932,6 @@ Closing stencil doc
 Loading "SECURITYJUSTICE_M.VSSX"
 Creating output folder
     master Gavel
-Creating output folder
-Creating output folder
     master Handcuffs
     master Jail
     master Key
@@ -12867,8 +11947,6 @@ Closing stencil doc
 Loading "SERVER_M.VSSX"
 Creating output folder
     master Server
-Creating output folder
-Creating output folder
     master File server
     master Email server
     master Web server
@@ -12889,8 +11967,6 @@ Closing stencil doc
 Loading "SERVME_M.VSSX"
 Creating output folder
     master Web server
-Creating output folder
-Creating output folder
     master File server
     master Application server
     master Certificate server
@@ -12911,8 +11987,6 @@ Closing stencil doc
 Loading "SHPMCH_M.VSSX"
 Creating output folder
     master CNC lathe
-Creating output folder
-Creating output folder
     master Centre lathe
     master Horz. band saw
     master Vert. band saw
@@ -12941,8 +12015,6 @@ Closing stencil doc
 Loading "SHPREC_M.VSSX"
 Creating output folder
     master Loading bay
-Creating output folder
-Creating output folder
     master Loading dock
     master Swing door 1
     master Swing door 2
@@ -12965,8 +12037,6 @@ Closing stencil doc
 Loading "SHPSTR_M.VSSX"
 Creating output folder
     master Electric forklift
-Creating output folder
-Creating output folder
     master Manual pallet truck
     master Diesel forklift
     master Rising cab forklift
@@ -12997,8 +12067,6 @@ Closing stencil doc
 Loading "SIGNS_M.VSSX"
 Creating output folder
     master Female
-Creating output folder
-Creating output folder
     master Fire
     master Forbidden
     master Heart
@@ -13009,7 +12077,7 @@ Creating output folder
     master No sign
     master Radioactive
     master Raised Hand
-    master Right Pointing Backhand Index 
+    master Right Pointing Backhand Index
     master Smoking
     master Thumbs Up Sign
     master Warning
@@ -13018,8 +12086,6 @@ Closing stencil doc
 Loading "SITACC_VISIO2013_M.VSSX"
 Creating output folder
     master Lamp post
-Creating output folder
-Creating output folder
     master Dumpster
     master Trash can
     master Fire hydrant
@@ -13049,8 +12115,6 @@ Closing stencil doc
 Loading "SITACC_M.VSSX"
 Creating output folder
     master Lamp post
-Creating output folder
-Creating output folder
     master Dumpster
     master Trash can
     master Fire hydrant
@@ -13089,8 +12153,6 @@ Closing stencil doc
 Loading "SPORTS_M.VSSX"
 Creating output folder
     master Baseball bat and ball
-Creating output folder
-Creating output folder
     master Baseball
     master Basketball
     master Bike
@@ -13122,8 +12184,6 @@ Closing stencil doc
 Loading "SPRBR_M.VSSX"
 Creating output folder
     master General
-Creating output folder
-Creating output folder
     master Deep  groove
     master Angular contact
     master Angular  cont. (dbl.)
@@ -13154,8 +12214,6 @@ Closing stencil doc
 Loading "SPWA2_M.VSSX"
 Creating output folder
     master Do calculation
-Creating output folder
-Creating output folder
     master Send an email
     master Set field in current item
     master Assign a task
@@ -13202,8 +12260,6 @@ Closing stencil doc
 Loading "SPWA_M.VSSX"
 Creating output folder
     master Assign a to-do item
-Creating output folder
-Creating output folder
     master Collect data from a user
     master Start approval process
     master Start custom task process
@@ -13244,8 +12300,6 @@ Closing stencil doc
 Loading "SPWC2_M.VSSX"
 Creating output folder
     master If any value equals value
-Creating output folder
-Creating output folder
     master Created by a specific person
     master Created in a specific date span
     master Modified in a specific date span
@@ -13258,8 +12312,6 @@ Closing stencil doc
 Loading "SPWC_M.VSSX"
 Creating output folder
     master Compare data source
-Creating output folder
-Creating output folder
     master Compare document field
     master Title contains keywords
     master Created by
@@ -13276,8 +12328,6 @@ Closing stencil doc
 Loading "SPWT2_M.VSSX"
 Creating output folder
     master Stage
-Creating output folder
-Creating output folder
     master Loop with condition
     master Step
     master Loop n times
@@ -13293,15 +12343,11 @@ Closing stencil doc
 Loading "SPWT_M.VSSX"
 Creating output folder
     master Start
-Creating output folder
-Creating output folder
     master Terminate
 Closing stencil doc
 Loading "SSFLOW_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Decision
     master Subprocess
     master Start/End
@@ -13320,8 +12366,6 @@ Closing stencil doc
 Loading "SSHOQ_M.VSSX"
 Creating output folder
     master Ratings
-Creating output folder
-Creating output folder
     master Value
     master Correlations
     master Complete
@@ -13339,8 +12383,6 @@ Closing stencil doc
 Loading "SYMBOL_M.VSSX"
 Creating output folder
     master Zone
-Creating output folder
-Creating output folder
     master "NO" sign
     master No smoking
     master Warning sign
@@ -13378,8 +12420,6 @@ Closing stencil doc
 Loading "TECHELEC_M.VSSX"
 Creating output folder
     master Camera
-Creating output folder
-Creating output folder
     master Computer
     master Disk
     master DVD player
@@ -13410,8 +12450,6 @@ Closing stencil doc
 Loading "Theme_m.vssx"
 Creating output folder
     master Theme
-Creating output folder
-Creating output folder
     master ThemeIcon
     master ColorScheme
     master ColorSchemeIcon
@@ -13428,8 +12466,6 @@ Closing stencil doc
 Loading "TIMELN_M.VSSX"
 Creating output folder
     master Block timeline
-Creating output folder
-Creating output folder
     master Line timeline
     master Cylindrical timeline
     master Line milestone
@@ -13460,8 +12496,6 @@ Closing stencil doc
 Loading "TITLE_M.VSSX"
 Creating output folder
     master Zones - 4
-Creating output folder
-Creating output folder
     master Zones - 8
     master Frame
     master Projection symbol
@@ -13494,8 +12528,6 @@ Closing stencil doc
 Loading "TOOLSBUILDING_M.VSSX"
 Creating output folder
     master Crane
-Creating output folder
-Creating output folder
     master Flashlight
     master Hammer
     master Jack hammer
@@ -13514,8 +12546,6 @@ Closing stencil doc
 Loading "TQM_M.VSSX"
 Creating output folder
     master Transportation
-Creating output folder
-Creating output folder
     master Inbound goods
     master Storage
     master Procedure
@@ -13571,8 +12601,6 @@ Closing stencil doc
 Loading "TRANSP_M.VSSX"
 Creating output folder
     master Traffic light
-Creating output folder
-Creating output folder
     master Stop
     master Give way
     master Route number 1
@@ -13605,8 +12633,6 @@ Closing stencil doc
 Loading "UACTME_M.VSSX"
 Creating output folder
     master Action
-Creating output folder
-Creating output folder
     master Decision
     master Merge Node
     master Initial node
@@ -13625,8 +12651,6 @@ Closing stencil doc
 Loading "UCMNME_M.VSSX"
 Creating output folder
     master Lifeline
-Creating output folder
-Creating output folder
     master Actor
     master Message
     master Return Message
@@ -13635,8 +12659,6 @@ Closing stencil doc
 Loading "UCOMME_M.VSSX"
 Creating output folder
     master Component
-Creating output folder
-Creating output folder
     master Provided Interface
     master Required Interface
     master Association
@@ -13651,8 +12673,6 @@ Closing stencil doc
 Loading "UDEPME_M.VSSX"
 Creating output folder
     master Node
-Creating output folder
-Creating output folder
     master Node Instance
     master Artifact
     master Artifact Instance
@@ -13677,8 +12697,6 @@ Closing stencil doc
 Loading "USEQME_M.VSSX"
 Creating output folder
     master Activation
-Creating output folder
-Creating output folder
     master Object lifeline
     master Actor lifeline
     master Loop fragment
@@ -13694,8 +12712,6 @@ Closing stencil doc
 Loading "USTAME_M.VSSX"
 Creating output folder
     master State
-Creating output folder
-Creating output folder
     master State with internal behavior
     master Composite state
     master Submachine state
@@ -13707,8 +12723,6 @@ Closing stencil doc
 Loading "USTRME_M.VSSX"
 Creating output folder
     master Class
-Creating output folder
-Creating output folder
     master Member
     master Separator
     master Interface
@@ -13728,8 +12742,6 @@ Closing stencil doc
 Loading "UUSEME_M.VSSX"
 Creating output folder
     master Actor
-Creating output folder
-Creating output folder
     master Use Case
     master Subsystem
     master Association
@@ -13741,8 +12753,6 @@ Closing stencil doc
 Loading "VALVE1_M.VSSX"
 Creating output folder
     master In-line valves
-Creating output folder
-Creating output folder
     master Screw-down valves
     master Relief  valves
     master Angle valves
@@ -13767,8 +12777,6 @@ Closing stencil doc
 Loading "VALVE2_M.VSSX"
 Creating output folder
     master In-line valves
-Creating output folder
-Creating output folder
     master Manual isolation
     master Power signal
     master Statically loaded
@@ -13789,8 +12797,6 @@ Closing stencil doc
 Loading "VEHICLES_M.VSSX"
 Creating output folder
     master Airplane
-Creating output folder
-Creating output folder
     master Bulldozer
     master Bus
     master Car
@@ -13808,8 +12814,6 @@ Closing stencil doc
 Loading "VEHICL_VISIO2013_M.VSSX"
 Creating output folder
     master Compact car
-Creating output folder
-Creating output folder
     master Mid-size car
     master Box van
     master Large semitrailer
@@ -13825,7 +12829,7 @@ Creating output folder
     master Small semitrailer
     master Truck
     master Semi trailer
-    master Metro bus 
+    master Metro bus
     master Articulated metro bus
     master Tour bus
     master School bus
@@ -13840,8 +12844,6 @@ Closing stencil doc
 Loading "VEHICL_M.VSSX"
 Creating output folder
     master Compact car
-Creating output folder
-Creating output folder
     master Mid-size car
     master Small semitrailer
     master Large semitrailer
@@ -13873,8 +12875,6 @@ Closing stencil doc
 Loading "VENNDIAG_M.VSSX"
 Creating output folder
     master Venn Diagram Shape
-Creating output folder
-Creating output folder
     master Square Venn diagram
     master 2-sets Square Venn diagram
     master 2-sets Venn diagram
@@ -13890,8 +12890,6 @@ Closing stencil doc
 Loading "VIDSUR_M.VSSX"
 Creating output folder
     master Camera
-Creating output folder
-Creating output folder
     master Motion detector
     master Glass break sensor
     master Screening device
@@ -13915,8 +12913,6 @@ Closing stencil doc
 Loading "VSM_M.VSSX"
 Creating output folder
     master Process
-Creating output folder
-Creating output folder
     master Inventory
     master Push arrow
     master VSM
@@ -13950,8 +12946,6 @@ Closing stencil doc
 Loading "WADOWI_M.VSSX"
 Creating output folder
     master Room
-Creating output folder
-Creating output folder
     master Wall
     master Door
     master Window
@@ -13970,8 +12964,6 @@ Closing stencil doc
 Loading "WALL_M.VSSX"
 Creating output folder
     master Room
-Creating output folder
-Creating output folder
     master Wall
     master Window
     master Door
@@ -13990,7 +12982,7 @@ Creating output folder
     master Uneven
     master Opposing
     master Revolving
-    master Pocket 
+    master Pocket
     master Double pocket
     master By-pass
     master Bi-fold
@@ -14016,8 +13008,6 @@ Closing stencil doc
 Loading "WEATHERSEASONS_M.VSSX"
 Creating output folder
     master Beach umbrella
-Creating output folder
-Creating output folder
     master Cloud
     master Leaf
     master Lightning
@@ -14037,8 +13027,6 @@ Closing stencil doc
 Loading "WEBMAP_M.VSSX"
 Creating output folder
     master HTML
-Creating output folder
-Creating output folder
     master Graphic (bitmap)
     master Text
     master Style sheet
@@ -14121,8 +13109,6 @@ Closing stencil doc
 Loading "WEBSIT_M.VSSX"
 Creating output folder
     master Group
-Creating output folder
-Creating output folder
     master Main object
     master Web page
     master Page group
@@ -14145,8 +13131,6 @@ Closing stencil doc
 Loading "WELD_M.VSSX"
 Creating output folder
     master Spot
-Creating output folder
-Creating output folder
     master Resistance seam
     master Slot/plug
     master Stud
@@ -14177,8 +13161,6 @@ Closing stencil doc
 Loading "WFCICN_M.VSSX"
 Creating output folder
     master Back
-Creating output folder
-Creating output folder
     master Forward
     master Expand
     master Collapse
@@ -14204,8 +13186,6 @@ Closing stencil doc
 Loading "WFCRS_M.VSSX"
 Creating output folder
     master Select
-Creating output folder
-Creating output folder
     master Move
     master Busy
     master Link select
@@ -14223,8 +13203,6 @@ Closing stencil doc
 Loading "WFCTRL_M.VSSX"
 Creating output folder
     master Label
-Creating output folder
-Creating output folder
     master Text box
     master Hyperlink
     master Button
@@ -14244,8 +13222,6 @@ Closing stencil doc
 Loading "WFDEME_M.VSSX"
 Creating output folder
     master Accounting
-Creating output folder
-Creating output folder
     master Accounts Payable
     master Accounts Receivable
     master Auditing
@@ -14292,8 +13268,6 @@ Closing stencil doc
 Loading "WFDEP_M.VSSX"
 Creating output folder
     master Accounting
-Creating output folder
-Creating output folder
     master Accounts payable
     master Accounts receivable
     master Auditing
@@ -14340,8 +13314,6 @@ Closing stencil doc
 Loading "WFDLGS_M.VSSX"
 Creating output folder
     master Dialog form
-Creating output folder
-Creating output folder
     master Application form
     master Panel
     master Dialog button
@@ -14363,8 +13335,6 @@ Closing stencil doc
 Loading "WFOBJ_M.VSSX"
 Creating output folder
     master Person
-Creating output folder
-Creating output folder
     master Person - torso
     master Customer
     master User
@@ -14394,8 +13364,6 @@ Closing stencil doc
 Loading "WFOBME_M.VSSX"
 Creating output folder
     master Person
-Creating output folder
-Creating output folder
     master Data
     master Customer
     master User
@@ -14424,8 +13392,6 @@ Closing stencil doc
 Loading "WFSTEP_M.VSSX"
 Creating output folder
     master Task
-Creating output folder
-Creating output folder
     master Issue
     master Submit
     master Request
@@ -14444,8 +13410,6 @@ Closing stencil doc
 Loading "WFSTME_M.VSSX"
 Creating output folder
     master Task
-Creating output folder
-Creating output folder
     master Issue
     master Submit
     master Request
@@ -14471,8 +13435,6 @@ Closing stencil doc
 Loading "WFTLBR_M.VSSX"
 Creating output folder
     master Menu bar
-Creating output folder
-Creating output folder
     master Menu bar item
     master Drop-down menu
     master Menu item
@@ -14495,8 +13457,6 @@ Closing stencil doc
 Loading "WFWICN_M.VSSX"
 Creating output folder
     master Search
-Creating output folder
-Creating output folder
     master Favorite
     master Shopping cart
     master RSS
@@ -14536,8 +13496,6 @@ Closing stencil doc
 Loading "WRKFLO_M.VSSX"
 Creating output folder
     master Accounting
-Creating output folder
-Creating output folder
     master Accounts payable
     master Accounts receivable
     master Bank
@@ -14583,8 +13541,6 @@ Closing stencil doc
 Loading "WWFCICN_M.VSSX"
 Creating output folder
     master Back
-Creating output folder
-Creating output folder
     master Forward
     master Expand
     master Collapse
@@ -14667,8 +13623,6 @@ Closing stencil doc
 Loading "WWFCONCTRL_M.VSSX"
 Creating output folder
     master Container
-Creating output folder
-Creating output folder
     master Window
     master Dialog Box
     master Alert Box
@@ -14679,7 +13633,7 @@ Creating output folder
     master Video Clip container 1
     master Video Clip container 2
     master Login Page Container
-    master Product description container 
+    master Product description container
     master Contact details container
     master Image and text Container
     master Payment Gateway Container
@@ -14687,8 +13641,6 @@ Closing stencil doc
 Loading "WWFCRS_M.VSSX"
 Creating output folder
     master Select
-Creating output folder
-Creating output folder
     master Move
     master Busy
     master Link select
@@ -14718,8 +13670,6 @@ Closing stencil doc
 Loading "WWFCTRL_M.VSSX"
 Creating output folder
     master Button
-Creating output folder
-Creating output folder
     master Color Picker
     master Combo Box
     master Percentage Range Slider
@@ -14743,8 +13693,6 @@ Closing stencil doc
 Loading "WWFMECTRL_M.VSSX"
 Creating output folder
     master Icon
-Creating output folder
-Creating output folder
     master Image
     master Circular Image
     master Carousel
@@ -14760,8 +13708,6 @@ Closing stencil doc
 Loading "WWFNAVCTRL_M.VSSX"
 Creating output folder
     master Pagination 1
-Creating output folder
-Creating output folder
     master Pagination 2
     master Bread Crumb
     master Divider (Horizontal and Vertical)
@@ -14777,8 +13723,6 @@ Closing stencil doc
 Loading "WWFTEXTCTRL_M.VSSX"
 Creating output folder
     master Separator
-Creating output folder
-Creating output folder
     master Paragraph Text
     master Tag Cloud
     master Text Box
@@ -14799,8 +13743,6 @@ Closing stencil doc
 Loading "WWFWICN_M.VSSX"
 Creating output folder
     master Power
-Creating output folder
-Creating output folder
     master Play
     master Pause
     master Stop
@@ -14830,8 +13772,6 @@ Closing stencil doc
 Loading "XFUNC_M.VSSX"
 Creating output folder
     master Swimlane
-Creating output folder
-Creating output folder
     master Separator
     master Swimlane (vertical)
     master Separator (vertical)
