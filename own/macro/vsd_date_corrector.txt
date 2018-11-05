@@ -1,0 +1,40 @@
+Sub date_corrector()
+Dim dt As Variant
+dt = ActiveDocument.DocumentSheet.Cells("prop.date").Result("")
+On Error GoTo err
+Dim i%, sht As Shape, sh As Shape, pg As Page
+For i = 3 To ActiveDocument.Pages.Count
+Set pg = ActiveDocument.Pages(i)
+Set sht = pg.Shapes.Item("Штамп")
+Set sh = sht.Shapes("razr")
+sh.CellsSRC(visSectionProp, intPropRow1, visCustPropsLangID).FormulaU = "1049"
+Rem sh.CellsSRC(visSectionProp, intPropRow1, visCustPropsValue).FormulaU = "DATETIME(41950)"
+' sh.Cells("prop.row_2").FormulaU = """"""
+sh.Cells("prop.row_2").FormulaU = "Thedoc!user.author"
+Set sh = sht.Shapes("razr")
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsLangID).FormulaU = "1049"
+sh.CellsSRC(visSectionProp, 0, visCustPropsFormat).FormulaU = """{{MM.yy}}"""
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsValue).FormulaU = "DATETIME(" & dt & ")"
+Set sh = sht.Shapes("prov")
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsLangID).FormulaU = "1049"
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsValue).FormulaU = "DATETIME(" & dt & ")"
+sh.CellsSRC(visSectionProp, 0, visCustPropsFormat).FormulaU = """{{MM.yy}}"""
+sh.Cells("prop.row_2").FormulaU = """"""
+sh.Cells("prop.row_2").FormulaU = "Thedoc!user.control"
+Set sh = sht.Shapes("gip")
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsLangID).FormulaU = "1049"
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsValue).FormulaU = "DATETIME(" & dt & ")"
+sh.CellsSRC(visSectionProp, 0, visCustPropsFormat).FormulaU = """{{MM.yy}}"""
+Set sh = sht.Shapes("ncont")
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsLangID).FormulaU = "1049"
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsValue).FormulaU = "DATETIME(" & dt & ")"
+sh.CellsSRC(visSectionProp, 0, visCustPropsFormat).FormulaU = """{{MM.yy}}"""
+Set sh = sht.Shapes("utv")
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsLangID).FormulaU = "1049"
+sh.CellsSRC(visSectionProp, intPropRow2, visCustPropsValue).FormulaU = "DATETIME(" & dt & ")"
+sh.CellsSRC(visSectionProp, 0, visCustPropsFormat).FormulaU = """{{MM.yy}}"""
+Next i
+MsgBox "все"
+err:
+MsgBox pg.Name
+End Sub

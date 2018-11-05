@@ -1,0 +1,19 @@
+Sub vsd_Add_Ribbon()
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set file = fso.OpenTextFile("c:\Users\akuzin\Desktop\sample-rib\ui.xml", 1)
+XML = file.ReadAll
+file.Close
+Dim ad As Document, adn$
+Set ad = ActiveDocument
+adn = ad.FullName
+ad.CustomUI = XML
+ad.Save
+ad.Close
+Documents.OpenEx adn, visOpenRW
+End Sub
+'-------------------------------
+Sub vsd_export_xml()
+Dim xml_
+xml_ = ActiveDocument.CustomUI
+Debug.Print xml_
+End Sub

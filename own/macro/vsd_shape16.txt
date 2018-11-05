@@ -1,0 +1,10 @@
+﻿Sub bbbb()
+Dim pg As Page
+Dim sh As Shape
+For Each pg In ActiveDocument.Pages
+Set sh = pg.Shapes.ItemFromID(16)
+sh.Cells("height").FormulaForce = "Guard(5 mm)"
+sh.Cells("Piny").FormulaForceU = "GUARD(Sheet.6!Width*User.p/185)"
+sh.Cells("user.p").FormulaForceU = "LEFT(Sheet.1!User.D,2)"
+Next pg
+End Sub

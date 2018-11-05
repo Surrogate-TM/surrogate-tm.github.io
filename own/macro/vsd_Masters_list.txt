@@ -1,0 +1,27 @@
+Public Sub Masters_Example()
+    Dim intCounter As Integer
+    Dim intMasterCount As Integer
+    Dim vsoApplication As Visio.Application
+    Dim vsoCurrentDocument As Visio.Document
+    Dim vsoMasters As Visio.Masters
+    Set vsoApplication = GetObject(, "visio.application")
+    If vsoApplication Is Nothing Then
+        MsgBox "Microsoft Office Visio is not loaded"
+        Exit Sub
+    End If
+    Set vsoCurrentDocument = vsoApplication.Documents.OpenEx("c:\Users\akuzin\Documents\Iie oeao?u\TNKSNBIPT.vss", vsoopenro)
+    If vsoCurrentDocument Is Nothing Then
+        MsgBox "No stencil is loaded"
+        Exit Sub
+    End If
+    Set vsoMasters = vsoCurrentDocument.Masters
+    Debug.Print "Masters in document : "; vsoCurrentDocument.Name
+    intMasterCount = vsoMasters.Count
+    If intMasterCount > 0 Then
+        For intCounter = 1 To intMasterCount
+            Debug.Print " "; intCounter, vsoMasters.Item(intCounter).Name
+        Next intCounter
+    Else
+        Debug.Print " No masters in document"
+    End If
+End Sub

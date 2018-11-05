@@ -1,0 +1,49 @@
+Option Base 1
+Sub BP4_corrector()
+Dim isSpec As Boolean
+isSpec = False
+Dim ma() As Integer
+Dim r%, form$
+r = ActiveDocument.Pages.Count
+ReDim ma(r)
+Dim pg As Page, sh As Shape, listing$, wn As Window, n%, pos As Shape, prim As Shape
+listing = "": n = 0
+For i = 4 To ActiveDocument.Pages.Count
+Set pg = ActiveDocument.Pages(i)
+pg.Shapes("Ooaii").Cells("fields.value").FormulaU = "0"
+pg.Shapes("Ooaii").Cells("fields.value").FormulaU = "=PAGENUMBER()-1"
+If InStr(1, pg.Shapes("Ooaii").Cells("prop.chapter").ResultStr(""), "-Niao") Then
+isSpec = True
+Else
+End If
+If pg.Shapes("Ooaii").Cells("prop.cnum").FormulaU = 1 Then listing = listing & ";" & pg.Name: n = n + 1: ma(n) = pg.Shapes("Ooaii").ID
+Next
+Set pg = ActiveDocument.Pages(3)
+Set wn = Application.ActiveWindow.Page.PageSheet.OpenSheetWindow
+Application.ActiveWindow.Shape.Cells("user.store.prompt").FormulaU = Chr(34) & listing & Chr(34)
+wn.Close
+Set sh = pg.Shapes("BP4")
+For i = 1 To n
+Set prim = sh.Shapes("pos" & i).Shapes("prim" & i)
+Set pos = prim.Parent
+prim.Cells("user.row_6").FormulaU = ""
+prim.Cells("user.row_6").FormulaU = "IF(Sheet." & pos.ID & "!User.N=Sheet." & sh.ID & "!Prop.N,SETF(getref(User.n),PAGECOUNT()-1),SETF(getref(User.n),Sheet." & pos.ID + 4 & "!User.pn))"
+pos.Cells("prop.det.format").FormulaForceU = "GUARD(ThePage!User.store.Prompt)"
+pos.Cells("prop.det.value").FormulaU = "INDEX(" & i & " ,Prop.det.Format)"
+pos.Cells("prop.det.value").FormulaU = "INDEX(" & i & " ,Prop.det.Format)"
+form = "IF(0=0,SETF(GetRef(User.ch)," & Chr(34) & "=Pages[" & Chr(34) & "&Prop.det&" & Chr(34) & "]!sheet." & ma(i) & "!user.ch" & Chr(34) & ")+SETF(GetRef(User.de)," & Chr(34) & "=Pages[" & Chr(34) & "&Prop.det&" & Chr(34) & "]!sheet." & ma(i) & "!user.de" & Chr(34) & ")+SETF(GetRef(User.pn)," & Chr(34) & "=Pages[" & Chr(34) & "&Prop.det&" & Chr(34) & "]!sheet." & ma(i) & "!fields.value" & Chr(34) & "),33)"
+pos.Cells("user.set").FormulaU = form
+pos.CellsSRC(visSectionAction, 0, visActionAction).FormulaU = "GOTOPAGE(Prop.det)"
+pos.CellsSRC(visSectionAction, 0, visActionMenu).FormulaU = """Перейти на ""&Prop.det"
+Next
+If isSpec Then
+n = n - 1
+Set prim = sh.Shapes("pos" & n).Shapes("prim" & n)
+Set pos = prim.Parent
+prim.Cells("user.row_6").FormulaU = ""
+Debug.Print prim.Name, "IF(Sheet." & pos.ID & "!User.N=Sheet." & sh.ID & "!Prop.N,SETF(getref(User.n),Sheet." & pos.ID + 4 & "!User.pn)),SETF(getref(User.n),Sheet." & pos.ID + 4 & "!User.pn))"
+prim.Cells("user.row_6").FormulaU = "IF(Sheet." & pos.ID & "!User.N=Sheet." & sh.ID & "!Prop.N,SETF(getref(User.n),Sheet." & pos.ID + 4 & "!User.pn),SETF(getref(User.n),Sheet." & pos.ID + 4 & "!User.pn))"
+Else
+End If
+sh.Cells("prop.n").Formula = n
+End Sub

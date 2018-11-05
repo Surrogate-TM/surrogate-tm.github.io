@@ -1,0 +1,34 @@
+﻿Sub BP4()
+Dim thisdoc As Document
+Dim prop As String
+Dim pgs As Pages
+Dim posname As String
+Dim BP4shape As Shape
+Dim BP4 As Shape
+Dim pageobj As Page
+Dim vsoCell As Cell
+Dim vsoCell1 As Cell
+Dim mastname As String
+Set thisdoc = ActiveDocument
+mastname = "BP4"
+Set pgs = ThisDocument.Pages
+pc = 3
+If pc = 3 Then
+Set pageobj = ActiveDocument.Pages(3)
+pageobj.Drop ActiveDocument.Masters.Item("BP4"), 0, 0
+Set BP4shape = pageobj.Shapes.Item(mastname)
+prop = "Prop.N"
+For x = 3 To thisdoc.Pages.Count
+Set vsoCell = BP4shape.Cells(prop)
+'Debug.Print vsoCell
+vsoCell.Formula = x - 2
+'Set vsoCell = BP4
+posname = 55 + 5 * (x - 3)
+'Debug.Print posname
+Set BP4 = pageobj.Shapes.ItemFromID(posname)
+Set vsoCell1 = BP4.Cells("Prop.det")
+'Debug.Print Chr(34) & ThisDocument.Pages(x).Name & Chr(34)
+vsoCell1.Formula = Chr(34) & ThisDocument.Pages(x).Name & Chr(34)
+Next x
+End If
+End Sub

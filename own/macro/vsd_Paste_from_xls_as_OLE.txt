@@ -1,0 +1,36 @@
+Sub Paste_from_xls_as_OLE()
+Dim shpOLE As Visio.Shape
+Dim oExcel As Excel.Application
+Set oExcel = CreateObject("Excel.Application")
+Dim sp As Excel.Workbook
+Dim sht As Excel.Sheets
+Dim ffs As FileDialogFilters
+Dim sFileName As String
+oExcel.Visible = True
+Dim fd As FileDialog
+Set fd = oExcel.FileDialog(msoFileDialogOpen)
+With fd
+.AllowMultiSelect = False
+.InitialFileName = pth
+ Set ffs = .Filters
+    With ffs
+        .Clear
+        .Add "Excel", "*.xls*"
+    End With
+oExcel.FileDialog(msoFileDialogOpen).Show
+End With
+sFileName = oExcel.FileDialog(msoFileDialogOpen).SelectedItems(1)
+Set sp = oExcel.workbooks.Open(sFileName)
+sp.Activate
+Dim UserRange As Excel.Range
+Set UserRange = oExcel.InputBox(Prompt:="Select range ", Title:="Select range", Type:=8)
+UserRange.Copy
+ActiveWindow.Page.PasteSpecial visPasteOLEObject
+Set shpOLE = ActiveWindow.Selection(1)
+shpOLE.Name = "OLE"
+sp.Close savechanges = False
+Set sp = Nothing
+oExcel.Quit
+Set oExcel = Nothing
+MsgBox "TheEnd!"
+End Sub

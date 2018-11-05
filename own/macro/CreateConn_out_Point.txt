@@ -1,0 +1,14 @@
+﻿Sub CreateConn_out_Point()
+Dim sel As Selection
+Set sel = ActiveWindow.Selection
+Dim shp As Shape
+For x = 1 To sel.Count
+    Set shp = sel.Item(x)
+    shp.AddSection visSectionConnectionPts
+    shp.AddRow visSectionConnectionPts, visRowLast, visTagDefault
+    shp.CellsSRC(visSectionConnectionPts, 0, visCnnctX).FormulaU = "Width*0.5"
+    shp.CellsSRC(visSectionConnectionPts, 0, visCnnctY).FormulaU = "Height*1"
+    shp.CellsSRC(visSectionConnectionPts, 0, visCnnctType).FormulaU = "1"
+Next x
+End Sub
+

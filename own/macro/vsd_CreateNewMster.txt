@@ -1,0 +1,25 @@
+﻿Sub NewMasterCreate()
+
+    Dim vsoDoc1 As Visio.Document
+    Set vsoDoc1 = Application.Documents.Item("Drawing2")
+    Dim UndoScopeID1 As Long
+    UndoScopeID1 = Application.BeginUndoScope("New Master")
+    Dim vsoMaster1 As Visio.Master
+    Set vsoMaster1 = vsoDoc1.Masters.Add
+    vsoMaster1.Name = "ooo"
+    vsoMaster1.Prompt = ""
+    vsoMaster1.IconSize = visNormal
+    vsoMaster1.AlignName = visCenter
+    vsoMaster1.MatchByName = False
+    vsoMaster1.IconUpdate = visAutomatic
+    Application.EndUndoScope UndoScopeID1, True
+
+    Application.Documents.Item("Drawing2").Masters.ItemFromID(8).Open.OpenDrawWindow
+
+    Application.Windows.ItemEx("Drawing2:Stencil:ooo").Activate
+
+    Application.ActiveWindow.Master.DrawRectangle 1.181102, 9.448819, 1.968504, 8.661417
+
+    Application.ActiveWindow.Master.Close
+
+End Sub

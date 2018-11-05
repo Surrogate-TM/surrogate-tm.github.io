@@ -1,0 +1,16 @@
+﻿Sub SetMask()
+Dim sel As Selection
+Dim shp As Shape
+Application.ActiveWindow.SelectAll
+Set sel = ActiveWindow.Selection
+For x = 1 To sel.Count
+Set shp = sel.Item(x)
+fi = Int(Rnd() * 9) + 14
+shp.CellsSRC(visSectionObject, visRowFill, visFillForegnd).FormulaU = "=Int(Rand() * 6) + 14"
+'Application.ActiveWindow.Close
+tr = (shp.CellsSRC(visSectionObject, visRowFill, visFillForegnd) - 14) * 6 + 30
+shp.CellsSRC(visSectionObject, visRowFill, visFillForegndTrans).FormulaU = "=(1+rand())*50%"
+Debug.Print x, shp.CellsSRC(visSectionObject, visRowFill, visFillForegnd), shp.CellsSRC(visSectionObject, visRowFill, visFillForegndTrans)
+Next x
+MsgBox "ololo"
+End Sub

@@ -1,0 +1,12 @@
+﻿Sub Sohr()
+Dim File_Name As String
+Dim ThisFile As Visio.Document
+Set ThisFile = Visio.ActiveDocument
+For x = 4 To 7
+File_Name = "\\amt.ru\root\users\akuzin\new" & x & ".vsd"
+ThisFile.SaveAs File_Name
+Next x
+words = "TheEnd"
+Style = vbInformation
+MsgBox "TheEnd", vbInformation
+End Sub

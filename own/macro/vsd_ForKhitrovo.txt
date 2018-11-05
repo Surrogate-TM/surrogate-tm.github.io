@@ -1,0 +1,39 @@
+Sub vsd_ForKhitrovo()
+    Dim sh As Visio.Shape
+    Dim pg As Visio.Page
+    Dim ch1 As Visio.Characters, ch2 As Visio.Characters
+    Dim l%, fl%
+    Dim coll As New Collection
+    For Each pg In ThisDocument.Pages
+        For Each sh In pg.Shapes
+            If sh.Shapes.Count > 0 Then
+                Recursion sh.Shapes, coll
+            End If
+            If InStr(sh.Text, "Switch") Then coll.Add sh
+        Next sh
+    Next pg
+    For Each sh In coll
+         l = Len(sh.Text)
+         fl = InStr(sh.Text, Chr(10))
+         Debug.Print sh.NameID, l, fl
+         Set ch1 = sh.Characters
+         ch1.Begin = 0
+         ch1.End = fl
+         ch1.CharProps(visCharacterSize) = 12#
+         ch1.CharProps(visCharacterColor) = 0#
+         Set ch2 = sh.Characters
+         ch2.Begin = fl
+         ch2.End = l
+         ch2.CharProps(visCharacterSize) = 10#
+         ch2.CharProps(visCharacterColor) = 2#
+    Next sh
+End Sub
+Sub Recursion(ByVal shps As Visio.Shapes, coll As Collection)
+    Dim sh As Visio.Shape
+    For Each sh In shps
+        If sh.Shapes.Count > 0 Then
+            Recursion sh.Shapes, coll 'caanu i?ienoiaeo aucia naiie naay
+        End If
+        If InStr(1, sh.Text, "Switch") Then coll.Add sh
+    Next sh
+End Sub

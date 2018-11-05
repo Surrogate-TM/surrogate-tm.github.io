@@ -1,0 +1,9 @@
+Sub vsd_CloseActiveSSWindow()
+Dim aw As Window
+Set aw = ActiveWindow
+If aw.Type = Visio.VisWinTypes.visSheet Then
+aw.Close
+Set aw = Nothing
+Else
+End If
+End Sub

@@ -1,0 +1,12 @@
+Sub C_1_find()
+Dim pg As Page, shp As Shape, pgn$, pgi%, bl As Boolean
+bl = False
+For Each pg In ActiveDocument.Pages
+For Each shp In pg.Shapes
+If shp.Cells("prop.chapter").ResultStr("") = "C-Niaoeoeeaoey" And shp.Cells("prop.cnum") = 3 Then bl = True
+If bl = True Then pgn = pg.Name: pgi = pg.Index: Exit For
+Next shp
+If bl = True Then Exit For
+Next pg
+Debug.Print pgi, pgn
+End Sub

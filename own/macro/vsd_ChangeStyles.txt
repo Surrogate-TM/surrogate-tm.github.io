@@ -1,0 +1,38 @@
+Sub vsd_ChangeStyles()
+Dim nf, cf As Integer
+    'Enable diagram services
+    Dim DiagramServices As Integer
+    DiagramServices = ActiveDocument.DiagramServicesEnabled
+    ActiveDocument.DiagramServicesEnabled = visServiceVersion140
+nf = ActiveDocument.Fonts.Item("Arial").Index
+    Dim UndoScopeID1 As Long
+    UndoScopeID1 = Application.BeginUndoScope("Naienoaa oaenoa")
+    Dim vsoStyle1 As Visio.Style
+    For i = 0 To ActiveDocument.Styles.Count - 1
+    Set vsoStyle1 = Application.ActiveDocument.Styles.ItemFromID(i)
+    cf = vsoStyle1.CellsSRC(visSectionCharacter, 0, visCharacterFont).FormulaU
+'    If i <> 5 Then
+    vsoStyle1.CellsSRC(visSectionCharacter, 0, visCharacterFont).FormulaU = nf
+'    vsoStyle1.CellsSRC(visSectionParagraph, 0, visSpaceLine).FormulaU = "100%"
+    vsoStyle1.CellsSRC(visSectionObject, visRowText, visTxtBlkTopMargin).FormulaU = "0 pt"
+    vsoStyle1.CellsSRC(visSectionObject, visRowText, visTxtBlkBottomMargin).FormulaU = "0 pt"
+    vsoStyle1.CellsSRC(visSectionObject, visRowText, visTxtBlkLeftMargin).FormulaU = "0 pt"
+    vsoStyle1.CellsSRC(visSectionObject, visRowText, visTxtBlkRightMargin).FormulaU = "0 pt"
+    vsoStyle1.CellsSRC(visSectionObject, visRowText, visTxtBlkBkgnd).FormulaU = 0
+    vsoStyle1.CellsSRC(visSectionObject, visRowFill, visFillForegnd).FormulaU = 1
+    vsoStyle1.CellsSRC(visSectionObject, visRowLine, visLineColor).FormulaU = "0"
+    vsoStyle1.CellsSRC(visSectionObject, visRowFill, visFillBkgnd).FormulaU = "0"
+    vsoStyle1.CellsSRC(visSectionObject, visRowFill, visFillShdwForegnd).FormulaU = "0"
+    vsoStyle1.CellsSRC(visSectionObject, visRowFill, visFillShdwBkgnd).FormulaU = "0"
+    vsoStyle1.CellsSRC(visSectionCharacter, 0, visCharacterColor).FormulaU = "0"
+'    Else
+'
+'    End If
+Debug.Print i, vsoStyle1.Name, vsoStyle1.TextBasedOn, ActiveDocument.Fonts.ItemFromID(cf), ActiveDocument.Fonts.ItemFromID(nf)
+    Next i
+    Application.EndUndoScope UndoScopeID1, True
+
+    'Restore diagram services
+    ActiveDocument.DiagramServicesEnabled = DiagramServices
+
+End Sub

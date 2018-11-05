@@ -1,0 +1,23 @@
+Sub InitDoc()
+    Dim DocSh As Shape
+    
+    Set DocSh = Application.ActiveDocument.DocumentSheet
+    
+    If (Not DocSh.SectionExists(visSectionUser, True)) Then
+        DocSh.AddSection (visSectionUser)
+    End If
+    
+    AddUserCell DocSh, "N1", "222"
+    AddUserCell DocSh, "N2", "333"
+    AddUserCell DocSh, "N3", """"""
+End Sub
+
+Sub AddUserCell(DocSh As Shape, ShortName As String, CellVal As String)
+    Dim FullName As String
+    
+    FullName = "User." + ShortName
+    If (Not DocSh.CellExists(FullName, True)) Then
+        DocSh.AddNamedRow visSectionUser, ShortName, visTagDefault
+    End If
+    DocSh.CellsU(FullName).FormulaForceU = CellVal
+End Sub

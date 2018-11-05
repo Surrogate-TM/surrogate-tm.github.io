@@ -1,0 +1,56 @@
+Private Sub CopyProp() '?ani?ino?aieou naienoaa naeoee Prop
+'Naienoaa ?ani?ino?aiy?ony n ia?aiai auaaeaiiiai yeaiaioa
+'ia e?aia eiee?anoai aoi?e?iuo auaaeaiiuo yeaiaioia.
+'No?iee naienoa eaaioeoeoe?o?ony ii eiaie. Anee no?iea ai aoi?e?iii ionoonoaoao,
+'iia nicaaaony e caiieiyaony cia?aieyie. Ia?aoiay naycu ionoonoaoao.
+'Anee no?iea nouanoaoao, ia?aienuaa?ony ana cia?aiey.
+'No?iee aoi?e?iiai, ionoonoao?uea a ia?ae?iii inoa?ony aac eciaiaiee
+''Ia ia?niaeoeao: Aiaaaeou auai?
+''1. eciaieou cia?aiey nouanoao?ueo no?ie i?e niaiaaaiee eiai
+''2. Eiie?iaaou oae?a e no?oeoo?o (nouanoao?uee aa?eaio)
+Dim vsoSel As Visio.Selection
+Dim vsoShpFst As Visio.Shape
+Dim vsoShpSec As Visio.Shape
+Dim x As Integer
+Dim vsoCellF As Visio.Cell, vsoCellS As Visio.Cell
+Dim vsoRow As Visio.Row
+Dim iRF%, iRS%, iTotCount%, stMsgTot$, intSecShp%, booISeeClone As Boolean
+Set vsoSel = ActiveWindow.Selection
+    If vsoSel.Count < 2 Then
+    MsgBox "Aey caaa?oaiey iia?aoee iaiaoiaeii auaaeeou eae ieieioi aaa iauaeoa! Iia?aoey i?a?aaia.", vbCritical + vbOKOnly, "Error"
+    Exit Sub
+    End If
+Set vsoShpFst = vsoSel(1)
+For intSecShp = 2 To vsoSel.Count 'Ia?aai? auaaeaiiuo yeaiaioia (aoi?e?iuo)
+iTotCount = 0
+Set vsoShpSec = vsoSel(intSecShp)
+For x = 242 To 243
+    For iRF = 0 To vsoShpFst.RowCount(x) - 1 'Ia?aai? no?ie naeoee Prop ia?ae?iiai yeaiaioa
+    Set vsoCellF = vsoShpFst.CellsSRC(x, iRF, 0)
+    booISeeClone = False
+        For iRS = 0 To vsoShpSec.RowCount(x) - 1 'Ia?aai? no?ie aoi?e?iiai yeaiaioa
+        Set vsoCellS = vsoShpSec.CellsSRC(x, iRS, 0)
+            If vsoCellS.RowName = vsoCellF.RowName Then
+            booISeeClone = True
+            Exit For
+            End If
+        Next iRS
+    If booISeeClone = False Then 'Anee no?iee ai aoi?e?iii n oaeei eiaiai ia nouanoaoao, oi
+    vsoShpSec.AddRow x, vsoShpSec.RowCount(x) + 1, visTagDefault 'Nicaaou no?ieo
+    j = vsoShpSec.RowCount(x) - 1 'E caaaou iiia? yoie no?iee, eia?a eniieucoaony iiia? no?iee ec oeeea ia?aai?a eiai ai aoi?e?iii yeaiaioa
+    vsoShpSec.CellsSRC(x, j, 0).RowName = vsoCellF.RowName
+    iTotCount = iTotCount + 1
+    Else
+    j = iRS
+    End If
+        For Z = 0 To vsoShpSec.RowsCellCount(x, iRS) ' Ia?aai? y?aae e caienu cia?aiee a ieo
+        Set vsoCellS = vsoShpSec.CellsSRC(x, j, Z)
+        Set vsoCellF = vsoShpFst.CellsSRC(x, iRF, Z)
+        vsoCellS.FormulaU = vsoCellF.FormulaU
+        Next Z
+    Next iRF
+    Next x
+stMsgTot = stMsgTot + vsoShpSec.NameU + Chr(32) + "aiaaaeaii no?ie naienoa: " & iTotCount & Chr(13)
+Next
+MsgBox stMsgTot
+End Sub

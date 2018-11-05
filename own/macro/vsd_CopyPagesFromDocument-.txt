@@ -1,0 +1,21 @@
+﻿Sub CopyPagesFromDocument()
+Dim TDoc As Document, SDoc As Document
+Dim TWin As Window, SWin As Window, sl As Selection
+Dim TPage As Page, SPage As Page
+Set TDoc = Documents(1)
+Set TWin = Windows(1)
+Set SWin = Windows(2)
+Set SDoc = Documents.Item(SWin.Caption & ".vsd")
+TWin.Activate
+For Each SPage In SDoc.Pages
+SWin.Activate
+SWin.Page = SPage.Name
+Set TPage = TDoc.Pages.Add
+TPage.Name = SPage.Name
+SWin.SelectAll
+SWin.Selection.Copy
+TWin.Activate
+TPage.Paste
+Next SPage
+MsgBox "TheEnd"
+End Sub

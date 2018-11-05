@@ -1,0 +1,44 @@
+Sub vsd_PasteFromManyFilesToOne()
+Dim va As Visio.Application
+Set va = CreateObject("visio.application")
+Dim ad As Visio.document '
+va.Visible = True
+Set ad = va.Documents.Add("c:\Users\akuzin\Desktop\Drawing2.vst")
+Dim myFile As String
+'Dim myDoc As Document
+Dim path As String
+Dim ext() As Variant
+Dim i As Long
+path = "c:\Motiv\fasad\"
+If Right(path, 1) <> "\" Then path = path + "\"
+ext = Array("*.vsd") 
+For i = 0 To UBound(ext) 
+myFile = Dir$(path & ext(i))
+While myFile <> ""
+va.AlertResponse = 7
+mf = Replace(myFile, ".vsd", "") 
+va.ActivePage.Name = mf '
+va.Documents.OpenEx path & myFile, visOpenRO '
+    va.Windows(2).SelectAll
+    va.Windows(2).Selection.Group
+   Set sh = va.Windows(2).Selection(1)
+sh.Cells("LocPinX").FormulaU = "Width*0"
+sh.Cells("PinX").FormulaU = "guard(30 mm/ThePage!PageScale*ThePage!DrawingScale)"
+sh.Cells("LocPiny").FormulaU = "Height*1"
+sh.Cells("Piny").FormulaU = "guard(290 mm/ThePage!PageScale*ThePage!DrawingScale)"
+va.Windows(2).Selection(1).Copy
+    va.Windows(2).Close
+    va.Windows(1).Activate
+    va.ActivePage.Paste visPasteVisioShapes
+    ad.Pages.Add
+myFile = Dir$()   '
+Wend
+va.AlertResponse = 0
+va.ActivePage.Delete True
+Next i
+ad.SaveAs "c:\Motiv\trash.vsd"
+va.Quit
+Set va = Nothing
+Set myDoc = Nothing
+MsgBox "TheEnd"
+End Sub

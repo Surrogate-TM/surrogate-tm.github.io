@@ -1,0 +1,32 @@
+Sub GetOLE_COLOR()
+Dim R%, G%, B%, ff$
+Dim oc As OLE_COLOR
+Dim aw As Window
+Set aw = ActiveWindow
+If aw.Type = Visio.VisWinTypes.visSheet Then
+aw.Close
+Set aw = Nothing
+Else
+End If
+Dim sh As Shape
+Set sh = ActiveWindow.Selection(1)
+' Iieo?aai cia?aiea a oi?iaoa RGB(r,g,b)
+ff = sh.Cells("FillForegnd").FormulaU
+' auaaeyai iiano?ieo r,g,b
+ff = Mid(ff, 5, Len(ff) - 5)
+' auaaeyai ninoaaey?uo? R
+R = CInt(Left(ff, InStr(ff, ",") - 1))
+' auaaeyai ninoaaey?uo? G
+G = CInt(Mid(ff, InStr(ff, ",") + 1, InStrRev(ff, ",") - InStr(ff, ",") - 1))
+' auaaeyai ninoaaey?uo? B
+B = CInt(Right(ff, Len(ff) - InStrRev(ff, ",")))
+oc = 65536 * B + 256 * G + R
+ChangePageColor 10050099 ' oc
+End Sub
+Function ChangePageColor(o_c As OLE_COLOR)
+Dim vsoApplicationSettings As Visio.ApplicationSettings
+Set vsoApplicationSettings = Visio.Application.Settings
+With vsoApplicationSettings
+    .DrawingPageColor = o_c
+End With
+End Function

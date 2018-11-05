@@ -1,0 +1,45 @@
+﻿Sub PushValue()
+
+Dim VisioApp As Visio.Application
+Dim DrwDoc As Visio.Document
+Dim vsoCell As Visio.Cell
+ On Error Resume Next
+
+
+If VisioApp Is Nothing Then
+CheckVisio:
+ ' Функция GetObject, вызванная без указания первого аргумента,
+ ' возвращает ссылку на экземпляр приложения. Если это приложение
+ ' не запущено, возвращается ошибка. Обратите внимание на запятую,
+ ' стоящую на месте отсутствующего первого аргумента.
+  Set VisioApp = VBA.GetObject(, "Visio.Application")
+  If VisioApp Is Nothing Then
+   Set VisioApp = VBA.GetObject("", "Visio.Application")
+   GoTo CheckVisio
+  Else
+   GoTo VisioShow
+  End If
+  ' Проверка Visio. Если Visio выполняется,
+   ' он вводится в таблицу выполняемых объектов (Running Object table).
+ End If
+
+VisioShow:
+ Err.Clear
+
+Set DrwDoc = Visio.ActiveDocument
+If DrwDoc Is Nothing Then
+ St = ActiveWorkbook.Path
+ 
+ Set DrwDoc = VisioApp.Documents.Open(ActiveWorkbook.Path & "\test2.vsd")
+
+End If
+
+Set Shp = DrwDoc.Pages(1).Shapes("Sheet.1")
+Set vsoCell = Shp.Cells("Prop.Value1")
+
+St = vsoCell.ResultStr(0) 'Get Value from Cell
+vsoCell.Formula = """" & ActiveWorkbook.Path & "\test3.vsd" & """" 'Set the value to Cell
+MsgBox "Sheet.1 Created"
+DrwDoc.SaveAs ActiveWorkbook.Path & "\test.vsd"
+End Sub
+

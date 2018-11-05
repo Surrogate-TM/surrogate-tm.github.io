@@ -1,0 +1,11 @@
+﻿Private Sub DeleteByMaster()
+  
+  Dim mst As Visio.Master
+  Set mst = ActiveDocument.Masters.Item("GLC-T")
+  
+  Dim sel As Visio.Selection
+  Set sel = Visio.ActivePage.CreateSelection(visSelTypeByMaster, visSelModeSkipSuper, mst) ' visSelModeSkipSuper, visSelModeOnlySuper, visSelModeOnlySub
+  
+  sel.Delete
+  
+End Sub

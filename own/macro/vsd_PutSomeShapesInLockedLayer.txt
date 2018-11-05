@@ -1,0 +1,14 @@
+Sub PutSomeShapesInLockedLayer()
+   Dim La As Visio.Layer
+    Set La = Application.ActiveWindow.Page.Layers.Add("Lock")
+    La.NameU = "Lock"
+    Dim shp As Shape, shps As Shape
+    For i = 1 To ActiveWindow.Selection.Count
+    Set shps = ActiveWindow.Selection(i)
+    For Each shp In shps.Shapes
+    shp.CellsSRC(visSectionObject, visRowLayerMem, visLayerMember).FormulaForceU = """1"""
+    Next shp
+    shps.CellsSRC(visSectionObject, visRowLayerMem, visLayerMember).FormulaForceU = """1"""
+    Next i
+    La.CellsC(visLayerLock).FormulaU = "1"
+End Sub

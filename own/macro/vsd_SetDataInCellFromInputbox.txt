@@ -1,0 +1,45 @@
+Sub vsd_SetDataInCellFromInputbox()
+Dim inp$
+Dim vc As Cell
+Set vc = ActivePage.Shapes(1).Cells("user.row_3")
+vc.FormulaU = StringToFormulaForString(InputBox("www"))
+End Sub
+
+Public Function StringToFormulaForString(strIn As String) As String
+
+' StringToFormulaForString
+'
+' Abstract - Convert the input string to a Visio string by
+' replacing each 'double quote'(") with a 'double double
+' quote'("") and adding a ("") around the entire string.
+'
+' Parameters
+' strIn         Input string that will to be converted to Visio string
+'
+' Return Value  A converted Visio string that can be programmatically assigned
+' to a ShapeSheet cell is returned.  Note that the string cannot be directly
+' pasted into a ShapeSheet cell because it doesn't have an "=" at its
+' beginning.
+
+    Dim strResult As String
+
+    On Error GoTo StringToFormulaForString_Err
+
+    strResult = strIn
+
+    ' Replace all (") with ("").
+    strResult = Replace(strResult, Chr(34), _
+        Chr(34) & Chr(34))
+
+    ' Add ("") around the whole string.
+    strResult = Chr(34) & strResult & Chr(34)
+
+    StringToFormulaForString = strResult
+
+    Exit Function
+
+StringToFormulaForString_Err:
+    Debug.Print Err.Description
+
+End Function
+

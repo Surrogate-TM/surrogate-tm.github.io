@@ -1,0 +1,48 @@
+Sub RepairShifr()
+Dim pn$, pd$
+Dim va As visio.Application
+Set va = CreateObject("visio.application")
+Dim pg As visio.Page
+Dim sh As visio.Shape
+Dim vd As visio.Document
+Set vd = va.Documents.OpenEx("i:\Motiv\MOTIV.vsd", visOpenRW)
+For i = 1 To 9
+pn = Replace(Cells(i, 1), "AIN?-IIOEAEIIE?-IA.0O-", "")
+'If I > 1 Then vd.Pages.Add
+'vd.Pages(I).Name = pn
+Set pg = vd.Pages(i)
+pd = pn & "-" & Cells(i, 2)
+Set sh = pg.Shapes(1)
+sh.Cells("prop.chapter").FormulaU = Chr(34) & pd & Chr(34)
+Set sh = pg.Shapes(1).Shapes.Item("forma3").Shapes.Item("shifr")
+sh.Cells("Fields.value").FormulaU = "TheDoc!User.dec&User.del&Sheet.1!User.ch"
+Next i
+End Sub
+' =========================================================
+Sub RepairDates()
+Dim pn$, pd$
+Dim va As visio.Application
+Set va = CreateObject("visio.application")
+Dim pg As visio.Page
+Dim sh As visio.Shape
+Dim vd As visio.Document
+Set vd = va.Documents.OpenEx("i:\Motiv\MOTIV.vsd", visOpenRW)
+For i = 1 To 9
+Set pg = vd.Pages(i)
+Set sh = pg.Shapes(1).Shapes.Item("razr")
+Dat sh
+Set sh = pg.Shapes(1).Shapes.Item("razr")
+Dat sh
+Set sh = pg.Shapes(1).Shapes.Item("prov")
+Dat sh
+Set sh = pg.Shapes(1).Shapes.Item("gip")
+Dat sh
+Set sh = pg.Shapes(1).Shapes.Item("ncont")
+Dat sh
+Set sh = pg.Shapes(1).Shapes.Item("utv")
+Dat sh
+Next i
+End Sub
+Function Dat(s As Shape)
+s.Cells("prop.date.format").FormulaU = Chr(34) & "{{dd.MM}}" & Chr(34)
+End Function

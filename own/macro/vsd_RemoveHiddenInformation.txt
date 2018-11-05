@@ -1,0 +1,10 @@
+Public Sub RemoveHiddenInformation_Example()
+On Error GoTo ttt:
+    ActiveDocument.RemoveHiddenInformation 27
+    Application.ActiveDocument.DocumentSheet.AddNamedRow visSectionUser, "visWarnOnPersonalInfo", visRowTagDefault
+    Application.ActiveDocument.DocumentSheet.CellsU("User.visWarnOnPersonalInfo").FormulaU = True
+    Application.ActiveDocument.DocumentSheet.CellsU("User.msvWarnOnPersonalInfo").FormulaU = True
+ttt:
+    Application.ActiveDocument.DocumentSheet.CellsU("User.visWarnOnPersonalInfo").FormulaU = True
+    Application.ActiveDocument.DocumentSheet.CellsU("User.msvWarnOnPersonalInfo").FormulaU = True
+End Sub

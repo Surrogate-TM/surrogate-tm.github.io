@@ -1,0 +1,152 @@
+'// Combo Box Table of Contents
+'// Visio Guy
+'// http://www.visguy.com
+'// November 8th, 2006
+
+'// A variable for tracking pages that are
+'// about to be deleted.
+Private m_deletedPageName As String
+
+'// This flag stops the code from jumping back
+'// to the index page every time the combo box
+'// is updated.
+Private m_editingList As Boolean
+
+Private Sub Document_RunModeEntered(ByVal doc As IVDocument)
+    
+  '// This event fires when you click the
+  '// run-mode/design-mode button on the
+  '// Developer Toolbar, as well as when
+  '// this document gets opened or created
+  '// (created = a copy is opened)
+  
+  Call m_updatePageList
+
+End Sub
+
+Private Sub Document_BeforePageDelete(ByVal Page As IVPage)
+  
+  '// Since this event fires before the page
+  '// is actually gone, we'll save it's name
+  '// so that m_updatePageList can ignore it.
+  
+  m_deletedPageName = Page.Name
+  
+  Call m_updatePageList
+  
+  '// Reset m_deletedPageName to nothing:
+  m_deletedPageName = vbNullString
+  
+End Sub
+
+Private Sub Document_PageAdded(ByVal Page As IVPage)
+  
+  Call m_updatePageList
+
+End Sub
+
+Private Sub Document_PageChanged(ByVal Page As IVPage)
+  
+  '// Occurs when page-name or background is changed.
+  Call m_updatePageList
+  
+End Sub
+
+Private Sub cmbPages_Change()
+
+  If m_editingList Then Exit Sub
+  
+  '// Switch the active window's page
+  '// to correspond to the user's choice
+  '// in the combo-box. Do nothing if there's
+  '// an error (i.e. the user types in a bad
+  '// page name)
+  
+  On Error GoTo Err
+  
+'  ActiveWindow.Page = cmbPages.Text
+  
+  Exit Sub
+  
+Err:
+  
+End Sub
+
+Private Sub m_updatePageList()
+
+  m_editingList = True
+
+  '// Update the combo-box with a list of
+  '// all foreground pages in this document.
+    
+  Dim collPgs As Collection
+  Dim sPageName As Variant
+  
+  Set collPgs = m_getPageList()
+'  cmbPages.Clear
+'
+'  '// Add all pages in collPgs, except a page
+'  '// that might have just been deleted. Such
+'  '// a page is stored in m_deletedPageNameName.
+'
+'  For Each sPageName In collPgs
+'    If (StrComp(sPageName, m_deletedPageName, _
+'        vbTextCompare) <> 0) Then
+'      Call cmbPages.AddItem(sPageName)
+'    End If
+'  Next
+'
+'  cmbPages.Text = cmbPages.ContainingPage.Name
+        
+  m_editingList = False
+  
+End Sub
+
+
+Private Function m_getPageList() As Collection
+
+  '// Return a collection of all foreground
+  '// page names in this document.
+
+  Dim collPgs As New Collection
+  Dim pg As Visio.Page
+  
+  For Each pg In ThisDocument.Pages
+  
+    '// Add non-background pages to the list:
+    If Not (pg.Background) Then
+      Call collPgs.Add(pg.Name)
+    End If
+  
+  Next
+  
+  '// Return the collection-list of page names:
+  Set m_getPageList = collPgs
+    
+End Function
+
+Private Function m_getShapeList() As Collection
+Dim txt As String
+txt = ""
+  '// Return a collection of all foreground
+  '// page names in this document.
+  Dim collShps As New Collection
+  Dim pg1 As Visio.Page
+  Set pg1 = ActiveDocument.Pages(1)
+  Dim sp As Shape
+  For Each sp In pg1.Shapes
+      '// Add non-background pages to the list:
+'    If Not (pg.Background) Then
+      Call collShps.Add(sp.Name)
+'    End If
+Debug.Print collShps.Count
+  For n = 1 To collShps.Count
+  Debug.Print collShps.Item(n)
+  txt1 = ";" & collShps.Item(n)
+  Next n
+  txt = txt & txt1
+  Next
+    '// Return the collection-list of page names:
+  Set m_getShapeList = collShps
+    MsgBox txt
+End Function

@@ -1,0 +1,7 @@
+Sub DeletePageUDC()
+Dim sec As Section
+Set sec = Application.ActiveWindow.Shape.Section(242)
+For x = sec.Count To 7 Step -1
+    Application.ActiveWindow.Page.PageSheet.DeleteRow visSectionUser, x
+Next x
+End Sub

@@ -1,0 +1,7 @@
+﻿Sub Sohr()
+Dim File_Name As String
+Dim ThisFile As Visio.Document
+Set ThisFile = CreateObject("c:\Documents and Settings\akuzin\Мои документы\My Shapes\blank.vst")
+File_Name = "\\amt.ru\root\users\akuzin\new0.vsd"
+ThisFile.SaveAs File_Name
+End Sub

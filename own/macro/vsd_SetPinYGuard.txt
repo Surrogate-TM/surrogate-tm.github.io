@@ -1,0 +1,9 @@
+﻿Sub SetPinYGuard()
+    Dim sel As Visio.Selection
+    Dim shp As Visio.Shape
+    Set sel = ActiveWindow.Selection
+    For Each shp In sel
+    pym = shp.Cells("Piny") * 25.4 + 2 ' перевод координат PinY в мм и добавление 2 мм
+    shp.Cells("PinY").Formula = "=Guard(" & pym & " mm)"
+    Next
+End Sub

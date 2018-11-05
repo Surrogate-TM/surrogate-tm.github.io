@@ -1,0 +1,21 @@
+Sub fill_speka()
+ Dim target As Shape
+ Dim Main As Shape
+ Dim rw As Shape
+ Dim rn As String
+ Set Main = ActivePage.Shapes.Item("MaTRIX")
+ Dim SSS As Shapes
+Set SSS = Main.Shapes
+For x = 1 To 2
+rn = "row" & x
+Set rw = SSS.Item(rn)
+Debug.Print rw.ID, rw.Name
+For y = 1 To 2
+tn = x & "." & y
+Debug.Print tn
+Set target = rw.Shapes.Item(tn)
+target.Text = x * 10 + y
+Next y
+Next x
+'Debug.Print Main.ID, SSS.Count, target.ID
+ End Sub

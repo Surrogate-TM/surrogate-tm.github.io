@@ -1,0 +1,15 @@
+Sub Add_CO_pages()
+Dim opn As Long
+Dim pName As String
+Dim np As Page
+pName = "ян"
+opn = ActiveDocument.Pages.Item(pName).Index
+'Debug.Print opn & " page - " & pName
+For x = 2 To 5
+Set np = ActiveDocument.Pages.Add
+np.Name = "ян." & x
+ActiveDocument.Pages.Item(np.Name).Index = opn + x - 1
+Next
+MsgBox "TheEnd"
+'Debug.Print np.Index
+End Sub

@@ -1,0 +1,10 @@
+Sub vsd_ChangeFillpatternShapesInGroup()
+Dim w As Window, i%, sh As Shape
+Set w = ActivePage.Shapes.ItemFromID(47).OpenDrawWindow
+w.SelectAll
+For i = 1 To w.Selection.Count
+Set sh = w.Selection(i)
+If sh.Cells("Height").ResultStr("") = "17,2000 mm" Then sh.Cells("FillPattern").FormulaU = 0
+Next i
+w.Close
+End Sub

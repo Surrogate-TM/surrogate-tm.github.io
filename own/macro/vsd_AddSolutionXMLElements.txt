@@ -1,0 +1,10 @@
+Sub vsd_AddSolutionXMLElements()
+Dim docobj As Document, x%
+Set docobj = ActiveDocument
+Dim vr As String
+For x = 1 To 10
+vr = "Pos_" & x
+docobj.SolutionXMLElement(vr) = "<SolutionXML Name='" & vr & "' xmlns:mysol='sol'> <mysol:myXML> " & x & " </mysol:myXML></SolutionXML>"
+Next x
+End Sub
+

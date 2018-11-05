@@ -1,0 +1,84 @@
+Sub vsd_insert_OLE-excel()
+
+Dim ae As Excel.Application
+Set 
+ae = CreateObject("Excel.application")
+
+ae.Visible = True
+Dim ew As Excel.Workbook
+Set 
+ew = ae.Workbooks.Open("c:\Users\akuzin\Desktop\ÞÂÀÎ.xls")
+
+ew.Sheets(4).Range("A1:C4").Select
+ 
+With Selection.Borders(xlEdgeLeft)
+        
+.LineStyle = xlContinuous
+        
+.Weight = xlThin
+        
+.ColorIndex = xlAutomatic
+    
+End With
+    With Selection.Borders(xlEdgeTop)
+       
+
+.LineStyle = xlContinuous
+        
+.Weight = xlThin
+        
+.ColorIndex = xlAutomatic
+    
+End With
+    With Selection.Borders(xlEdgeBottom)
+        
+.LineStyle = xlContinuous
+        .Weight = xlThin
+       
+ .ColorIndex = xlAutomatic
+    
+End With
+    
+With Selection.Borders(xlEdgeRight)
+        
+.LineStyle = xlContinuous
+       
+ .Weight = xlThin
+       
+ .ColorIndex = xlAutomatic
+    
+End With
+    
+With Selection.Borders(xlInsideVertical)
+        
+.LineStyle = xlContinuous
+       
+ .Weight = xlThin
+       
+ .ColorIndex = xlAutomatic
+    
+End With
+    
+With Selection.Borders(xlInsideHorizontal)
+        
+.LineStyle = xlContinuous
+        
+.Weight = xlThin
+        
+.ColorIndex = xlAutomatic
+    
+End With
+Selection.Copy
+ActivePage.PasteSpecial 49165, True, False
+'
+Debug.Print ew.Name
+ew.Close savechanges = False
+
+Set ew = Nothing
+
+ae.Quit
+
+Set ae = Nothing
+
+End Sub
+

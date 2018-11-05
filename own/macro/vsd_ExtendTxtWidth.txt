@@ -1,0 +1,7 @@
+﻿Sub ExtendTxtWidth()
+Dim shp As Shape
+For i = 1 To ActiveWindow.Selection.Count
+Set shp = ActiveWindow.Selection(i)
+shp.CellsSRC(visSectionObject, visRowTextXForm, visXFormWidth).FormulaU = "Width*4"
+Next i
+End Sub

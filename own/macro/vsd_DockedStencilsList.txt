@@ -1,0 +1,17 @@
+Public Sub ListStencilShapeCategories()
+' List the categories used in the docked stencils
+    If Not Visio.ActiveWindow.Type = _
+        Visio.VisWinTypes.visDrawing Then
+        Exit Sub
+    End If
+Dim aryStencils() As String
+Visio.ActiveWindow.DockedStencils aryStencils
+Dim stenCounter As Integer
+Dim sten As Visio.Document
+Dim mst As Visio.Master
+Dim shp As Visio.Shape
+For stenCounter = 1 To UBound(aryStencils) + 1
+Debug.Print Visio.Documents(stenCounter).Name
+Next
+End Sub
+

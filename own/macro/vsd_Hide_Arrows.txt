@@ -1,0 +1,19 @@
+﻿Sub hide_triangles()
+Dim wll As Shape
+Dim nm As String
+Debug.Print ActivePage.Shapes.Count
+For Each wll In ActivePage.Shapes
+nm = Left(wll.NameU, 4)
+Debug.Print wll.Name, wll.ID, wll.NameU
+Select Case nm
+Case "Exte"
+wll.Cells("user.visBESelected").FormulaU = 0
+Case "Wall"
+wll.Cells("user.visBESelected").FormulaU = 0
+Case "Door"
+wll.Cells("user.visBESelected").FormulaU = 0
+End Select
+Next wll
+Application.ActiveDocument.RemoveHiddenInformation (visRHIMasters + visRHIStyles)
+MsgBox "TheEnd"
+End Sub

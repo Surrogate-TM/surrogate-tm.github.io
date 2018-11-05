@@ -1,0 +1,44 @@
+Sub vsd_PrintToPDFandAddSert()
+PrintSheetAsPDF "c:\test\0-1.pdf", "c:\test\sert.pdf" ' 
+' "c:\test\0-1.pdf" - им€ файла куда сохраним итоговый документ
+"c:\test\trash.pdf" - им€ файла который хотим склеить с нашим документом визио
+End Sub
+Function PrintSheetAsPDF(file_name As String, merge_file_name As String) 
+    Dim obj_printer_util As Object
+    Dim obj_printer_settings As Object
+    Dim printername As String
+    Set obj_printer_util = CreateObject("Bullzip.PDFUtil")
+    printername = obj_printer_util.DefaultPrinterName
+    Set obj_printer_settings = CreateObject("Bullzip.PDFSettings")
+    obj_printer_settings.printername = obj_printer_util.DefaultPrinterName
+    obj_printer_settings.LoadSettings (True)
+    If file_name = "" Then Exit Function
+    If LCase(Right(file_name, 4)) <> ".pdf" Then
+        file_name = file_name & ".pdf"
+    End If
+    With obj_printer_settings
+        .SetValue "output", save_path & file_name
+        .SetValue "showsettings", "never"
+        .SetValue "ConfirmOverwrite", "no" ' если файл с именем "c:\test\0-1.pdf" уже существует перезапишем без разговоров
+        .SetValue "ShowPDF", "yes" ' после создани€ файла откроем его
+        .SetValue "Target", "prepress"
+        .SetValue "Author", Author ' не удалось избавитьс€ от добавлени€ своих персональных данных в файл :(
+        .SetValue "Title", doc_title
+        .SetValue "Subject", subject_name
+        .SetValue "Keywords", Keywords
+        .SetValue "UseThumbs", "no"
+' FitToPage делаетс€ сам собой :)
+        .SetValue "AutoRotatePages", "all"
+        .SetValue "Linearize", "yes"
+        .SetValue "Res", "3600"
+        If merge_file_name <> "" Then
+            .SetValue "MergeFile", save_path & merge_file_name
+            .SetValue "MergePosition", "top"
+        End If
+        If FileType = "JPEG" Then
+            .SetValue "Device", "jpeg"
+        End If
+        .WriteSettings True
+    End With
+    ActiveDocument.PrintOut visPrintAll, , , True, , False
+End Function

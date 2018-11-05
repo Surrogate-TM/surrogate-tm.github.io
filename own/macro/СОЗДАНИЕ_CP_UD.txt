@@ -1,0 +1,38 @@
+﻿Dim J As String
+Sub Macro3()
+J = "NEW"
+L = Replace(J, Chr(34), "")
+
+'
+'    Dim UndoScopeID1 As Long
+'    UndoScopeID1 = Application.BeginUndoScope("Define Custom Properties")
+    Dim vsoShape1 As Visio.Shape
+    Dim INTPROPROW2 As Integer
+    Dim I As Integer
+
+    Set vsoShape1 = Application.ActiveWindow.Page.Shapes.ItemFromID(2)
+    INTPROPROW2 = vsoShape1.AddRow(visSectionProp, visRowLast, visTagDefault)
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsValue).RowNameU = J
+'    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsNAME).FormulaU = I
+'    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsLabel).FormulaU = L
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsType).FormulaU = "1"
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsFormat).FormulaU = """CORESW;FW1;FW2;RNAME1;RNAME2"""
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsLangID).FormulaU = "1033"
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsCalendar).FormulaU = ""
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsPrompt).FormulaU = ""
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsValue).FormulaU = """FW1"""
+    vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsSortKey).FormulaU = ""
+
+'    Application.ActiveWindow.Page.Shapes.ItemFromID(2).OpenSheetWindow
+
+'    Dim UndoScopeID3 As Long
+'    UndoScopeID3 = Application.BeginUndoScope("Add Section")
+'    Application.ActiveWindow.Shape.AddSection visSectionUser
+    Application.ActiveWindow.Shape.AddRow visSectionUser, visRowLast, visTagDefault
+    Application.ActiveWindow.Shape.CellsSRC(visSectionUser, 0, visUserValue).RowNameU = J
+    Application.ActiveWindow.Shape.CellsSRC(visSectionUser, 0, visUserValue).FormulaU = """"""
+    Application.ActiveWindow.Shape.CellsSRC(visSectionUser, 0, visUserPrompt).FormulaU = vsoShape1.CellsSRC(visSectionProp, INTPROPROW2, visCustPropsValue).Formula
+'    Application.EndUndoScope UndoScopeID3, True
+
+I = I + 1
+End Sub

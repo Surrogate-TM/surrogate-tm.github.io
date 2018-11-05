@@ -1,0 +1,8 @@
+Sub vsd_CheckSectionCellExists()
+'For Each mst In sten.Masters
+Set shp = ActiveWindow.Selection(1) ' mst.Shapes.Item(1)
+If shp.SectionExists(visSectionUser, VisExistsFlags.visExistsAnywhere) Then MsgBox "!"
+' Check that the Category cell exists
+If shp.CellExists("User.Shapeclass", VisExistsFlags.visExistsAnywhere) Then MsgBox "!!"
+' The default List Separator is ;
+End Sub

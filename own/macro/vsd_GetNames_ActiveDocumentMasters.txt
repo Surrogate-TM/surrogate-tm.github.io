@@ -1,0 +1,19 @@
+Sub vsd_GetNames_ActiveDocumentMasters()
+  
+ Dim strMasterNames() As String
+ Dim intLowerBound As Integer
+ Dim intUpperBound As Integer
+ 
+ ActiveDocument.Masters.GetNames strMasterNames
+ intLowerBound = LBound(strMasterNames)
+ intUpperBound = UBound(strMasterNames)
+ Debug.Print ActiveDocument; " Lower bound:"; intLowerBound; "Upper bound:"; intUpperBound
+ 
+ While intLowerBound <= intUpperBound
+ 
+ Debug.Print strMasterNames(intLowerBound)
+ intLowerBound = intLowerBound + 1
+ 
+ Wend
+
+End Sub

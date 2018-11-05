@@ -1,0 +1,25 @@
+Sub vsd_AlignShapesInStencil()
+Dim sd As Document
+Dim sn$
+Dim sm As Master
+Dim ss As Shape
+Application.ActiveDocument.RemoveHiddenInformation (visRHIMasters)
+Set sd = Application.Documents.OpenEx("i:\Motiv\org.vss", visOpenRW + visOpenDocked)
+For Each sm In sd.Masters
+'Debug.Print sm.Name, sm.ID
+'Application.Documents.Item("i:\Motiv\org.vss").Masters.ItemFromID(sm.ID).Open.OpenDrawWindow
+'sn = "T6:Stencil:" & sm.Name
+''Application.Windows.ItemEx(sn).Activate
+Set ss = sm.Shapes.ItemFromID(5)
+ss.Cells("LocPinx").FormulaU = "Width*0"
+ss.Cells("LocPiny").FormulaU = "Height*1"
+ss.Cells("Pinx").FormulaForce = "Guard(25 mm)"
+ss.Cells("Piny").FormulaForce = "Guard(280 mm)"
+ss.Cells("Eventdrop").Formula = """"""
+'Application.ActiveWindow.Master.Close
+'Application.Windows.ItemEx(sn).Close
+'sm.Close
+Next sm
+sd.Save
+sd.Close
+End Sub
