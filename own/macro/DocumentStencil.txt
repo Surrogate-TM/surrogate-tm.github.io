@@ -1,5 +1,5 @@
 Sub SelectedMasters_Example()
-
+' author unknown
     Dim vsoWindow As Visio.Window
     Dim aobjSelectedMasters() As Object
     Dim intNumberMasters As Integer
