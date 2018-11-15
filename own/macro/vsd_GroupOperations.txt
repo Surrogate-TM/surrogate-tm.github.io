@@ -1,0 +1,40 @@
+Sub SetHideOrVisible()
+Dim sh As Shape
+'Dim mo As Visio.Document
+'Set mo = va.Documents.Open("i:\Motiv\org.vss")
+For i = 1 To 6
+'Dim ds As Object
+Set sh = ActiveWindow.Selection(i)
+sh.Cells("geometry1.noshow").FormulaU = "if(thedoc!user.q_ext_lines<2,1,0)"
+sh.Cells("hidetext").FormulaU = "Geometry1.Noshow"
+Next i
+End Sub
+Sub Add()
+Dim shp As Shape
+Set shp = ActiveWindow.Selection(1)
+shp.AddNamedRow visSectionUser, "ls1_st", 0
+shp.Cells("user.ls1_st").FormulaU = "thedoc!user.ls1_st"
+shp.AddNamedRow visSectionUser, "ls2_st", 0
+shp.Cells("user.ls2_st").FormulaU = "thedoc!user.ls2_st"
+shp.AddNamedRow visSectionUser, "ls3_st", 0
+shp.Cells("user.ls3_st").FormulaU = "thedoc!user.ls3_st"
+shp.AddNamedRow visSectionUser, "q_ext_lines", 0
+shp.Cells("user.q_ext_lines").FormulaU = "thedoc!user.q_ext_lines"
+End Sub
+Sub SetLineProps()
+Dim sh As Shape
+Set sh = ActiveWindow.Selection(1)
+sh.Cells("LinePattern").FormulaU = "IF(TheDoc!User.ls1_st=2,7,2)"
+sh.Cells("Lineweight").FormulaU = "iF(TheDoc!User.ls1_st=2,0.75 pt,0.5 pt)"
+End Sub
+'=====
+Sub SetHideText()
+Dim gr As Shape, sh As Shape, n%, f$, ff$
+Set gr = ActiveWindow.Selection(1)
+n = Mid(gr.Name, 4, 2)
+f = "if(thedoc!user.q_ext_lines<#,1,0)"
+f = Replace(f, "#", n)
+For Each sh In gr.Shapes
+sh.Cells("Hidetext").FormulaU = f
+Next
+End Sub

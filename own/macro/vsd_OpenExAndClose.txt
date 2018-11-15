@@ -1,0 +1,10 @@
+Sub vsd_OpenExAndClose()
+Dim VA As Visio.Application
+Dim vd As Visio.Document
+Set VA = CreateObject("visio.application")
+Set vd = VA.Documents.OpenEx("c:\dropbox\selected_shape.vsd", visOpenCopy)
+' some code
+vd.Close
+' some code
+VA.Quit
+End Sub

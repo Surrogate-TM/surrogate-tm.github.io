@@ -1,0 +1,16 @@
+﻿Sub CreateCircleWithCP()
+    Dim circ As Shape
+    Application.ActiveWindow.Page.DrawOval 1.771654, 5.314961, 1.968504, 5.11811
+    Set circ = ActiveWindow.Selection.Item(1)
+    circ.AddSection visSectionConnectionPts
+    circ.AddRow visSectionConnectionPts, visRowLast, visTagDefault
+    circ.CellsSRC(visSectionConnectionPts, 0, visCnnctX).FormulaU = "Width*0.5"
+    circ.CellsSRC(visSectionConnectionPts, 0, visCnnctY).FormulaU = "Height*0.5"
+    circ.CellsSRC(visSectionConnectionPts, 0, visCnnctDirX).FormulaU = "0 mm"
+    circ.CellsSRC(visSectionConnectionPts, 0, visCnnctDirY).FormulaU = "0 mm"
+    circ.CellsSRC(visSectionConnectionPts, 0, visCnnctType).FormulaU = "1"
+    circ.CellsSRC(visSectionConnectionPts, 0, visCnnctAutoGen).FormulaU = "0 mm"
+    circ.CellsSRC(visSectionConnectionPts, 0, 6).FormulaU = ""
+End Sub
+
+

@@ -1,0 +1,28 @@
+﻿Sub main()
+RackCopy
+RackPaste
+End Sub
+Function RackCopy()
+'
+' СКОПИРОВАТЬ ИЗ ФАЙЛА
+'
+' Keyboard Shortcut: Ctrl+Shift+M
+    Dim ADOC As Document
+    Set ADOC = Application.ActiveDocument
+    Dim X As Integer
+    Debug.Print Path
+    Application.Documents.OpenEx "d:\VISIO\Макросы\2.vsd", visOpenRW
+    Application.ActiveWindow.SelectAll
+    ActiveWindow.DeselectAll
+    For X = Application.ActiveWindow.Page.Shapes.Count To 1 Step -1
+    Debug.Print X
+'    ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(X), visSelect
+    Next X
+    Application.ActiveWindow.Selection.Copy
+    Application.ActiveWindow.Close
+    Debug.Print ADOC
+End Function
+Sub RackPaste()
+'RackCopy
+Application.ActiveWindow.Page.Paste
+End Sub

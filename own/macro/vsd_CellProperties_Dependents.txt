@@ -1,0 +1,28 @@
+Public Sub DebugPrintCellProperties()
+Dim acellDependentCells() As Visio.Cell
+'Abort if ShapeSheet not selected in the Visio UI
+If Not Visio.ActiveWindow.Type = Visio.VisWinTypes.visSheet Then
+Exit Sub
+End If
+Dim cel As Visio.Cell
+Set cel = Visio.ActiveWindow.SelectedCell
+'Print out some of the cell properties
+Debug.Print "Section", cel.Section
+Debug.Print "Row", cel.Row
+Debug.Print "Column", cel.Column
+Debug.Print "Name", cel.Name
+Debug.Print "FormulaU", cel.FormulaU
+Debug.Print "ResultIU", cel.ResultIU
+Debug.Print "ResultStr("""")", cel.ResultStr("")
+Debug.Print "Dependents", UBound(cel.Dependents)
+ acellDependentCells = cel.Dependents
+'List the cell names and their associated formulas
+ For intCounter = LBound(acellDependentCells) To UBound(acellDependentCells)
+ 
+ Set vsoCell = acellDependentCells(intCounter)
+ Debug.Print intCounter, vsoCell.Name & " has this formula: " & vsoCell.Formula
+ 
+ Next
+'cel.Precedents may cause an error
+On Error Resume Next
+End Sub

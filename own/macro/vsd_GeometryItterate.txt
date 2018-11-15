@@ -1,0 +1,40 @@
+Sub GeometryItterate()
+Dim vsoshape As Shape
+  'Get the shape from the active page.
+ Set vsoshape = ActivePage.Shapes(6)
+ 
+ 'Get the count of Geometry sections in the shape.
+ '(If the shape is a group, this will be 0.)
+
+ intSections = vsoshape.GeometryCount
+ 
+ 'Iterate through all Geometry sections for the shape.
+ 'Because we are adding the current Geometry section index to
+ 'the constant visSectionFirstComponent, we must start with 0.
+ For intCurrentGeometrySectionIndex = 0 To intSections  '- 1
+ 
+    'Set a variable to use when accessing the current
+    'Geometry section.
+    intCurrentGeometrySection = visSectionFirstComponent + intCurrentGeometrySectionIndex
+    
+    'Get the count of rows in the current Geometry section.
+    intRows = vsoshape.RowCount(intCurrentGeometrySection)
+    
+    'Loop through the rows. The count is zero-based.
+    For intCurrentRow = 0 To (intRows - 1)
+    
+        Debug.Print vsoshape.RowType(intCurrentGeometrySection, intRows) 'always -1
+        
+       'Get the count of cells in the current row.
+       intCells = vsoshape.RowsCellCount(intCurrentGeometrySection, intCurrentRow)
+       
+       'Loop through the cells. Again, this is zero-based.
+       For intCurrentCell = 0 To (intCells - 1)
+          Debug.Print vsoshape.CellsSRC(intCurrentGeometrySection, intCurrentRow, intCurrentCell).LocalName & ": " & vsoshape.CellsSRC(intCurrentGeometrySection, intCurrentRow, intCurrentCell).Result("mm")
+       Next intCurrentCell
+       
+    Next intCurrentRow
+ Next intCurrentGeometrySectionIndex
+ 
+
+End Sub

@@ -1,0 +1,22 @@
+Sub vsd_CopyFromPagesToStencil()
+Dim ns As Document, nm As Master, pg As Page, pn$, n%, d%
+Set ns = Application.Documents.AddEx("", visMSDefault, visAddStencil + visOpenDocked)
+ns.SaveAsEx "i:\motiv\co.vss", visSaveAsWS
+ns.Masters.Drop Application.ActiveDocument.Masters.ItemU("Rack"), 0#, 0# ' ID = 2
+ns.Masters.Drop Application.ActiveDocument.Masters.ItemU("iai?oaiaaiea"), 0#, 0# ' ID = 3
+n = 2 
+d = 0
+' ID = 4 always empty
+For Each pg In ActiveDocument.Pages
+pn = pg.Name
+if n > 3 then d = 2
+    Application.ActiveWindow.Page = Application.ActiveDocument.Pages.ItemU(pn)
+    ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(1), visSelect
+    Application.ActiveWindow.Selection.Copy
+    ns.Masters.Paste visPasteVisioShapes
+    Set nm = ns.Masters.ItemFromID(n+d)
+    nm.Name = pn
+    n = n + 1
+Next pg
+ns.save
+end sub

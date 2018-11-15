@@ -1,0 +1,54 @@
+Sub vsd_RepairError1()
+Dim nn$, sn$, pth$, fn$
+Dim doc As Document
+Set doc = ActiveDocument
+pth = doc.Path
+fn = doc.Name
+sn = pth & fn
+nn = Replace(sn, ".vsd", ".vdx")
+doc.RemoveHiddenInformation (visRHIPersonalInfo + visRHIMasters + visRHIStyles + visRHIDataRecordsets)
+doc.SaveAsEx nn, visSaveAsWS
+doc.Close
+Documents.OpenEx nn, visOpenCopy
+Set doc = ActiveDocument
+doc.RemoveHiddenInformation (visRHIPersonalInfo + visRHIMasters + visRHIStyles + visRHIDataRecordsets)
+sn = Replace(sn, ".", "_.")
+doc.SaveAs sn
+doc.Close
+Set doc = Nothing
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set fil = fso.GetFile(nn)
+fil.Delete
+Set fil = Nothing
+Set fso = Nothing
+End Sub
+'======================
+Sub vss_RepairError1()
+Dim nn$, sn$, pth$, fn$, i%, n%
+Dim doc As Document
+Set doc = GetObject("c:\Motiv\new\t5.vss") ' TargetDocument
+For i = 1 To Documents.Count
+If Documents(i).Name = doc.Name Then n = i: Exit For
+Next
+pth = doc.Path
+fn = doc.Name
+sn = pth & fn
+nn = Replace(sn, ".vss", "1.vsx")
+doc.SaveAs nn
+doc.Close
+Application.AlertResponse = 7
+Documents(n).Close
+Set doc = Documents.OpenEx(nn, visOpenCopy)
+'Set doc = GetObject(nn)
+sn = Replace(sn, ".", "_.")
+doc.SaveAs sn
+doc.Close
+Set doc = Nothing
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set fil = fso.GetFile(nn)
+fil.Delete
+Set fil = Nothing
+Set fso = Nothing
+Application.AlertResponse = 0
+End Sub
+

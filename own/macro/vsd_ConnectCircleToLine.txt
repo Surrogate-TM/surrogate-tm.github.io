@@ -1,0 +1,9 @@
+﻿Sub ConnectCircleToLine()
+    ActiveWindow.DeselectAll
+    ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(2), visSelect
+    Dim vsoCell3 As Cell
+    Dim vsoCell4 As Cell
+    Set vsoCell3 = Application.ActiveWindow.Page.Shapes.ItemFromID(2).CellsSRC(visSectionConnectionPts, 0, 0)
+    Set vsoCell4 = Application.ActiveWindow.Page.Shapes.ItemFromID(1).CellsSRC(visSectionConnectionPts, 0, 0)
+    vsoCell3.GlueTo vsoCell4
+End Sub

@@ -1,0 +1,11 @@
+Sub d()
+Dim vd As Document
+Set vd = ActiveDocument
+fn = Dir("c:\fasad\")
+Dim sh As Shape
+'ActiveWindow.SetWindowRect -1, 8, 8, 2
+If ActiveWindow.Selection.Count > 0 Then Set sh = ActiveWindow.Selection(1): sh.Cells("LockDelete").FormulaU = "0": sh.Delete
+vd.RemoveHiddenInformation (visRHIPersonalInfo + visRHIMasters + visRHIStyles + visRHIDataRecordsets)
+vd.Save
+If ActiveWindow.Caption <> "Drawing1" Then vd.Close
+End Sub

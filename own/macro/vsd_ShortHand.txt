@@ -1,0 +1,19 @@
+Sub ShortHand()
+Dim pg As Page
+Set pg = ActivePage
+Dim shpd As Master, sh As Shape
+Set shpd = ActiveDocument.Masters.Item(1)
+pg.Drop(shpd, 1, 1).Shapes.Item("razr").Cells("prop.row_2").Formula = """Pishkin"""
+Set shpd = ActiveDocument.Masters.Item(13)
+pg.Drop(shpd, 2, 5).Cells("height").FormulaU = 1
+End Sub
+
+'Dim pg As Page, sh As Shape
+'Dim shpd As Master
+'Set shpd = ActiveDocument.Masters.Item(1)
+'Set pg = ActivePage
+'Set sh = pg.Drop(shpd, 0, 0) '.Shapes.Item(3)
+'sh.Shapes.Item(1).Text = "123456"
+'sh.Shapes.Item(2).Text = "123456"
+'sh.Shapes.Item(3).Text = "1456"
+'sh.Shapes.Item(4).Text = "123"

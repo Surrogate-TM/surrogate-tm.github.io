@@ -1,0 +1,14 @@
+﻿Sub Get_TheDoc()
+Dim txt As String
+txt = ""
+    Application.ActiveDocument.DocumentSheet.OpenSheetWindow
+    For x = 13 To 191
+txt = txt & Application.ActiveWindow.Shape.CellsSRC(visSectionUser, x, visUserValue).RowNameU & vbTab & Application.ActiveWindow.Shape.CellsSRC(visSectionUser, x, visUserValue).FormulaU & Chr(10)
+    Next x
+    Application.ActiveWindow.Close
+Dim vsoCharacters1 As Visio.Characters
+    Set vsoCharacters1 = Application.ActiveWindow.Page.Shapes.ItemFromID(364).Characters
+    vsoCharacters1.Begin = 0
+    vsoCharacters1.End = 0
+    vsoCharacters1.Text = txt
+End Sub

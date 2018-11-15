@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+    <ribbon startFromScratch="false">
+        <tabs>
+            <tab id="rxtb0" label="OPD_HardCore">
+                <group id="rxPowerScheme" label="Tasks">
+                    <button id="rxMain" 
+                            label="Create scheme"
+                            size ="large"
+                            imageMso="OmsCustomizeLayout"
+                            onAction="rxMain"/>
+                    <button id="rxClearDrawing"
+                            label ="Clear scheme"
+                            size ="large"
+                            imageMso="OmsDelete"
+                            onAction="rxClearDrawing"/>
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

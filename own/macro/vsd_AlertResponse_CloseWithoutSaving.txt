@@ -1,0 +1,10 @@
+ Dim lRet As Long
+    'Save alert response so we can revert it back to original setting
+    lRet = Application.AlertResponse
+    'Tell it that we want to automatically choose "No"
+    Application.AlertResponse = 7
+    'Close the document after some changes have been made
+    'No save prompt will be displayed since we told visio to choose the "No" button
+    Application.ActiveDocument.Close
+    'Revert back to original setting
+    Application.AlertResponse = lRet

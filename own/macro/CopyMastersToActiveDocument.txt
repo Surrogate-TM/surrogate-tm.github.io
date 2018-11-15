@@ -1,0 +1,6 @@
+Sub CopyMastersToActiveDocument()
+Dim mst As Master
+For Each mst In Me.Masters
+ActiveDocument.Masters.Drop mst, 0#, 0#
+Next
+End Sub

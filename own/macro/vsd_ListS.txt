@@ -1,0 +1,14 @@
+Sub vsd_lists()
+Dim pg As Page, pn%, shp As Shape, celCh As Cell, celDe As Cell, lst$, celPN As Cell
+lst = ""
+For pn = 4 To 20
+Set shp = ActiveDocument.Pages(pn).Shapes(1)
+Set celCh = shp.Cells("user.ch")
+Set celDe = shp.Cells("user.de")
+Set celPN = shp.Cells("Fields.Value")
+celPN.FormulaU = "=pagenumber()-1"
+'If shp.Cells("prop.cnum").Result("") = 1 Then lst = lst & ";" & ActiveDocument.Pages(pn).Name
+Next pn
+'Set shp = ActiveDocument.Pages(3).Shapes.ItemFromID(109)
+'shp.Text = lst
+End Sub

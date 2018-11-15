@@ -1,0 +1,11 @@
+﻿Sub list()
+Dim pg As Page
+Dim sp As Shape
+Dim ce As Cell
+For Each pg In ThisDocument.Pages
+Set sp = pg.Shapes.ItemFromID(1)
+Set ce = sp.Cells("fields.value")
+ce.FormulaU = "=pagenumber()*-1"
+Debug.Print pg.Name, sp.Name, ce.Formula
+Next pg
+End Sub

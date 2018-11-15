@@ -1,0 +1,9 @@
+Sub WrapToGUARD()
+Dim ar(), sh As Shape, c1$, i%
+ar() = Array("Width", "Height", "Piny")
+Set sh = ActiveWindow.Selection(1)
+For i = LBound(ar) To UBound(ar)
+c1 = "guard(" & sh.Cells(ar(i)).FormulaU & ")"
+sh.Cells(ar(i)).FormulaU = c1
+Next
+End Sub

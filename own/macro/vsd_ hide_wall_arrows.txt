@@ -1,0 +1,7 @@
+Sub hide_wall_arrows()
+Dim shp As Shape
+For i = 1 To ActiveWindow.Selection.Count
+Set shp = ActiveWindow.Selection(i)
+shp.Cells("user.visBESelected").FormulaForceU = "GUARD(0)"
+Next i
+End Sub

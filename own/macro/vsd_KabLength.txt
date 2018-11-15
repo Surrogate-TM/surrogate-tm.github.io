@@ -1,0 +1,23 @@
+﻿Sub dl()
+Dim snap1 As Shape
+Set snap1 = ActivePage.Shapes
+Dim dl As Double
+dl = KabLength(snap1)
+Debug.Print dl & " mm"
+End Sub
+
+Function KabLength(Shap As Shape) As Double
+ Dim i As Integer
+ Dim Summa As Double
+ Dim dx As Double, dy As Double
+ Dim nRows As Integer
+ nRows = Shap.RowCount(visSectionFirstComponent) - 1
+ Summa = 0
+ For i = 1 To nRows - 1
+ dx = (Shap.CellsSRC(visSectionFirstComponent, i, 0) - Shap.CellsSRC(visSectionFirstComponent, i + 1, 0)) * 0.0254 * 1000
+ dy = (Shap.CellsSRC(visSectionFirstComponent, i, 1) - Shap.CellsSRC(visSectionFirstComponent, i + 1, 1)) * 0.0254 * 1000
+ Summa = Summa + Sqr(dx ^ 2 + dy ^ 2)
+ Next
+ KabLength = Summa
+End Function
+

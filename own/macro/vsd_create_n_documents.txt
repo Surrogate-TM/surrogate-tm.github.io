@@ -1,0 +1,17 @@
+﻿Sub OOO()
+Dim FN As String
+Dim VD As Document
+Dim N As Integer
+Dim CL As Cell
+Dim ZER  As String
+ZER = "0"
+Set VD = ActiveDocument
+Set CL = VD.DocumentSheet.Cells("USER.BOOK")
+For N = 2 To 23
+If N > 9 Then ZER = ""
+FN = "C:\TEMP\A_BSZLAN-" & ZER & N & "-RD.vsd"
+CL.Formula = N
+VD.SaveAs FN
+Next N
+VD.Close
+End Sub

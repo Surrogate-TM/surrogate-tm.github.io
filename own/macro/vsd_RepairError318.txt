@@ -1,0 +1,23 @@
+Sub vsd_RepairError318()
+Dim cl As Row
+Dim n As Integer
+n = 0
+Dim row_name$, row_value$, row_prompt$, new_prompt$, bl As Boolean
+Application.ActiveDocument.DocumentSheet.OpenSheetWindow
+For i = ActiveWindow.Shape.RowCount(242) - 1 To 0 Step -1
+    row_name = Application.ActiveWindow.Shape.CellsSRC(visSectionUser, i, visUserValue).RowNameU
+    row_value = Application.ActiveWindow.Shape.CellsSRC(visSectionUser, i, visUserValue).FormulaU
+    row_prompt = Application.ActiveWindow.Shape.CellsSRC(visSectionUser, i, visUserPrompt).FormulaU
+    Debug.Print Mid(row_value, 2, 6), Left(row_value, 6)
+    bl = InStr(row_value, Trim("Pages["))
+ If bl = True Then ' And Application.ActiveWindow.Shape.CellsSRC(visSectionUser, i, visUserPrompt).FormulaU = "" Then Application.ActiveWindow.Shape.CellsSRC(visSectionUser, i, visUserPrompt).FormulaU = new_prompt
+ n = n + 1
+ If n = 1 Then new_prompt = "setf(getref(user." & row_name & "), " & row_value & ")"
+ If n > 1 Then new_prompt = new_prompt & "+setf(getref(user." & row_name & "), " & row_value & ")"
+ Else
+ End If
+Next
+ActiveDocument.DocumentSheet.AddNamedRow visSectionUser, "Err318fix", visTagDefault
+ActiveDocument.DocumentSheet.Cells("user.fix.prompt").FormulaU = new_prompt
+Application.ActiveWindow.Close
+End Sub

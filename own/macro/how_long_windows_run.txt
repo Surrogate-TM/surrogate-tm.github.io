@@ -1,0 +1,42 @@
+'Пример 1
+'Этот пример покажет время в милисекундах (1000 миллисекунд = 1 секунда). 
+'Если хотите получить секунды - разделите на 1000.
+ 
+Private Declare Function GetTickCount Lib "Kernel32" () As Long
+ 
+Private Sub Form_Load()
+    MsgBox GetTickCount()
+End Sub
+ 
+'Более подробнее расписанная статистика.
+ 
+Private Declare Function GetTickCount Lib "Kernel32" () As Long
+ 
+Private Sub Command1_Click()
+    Dim a_hour, a_minute, a_second
+    a = Format(GetTickCount() / 1000, "0") 'всего секунд
+    a_hour = Int(a / 3600)
+    a = a - a_hour * 3600
+    a_minute = Int(a / 60)
+    a_second = a - a_minute * 60
+    MsgBox "Ваш компьютер работает в эту загрузку " & str(a_hour) & " часов " & str(a_minute) & " минут" & str(a_second) & " секунд"
+End Sub
+ 
+'ИЛИ ТАКОЙ ПРИМЕР
+'Расположите на форме элемент ListBox и элемент Timer
+ 
+Private Declare Function GetTickCount& Lib "Kernel32" ()
+ 
+Private Sub Form_Load()
+    Timer1.Interval = 1000
+End Sub
+ 
+Private Sub Timer1_Timer()
+    MS = GetTickCount()
+    SekGesamt = MS \ 1000
+    Std = (SekGesamt \ 3600)
+    Min = (SekGesamt - (Std * 3600)) \ 60
+    Sek = (SekGesamt - (Std * 3600) - (Min * 60))
+    t = Format(Std, "00") & ":" & Format(Min, "00") & ":" & Format(Sek, "00")
+    Label1.Caption = t
+End Sub

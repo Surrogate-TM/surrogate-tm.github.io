@@ -1,0 +1,59 @@
+Option Base 1
+
+
+Sub main()
+Dim n As Single
+Dim r As Single
+'n = InputBox("N: ")
+'r = InputBox("R: ")
+'DrawShape n, r
+DrawShape
+MsgBox "TheEnd"
+End Sub
+
+
+'Private Sub DrawShape(iNumSides, dRadiusInches)
+Private Sub DrawShape()
+
+
+  Dim i As Integer
+  Dim shp As Visio.Shape
+  Dim xy() As Double
+  Dim ang As Double, angDelta As Double
+
+  '// Create an array to hold all of the points:
+'  ReDim xy(1 To iNumSides * 2 + 2)
+ReDim xy(8)
+'  angDelta = 3.14159265358 / iNumSides
+
+xy(1) = 3.00000000000565
+xy(2) = 0.267949192434387
+xy(3) = 3.00000000000565
+xy(4) = 3.73205080756561
+xy(5) = 0
+xy(6) = 2.00000000001959
+xy(7) = 2.99999999997173
+xy(8) = 0.267949192414801
+'xy(9) = 3
+'xy(10) = 0
+'  ''// Use trigonometry to calculate each vertex:
+''  For i = 1 To UBound(xy) Step 2
+''    ang = (i - 2) * angDelta
+''    xy(i) = dRadiusInches + dRadiusInches * VBA.Math.Cos(ang)
+''    xy(i + 1) = dRadiusInches + dRadiusInches * VBA.Math.Sin(ang)
+''    Debug.Print "xy(" & i & ")=" & xy(i) & Chr(10) & "xy(" & i + 1 & ")=" & xy(i + 1)
+''  Next i
+
+  '// Use Visio's DrawPolyline function to create the shape:
+Set shp = Visio.ActivePage.DrawPolyline(xy, 0)
+ ' // flag = visPolyline1D or visPolyarcs or just 0
+
+ ' // Close off the polygon by setting the last geometry
+ ' // row's formulas to reference the first row:
+  shp.Cells("Geometry1.X2").Formula = "Geometry1.X1"
+  shp.Cells("Geometry1.Y2").Formula = "Geometry1.Y1"
+
+  '// Set the polygon to be filled:
+  shp.Cells("Geometry1.NoFill").Formula = "FALSE"
+
+End Sub

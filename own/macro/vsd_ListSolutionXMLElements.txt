@@ -1,0 +1,8 @@
+Sub vsd_ListSolutionXMLElements()
+Dim docobj As Document, x%
+Set docobj = ActiveDocument
+Dim i%
+For i = 1 To ActiveDocument.SolutionXMLElementCount
+Debug.Print docobj.SolutionXMLElement(ActiveDocument.SolutionXMLElementName(i))
+Next i
+End Sub

@@ -1,0 +1,20 @@
+Sub protection0()
+Dim pn As Integer
+pn = ActiveDocument.Pages.Item("Ò5").id
+For x = pn To pn + 1
+Application.ActiveWindow.Page = ActiveDocument.Pages(x + 1)
+Dim sss As Shape
+Dim sh As Shape
+Dim id As Integer
+For Each sh In ActivePage.Shapes
+If sh.Type = 4 Then id = sh.id
+'Debug.Print sh.Name, sh.Type, sh.id
+Next sh
+Set sss = ActivePage.Shapes.ItemFromID(id)
+sss.Cells("LocPinx").Formula = "Width*0"
+sss.Cells("Pinx").Formula = "Guard(20 mm)"
+sss.Cells("LocPiny").Formula = "Height"
+sss.Cells("Piny").Formula = "Guard(287 mm)"
+sss.Cells("Width").Formula = "Guard(395.5 mm)"
+Next x
+End Sub

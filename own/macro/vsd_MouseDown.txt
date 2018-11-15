@@ -1,0 +1,14 @@
+﻿Public WithEvents VisApp As Visio.Application
+
+Private Sub VisApp_MouseDown(ByVal Button As Long, ByVal KeyButtonState As Long, ByVal X As Double, ByVal y As Double, CancelDefault As Boolean)
+    Debug.Print
+    Dim str As String
+    x1 = X * 25.4
+    y1 = y * 25.4
+    str = x1 & " - " & y1
+  MsgBox str, vbOK, "x - y"
+End Sub
+
+Sub Reg()
+    Set VisApp = Visio.Application
+End Sub

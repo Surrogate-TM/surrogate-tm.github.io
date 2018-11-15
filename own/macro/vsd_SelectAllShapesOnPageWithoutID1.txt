@@ -1,0 +1,4 @@
+﻿Sub vsd_SelectAllShapesOnPageWithoutID1()
+Application.ActiveWindow.SelectAll
+ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(1), visDeselect
+End Suby

@@ -1,0 +1,75 @@
+Sub Draw_Table30x15()
+Dim Mast As Master
+Dim ololo As Shape
+Dim ooo As Window
+Dim x As Integer
+Dim y As Integer
+Dim r As Shape
+Dim cn As String
+Dim rn As String
+Const rh = 0.31496063 ' высота строки 8 мм в дюймах
+Dim xc(15) As Single
+xc(1) = 0.59055118
+xc(2) = 2.16535433
+xc(3) = 3.74015748
+xc(4) = 4.52755906
+xc(5) = 5.51181102
+xc(6) = 6.2992126
+xc(7) = 7.87401575
+xc(8) = 8.66141732
+xc(9) = 9.64566929
+xc(10) = 10.43307087
+xc(11) = 12.20472441
+xc(12) = 12.79527559
+xc(13) = 13.38582677
+xc(14) = 13.97637795
+xc(15) = 15.5511811
+n = 1
+Dim rect As Shape
+Dim rw As Shape
+Dim rs As Selection
+Dim piny As String
+piny = "=0 mm"
+Set ooo = ActiveWindow
+For y = 1 To 30 ' ÷икл по созданию 30 строк
+Set rs = Nothing
+Set rw = ActiveWindow.Shape.DrawRectangle(0, 0, 0, 0) ' рисуем пр€моугольник нулевой ширины и высоты
+rnm = "pos" & y ' определ€ем им€ текущей строки как pos + номер строки
+rw.Name = rnm ' присваиваем полученное им€ строке
+ActiveWindow.Selection.ConvertToGroup ' преобразуем шейп в группу
+rw.OpenDrawWindow.Activate ' входим внутрь данной группы
+Set ooo = ActiveWindow
+For x = 1 To 15 ' начинаем заполн€ть строку шейпами-столбцами
+tn = y & "." & x '  им€ текущего шейпа-пр€моугольника, состоит из номера строки.номера в строке
+tx = xc(x - 1) ' лева€ координата пр€моугольника
+bx = xc(x) ' права€ нижн€€ координата пр€моугольника
+ty = 0 + rh * (y - 1) ' нижн€€ координата пр€моугольника
+by = 0 + rh * (y) ' верхн€€ координата пр€моугольника
+Set rect = ooo.Shape.DrawRectangle(tx, ty, bx, by) ' рисуем пр€моугольник с полученными ранее координатами
+rect.Style = "None" ' отключаю стили
+rect.CellsSRC(visSectionObject, visRowXFormOut, visXFormLocPinY).FormulaU = "Height*1" ' ставим прив€зку PinY пр€моугольника по верхнему краю шейпа
+rect.CellsSRC(visSectionParagraph, 0, visSpaceLine).FormulaU = "8 mm" ' делаем рассто€ние между строками текста пр€моугольника 8 мм
+'rect.AddSection visSectionUser ' добавл€ем секцию User
+rect.AddNamedRow visSectionUser, "row_1", visTagDefault  ' добавл€ем строку в секцию User
+rect.Cells("user.row_1.Prompt").FormulaU = "if(strsame(shapetext(thetext),"" ""),0,1)" ' забиваем значение в поле Prompt
+rect.Cells("user.row_1").FormulaU = "=user.row_1.prompt*INT(TEXTHEIGHT(TheText,Width)/8 mm)*8 mm" ' забиваем значение в поле Value
+rect.CellsSRC(visSectionObject, visRowText, visTxtBlkVerticalAlign).FormulaU = "=if(height=8 mm,1,0)" ' забиваем значение в поле Value
+rect.CellsSRC(visSectionObject, visRowText, visTxtBlkTopMargin).FormulaU = "0 pt" ' ставим нулевой отступ сверху в тексте шейпа
+rect.CellsSRC(visSectionObject, visRowText, visTxtBlkBottomMargin).FormulaU = "0 pt" ' ставим нулевой отступ сверху в тексте шейпа
+rect.Name = tn ' присваиваем шейпу полученное ранее им€, состоит из номера строки.номера в строке
+rect.Text = y & "." & x ' вписываем в шейп текст, который состоит из номера строки.номера в строке
+Next x
+Dim tex As String
+ooo.Close
+Application.ActiveWindow.Selection.UpdateAlignmentBox ' производим выравнивание размеров группы, в соответствии с размерами дочерних шейпов
+hrow = "=guard(max(sheet." & n + 1 & "!user.row_1,sheet." & n + 2 & "!user.row_1,sheet." & n + 3 & "!user.row_1,sheet." & n + 4 & "!user.row_1,sheet." & n + 5 & "!user.row_1,sheet." & n + 6 & "!user.row_1,sheet." & n + 7 & "!user.row_1,sheet." & n + 8 & "!user.row_1,sheet." & n + 9 & "!user.row_1,sheet." & n + 10 & "!user.row_1,sheet." & n + 11 & "!user.row_1,sheet." & n + 12 & "!user.row_1,sheet." & n + 13 & "!user.row_1,sheet." & n + 14 & "!user.row_1,sheet." & n + 15 & "!user.row_1))" ' вычисл€ем максимальную высоту дочернего шейпа
+If n > 16 Then piny = "=guard(sheet." & n - 16 & "!piny-sheet." & n - 16 & "!height)"
+rw.CellsSRC(visSectionObject, visRowXFormOut, visXFormHeight).FormulaU = hrow
+rw.CellsSRC(visSectionObject, visRowXFormOut, visXFormLocPinY).FormulaU = "Height*1"
+rw.CellsSRC(visSectionObject, visRowXFormOut, visXFormLocPinX).FormulaU = "Width*0"
+rw.CellsSRC(visSectionObject, visRowXFormOut, visXFormPinY).FormulaU = piny
+n = n + 16
+Next y
+Application.ActiveWindow.SelectAll
+ActiveWindow.Selection.Group
+End Sub

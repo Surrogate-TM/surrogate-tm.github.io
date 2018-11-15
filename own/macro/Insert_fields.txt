@@ -1,0 +1,10 @@
+﻿Sub insert_field()
+    For x = ActiveWindow.PShapes.Count - 1 To 49
+    ActiveWindow.Select ActiveWindow.Shapes.ItemFromID(x), visSelect
+ Set vsoCharacters2 = ActiveWindow.Selection.Item(x).Characters
+    vsoCharacters2.Begin = 0
+    vsoCharacters2.End = 0
+    vsoCharacters2.AddCustomFieldU """thedoc!user.""", visFmtNumGenNoUnits
+    ActiveWindow.Selection.Item(x).CellsSRC(visSectionCharacter, 0, visCharacterLangID).FormulaU = 1033
+Next x
+End Sub
