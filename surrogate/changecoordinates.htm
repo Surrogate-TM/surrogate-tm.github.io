@@ -1,0 +1,129 @@
+﻿<HTML>
+<HEAD>
+<TITLE>VBA Visio. Изменение координат фигуры программно</TITLE>
+<META NAME="robots" content="all">
+</HEAD>
+<BODY>
+<h1>Как изменить координаты фигуры программно</h1>
+<h2>Особенности системы координат</h2>
+<p>Для начала поговорим о том, как в MS Visio описываются координаты фигуры.</p>
+<p>С помощью пользовательского интерфейса геометрические параметры фигуры можно изменять
+используя окно <b>«Размер и положение»</b>.</p>
+<IMG ALT="Окно «Размер и положение»" src="./pics/2_ShapeTransform_GUI.png" width=800 height=474>
+<!-- 1396x1057 -->
+<p>По умолчанию, точкой отсчета координат страницы является ее левый нижний угол.</p>
+<p>Местоположение фигуры на странице определяется параметрами <b>X</b>, <b>Y</b> и <b>«Положение булавки»</b> (<b>Pin Position</b>).</p>
+<IMG ALT="Координаты" src="./pics/1_ShapeTransform_Basics.png" width=800 height=606>
+<!-- 1396x1057 -->
+<p>По умолчанию <b>«Положение булавки»</b> располагается в геометрическом центре фигуры (В середине по центру).</p>
+<p>С помощью выпадающего списка в окне <b>«Размер и положение»</b> можно изменять <b>«Положение булавки»</b>.</p>
+
+<IMG ALT="Положение булавки" src="./pics/3_ShapeTransform_PinPosition.gif" width=800 height=487>
+<!-- 1740x500 -->
+<p>В <a href="https://rus-visio-blog-archive.github.io/2018/05/21/shapesheet-intro.htm" target="_blank" >таблице свойств фигуры (ShapeSheet)</a> параметры определяющие размеры и расположение фигуры содержатся в разделе 
+<b>ShapeTransform</b>.<br> Параметрам <b>X</b>/<b>Y</b> в окне <b>«Размер и положение»</b> соответствуют параметры содержащиеся в ячейках <b>PinX</b>/<b>PinY</b> таблицы свойств. А параметр<br> <b>«Положение булавки»</b> соответствует комбинации параметров <b>LocPinX</b> и <b>LocPinY</b>.</p>
+<IMG ALT="Раздел ShapeTransform" src="./pics/4_ShapeTransform_Section.png" width=800 height=194>
+<!-- 1740x500 -->
+<h2>Как программно изменять размеры, ориентацию и местоположение фигуры</h2>
+В Visio вся информация о параметрах объекта хранится в ячейках таблицы свойств. Существует два способа обращения
+к ячейкам:<br> 
+<ul>
+<li>с указанием непосредственно имени ячейки (<b><a href="https://docs.microsoft.com/en-us/office/vba/api/visio.shape.cells" target="_blank" >Cells</a></b>)</li>
+
+<h3 id="syntax"><span data-ttu-id="63510-106">Синтаксис</span></h3>
+<p><span data-ttu-id="63510-107"><em>выражение</em>.</span><span data-ttu-id="63510-108"><code>Cells</code>(<code>"Имя ячейки"</code>)</span></p>
+<p><span data-ttu-id="63510-109"><em>выражение</em>  Переменная, представляющая объект <a href="https://docs.microsoft.com/en-us/office/vba/api/visio.shape">Shape</a> .</span></p>
+<h3 id="parameters"><span data-ttu-id="63510-110">Параметры</span></h3>
+<table>
+<thead>
+<tr>
+<th style=""><span data-ttu-id="63510-111">Имя</span><span class="sxs-lookup"></th>
+<th style=""><span data-ttu-id="63510-112">Обязательный или необязательный</span></th>
+<th style=""><span data-ttu-id="63510-113">Тип данных</span></th>
+<th style=""><span data-ttu-id="63510-114">Описание</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=""><span data-ttu-id="63510-115"><em>Имя ячейки</em></span></td>
+<td style=""><span data-ttu-id="63510-116">Обязательный</span></td>
+<td style=""><span data-ttu-id="63510-117"><strong>Строка</strong></span></td>
+<td style=""><span data-ttu-id="63510-118">Имя ячейки таблицы свойств фигуры.</span></td>
+</tr>
+</tbody>
+</table>
+<br>
+<li>с указанием индексов раздела, строки раздела и столбца в строке (<b><a href="https://docs.microsoft.com/en-us/office/vba/api/visio.shape.cellssrc" target="_blank" >CellsSRC</a></b> -
+<b>S</b>ection (Раздел), <b>R</b>ow (Строка), <b>C</b>olumn (Столбец)).</li>
+<h3 id="syntax"><span data-ttu-id="18d9e-106">Синтаксис</span></h3>
+<p><span data-ttu-id="18d9e-107"><em>выражение</em>.</span></span> <span data-ttu-id="18d9e-108"><code>CellsSRC</code>( <code>Section</code> , <code>Row</code> , <code>Column</code> )</span><span class="sxs-lookup"><span data-stu-id="18d9e-108"></span></span></p>
+<p><span data-ttu-id="18d9e-109"><em>выражение</em>  Переменная, представляющая объект <a href="https://docs.microsoft.com/en-us/office/vba/api/visio.shape" target="_blank" >Shape</a> .</span></p>
+<h3 id="parameters"><span data-ttu-id="18d9e-110">Параметры</span></h3>
+<table>
+<thead>
+<tr>
+<th style=""><span data-ttu-id="18d9e-111">Имя</span><span class="sxs-lookup"></th>
+<th style=""><span data-ttu-id="18d9e-112">Обязательный или необязательный</span><span class="sxs-lookup"></th>
+<th style=""><span data-ttu-id="18d9e-113">Тип данных</span></th>
+<th style=""><span data-ttu-id="18d9e-114">Описание</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=""><span data-ttu-id="18d9e-115"><em>Section      </em></span></td>
+<td style=""><span data-ttu-id="18d9e-116">Обязательный</span></td>
+<td style=""><span data-ttu-id="18d9e-117"><strong>Integer</strong></span></td>
+<td style=""><span data-ttu-id="18d9e-118">Индекс раздела ячейки.</span></td>
+</tr>
+<tr>
+<td style=""><span data-ttu-id="18d9e-119"><em>Row</em></span></td>
+<td style=""><span data-ttu-id="18d9e-120">Обязательный</span></td>
+<td style=""><span data-ttu-id="18d9e-121"><strong>Integer</strong></span></td>
+<td style=""><span data-ttu-id="18d9e-122">Индекс строки в ячейке.</span></td>
+</tr>
+<tr>
+<td style=""><span data-ttu-id="18d9e-123"><em>Column</em></span></td>
+<td style=""><span data-ttu-id="18d9e-124">Обязательный</span></td>
+<td style=""><span data-ttu-id="18d9e-125"><strong>Integer</strong></span></td>
+<td style=""><span data-ttu-id="18d9e-126">Индекс столбца ячейки.</span></td>
+</tr>
+</tbody>
+</table><br>
+<br>
+<p>Некоторые языки программирования (например <a href="https://ru.wikipedia.org/wiki/C_Sharp" target="_blank" >C#</a>) поддерживают обращение к ячейкам только с использованием <b>CellsSRC</b>!</p>
+
+<h2>Примеры</h2>
+<pre><code class="lang-vb"> 
+Sub ShapeTransform_Cells()
+Dim sh As Shape
+Set sh = ActiveWindow.Selection.PrimaryItem
+sh.Cells("Width").FormulaU = "50 mm"
+sh.Cells("Height").FormulaU = "30 mm"
+sh.Cells("Angle").FormulaU = "33 deg"
+sh.Cells("PinX").FormulaU = "60 mm"
+sh.Cells("PinY").FormulaU = "60 mm"
+sh.Cells("LocPinX").FormulaU = "Width*0"
+sh.Cells("LocPinY").FormulaU = "Height*1"
+sh.Cells("FlipX").FormulaU = "True"
+sh.Cells("FlipY").FormulaU = "True"
+sh.Cells("ResizeMode").FormulaU = "1"
+End Sub 
+  
+Sub ShapeTransform_CellsSRC()
+Dim sh As Shape
+Set sh = ActiveWindow.Selection.PrimaryItem
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormWidth).FormulaU = "50 mm"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormHeight).FormulaU = "50 mm"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormAngle).FormulaU = "16 deg"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormPinX).FormulaU = "50 mm"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormPinY).FormulaU = "55 mm"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormPinX).FormulaU = "Width*0.5"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormPinY).FormulaU = "Height*0.5"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormFlipX).FormulaU = "FALSE"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormFlipY).FormulaU = "FALSE"
+sh.CellsSRC(visSectionObject, visRowXFormOut, visXFormResizeMode).FormulaU = "FALSE"
+End Sub
+</code></pre>
+
+</body>
+</html>
