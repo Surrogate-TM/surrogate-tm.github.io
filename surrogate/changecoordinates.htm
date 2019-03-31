@@ -21,8 +21,8 @@
 <IMG ALT="Положение булавки" src="./pics/3_ShapeTransform_PinPosition.gif" width=800 height=487>
 <!-- 1740x500 -->
 <p>В <a href="https://rus-visio-blog-archive.github.io/2018/05/21/shapesheet-intro.htm" target="_blank" >таблице свойств фигуры (ShapeSheet)</a> параметры определяющие размеры и расположение фигуры содержатся в разделе 
-<b>ShapeTransform</b>.<br> Параметрам <b>X</b>/<b>Y</b> в окне <b>«Размер и положение»</b> соответствуют параметры содержащиеся в ячейках <b>PinX</b>/<b>PinY</b> таблицы свойств. А параметр<br> <b>«Положение булавки»</b> соответствует комбинации параметров <b>LocPinX</b> и <b>LocPinY</b>.</p>
-<IMG ALT="Раздел ShapeTransform" src="./pics/4_ShapeTransform_Section.png" width=800 height=194>
+<b>a href="https://shapesheet-kb.github.io/ru/pages/sections/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%20Shape%20Transform.htm" target="_blank" >Shape Transform</a></b>.<br> Параметрам <b>X</b>/<b>Y</b> в окне <b>«Размер и положение»</b> соответствуют параметры содержащиеся в ячейках <b>PinX</b>/<b>PinY</b> таблицы свойств. А параметр<br> <b>«Положение булавки»</b> соответствует комбинации параметров <b>LocPinX</b> и <b>LocPinY</b>.</p>
+<IMG ALT="Раздел Shape Transform" src="./pics/4_ShapeTransform_Section.png" width=800 height=194>
 <!-- 1740x500 -->
 <h2>Как программно изменять размеры, ориентацию и местоположение фигуры</h2>
 В Visio вся информация о параметрах объекта хранится в ячейках таблицы свойств. Существует два способа обращения
@@ -91,6 +91,70 @@
 </table><br>
 <br>
 <p>Некоторые языки программирования (например <a href="https://ru.wikipedia.org/wiki/C_Sharp" target="_blank" >C#</a>) поддерживают обращение к ячейкам только с использованием <b>CellsSRC</b>!</p>
+<p>Разделу <b>Shape Transform</b> таблицы свойств соответствует раздел <a href="https://ru.wikipedia.org/wiki/C_Sharp" target="_blank" >visSectionObject</a>.</p>
+<!-- ### -->
+<!-- <table> -->
+<!-- <thead> -->
+<!-- <tr> -->
+<!-- <th align="left"><strong>Constant</strong></th> -->
+<!-- <th align="left"><strong>Value</strong></th> -->
+<!-- <th align="left"><strong>Description</strong></th> -->
+<!-- </tr> -->
+<!-- </thead> -->
+<!-- <tbody> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRow1stHyperlink</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the first row in  <strong>visSectionHyperlink</strong> .</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRow3DRotationProperties</strong></td> -->
+<!-- <td align="left">30</td> -->
+<!-- <td align="left">Index of the row in  <strong>visSectionObject</strong> that defines the 3-D rotation properties of the shape.</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowAction</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the first row in  <strong>visSectionAction</strong> .</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowAlign</strong></td> -->
+<!-- <td align="left">14</td> -->
+<!-- <td align="left">Index of the row in  <strong>visSectionObject</strong> that defines the shape's alignment.</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowAnnotation</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the first row in  <strong>visSectionAnnotation</strong> .</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowBevelProperties</strong></td> -->
+<!-- <td align="left">29</td> -->
+<!-- <td align="left">Index of the row in  <strong>visSectionObject</strong> that defines the bevel properties of the shape.</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowCharacter</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the first row in  <strong>visSectionCharacter</strong> .</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowComponent</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the component properties row in a Geometry section ( <strong>visSectionFirstComponent</strong> +).</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowConnectionPts</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the first row in  <strong>visSectionConnectionPts</strong> .</td> -->
+<!-- </tr> -->
+<!-- <tr> -->
+<!-- <td align="left"><strong>visRowControl</strong></td> -->
+<!-- <td align="left">0</td> -->
+<!-- <td align="left">Index of the first row in  <strong>visSectionControl</strong> .</td> -->
+<!-- </tr> -->
+<!-- </table> -->
+<!-- ### -->
+
 
 <h2>Примеры</h2>
 <pre><code class="lang-vb"> 
