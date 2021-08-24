@@ -14,32 +14,41 @@
 						Сниппет для ShapeSheet
 				</h1>
 <article id="snippets" class="snippets">
+<a name = "descr" href="#descr">Краткое описание работы с инструментом</a><br>
+<a name = "video" href="#video">Видео инструкция</a>
 		<hr>
 		</header><div class="entry">
 		<p>C помощью данного инструмента вы можете получить ссылку на ячейку таблицы свойств фигуры, в том числе фигуры расположенной на другой странице.</p>
-<strong class="bold-740" data-slate-leaf="true">Краткое описание работы с инструментом</strong>
-<a name = "descr" href="#descr" contenteditable="false" class="blockHeadingAnchor-34f75d78--blockHeadingAnchorHidden-d69b5eda"><span class="blockHeadingAnchorIcon-1c2bf3cb"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></g></svg></span></a>
-<p>1. Выберите фигуру с нужным именем (в приложение Visio).</p>
-<p>2. Откройте это окно в браузере.</p>
-<p>3. Если вам нужно получить ссылку на фигуру в другой фигуре, напишите имя ячейки в диапазоне <b>A2</b> рабочей книги.</p>
-    Если вам нужно получить ссылку на фигуру в той же самой фигуре, напишите имя ячейки в диапазоне <b>A5</b> рабочей книги.</p>
-<p>4. Если вам нужно получить ссылку на фигуру в другой фигуре, выберите диапазон ячеек <b>B2</b> рабочей книги.
-    Если нужно получить ссылку на форму в той же форме, выделите диапазон ячеек <b>B5</b> рабочей книги.
-Cкопируйте значение из ячейки <b>B2</b> или <b>B5</b>.</p>
-<p>5. Активируйте приложение <b>MS Visio</b>.</p>
-<p>6. Откройте редактор VBA / если окно Immediate не активировано, нажмите клавиши <b>Ctrl</b>+<b>G</b>.</p>
-<p>7. Вставьте формулу в окно Immediate и нажмите клавишу <kbd><b>Enter</kbd></b>.</p>
-<p>8. Полученную формулу (см. вторую строку в окне Immediate) можно вставлять как ссылку на ячейку в нужном вам месте. Эта ссылка будет содержать корректное имя страницы, имя ссылочной (выделенной ранее) фигуры и название ячейки.</p>
-
-		<div class="blockHeadingContent-756c9114"><span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="df12a5603e9d4586992d90399f8f45e8"><span data-offset-key="df12a5603e9d4586992d90399f8f45e8:0">
+		<div class="blockHeadingContent-756c9114"><span class="txt"><span data-key="df12a5603e9d4586992d90399f8f45e8"><span data-offset-key="df12a5603e9d4586992d90399f8f45e8:0">
+		<h2 id="ref"></h2>
 		<strong class="bold-3c254bd9" data-slate-leaf="true">Инструмент для получения ссылки на свойство фигуры ShapeSheet</strong>
-		</span>
-		</span>
-		</span>
-		<a name = "ref" href="#ref" contenteditable="false" class="blockHeadingAnchor-34f75d78--blockHeadingAnchorHidden-d69b5eda"><span class="blockHeadingAnchorIcon-1c2bf3cb"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></g></svg></span></a></div>
+		<a name = "ref" href="#ref" contenteditable="false" class="blockHeadingAnchor1"><span class="blockHeadingAnchorIcon-1c2bf3cb"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></g></svg></span></a></div>
 		<p>Таблица для формирования ссылки на ячейку фигуры. В ячейках A2/B2 и A5/B5 даны подсказки по последовательности действий, подсказки появляются при выделении ячейки.</p>
-
 <iframe width="880" height="480" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C8D7257E850E17D9%2119478&authkey=%21AGHLi4LaJpQ6ujo&em=2&wdAllowInteractivity=True&AllowTyping=True&ActiveCell='ShapeSheet_Snippet'!A2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=False"></iframe><br>
+<h2 id = "descr"></h2>
+<strong class="bold-740" data-slate-leaf="true">Краткое описание работы с инструментом</strong>
+<a name = "descr" href="#descr" contenteditable="false" class="blockHeadingAnchor2"><span class="blockHeadingAnchorIcon-1c2bf3cb"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></g></svg></span></a>
+<p>1. Выберите интересующую вас фигуру в приложение <b>Visio</b>.</p>
+<p>2. Открыть таблицу свойств фигуры, нажав клавиши <kbd><b>Shift</kbd></b>+<kbd><b>F10</kbd></b>.</p>
+<p>3. Выделяем произвольную ячейку, удаляем ее содержимое, оставив только знак равенства (=). <br>
+Далее щелкаем мышью по интересующей нас ячейке. Ссылка на нее добавлятся после знака равенства, таким же образом как это происходит в MS Excel.
+</p>
+<p>4. Выделяем подставившуюся ссылку на ячейку и вырезаем ее нажав клавиши <kbd><b>Ctrl</kbd></b>+<kbd><b>x</kbd></b>.
+Далее нажимаем клавишу <kbd><b>Esc</kbd></b>, чтобы отменить изменения в ячейке.<br>
+<div style="border: 5px double red; padding: 10px; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">Если вы уже успели нажать клавишу <kbd><b>Esc</kbd></b> на клавиатуре или кнопку "Принять" в строке формул таблицы свойств (ShapeSheet), то для отмены этого действия нажмите клавиши <kbd><b>Ctrl</kbd></b>+<kbd><b>z</kbd></b>!</div></p>
+<p>5. Откройте это окно в браузере.</p>
+<p>6. Если вам нужно получить ссылку на фигуру в другой фигуре, вставьте из буфера обмена скопированное значение имени ячейки в диапазон <b>A2</b> рабочей книги.</p>
+<p>7. Нажмите клавишу <kbd><b>Tab</kbd></b>, фокус выделения сместится в ячейку <b>B2</b>. Если нужно получить ссылку на форму в той же форме, выделите диапазон ячеек <b>B5</b> рабочей книги.<br>
+Cкопируйте значение из ячейки <b>B2</b> нажав клавиши <kbd><b>Ctrl</kbd></b>+<kbd><b>c</kbd></b>.</p>
+<p>8. Активируйте приложение <b>MS Visio</b>.</p>
+<p>9. Откройте редактор <b>VBA</b> нажав клавиши <kbd><b>Alt</b></kbd>+<kbd><b>F11</b></kbd> / если окно <b>Immediate</b> не активировано, нажмите клавиши <kbd><b>Ctrl</b></kbd>+<kbd><b>G</b></kbd>.</p>
+<p>10. Вставьте формулу в окно <b>Immediate</b> и нажмите клавишу <kbd><b>Enter</kbd></b>.</p>
+<p>11. Полученную формулу (см. вторую строку в окне <b>Immediate</b>) можно вставлять как ссылку на ячейку в нужном вам месте.<br>Эта ссылка будет содержать корректное имя страницы, имя ссылочной (выделенной ранее) фигуры и название ячейки!</p>
+    <!-- Если вам нужно получить ссылку на свойство страницы, вставьте значение в диапазон <b>A5</b> рабочей книги.</p> -->
+<h2 id="video"></h2>
+<strong class="bold-740" data-slate-leaf="true">Видео инструкция</strong>
+<a name = "video" href="#video" contenteditable="false" class="blockHeadingAnchor3"><span class="blockHeadingAnchorIcon-1c2bf3cb"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></g></svg></span></a><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/evAH6HRXCwQ"> frameborder="0" allowfullscreen></iframe>
 
 </article>
 <hr>
