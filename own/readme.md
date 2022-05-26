@@ -49,16 +49,16 @@
   <summary>Перечень трафаретов</summary>
   
   [Трафареты СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds)   
-  [Трафарет ГОСТ 21.101-97]([https://rus-visio-blog-archive.github.io/2017/01/18/osnovnye-jelementy-okna-visio-s-lentochnym-interfejsom.htm](https://surrogate-tm.gitbook.io/my-stencils/spds/nabor-elementov-gost-21.101-97))   
-  [Трафарет для схемы расположения оборудования в шкафу]([https://rus-visio-blog-archive.github.io/2017/01/24/video-novye-vozmozhnosti-visio-2016.htm](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu))   
+  [Трафарет ГОСТ 21.101-97](https://surrogate-tm.gitbook.io/my-stencils/spds/nabor-elementov-gost-21.101-97)  
+  [Трафарет для схемы расположения оборудования в шкафу](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu)    
   [Stencil for create rack diagram](https://surrogate-tm.gitbook.io/my-stencils/racks/stencil-for-create-rack-diagram)    
-  [Трафарет MS Visio для создания однолинейных схем]([https://rus-visio-blog-archive.github.io/2017/03/06/trafaret-dokumenta.htm](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem))    
+  [Трафарет MS Visio для создания однолинейных схем](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem)    
 </details>
 
 ## Мои коды
 [GitHub Gist](https://gist.github.com/Surrogate-TM)    
-[Jupyter notebooks](https://surrogate-tm.github.io/jupyterlab/)    
-[Несортированная коллекция макросов](https://surrogate-tm.github.io/own/macro/)
+[Jupyter notebooks](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master/jupyterlab/)    
+[Несортированная коллекция макросов](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master/own/macro)
 
 ## Мой YouTube-канал
 Собственно ссылка на мой канал [Surrogate I](https://www.youtube.com/channel/UCknAtNBhSwX_mDMmVdOhbaA/videos)    
@@ -66,5 +66,5 @@
 
 ## Полезные интерактивные таблицы
 [Список команд DOCMD](https://surrogate-tm.github.io/surrogate/DOCMD.htm) с возможностью фильтрации и поиска    
-[Инструмент для получения ссылки на свойство фигуры](surrogate-tm.github.io/snippets/shapesheet_ru.html)
+[Инструмент для получения ссылки на свойство фигуры](https://surrogate-tm.github.io/snippets/shapesheet_ru.html)
 
