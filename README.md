@@ -15,4 +15,4 @@ Back-ups of MSDN/Technet forums
 [Архив блога «О Visio по-русски»](https://rus-visio-blog-archive.github.io/)   
 
 ## My own articles/codes/tools
-
+Смотрите [Раздел «Моё»](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master/own#readme)
