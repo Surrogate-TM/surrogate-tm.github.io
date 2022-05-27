@@ -60,7 +60,7 @@
 
 ## Мой YouTube-канал
 Собственно ссылка на мой канал [Surrogate I](https://www.youtube.com/channel/UCknAtNBhSwX_mDMmVdOhbaA/videos)    
-[Список видео с моего канала](surrogate-tm.github.io/video-faq/myvideos.htm) с возможностью поиска и фильтрации
+[Список видео с моего канала](https://surrogate-tm.github.io/video-faq/myvideos.htm) с возможностью поиска и фильтрации
 
 ## Полезные интерактивные таблицы
 [Список команд DOCMD](https://surrogate-tm.github.io/surrogate/DOCMD.htm) с возможностью фильтрации и поиска    
