@@ -1,4 +1,8 @@
-﻿Sub Create4SidesConn_in_Points()
+# Create4SidesConn_in_Points
+Код добавляет соединительные точки с каждой из 4 сторон фигуры
+
+```
+Sub Create4SidesConn_in_Points()
 Dim main As Shape
 Dim val As String
 Dim n As Integer
@@ -25,3 +29,4 @@ main.CellsSRC(visSectionConnectionPts, visRowLast, visCnnctAutoGen).FormulaForce
 main.CellsSRC(visSectionConnectionPts, visRowLast, 6).FormulaForceU = ""
 Next y
 End Sub
+```
