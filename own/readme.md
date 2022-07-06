@@ -4,6 +4,7 @@
 [Как изменить координаты фигуры программно](https://visio-tricks.gitbook.io/workspace/kak-izmenit-koordinaty-figury-programmno)    
 [Проблема с отображением кириллицы в VBA-редакторе](https://visio-tricks.gitbook.io/workspace/cyrillic_text_broken)    
 [Объектная модель Visio](https://visio-tricks.gitbook.io/workspace/obektnaya-model-visio)    
+[Эмуляция работы с интерфейсом приложения](https://visio-tricks.gitbook.io/workspace/emulyaciya-raboty-s-interfeisom-prilozheniya)    
 <details>
   <summary>Серия материалов подготовленная для российского офиса Microsoft</summary>
   
