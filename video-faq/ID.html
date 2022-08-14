@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 
+﻿<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 
 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
 <! - - Позаимствовано http://htmlbook.ru/content/dve-kolonki-navigatsiya-sleva - - >
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -26,27 +26,28 @@
    #menu { /* Левая колонка */
     float: left; /* Обтекание справа */
     border: 1px solid #333; /* Параметры рамки вокруг */
-    width: 300px; /* Ширина колонки */
+    width: 400px; /* Ширина колонки */
     padding: 5px; /* Поля вокруг текста */
     margin: 10px 10px 20px 5px; /* Значения отступов */
+    overflow: auto; /* ??? */
    }
    #menu div {
     padding: 2px; /* Поля вокруг ссылок */
    }
-   #menu a { 
+   #menu a {
     display: block; /* Отображать ссылку как блок */
     padding: 2px; /* Поля вокруг ссылок */
     margin: 1px; /* Отступы вокруг */
     font-size: 0.9em; /* Размер текста */
     text-decoration: none; /* Убираем подчеркивание текста */
    }
-   #menu a:hover { 
+   #menu a:hover {
     background: #faf3d2; /* Цвет фона */
     border: 1px dashed #634f36; /* Добавление пунктирной рамки */
     margin: 0; /* Убираем поля */
    }
    #content { /* Правая колонка */
-    margin: 10px 5px 20px 325px; /* Значения отступов */
+    margin: 10px 5px 20px 425px; /* Значения отступов */
     padding: 5px; /* Поля вокруг текста */
     border: 1px solid #333; /* Параметры рамки */
    }
@@ -66,17 +67,13 @@
    <h1>ShapeSheet VideoFAQ</h1>
    <p>↓ Список задач вы можете увидеть в левой боковой панели этого сайта. <a href='faq.html'>Создать запрос</a> на добавление информации в VideoFAQ.</p>
   </div>
-<div id='menu'>
-<!---   <h3>Добавить запрос</h3>
-   <div><a href='faq.html'>Перейти на главную страницу</a></div> --->
-    <h3>Типовые задачи</h3>
-<div><a href='DevTab.html'>Включить панель разработчик</a></div>
-<div><a href='ID.html'>Определить ID и имя фигуры</a></div>
-</div>
+  <div id='menu'>
+   <embed type='text/html' src='tasks.html' width='400' height='804'>
+  </div>
   <div id='content'>
-<h3>Определить ID и имя фигуры</h3><iframe width='1120' height='630' src='https://www.youtube.com/embed/lSXBGQps9b0?rel=0&start=255&end=269' frameborder='1'></iframe>
-   </div>
-   
+   <!--<h3>Включить панель разработчик*</h3><iframe width='1315' height='740' src='https://www.youtube.com/embed/WmnzwS9Dir8?rel=0&start=39&end=90' frameborder='1'> -->
+   <h3>Определить ID и имя фигуры</h3><iframe width='1315' height='740' src='https://www.youtube.com/embed/lSXBGQps9b0?rel=0&start=255&end=269' frameborder='1'></iframe>
+  </div>  
   <div id='foot'>
 <!--   Copyright &copy; Влад Мержевич -->
   </div>
