@@ -8,6 +8,7 @@
 <details>
   <summary>Серия материалов подготовленная для российского офиса Microsoft</summary>
   
+  *Записи в корпоративном блоге Microsoft*    
   [Как оптимизировать рабочее пространство в окне документа Visio](https://rus-visio-blog-archive.github.io/2017/01/12/kak-optimizirovat-rabochee-prostranstvo-v-okne-dokumenta-visio.htm)   
   [Основные элементы окна Visio с ленточным интерфейсом](https://rus-visio-blog-archive.github.io/2017/01/18/osnovnye-jelementy-okna-visio-s-lentochnym-interfejsom.htm)   
   [Видео: Новые возможности Visio 2016](https://rus-visio-blog-archive.github.io/2017/01/24/video-novye-vozmozhnosti-visio-2016.htm)   
@@ -30,11 +31,12 @@
   [Многостраничные документы в MS Visio](https://rus-visio-blog-archive.github.io/2018/06/20/multipage.htm)    
   [Совместная работа с файлами Visio в приложении Microsoft Teams](https://rus-visio-blog-archive.github.io/2018/06/22/visio-and-ms-teams.htm) (перевод статьи)   
   [MS Visio - удобное средство для создания схем](https://rus-visio-blog-archive.github.io/2018/70/40/over9000.htm)   
-  <!--- Here's my comment --->
-  ---
+  <!--- Here's my comment ---> 
+  
+  *Доклады и вебинары*     
+  [Вебинар Visio для IT специалистов](https://www.youtube.com/watch?v=eYvQXiqaMi0) (вебинар для клиентов M$FT из стран СНГ)   
   <!--- [MS Visio. Удобный инструмент для создантия схем](https://www.youtube.com/watch?v=PaELDyYX_Aw) (доклад о MS Visio на VII ежегодной конференции MS Project)--->   
   <!--- [MS Visio. Сделайте ваши проекты более наглядными](https://www.youtube.com/watch?v=SJZag89T764) (доклад о MS Visio на VIII ежегодной конференции MS Project)--->   
-  [Вебинар Visio для IT специалистов](https://www.youtube.com/watch?v=eYvQXiqaMi0) (вебинар для клиентов M$FT из стран СНГ)     
 </details>
  
 ## База Знаний (ShapeSheet™) Knowledge Base
