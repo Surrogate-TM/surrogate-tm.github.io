@@ -5,6 +5,7 @@
 [Проблема с отображением кириллицы в VBA-редакторе](https://visio-tricks.gitbook.io/workspace/cyrillic_text_broken)    
 [Объектная модель Visio](https://visio-tricks.gitbook.io/workspace/obektnaya-model-visio)    
 [Эмуляция работы с интерфейсом приложения](https://visio-tricks.gitbook.io/workspace/emulyaciya-raboty-s-interfeisom-prilozheniya)    
+[Преобразование в абсолютные координаты страницы](https://visio-tricks.gitbook.io/workspace/preobrazovanie-v-absolyutnye-koordinaty-stranicy)    
 <details>
   <summary>Серия материалов подготовленная для российского офиса Microsoft</summary>
   
