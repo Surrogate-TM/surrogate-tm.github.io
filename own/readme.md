@@ -69,7 +69,7 @@
 [Несортированная коллекция макросов](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master/own/macro)
 
 ## Мой YouTube-канал
-Собственно ссылка на мой канал [Surrogate I](https://www.youtube.com/channel/UCknAtNBhSwX_mDMmVdOhbaA/videos)    
+Собственно ссылка на мой канал [@surrogate-tm](https://www.youtube.com/@surrogate-tm)    
 [Список видео с моего канала](https://surrogate-tm.github.io/video-faq/myvideos.htm) с возможностью поиска и фильтрации
 
 ## Полезные интерактивные таблицы
