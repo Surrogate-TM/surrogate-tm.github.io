@@ -6,7 +6,7 @@
 [Объектная модель Visio](https://visio-tricks.gitbook.io/workspace/obektnaya-model-visio)    
 [Эмуляция работы с интерфейсом приложения](https://visio-tricks.gitbook.io/workspace/emulyaciya-raboty-s-interfeisom-prilozheniya)    
 [Преобразование в абсолютные координаты страницы](https://visio-tricks.gitbook.io/workspace/preobrazovanie-v-absolyutnye-koordinaty-stranicy)    
-## Статьи на habr
+## Статьи на habr [![habr_logo](https://assets.habr.com/habr-web/img/favicons/favicon-16.png)]([https://assets.habr.com/habr-web/img/favicons/favicon-32.png](https://habr.com/ru/feed/))
 [Как бороться с «темами» в документе MS Visio](https://habr.com/ru/post/697172/)  
 <details>
   <summary>Серия материалов подготовленная для российского офиса Microsoft</summary>
