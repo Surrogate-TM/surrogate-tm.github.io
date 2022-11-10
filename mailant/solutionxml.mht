@@ -1,0 +1,3774 @@
+MIME-Version: 1.0
+Content-Location: file:///C:/D92869EC/SolutionXML.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 11">
+<meta name=3DOriginator content=3D"Microsoft Word 11">
+<link rel=3DFile-List href=3D"SolutionXML_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>mailant</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>mailant</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-11-03T21:02:00Z</o:Created>
+  <o:LastSaved>2004-11-03T21:03:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>1967</o:Words>
+  <o:Characters>11213</o:Characters>
+  <o:Company>Microsoft Corporation</o:Company>
+  <o:Lines>93</o:Lines>
+  <o:Paragraphs>26</o:Paragraphs>
+  <o:CharactersWithSpaces>13154</o:CharactersWithSpaces>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-update:auto;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial Unicode MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial Rounded MT Bold";
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Arial Rounded MT Bold";
+	mso-bidi-font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:"Arial Rounded MT Bold";
+	mso-bidi-font-family:Arial;}
+p.Heading35, li.Heading35, div.Heading35
+	{mso-style-name:"Heading 3\.5";
+	mso-style-update:auto;
+	mso-style-parent:"Heading 3";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:10.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Arial Rounded MT Bold";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US style=3D'tab-interval:.5in'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'color:gray'>/=
+//</span><span
+style=3D'color:green'> </span><span style=3D'color:gray'>&lt;summary&gt;</s=
+pan><span
+style=3D'color:green'>The SolutionXmlManipulator class is used to associate=
+<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'color:gray'>/=
+//</span><span
+style=3D'color:green'> and retrieve XML data for documents or cells.</span>=
+<span
+style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'color:blue'>p=
+ublic</span>
+<span style=3D'color:blue'>class</span> SolutionXmlManipulator <o:p></o:p><=
+/span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>const</span>=
+ <span
+style=3D'color:blue'>string</span> solutionXmlElement =3D
+&quot;&lt;SolutionXML/&gt;&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>const</span>=
+ <span
+style=3D'color:blue'>string</span> nameAttribute =3D &quot;Name&quot;;<o:p>=
+</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>const</span>=
+ <span
+style=3D'color:blue'>string</span> namespaceAttributePrefix =3D &quot;xmlns=
+:&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>const</span>=
+ <span
+style=3D'color:blue'>string</span> namespacePrefix =3D &quot;MyNamespace&qu=
+ot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>const</span>=
+ <span
+style=3D'color:blue'>string</span> namespaceUri =3D
+&quot;http://MySchemaUrl...&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:green'>// xml can be stored in a user cell, custom property =
+or a
+scratch cell.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>const</span>=
+ <span
+style=3D'color:blue'>string</span> invalidCellError =3D &quot;The cell must=
+ be an A
+through &quot;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+
+&quot;D cell of the Scratch section or value &quot;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+
+&quot;cell of the User-defined Cells or Custom Properties sections&quot;;<o=
+:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This
+constructor is intentionally left blank.</span><span style=3D'color:gray'>&=
+lt;/summary&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>public</span> SolutionXmlManipulator() <o:p></o:p></sp=
+an></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// No initialization is required.<o:p></o:p></span></=
+span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+demonstrates how to get and set XML data<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> within a docume=
+nt or a
+cell.</span><span style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span></=
+span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;visioApplication&quot;&gt;</spa=
+n><span
+style=3D'color:green'>A Visio application instance</span><span style=3D'col=
+or:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>public</span> <span style=3D'color:blue'>void</span>
+DemoSolutionXml(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Application
+visioApplication) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// The name associated with the SolutionXML for this =
+demo<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>const</span> <span style=3D'color:blue'>string</span> =
+solutionXmlName
+=3D &quot;MySolutionName&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// the cell name used to store SolutionXML for this d=
+emo<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>const</span> <span style=3D'color:blue'>string</span>
+myXmlCellName =3D &quot;MyXml&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>const</span> <span style=3D'color:blue'>string</span>
+userMyXmlCellName =3D &quot;User.MyXml&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// The data contained within the SolutionXML, which c=
+an be<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// a string or any well-formed XML data<o:p></o:p></s=
+pan></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>const</span> <span style=3D'color:blue'>string</span>
+solutionXmlData =3D &quot;&lt;&quot; + namespacePrefix + <o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span>&quot;:MyXml&gt;MyData&lt;/&quot; +
+namespacePrefix + &quot;:MyXml&gt;&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Document
+targetDocument;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Shape
+targetPageSheet;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Cell
+targetCell;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> documentXml;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> cellXml;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> message;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Add a new document.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>targetDocument
+=3D visioApplication.Documents.Add(&quot;&quot;);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Store the SolutionXML data in the document.<o:p></=
+o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>SetDocumentXml(targetDocument,
+solutionXmlName, <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlData)=
+;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Add a user cell on the page to store the SolutionX=
+ML.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>targetPageSheet
+=3D targetDocument.Pages[1].PageSheet;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (0 =3D=3D targetPageSheet.get_CellExistsU(us=
+erMyXmlCellName,
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(<span
+style=3D'color:blue'>short</span>)Microsoft.Office.Interop.Visio.VisExistsF=
+lags.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>visExistsAnywher=
+e))
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>targetPageSheet.=
+AddNamedRow((<span
+style=3D'color:blue'>short</span>)Microsoft.Office.Interop.<o:p></o:p></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>Visio.VisSectionIndices.visSectionUser,<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>myXmlCellName,
+(<span style=3D'color:blue'>short</span>)Microsoft.Office.Interop.Visio.<o:=
+p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>VisRowTags.visTagDefault);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>targetCell
+=3D targetPageSheet.get_CellsU(userMyXmlCellName);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Store the SolutionXML data in the user cell.<o:p><=
+/o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>SetCellXml(targetCell,
+solutionXmlData);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Retrieve the XML data from the document that was j=
+ust
+set.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Multiple sets of XML data can be associated with a
+document,<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// so the SolutionXML name is needed to identify whic=
+h<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// SolutionXML to retrieve.<o:p></o:p></span></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>documentXml
+=3D GetDocumentXml(targetDocument, solutionXmlName);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Retrieve the XML data from the cell that was just =
+set. <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Because only one set of XML data can be associated=
+ with
+a <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// cell, the SolutionXML name is not needed to identi=
+fy
+which <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// SolutionXML to retrieve.<o:p></o:p></span></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>cellXml
+=3D GetCellXml(targetCell);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// display the xml from the document and from the use=
+r cell<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>message
+=3D &quot;Document xml:&quot; + System.Environment.NewLine +<o:p></o:p></sp=
+an></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>documentXml
++ System.Environment.NewLine + <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Environme=
+nt.NewLine
++<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&quot;User
+cell xml:&quot; + System.Environment.NewLine +<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>cellXml;<o:p></o=
+:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Windows.Forms.MessageBox.Show(message);<o:p></o:p><=
+/span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Diagnostics.Debug.WriteLine(err.Message);<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+retrieves the XML associated with a document.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;sourceDocument&quot;&gt;</span>=
+<span
+style=3D'color:green'>Document containing XML data</span><span style=3D'col=
+or:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlName&quot;&gt;</span=
+><span
+style=3D'color:green'>Identifies the SolutionXML to <o:p></o:p></span></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> retrieve</span>=
+<span
+style=3D'color:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;returns&gt;</span><span style=3D'color:green'>XML =
+data
+designated by solutionXmlName</span><span style=3D'color:gray'>&lt;/returns=
+&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>public</span> <span style=3D'color:blue'>string</span>
+GetDocumentXml(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Document
+sourceDocument,<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlName) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlString;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> returnValue =3D &quot;&quot;;<o:p></o:p>=
+</span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Check if the the SolutionXML exists within the doc=
+ument.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (sourceDocument.get_SolutionXMLElementExists=
+(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlName))
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlString
+=3D sourceDocument.get_SolutionXMLElement(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>solutionXmlName);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// The XML data will be returned excluding the enclos=
+ing<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// SolutionXML tag.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>returnValue
+=3D getSolutionXmlData(solutionXmlString);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Diagnostics.Debug.WriteLine(err.Message);<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>return</span> returnValue;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+sets XML data for a document. In order for<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> XML to be store=
+d within
+a document, it must be enclosed within a<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> SolutionXML tag=
+ and the
+name attribute must be set.</span><span style=3D'color:gray'>&lt;/summary&g=
+t;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;targetDocument&quot;&gt;</span>=
+<span
+style=3D'color:green'>The document where XML is to be stored<o:p></o:p></sp=
+an></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlName&quot;&gt;</span=
+><span
+style=3D'color:green'>Identifies the SolutionXML because<o:p></o:p></span><=
+/span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> more than one s=
+et of
+XML can be associated with a document</span><span style=3D'color:gray'>&lt;=
+/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlData&quot;&gt;</span=
+><span
+style=3D'color:green'>A string or well-formed XML</span><span style=3D'colo=
+r:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>public</span> <span style=3D'color:blue'>void</span>
+SetDocumentXml(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Document
+targetDocument,<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlName, <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlData) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlString;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>solutionXmlString
+=3D buildSolutionXmlString(solutionXmlName,<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlData)=
+;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// The solutionXmlName identifies the SolutionXML. Th=
+e name<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// attribute of the SolutionXML element must be the s=
+ame<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// as the value in solutionXmlName.<o:p></o:p></span>=
+</span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>targetDocument.set_SolutionXMLElement(solutionXmlName,
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlStrin=
+g);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Diagnostics.Debug.WriteLine(err.Message);<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+retrieves the XML associated with a cell.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;sourceCell&quot;&gt;</span><span
+style=3D'color:green'>A-D cell of the Scratch section or value<o:p></o:p></=
+span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> cell of the Use=
+r or
+Custom Properties sections</span><span style=3D'color:gray'>&lt;/param&gt;<=
+o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;returns&gt;</span><span style=3D'color:green'>XML =
+data
+stored within the cell</span><span style=3D'color:gray'>&lt;/returns&gt;<o:=
+p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>public</span> <span style=3D'color:blue'>string</span>
+GetCellXml(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Cell
+sourceCell) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlString;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> returnValue =3D &quot;&quot;;<o:p></o:p>=
+</span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (isValidCellForXml(sourceCell)) <o:p></o:p><=
+/span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlString
+=3D sourceCell.FormulaU;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// Strings in Visio formulas are surrounded by double=
+ <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// quotes. Remove them so that the SolutionXML can be=
+ <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </s=
+pan><span
+style=3D'color:green'>// parsed.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlString
+=3D FormulaToString.FormulaStringToString(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>solutionXmlString);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>returnValue
+=3D getSolutionXmlData(solutionXmlString);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>else</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>throw</span> <span style=3D'color:blue'>new</span>
+ApplicationException(invalidCellError);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Diagnostics.Debug.WriteLine(err.Message);<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>return</span> returnValue;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+stores XML within a cell. It checks to <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> see if the pass=
+ed cell
+is capable of having XML stored within it.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> The XML that wi=
+ll be
+contained within a SolutionXML element.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;targetCell&quot;&gt;</span><span
+style=3D'color:green'>A-D cell of the Scratch section, or value<o:p></o:p><=
+/span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> cell of the Use=
+r or
+Custom Properties sections</span><span style=3D'color:gray'>&lt;/param&gt;<=
+o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlData&quot;&gt;</span=
+><span
+style=3D'color:green'>A string or well-formed XML</span><span style=3D'colo=
+r:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>public</span> <span style=3D'color:blue'>void</span>
+SetCellXml(Microsoft.Office.Interop.Visio.Cell targetCell, <o:p></o:p></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlData) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlString;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (isValidCellForXml(targetCell)) <o:p></o:p><=
+/span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// XML stored within a cell do not require a name<o:p=
+></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// to identify it. Pass an empty string for the <o:p>=
+</o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// solutionXmlName parameter.<o:p></o:p></span></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlString
+=3D buildSolutionXmlString(&quot;&quot;,<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>solutionXmlData);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// Any double quotes used for attributes within the X=
+ML<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// must be replaced with single quotes.<o:p></o:p></s=
+pan></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlString
+=3D solutionXmlString.Replace(&quot;\&quot;&quot;,&quot;'&quot;);<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// The entire XML must be surrounded by double quotes=
+ so<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// that it can be a string within a Visio formula.<o:=
+p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>StringToFormulaS=
+tring
+stringUtility =3D <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>new</span> StringToFormulaString();<o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>solutionXmlString
+=3D stringUtility.StringToFormulaForString(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span>solutionXmlString);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>targetCell.Formu=
+laU
+=3D solutionXmlString;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>else</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>throw</span> <span style=3D'color:blue'>new</span> App=
+licationException(invalidCellError);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=3DDE style=3D'font-size:8.0pt;font-family:"Courier New";mso-ansi-langu=
+age:
+DE'>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+lang=3DDE style=3D'font-size:8.0pt;font-family:"Courier New";mso-ansi-langu=
+age:
+DE'><span style=3D'mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Diagnostics.Debug.=
+WriteLine(err.Message);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+lang=3DDE style=3D'font-size:8.0pt;font-family:"Courier New";mso-ansi-langu=
+age:
+DE'><span style=3D'mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span></span><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+builds a valid XML string that can<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> be associated w=
+ith a
+document or a cell. The data passed in <o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> solutionXmlData=
+ is
+contained within a SolutionXML element.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> The XML that th=
+is
+method builds declares a namespace within<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> the SolutionXML
+element.</span><span style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span=
+></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlName&quot;&gt;</span=
+><span
+style=3D'color:green'>Identifies the SolutionXML for a <o:p></o:p></span></=
+span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> Document. Pass =
+an empty
+string if this SolutionXML is for<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> a cell.</span><=
+span
+style=3D'color:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlData&quot;&gt;</span=
+><span
+style=3D'color:green'>Data to be stored within the <o:p></o:p></span></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> solutionXmlName=
+ element
+that can be text or well-formed XML</span><span style=3D'color:gray'>&lt;/p=
+aram&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;returns&gt;</span><span style=3D'color:green'>Stri=
+ng containing
+XML to be stored within a document or<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> a cell</span><s=
+pan
+style=3D'color:gray'>&lt;/returns&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>string</span>
+buildSolutionXmlString(<span style=3D'color:blue'>string</span> solutionXml=
+Name, <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> solutionXmlData) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>const</span> <span style=3D'color:blue'>string</span>
+errorMessage =3D <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span>&quot;Error occurred while building
+SolutionXML.&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Xml.XmlDocum=
+ent
+solutionXml =3D <span style=3D'color:blue'>new</span> System.Xml.XmlDocumen=
+t();<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Xml.XmlEleme=
+nt
+rootElement;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Xml.XmlAttri=
+bute
+attribute;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Start with an empty SolutionXML tag.<o:p></o:p></s=
+pan></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>solutionXml.LoadXml(solutionXmlElement);<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>rootElement
+=3D solutionXml.DocumentElement;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// A zero length string indicates that the SolutionXM=
+L<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// will be stored within a cell instead of a document=
+.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (solutionXmlName.Length &gt; 0) <o:p></o:p><=
+/span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// The Name attribute must match the name of the XML<=
+o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:green'>// element that will be added.<o:p></o:p></span></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>attribute
+=3D solutionXml.CreateAttribute(nameAttribute);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>attribute.Value
+=3D solutionXmlName;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>rootElement.Attr=
+ibutes.Append(attribute);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Add the namespace prefix and universal resource
+identifier<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// used by the custom XML.<o:p></o:p></span></span></=
+p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>attribute
+=3D solutionXml.CreateAttribute(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>namespaceAttribu=
+tePrefix
++ namespacePrefix);<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>attribute.Value
+=3D namespaceUri;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>rootElement.Attributes.Append(attribute);<o:p></o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>rootElement.InnerXml
+=3D solutionXmlData;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Diagnostics.Debug.WriteLine(&quot;Exception:
+&quot; +<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>err.Message
++ errorMessage)<span style=3D'mso-tab-count:1'> </span>;<o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>return</span> solutionXml.InnerXml;<o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method parses
+the SolutionXML and returns<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> the XML stored =
+within
+it.</span><span style=3D'color:gray'>&lt;/summary&gt;<o:p></o:p></span></sp=
+an></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;solutionXmlString&quot;&gt;</sp=
+an><span
+style=3D'color:green'>SolutionXML from a cell or<o:p></o:p></span></span></=
+p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> document</span>=
+<span
+style=3D'color:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;returns&gt;</span><span style=3D'color:green'>XML =
+data
+stored within the SolutionXML element</span><span style=3D'color:gray'>&lt;=
+/returns&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>string</span=
+> getSolutionXmlData(<span
+style=3D'color:blue'>string</span> solutionXmlString) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>const</span> <span style=3D'color:blue'>string</span>
+errorMessage =3D <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span>&quot;Error occurred while retriev=
+ing
+SolutionXML.&quot;;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Xml.XmlDocum=
+ent
+solutionXml;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.Xml.XmlEleme=
+nt
+rootElement;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>string</span> returnValue =3D &quot;&quot;;<o:p></o:p>=
+</span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>try</span> <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p=
+></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>solutionXml
+=3D <span style=3D'color:blue'>new</span> System.Xml.XmlDocument();<o:p></o=
+:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>solutionXml.LoadXml(solutionXmlString);<o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// Retrieve the XML data stored with the SolutionXML<=
+o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:green'>// element.<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>rootElement
+=3D solutionXml.DocumentElement;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>returnValue
+=3D rootElement.InnerXml;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>catch</span> (Exception err) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>System.Diagnostics.Debug.WriteLine(&quot;Exception:
+&quot; +<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>err.Message
++ errorMessage)<span style=3D'mso-tab-count:1'> </span>;<span style=3D'mso-=
+tab-count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; </span><o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>return</span> returnValue;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;summary&gt;</span><span style=3D'color:green'>This=
+ method
+checks if XML can be stored within the passed<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> cell. Cells A-D=
+ of the
+Scratch section, and value cells of the<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> User or Custom
+Properties sections can store XML data.</span><span style=3D'color:gray'>&l=
+t;/summary&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;param name=3D&quot;targetCell&quot;&gt;</span><span
+style=3D'color:green'>Cell in which to check if XML can be <o:p></o:p></spa=
+n></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> stored</span><s=
+pan
+style=3D'color:gray'>&lt;/param&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;returns&gt;</span><span style=3D'color:green'>true=
+ if XML
+can be stored in the cell, otherwise false<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:gray'>///</span><span style=3D'color:green'> </span><span
+style=3D'color:gray'>&lt;/returns&gt;<o:p></o:p></span></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'color:blue'>private</span> <span style=3D'color:blue'>bool</span>
+isValidCellForXml(<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Microsoft.Office.In=
+terop.Visio.Cell
+targetCell) <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>bool</span> returnValue =3D <span style=3D'color:blue'=
+>false</span>;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (targetCell.Section =3D=3D (<span style=3D'c=
+olor:blue'>short</span>)Microsoft.Office.Interop.Visio.<o:p></o:p></span></=
+p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>VisSectionIndices.visSectionScratch)
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (targetCell.Column =3D=3D (<span style=3D'co=
+lor:blue'>short</span>)Microsoft.Office.Interop.Visio.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>VisCellIndices.v=
+isScratchA
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>||
+targetCell.Column =3D=3D (<span style=3D'color:blue'>short</span>)Microsoft=
+.Office.Interop.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Visio.VisCellInd=
+ices.visScratchB<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>||
+targetCell.Column =3D=3D (<span style=3D'color:blue'>short</span>)Microsoft=
+.Office.Interop.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Visio.VisCellInd=
+ices.visScratchC<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>||
+targetCell.Column =3D=3D (<span style=3D'color:blue'>short</span>)Microsoft=
+.Office.Interop.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Visio.VisCellInd=
+ices.visScratchD)
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>returnValue
+=3D <span style=3D'color:blue'>true</span>;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>else</span> <span style=3D'color:blue'>if</span> (targ=
+etCell.Section
+=3D=3D (<span style=3D'color:blue'>short</span>)Microsoft.Office.Interop.<o=
+:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>Visio.VisSectionIndices.visSectionUser)
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (targetCell.Column =3D=3D (<span style=3D'co=
+lor:blue'>short</span>)Microsoft.Office.Interop.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Visio.VisCellInd=
+ices.visUserValue)
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>returnValue
+=3D <span style=3D'color:blue'>true</span>;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>else</span> <span style=3D'color:blue'>if</span>
+(targetCell.Section =3D=3D (<span style=3D'color:blue'>short</span>)Microso=
+ft.Office.Interop.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>Visio.VisSectionIndices.visSectionProp)
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span><span
+style=3D'color:blue'>if</span> (targetCell.Column =3D=3D (<span style=3D'co=
+lor:blue'>short</span>)Microsoft.Office.Interop.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Visio.VisCellInd=
+ices.visCustPropsValue)
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>{<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>returnValue
+=3D <span style=3D'color:blue'>true</span>;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span><span
+style=3D'mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span><=
+/p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'color:blue'>return</span> returnValue;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'><span style=3D'mso-tab-=
+count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:#EEEEEE;mso-layout-grid-align:none=
+'><span
+style=3D'font-size:8.0pt;font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
