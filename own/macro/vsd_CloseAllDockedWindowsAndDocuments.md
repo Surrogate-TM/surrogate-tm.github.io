@@ -1,3 +1,4 @@
+Originally posted [there](http://visguy.com/vgforum/index.php?topic=5945.msg23949#msg23949)
 ```
 Sub vsd_CloseAllDockedWindowsAndDocuments()
 Dim va As visio.Application, vd As visio.Document, j%
