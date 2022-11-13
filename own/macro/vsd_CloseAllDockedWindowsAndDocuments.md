@@ -9,7 +9,7 @@ Dim path As String
 Dim ext() As Variant
 Dim x%, n%
 n = 0
-path = "i:\Motiv\plan\" '
+path = "i:\Motiv\plan\" ' change this line for your folder
 If Right(path, 1) <> "\" Then path = path + "\"
 ext = Array("*.vsd") 
 For i = 0 To UBound(ext)
@@ -18,10 +18,7 @@ While myFile <> ""
 myFile = Dir$()
 Set vd = va.Documents.Open(path & myFile)
 For j = va.Documents.Count To 1 Step -1
-If Right(va.Documents(j).Name, 3) = "VSS" Then va.Documents(j).Close ' çàêðûâàåì íàáîðû-äîêóìåíòû
-Next j
-For j = va.Windows.Count To 1 Step -1
-If Right(va.Windows(j).Caption, 4) <> "plan" Then va.Windows(j).Close ' çàêðûâàåì íàáîðû-îêíà
+If Right(va.Documents(j).Name, 3) = "VSS" Then va.Documents(j).Close ' close docked stencil
 Next j
 vd.Save
 vd.Close
