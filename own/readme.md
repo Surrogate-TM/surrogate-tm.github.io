@@ -8,10 +8,11 @@
 [Преобразование в абсолютные координаты страницы](https://visio-tricks.gitbook.io/workspace/preobrazovanie-v-absolyutnye-koordinaty-stranicy)    
 ## Статьи на habr [![habr_logo](https://assets.habr.com/habr-web/img/favicons/favicon-16.png)](https://habr.com/ru/feed/)
 [Как бороться с «темами» в документе MS Visio](https://habr.com/ru/post/697172/)  
+
+## Серия материалов подготовленная для российского офиса Microsoft
 <details>
-  <summary>Серия материалов подготовленная для российского офиса Microsoft</summary>
-  
-  *Записи в корпоративном блоге Microsoft*    
+  <summary>Записи в корпоративном блоге Microsoftt</summary>
+ 
   [Как оптимизировать рабочее пространство в окне документа Visio](https://rus-visio-blog-archive.github.io/2017/01/12/kak-optimizirovat-rabochee-prostranstvo-v-okne-dokumenta-visio.htm)   
   [Основные элементы окна Visio с ленточным интерфейсом](https://rus-visio-blog-archive.github.io/2017/01/18/osnovnye-jelementy-okna-visio-s-lentochnym-interfejsom.htm)   
   [Видео: Новые возможности Visio 2016](https://rus-visio-blog-archive.github.io/2017/01/24/video-novye-vozmozhnosti-visio-2016.htm)   
