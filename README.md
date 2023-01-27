@@ -16,3 +16,5 @@ Back-ups of MSDN/Technet forums
 
 ## My own articles/codes/tools
 Смотрите [Раздел «Моё»](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master/own#readme)
+----
+![](https://komarev.com/ghpvc/?username=Surrogate-TM)
