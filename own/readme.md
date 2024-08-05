@@ -9,6 +9,25 @@
 ## Статьи на habr [![habr_logo](https://assets.habr.com/habr-web/img/favicons/favicon-16.png)](https://habr.com/ru/feed/)
 [Как бороться с «темами» в документе MS Visio](https://habr.com/ru/post/697172/)  
 
+## Статьи из моего gist
+[Сводная информация по ShapeSheet](https://gist.github.com/Surrogate-TM/f8932102ea36ea7d9c30be160d978fc5)    
+[Где искать свойства в ShapeSheet и VBA](https://gist.github.com/Surrogate-TM/5732089fb8988a3823dfbad39948874f)    
+[Характерные особенности фигур](https://gist.github.com/Surrogate-TM/2fd51fde05c5e4cc1acbd9653e858458)    
+[Что нужно знать о переносе кода из VBA в C#](https://gist.github.com/Surrogate-TM/83cb112c8f4ec582a1882428e9615637)   
+[Исследование векторного графического редактора «Автограф»](https://gist.github.com/Surrogate-TM/6f16874e4ca0d700b29640d8bcb557ce)    
+[Метод CreateSelection](https://gist.github.com/Surrogate-TM/bd55e2870e21e68dc44a5e661a4bc2cb)   
+[Метод XYToPage](https://gist.github.com/Surrogate-TM/caa23fb3d3816b19c5d0aecfbc209c71)    
+
+<!--- []()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    --->
 ## Серия материалов подготовленная для российского офиса Microsoft
 <details>
   <summary>Записи в корпоративном блоге Microsoftt</summary>
