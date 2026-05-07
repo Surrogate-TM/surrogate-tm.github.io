@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="ltr" lang="ru-ru" xml:lang="ru-ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="ru-ru" http-equiv="content-language"/>
+<meta content="text/css" http-equiv="content-style-type"/>
+<meta content="no" http-equiv="imagetoolbar"/>
+<meta content="document" name="resource-type"/>
+<meta content="global" name="distribution"/>
+<meta content="2002-2006 phpBB Group" name="copyright"/>
+<meta content="" name="keywords"/>
+<meta content="" name="description"/>
+<title>Форум пользователей Visio • Просмотр форума - Общие вопросы</title>
+<link href="/rss.php" rel="alternate" title="Форум пользователей Visio" type="application/rss+xml"/>
+<link href="./styles/subsilver2-modded/theme/stylesheet.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+// <![CDATA[
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Введите номер страницы, на которую хотите перейти:', '1');
+	var perpage = '40';
+	var base_url = './viewforum.php?f=29&amp;st=0&amp;sk=t&amp;sd=d';
+
+	if (page !== null && !isNaN(page) && page > 0)
+	{
+		document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * perpage);
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+// ]]>
+</script>
+</head>
+<body class="ltr">
+<a name="top"></a>
+<div id="wrapheader">
+<div id="logodesc">
+<table cellspacing="0" width="100%">
+<tr>
+<td><a href="index.php.html"><img alt="" src="./styles/subsilver2-modded/imageset/../.././../images/ranks/visio_getbb_ru/logo.png" title=""/></a></td>
+<td align="center" width="100%"><h1>Форум пользователей Visio</h1><span class="gen">Форум по вопросам применения и программирования в Visio</span></td>
+</tr>
+</table>
+</div>
+<div id="menubar">
+<table cellspacing="0" width="100%">
+<tr>
+<td class="genmed">
+<a href="./ucp.php?mode=login"><img alt="*" height="13" src="./styles/subsilver2-modded/theme/images/icon_mini_login.gif" width="12"/> Вход</a>   <a href="./ucp.php?mode=register"><img alt="*" height="13" src="./styles/subsilver2-modded/theme/images/icon_mini_register.gif" width="12"/> Регистрация</a>
+</td>
+<td align="right" class="genmed">
+ <a href="https://visioport.epizy.com/search.htm"><img alt="*" height="13" src="./styles/subsilver2-modded/theme/images/icon_mini_search.gif" width="12"/> Поиск в Visioport</a>  
+				<a href="gallery_index.php.html" title="Альбомы изображений"><img alt="*" height="13" src="./styles/subsilver2-modded/theme/images/icon_mini_gallery.gif" width="12"/> Альбомы</a>   
+				<a href="./faq.php"><img alt="*" height="13" src="./styles/subsilver2-modded/theme/images/icon_mini_faq.gif" width="12"/> FAQ</a>
+				   <a href="./search.php"><img alt="*" height="13" src="./styles/subsilver2-modded/theme/images/icon_mini_search.gif" width="12"/> Поиск</a> </td>
+</tr>
+</table>
+</div>
+<div id="datebar">
+<table cellspacing="0" width="100%">
+<tr>
+<td class="gensmall"></td>
+<td align="right" class="gensmall">Текущее время: 06 май 2026, 02:22<br/></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="wrapcentre">
+<p class="searchbar">
+<span style="float: left;"><a href="./search.php?search_id=unanswered">Сообщения без ответов</a> | <a href="./search.php?search_id=active_topics">Активные темы</a></span>
+</p>
+<br style="clear: both;"/>
+<table cellpadding="0" cellspacing="1" class="tablebg" style="margin-top: 5px;" width="100%">
+<tr>
+<td class="row1">
+<p class="breadcrumbs"><a href="./portal.php">Портал</a> » <a href="index.php.html">Список форумов</a> » <a href="viewforum.php_f=1.html">Форум пользователей</a> » <a href="viewforum.php_f=29.html">Общие вопросы</a></p>
+<p class="datetime">Часовой пояс: UTC + 3 часа [ Летнее время ]</p>
+</td>
+</tr>
+</table>
+<br/>
+<table cellspacing="1" class="tablebg" width="100%">
+<tr>
+<td align="right" class="cat" colspan="5"> </td>
+</tr>
+<tr>
+<th colspan="2"> Форум </th>
+<th width="50"> Темы </th>
+<th width="50"> Сообщений </th>
+<th> Последнее сообщение </th>
+</tr>
+<tr>
+<td align="center" class="row1" width="50"><img alt="Нет новых сообщений" height="25" src="./styles/subsilver2-modded/imageset/forum_read.gif" title="Нет новых сообщений" width="46"/></td>
+<td class="row1" width="100%">
+<div style="float: left; margin-right: 5px;"><img alt="Нет новых сообщений" src="./Surrogate"/></div><div style="float: left;">
+<a class="forumlink" href="viewforum.php_f=24.html">Полезные ссылки</a>
+<p class="forumdesc">Полезные ссылки по общим вопросам</p>
+</div> </td>
+<td align="center" class="row2"><p class="topicdetails">28</p></td>
+<td align="center" class="row2"><p class="topicdetails">117</p></td>
+<td align="center" class="row2" nowrap="nowrap">
+<p class="topicdetails"><a href="viewtopic.php_f=24&amp;t=351.html" title="answers.microsoft.com теперь и по-русски">answers.microsoft.com теп...</a><a href="viewtopic.php_f=24&amp;p=16678.html" title="Re: answers.microsoft.com теперь и по-русски"></a></p>
+<p class="topicdetails">13 янв 2022, 02:10</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=24&amp;p=16678.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+</table> <br clear="all"/>
+<div id="pageheader">
+<h2><a class="titles" href="viewforum.php_f=29&amp;st=0.html">Общие вопросы</a></h2>
+</div>
+<br clear="all"/><br/>
+<div id="pagecontent">
+<table cellspacing="1" width="100%">
+<tr>
+<td align="left" valign="middle"><a href="./posting.php?mode=post&amp;f=29"><img alt="Начать новую тему" src="./styles/subsilver2-modded/imageset/ru/button_topic_new.gif" title="Начать новую тему"/></a></td>
+<td class="nav" nowrap="nowrap" valign="middle"> Страница <strong>1</strong> из <strong>10</strong><br/></td>
+<td class="gensmall" nowrap="nowrap"> [ Тем: 396 ] </td>
+<td align="right" class="gensmall" nowrap="nowrap" width="100%"><b><a href="#" onclick="jumpto(); return false;" title="Перейти на страницу…">На страницу</a> <strong>1</strong><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">2</a><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">3</a><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">4</a><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">5</a> ... <a href="viewforum.php_f=29&amp;st=0.html">10</a>  <a href="viewforum.php_f=29&amp;st=0.html">След.</a></b></td>
+</tr>
+</table>
+<table cellspacing="1" class="tablebg" width="100%">
+<tr>
+<td class="cat" colspan="7">
+<table cellspacing="0" width="100%">
+<tr class="nav">
+<td valign="middle"> </td>
+<td align="right" valign="middle"> </td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th colspan="3"> Темы </th>
+<th> Автор </th>
+<th> Ответы </th>
+<th> Просмотры </th>
+<th> Последнее сообщение </th>
+</tr>
+<tr>
+<td class="row3" colspan="7"><b class="gensmall">Объявления</b></td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/announce_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1088.html" title="Добавлено: 28 янв 2017, 17:00">Архив "старого" форума visio.artberg.ru/forum</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">2</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">13421</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">06 фев 2017, 12:42</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=1088&amp;p=10625.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="row3" colspan="7"><b class="gensmall">Темы</b></td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2198.html" title="Добавлено: 11 фев 2026, 16:46">Выбрасывает при сохранении</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><span class="username-coloured" style="color: #000001;">Andrey</span></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">1</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">284</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">12 фев 2026, 19:48</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2198&amp;p=19570.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=2160.html" title="Добавлено: 27 ноя 2025, 03:43">Когда я сохраняю  в формате PNG,JPEG на краях желтые линии</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">1</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">175</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">27 ноя 2025, 17:44</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2160&amp;p=19525.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2149.html" title="Добавлено: 31 окт 2025, 14:00">Текст крупным кеглем переносится на другую строку</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=975">Expodroid</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">1</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">132</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">01 ноя 2025, 00:10</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2149&amp;p=19511.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2071.html" title="Добавлено: 29 мар 2025, 00:13">КРАШИ</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=2071.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=2071.html">2</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">21</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">2810</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">16 апр 2025, 00:03</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a> <a href="viewtopic.php_f=29&amp;t=2071&amp;p=19396.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2069.html" title="Добавлено: 27 мар 2025, 22:33">Картинки в визио</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">10</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">874</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">12 апр 2025, 20:09</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a> <a href="viewtopic.php_f=29&amp;t=2069&amp;p=19381.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=2041.html" title="Добавлено: 31 янв 2025, 16:47">Ложное восстановление файлов</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">6</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">854</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">19 фев 2025, 20:04</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a> <a href="viewtopic.php_f=29&amp;t=2041&amp;p=19315.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=2011.html" title="Добавлено: 11 сен 2024, 23:59">Тормозит соединительная линия при масштабе больше 200%</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">12</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">814</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">19 янв 2025, 04:22</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a> <a href="viewtopic.php_f=29&amp;t=2011&amp;p=19285.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2023.html" title="Добавлено: 13 дек 2024, 08:15">Из XLS в VSD</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1415">Stamm331</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">8</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">548</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">13 дек 2024, 17:53</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2023&amp;p=19272.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=2022.html" title="Добавлено: 05 дек 2024, 15:08">При переносе не выдерживается масштаб.</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=237">Юрий</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">19</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1135</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">06 дек 2024, 12:02</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2022&amp;p=19261.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=2016.html" title="Добавлено: 09 окт 2024, 13:40">Слетающие шрифты</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1393">Easterdie</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">18</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">875</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">01 дек 2024, 22:46</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a> <a href="viewtopic.php_f=29&amp;t=2016&amp;p=19233.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2018.html" title="Добавлено: 24 окт 2024, 13:32">Краш visio</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=2018.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=2018.html">2</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">33</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1656</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">26 окт 2024, 00:58</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2018&amp;p=19213.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1850.html" title="Добавлено: 07 окт 2022, 19:20">Аналоги Visio. Хотите поговорить об этом?</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1850.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1850.html">2</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1850.html">3</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1850.html">4</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1850.html">5</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">85</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">5876</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">24 окт 2024, 16:47</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a> <a href="viewtopic.php_f=29&amp;t=1850&amp;p=19195.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2017.html" title="Добавлено: 16 окт 2024, 19:50">Цвет Controls</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">1</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">516</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">17 окт 2024, 20:23</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=2017&amp;p=19172.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2014.html" title="Добавлено: 18 сен 2024, 23:20">Visio Макросы Visual Basic</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">2</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">317</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">19 сен 2024, 00:50</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a> <a href="viewtopic.php_f=29&amp;t=2014&amp;p=19146.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2012.html" title="Добавлено: 16 сен 2024, 12:44">"Недостаточно памяти"</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=2012.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=2012.html">2</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">22</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">769</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">16 сен 2024, 21:59</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=1398">Snakedon</a> <a href="viewtopic.php_f=29&amp;t=2012&amp;p=19141.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=2010.html" title="Добавлено: 29 авг 2024, 17:50">Из VSD в PDF - обрезает по длине.</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><span class="username-coloured" style="color: #000001;">гость</span></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">6</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">404</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">30 авг 2024, 14:01</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a> <a href="viewtopic.php_f=29&amp;t=2010&amp;p=19107.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1997.html" title="Добавлено: 19 мар 2024, 12:18">Проблемы с привязками и автоподгонкой в Visio для складов</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1350">edwardsjethro</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">2</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">310</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">19 мар 2024, 16:06</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a> <a href="viewtopic.php_f=29&amp;t=1997&amp;p=19012.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1990.html" title="Добавлено: 19 фев 2024, 14:14">Visio подвисает при удалении элементов</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1343">Maria</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">7</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">566</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">20 фев 2024, 08:53</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=1343">Maria</a> <a href="viewtopic.php_f=29&amp;t=1990&amp;p=18975.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1986.html" title="Добавлено: 15 янв 2024, 13:55">Запуск события при удалении фигуры со страницы</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1210">Ingvarr</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">8</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">424</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">15 янв 2024, 21:35</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=1210">Ingvarr</a> <a href="viewtopic.php_f=29&amp;t=1986&amp;p=18948.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1980.html" title="Добавлено: 25 дек 2023, 19:07">Как зафиксировать размер фигуры при ее масштабирование</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1336">Stim23</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">4</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">413</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">15 янв 2024, 13:13</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=1210">Ingvarr</a> <a href="viewtopic.php_f=29&amp;t=1980&amp;p=18939.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=767.html" title="Добавлено: 08 июн 2015, 11:38">Соединительная линия не привязывается к фигуре</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><span class="username-coloured" style="color: #000001;">SLameN</span></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">6</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1624</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">22 дек 2023, 20:50</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a> <a href="viewtopic.php_f=29&amp;t=767&amp;p=18912.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1978.html" title="Добавлено: 10 дек 2023, 00:56">В отчет фигура визио не попадает последняя строчка.</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">5</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">445</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">10 дек 2023, 21:17</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a> <a href="viewtopic.php_f=29&amp;t=1978&amp;p=18904.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1971.html" title="Добавлено: 07 ноя 2023, 07:44">Как вставить DWG в Visio 1:1</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1316">yuri-pet</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">3</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1563</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">09 ноя 2023, 10:48</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=991">Nik035</a> <a href="viewtopic.php_f=29&amp;t=1971&amp;p=18878.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1962.html" title="Добавлено: 02 окт 2023, 18:00">Подсветка фигур с гиперссылкой</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">16</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">13316</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">05 окт 2023, 09:56</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1962&amp;p=18783.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1211.html" title="Добавлено: 02 окт 2017, 14:44">Автоматическое создание сложной организационной диаграммы</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1211.html">1</a> ... <a href="viewtopic.php_f=29&amp;t=1211.html">5</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1211.html">6</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1211.html">7</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=742">man_2017</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">132</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">11400</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">02 окт 2023, 21:18</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1211&amp;p=18768.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1959.html" title="Добавлено: 12 сен 2023, 21:11">Visio Super Utilities</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">0</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">846</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">12 сен 2023, 21:11</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=272" style="color: #0000FF;">nbelyh</a> <a href="viewtopic.php_f=29&amp;t=1959&amp;p=18743.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1958.html" title="Добавлено: 04 сен 2023, 21:18">Окна, двери при копировании перемещаются на передний план.</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">8</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">594</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">05 сен 2023, 19:27</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=932">Tim Umix</a> <a href="viewtopic.php_f=29&amp;t=1958&amp;p=18736.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1721.html" title="Добавлено: 19 сен 2021, 17:51">Аналог "копирки" в висио для создание фигур, взаимодействие</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=1034">Globus</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">16</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1178</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">04 сен 2023, 10:31</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a> <a href="viewtopic.php_f=29&amp;t=1721&amp;p=18718.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1954.html" title="Добавлено: 14 авг 2023, 22:31">Visio PID или как строить системы на основе Visio</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">11</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">726</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">15 авг 2023, 21:53</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=57" style="color: #00CC00;">Tumanov</a> <a href="viewtopic.php_f=29&amp;t=1954&amp;p=18664.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1945.html" title="Добавлено: 06 июл 2023, 12:34">Реестр процессов компании</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1945.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1945.html">2</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1945.html">3</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">42</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">2191</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">20 июл 2023, 12:02</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1945&amp;p=18583.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1944.html" title="Добавлено: 05 июл 2023, 18:32">Наложение букв в надписи фигуры</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">4</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">612</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">06 июл 2023, 12:36</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1944&amp;p=18498.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1940.html" title="Добавлено: 16 июн 2023, 23:26">Имитационное моделирование c отрисовкой схемы процессов</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1940.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1940.html">2</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1940.html">3</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">41</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1954</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">30 июн 2023, 22:34</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1940&amp;p=18476.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1938.html" title="Добавлено: 08 июн 2023, 22:20">Вставка visio блок схемы в word</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><span class="username-coloured" style="color: #000001;">Alexandr</span></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">7</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">724</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">09 июн 2023, 15:29</p>
+<p class="topicdetails"><span class="username-coloured" style="color: #000001;">Гость</span> <a href="viewtopic.php_f=29&amp;t=1938&amp;p=18399.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1076.html" title="Добавлено: 17 янв 2017, 12:24">Защита Файла</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1076.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1076.html">2</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=663">Yaguar</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">24</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">3420</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">05 июн 2023, 13:31</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=1076&amp;p=18372.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1921.html" title="Добавлено: 28 мар 2023, 18:12">web-публикация схем: стандартный экспорт и svgpublish</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">16</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">1165</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">01 май 2023, 22:14</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1921&amp;p=18351.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1926.html" title="Добавлено: 10 апр 2023, 19:07">Автоматические Орг-диаграммы. Комплексная пост-обработка</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1926.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1926.html">2</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1926.html">3</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">46</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">2687</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">27 апр 2023, 15:19</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=1926&amp;p=18349.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1934.html" title="Добавлено: 19 апр 2023, 15:17">Межстраничные ссылки при сохранении в PDF</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=80" style="color: #0000FF;">zhuravsky</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">1</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">444</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">19 апр 2023, 15:30</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=1934&amp;p=18326.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"><img alt="" height="16" src="./images/icons/misc/star.gif" title="" width="16"/></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1931.html" title="Добавлено: 14 апр 2023, 17:14">Группировка объектов в одну папку , установлен плюс</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><span class="username-coloured" style="color: #000001;">Kopsvet</span></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">3</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">274</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">14 апр 2023, 22:50</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=881" style="color: #0000FF;">gtfox</a> <a href="viewtopic.php_f=29&amp;t=1931&amp;p=18315.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<a class="topictitle" href="viewtopic.php_f=29&amp;t=1924.html" title="Добавлено: 05 апр 2023, 17:35">Гиперссылки с якорями</a>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">5</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">401</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">05 апр 2023, 18:59</p>
+<p class="topicdetails"><a class="username-coloured" href="./memberlist.php?mode=viewprofile&amp;u=61" style="color: #AA0000;">Surrogate</a> <a href="viewtopic.php_f=29&amp;t=1924&amp;p=18266.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="row1" width="25"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений" width="19"/></td>
+<td align="center" class="row1" width="25"></td>
+<td class="row1">
+<img alt="Вложения" height="18" src="./styles/subsilver2-modded/imageset/icon_topic_attach.gif" title="Вложения" width="14"/> <a class="topictitle" href="viewtopic.php_f=29&amp;t=1241.html" title="Добавлено: 11 окт 2017, 20:10">Автоматическое создание VAD – Диаграмм из Excel таблиц</a>
+<p class="gensmall"> [ <img alt="На страницу" height="9" src="./styles/subsilver2-modded/imageset/icon_post_target.gif" title="На страницу" width="12"/>На страницу: <a href="viewtopic.php_f=29&amp;t=1241.html">1</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1241.html">2</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1241.html">3</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1241.html">4</a><span class="page-sep">, </span><a href="viewtopic.php_f=29&amp;t=1241.html">5</a> ] </p>
+</td>
+<td align="center" class="row2" width="130"><p class="topicauthor"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a></p></td>
+<td align="center" class="row1" width="50"><p class="topicdetails">82</p></td>
+<td align="center" class="row2" width="50"><p class="topicdetails">4326</p></td>
+<td align="center" class="row1" width="140">
+<p class="topicdetails" style="white-space: nowrap;">04 апр 2023, 22:25</p>
+<p class="topicdetails"><a href="./memberlist.php?mode=viewprofile&amp;u=466">BPM</a> <a href="viewtopic.php_f=29&amp;t=1241&amp;p=18259.html"><img alt="Перейти к последнему сообщению" height="9" src="./styles/subsilver2-modded/imageset/icon_topic_latest.gif" title="Перейти к последнему сообщению" width="18"/></a>
+</p>
+</td>
+</tr>
+<tr align="center">
+<td class="cat" colspan="7">
+<form action="./viewforum.php?f=29" method="post"><span class="gensmall">Показать темы за:</span> <select name="st"><option selected="selected" value="0">Все темы</option><option value="1">1 день</option><option value="7">7 дней</option><option value="14">2 недели</option><option value="30">1 месяц</option><option value="90">3 месяца</option><option value="180">6 месяцев</option><option value="365">1 год</option></select> <span class="gensmall">Поле сортировки</span> <select name="sk"><option value="a">Автор</option><option selected="selected" value="t">Время размещения</option><option value="r">Ответы</option><option value="s">Заголовок</option><option value="v">Просмотры</option></select> <select name="sd"><option value="a">по возрастанию</option><option selected="selected" value="d">по убыванию</option></select> <input class="btnlite" name="sort" type="submit" value="Перейти"/></form>
+</td>
+</tr>
+</table>
+<table cellspacing="1" width="100%">
+<tr>
+<td align="left" valign="middle"><a href="./posting.php?mode=post&amp;f=29"><img alt="Начать новую тему" src="./styles/subsilver2-modded/imageset/ru/button_topic_new.gif" title="Начать новую тему"/></a></td>
+<td class="nav" nowrap="nowrap" valign="middle"> Страница <strong>1</strong> из <strong>10</strong><br/></td>
+<td class="gensmall" nowrap="nowrap"> [ Тем: 396 ] </td>
+<td align="right" class="gensmall" nowrap="nowrap" width="100%"><b><a href="#" onclick="jumpto(); return false;" title="Перейти на страницу…">На страницу</a> <strong>1</strong><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">2</a><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">3</a><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">4</a><span class="page-sep">, </span><a href="viewforum.php_f=29&amp;st=0.html">5</a> ... <a href="viewforum.php_f=29&amp;st=0.html">10</a>  <a href="viewforum.php_f=29&amp;st=0.html">След.</a></b></td>
+</tr>
+</table>
+<br clear="all"/>
+</div>
+<table cellpadding="0" cellspacing="1" class="tablebg" style="margin-top: 5px;" width="100%">
+<tr>
+<td class="row1">
+<p class="breadcrumbs"><a href="./portal.php">Портал</a> » <a href="index.php.html">Список форумов</a> » <a href="viewforum.php_f=1.html">Форум пользователей</a> » <a href="viewforum.php_f=29.html">Общие вопросы</a></p>
+<p class="datetime">Часовой пояс: UTC + 3 часа [ Летнее время ]</p>
+</td>
+</tr>
+</table><br/>
+<!-- Yandex.RTB R-A-1239576-1 -->
+<div id="yandex_rtb_R-A-1239576-1" style="display: table;margin-right:auto;margin-left:auto;"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-1239576-1",
+                renderTo: "yandex_rtb_R-A-1239576-1",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+<br clear="all"/>
+<table cellspacing="1" class="tablebg" width="100%">
+<tr>
+<td class="cat"><h4>Кто сейчас на конференции</h4></td>
+</tr>
+<tr>
+<td class="row1"><p class="gensmall">Сейчас этот форум просматривают: нет зарегистрированных пользователей и гости: 2</p></td>
+</tr>
+</table>
+<br clear="all"/>
+<table cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top">
+<table border="0" cellpadding="0" cellspacing="3">
+<tr>
+<td style="text-align: center;" width="20"><img alt="Новые сообщения" height="18" src="./styles/subsilver2-modded/imageset/topic_unread.gif" title="Новые сообщения" width="19"/></td>
+<td class="gensmall">Новые сообщения</td>
+<td>  </td>
+<td style="text-align: center;" width="20"><img alt="Нет новых сообщений" height="18" src="./styles/subsilver2-modded/imageset/topic_read.gif" title="Нет новых сообщений" width="19"/></td>
+<td class="gensmall">Нет новых сообщений</td>
+<td>  </td>
+<td style="text-align: center;" width="20"><img alt="Объявление" height="18" src="./styles/subsilver2-modded/imageset/announce_read.gif" title="Объявление" width="19"/></td>
+<td class="gensmall">Объявление</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img alt="Новые сообщения [ Популярная тема ]" height="18" src="./styles/subsilver2-modded/imageset/topic_unread_hot.gif" title="Новые сообщения [ Популярная тема ]" width="19"/></td>
+<td class="gensmall">Новые сообщения [ Популярная тема ]</td>
+<td>  </td>
+<td style="text-align: center;"><img alt="Нет новых сообщений [ Популярная тема ]" height="18" src="./styles/subsilver2-modded/imageset/topic_read_hot.gif" title="Нет новых сообщений [ Популярная тема ]" width="19"/></td>
+<td class="gensmall">Нет новых сообщений [ Популярная тема ]</td>
+<td>  </td>
+<td style="text-align: center;"><img alt="Прикреплённая" height="18" src="./styles/subsilver2-modded/imageset/sticky_read.gif" title="Прикреплённая" width="19"/></td>
+<td class="gensmall">Прилепленная</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img alt="Новые сообщения [ Тема закрыта ]" height="18" src="./styles/subsilver2-modded/imageset/topic_unread_locked.gif" title="Новые сообщения [ Тема закрыта ]" width="19"/></td>
+<td class="gensmall">Новые сообщения [ Тема закрыта ]</td>
+<td>  </td>
+<td style="text-align: center;"><img alt="Нет новых сообщений [ Тема закрыта ]" height="18" src="./styles/subsilver2-modded/imageset/topic_read_locked.gif" title="Нет новых сообщений [ Тема закрыта ]" width="19"/></td>
+<td class="gensmall">Нет новых сообщений [ Тема закрыта ]</td>
+<td>  </td>
+<td style="text-align: center;"><img alt="Перенесённая" height="18" src="./styles/subsilver2-modded/imageset/topic_moved.gif" title="Перенесённая" width="19"/></td>
+<td class="gensmall">Перенесённая</td>
+</tr>
+</table>
+</td>
+<td align="right"><span class="gensmall">Вы <strong>можете</strong> начинать темы<br/>Вы <strong>можете</strong> отвечать на сообщения<br/>Вы <strong>не можете</strong> редактировать свои сообщения<br/>Вы <strong>не можете</strong> удалять свои сообщения<br/>Вы <strong>не можете</strong> добавлять вложения<br/></span></td>
+</tr>
+</table>
+<br clear="all"/>
+<table cellspacing="0" width="100%">
+<tr>
+<td><form action="./search.php?fid[]=29" method="post" name="search"><span class="gensmall">Найти:</span> <input class="post" name="keywords" size="20" type="text"/> <input class="btnlite" type="submit" value="Перейти"/></form></td>
+<td align="right"> <form action="./viewforum.php" method="post" name="jumpbox" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td nowrap="nowrap"><span class="gensmall">Перейти:</span> <select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+<option value="-1">Выберите форум</option>
+<option value="-1">------------------</option> <option value="1">Форум пользователей</option>
+<option selected="selected" value="29">   Общие вопросы</option>
+<option value="24">      Полезные ссылки</option>
+<option value="3">   Трафареты и шаблоны</option>
+<option value="49">      Полезные ссылки</option>
+<option value="2">   Версии и варианты поставки Visio</option>
+<option value="28">      Публикации официального русскоязычного блога Visio</option>
+<option value="18">   Свободная трибуна</option>
+<option value="19">      Флейм</option>
+<option value="4">Форум разработчиков</option>
+<option value="6">   Программирование</option>
+<option value="22">      Полезные ссылки</option>
+<option value="5">   ShapeSheet</option>
+<option value="21">      Полезные ссылки</option>
+<option value="15">   Склад полезных макросов</option>
+<option value="30">Работы участников форума</option>
+<option value="32">Работа</option>
+<option value="33">   Исполнители</option>
+<option value="34">   Заказы</option>
+<option value="7">О форуме</option>
+<option value="10">   Предложения и обсуждения</option>
+<option value="9">   Объявления и указания</option>
+<option value="25">Коллективная работа</option>
+<option value="44">   АСУТП</option>
+<option value="42">   Инженерные системы</option>
+<option value="26">   Схема электрощита</option>
+<option value="50">   Надстройка "Хранилище макросов"</option>
+<option value="52">   Комплект проектной/рабочей документации</option>
+<option value="38">База знаний</option>
+<option value="39">   Документация</option>
+<option value="40">   Типичные проблемы</option>
+<option value="41">   Установка и настройка</option>
+<option value="53">VisioPort</option>
+<option value="54">   Visio Navigator</option>
+<option value="55">   Прочее к VisioPort</option>
+<option value="56">   Перенесено из Gumroad</option>
+</select> <input class="btnlite" type="submit" value="Перейти"/></td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+</div>
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+<div id="wrapfooter">
+<span class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a> © 2000, 2002, 2005, 2007 phpBB Group
+	<br/>Вы можете <a href="http://getbb.ru/">создать форум бесплатно</a> PHPBB3 на Getbb.Ru, Также возможно <a href="http://mybb2.ru/">сделать готовый форум</a> PHPBB2 на Mybb2.ru <br/><a href="http://www.phpbbguru.net/">Русская поддержка phpBB</a></span>
+</div>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+new Image().src = "http://counter.yadro.ru/hit;getbb?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script><!--/LiveInternet--></body>
+</html>

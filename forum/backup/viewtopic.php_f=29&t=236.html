@@ -1,0 +1,47 @@
+<div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Спойлер: </b><a href=\'#\' onClick=\'return false;\'>↓</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Спойлер: </b><a href=\'#\' onClick=\'return false;\'>↕</a>'; }"></span><b>Спойлер: </b><a href="#" onclick="return false;">↕</a></div><div class="quotecontent"><div style="display: none;"><script src="https://gist.github.com/Surrogate-TM/c81147acc163b6c2f8f97c5a98b0e5b1.js"></script><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-f554937d749d36df.css"><div id="gist110565114" class="gist">
+    <div class="gist-file" translate="no" data-color-mode="light" data-light-theme="light">
+      <div class="gist-data">
+        
+<div class="js-gist-file-update-container js-task-list-container">
+      <div id="file-changeguidestyle-md" class="file my-2">
+      <div id="file-changeguidestyle-md-readme" class="Box-body readme blob tmp-p-5 tmp-p-xl-6 " style="overflow: auto" tabindex="0" role="region" aria-label="ChangeGuideStyle.md content, created by Surrogate-TM on 08:00AM on July 09, 2021.">
+    <article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 class="heading-element" dir="auto">Fix blind guide-lines in MS Visio 2013+</h1><a id="user-content-fix-blind-guide-lines-in-ms-visio-2013" class="anchor" aria-label="Permalink: Fix blind guide-lines in MS Visio 2013+" href="#fix-blind-guide-lines-in-ms-visio-2013"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">Originally posted at <a href="https://visio.getbb.ru/viewtopic.php?p=11302#p11302" rel="nofollow">https://visio.getbb.ru/viewtopic.php?p=11302#p11302</a><br>
+The guide lines in versions after 2013 are barely visible, this code makes the lines visible.<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e6cabcf5c3d3943faa541ab914e1db9a79cf3edaeb024bec689a4c252bf42556/68747470733a2f2f736f6369616c2e746563686e65742e6d6963726f736f66742e636f6d2f466f72756d732f67657466696c652f31303332373935"><img src="https://camo.githubusercontent.com/e6cabcf5c3d3943faa541ab914e1db9a79cf3edaeb024bec689a4c252bf42556/68747470733a2f2f736f6369616c2e746563686e65742e6d6963726f736f66742e636f6d2f466f72756d732f67657466696c652f31303332373935" alt="Bling guide-line" data-canonical-src="https://social.technet.microsoft.com/Forums/getfile/1032795" style="max-width: 100%;"></a></p>
+<pre><code>sub ChangeGuideStyle()
+Dim App
+dim Doc, pg
+Dim i, sh
+dim Nam
+dim st
+On Error Resume Next
+set App = GetObject( , "Visio.Application")
+If Err.number = 429 Then msgbox "No instance of the Visio application": Exit Sub
+if App.Documents.Count = 0 then msgbox "No open documents": Exit Sub
+set Doc = App.Activedocument
+if msgbox (Doc.FullName, 4, "You want to fix the style of the guide line in document?") = 7 then Exit sub
+set st = Doc.Styles.ItemU("Guide")
+st.cellsSRC(1,2,1).formulaforceU = "Guard(RGB(0,0,255))"
+st.cellsSRC(1,2,2).formulaforceU = "Guard(23)"
+st.cellsSRC(1,2,0).formulaforceU = "0.04 mm"
+End Sub
+</code></pre>
+</article>
+  </div>
+
+  </div>
+
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Surrogate-TM/c81147acc163b6c2f8f97c5a98b0e5b1/raw/9b1056abfde8f92d807651749aa06f86f2efabdf/ChangeGuideStyle.md" style="float:right" class="Link--inTextBlock">view raw</a>
+        <a href="https://gist.github.com/Surrogate-TM/c81147acc163b6c2f8f97c5a98b0e5b1#file-changeguidestyle-md" class="Link--inTextBlock">
+          ChangeGuideStyle.md
+        </a>
+        hosted with ❤ by <a class="Link--inTextBlock" href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+</div></div></div>
