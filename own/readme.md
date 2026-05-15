@@ -29,8 +29,8 @@
 []()    
 []()    --->
 ## Серия материалов подготовленная для российского офиса Microsoft
-<details>
-  <summary>Записи в корпоративном блоге Microsoftt</summary>
+<!--- <details>
+  <summary>Записи в корпоративном блоге Microsoftt</summary>--->
  
   [Как оптимизировать рабочее пространство в окне документа Visio](https://rus-visio-blog-archive.github.io/2017/01/12/kak-optimizirovat-rabochee-prostranstvo-v-okne-dokumenta-visio.htm)   
   [Основные элементы окна Visio с ленточным интерфейсом](https://rus-visio-blog-archive.github.io/2017/01/18/osnovnye-jelementy-okna-visio-s-lentochnym-interfejsom.htm)   
@@ -60,7 +60,7 @@
   [Вебинар Visio для IT специалистов](https://www.youtube.com/watch?v=eYvQXiqaMi0) (вебинар для клиентов M$FT из стран СНГ)   
   <!--- [MS Visio. Удобный инструмент для создантия схем](https://www.youtube.com/watch?v=PaELDyYX_Aw) (доклад о MS Visio на VII ежегодной конференции MS Project)--->   
   <!--- [MS Visio. Сделайте ваши проекты более наглядными](https://www.youtube.com/watch?v=SJZag89T764) (доклад о MS Visio на VIII ежегодной конференции MS Project)--->   
-</details>
+<!--- </details>--->
  
 ## База Знаний (ShapeSheet™) Knowledge Base
 [Онлайн-версия описания таблицы свойств (aka ShapeSheet)](https://shapesheet-kb.github.io/) - за основу базы знаний взяты справочные материалы из комплекта поставки русскоязычной версии Visio 2010! 📖     
@@ -75,7 +75,7 @@
 
 ## Мои трафареты
 По долгу службы и призванию души я создавал трафареты для приложения MS Visio. С января 2021 я буду публиковать свои наработки и описания к ним [здесь](https://surrogate-tm.gitbook.io/my-stencils/)!   
-<details>
+<!--- <details>--->
   <summary>Перечень трафаретов</summary>
   
   [Трафареты СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds)   
@@ -83,7 +83,7 @@
   [Трафарет для схемы расположения оборудования в шкафу](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu)    
   [Stencil for create rack diagram](https://surrogate-tm.gitbook.io/my-stencils/racks/stencil-for-create-rack-diagram)    
   [Трафарет MS Visio для создания однолинейных схем](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem)    
-</details>
+<!--- </details>--->
 
 ## Мои коды
 [GitHub Gist](https://gist.github.com/Surrogate-TM)    
