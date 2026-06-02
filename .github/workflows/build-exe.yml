@@ -1,0 +1,44 @@
+name: Build Windows EXE
+
+on:
+  push:
+    branches:
+      - issue-16-28ad930a2e05
+    paths:
+      - 'own/macro/pdf_sign_inserter.py'
+      - 'own/macro/pdf_sign_inserter.spec'
+      - '.github/workflows/build-exe.yml'
+  workflow_dispatch:
+
+jobs:
+  build-windows-exe:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install pymupdf pyinstaller
+
+      - name: Build EXE with PyInstaller
+        working-directory: own/macro
+        run: |
+          pyinstaller pdf_sign_inserter.spec
+
+      - name: Upload EXE artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf_sign_inserter-windows-exe
+          path: own/macro/dist/pdf_sign_inserter.exe
+          if-no-files-found: error
+
+      - name: Copy EXE to release folder
+        run: |
+          mkdir -p own/macro/dist
+          cp own/macro/dist/pdf_sign_inserter.exe own/macro/pdf_sign_inserter.exe
+        shell: bash
