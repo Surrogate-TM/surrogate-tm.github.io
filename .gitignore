@@ -1,3 +1,7 @@
 __pycache__/
 *.py[cod]
 *.pyo
+
+# PyInstaller build artifacts
+own/macro/build/
+own/macro/dist/
