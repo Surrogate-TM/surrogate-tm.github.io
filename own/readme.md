@@ -10,6 +10,7 @@
 [Как бороться с «темами» в документе MS Visio](https://habr.com/ru/post/697172/)  
 
 ## Статьи из моего gist
+[Снятие защиты с макросов защищенных паролем в документах формата vsdm](https://gist.github.com/Surrogate-TM/01f63bb22e4509b938fe1ebd52ca8f13)    
 [Сводная информация по ShapeSheet](https://gist.github.com/Surrogate-TM/f8932102ea36ea7d9c30be160d978fc5)    
 [Где искать свойства в ShapeSheet и VBA](https://gist.github.com/Surrogate-TM/5732089fb8988a3823dfbad39948874f)    
 [Характерные особенности фигур](https://gist.github.com/Surrogate-TM/2fd51fde05c5e4cc1acbd9653e858458)    
@@ -77,12 +78,14 @@
 По долгу службы и призванию души я создавал трафареты для приложения MS Visio. С января 2021 я буду публиковать свои наработки и описания к ним [здесь](https://surrogate-tm.gitbook.io/my-stencils/)!   
 <!--- <details>--->
   <summary>Перечень трафаретов</summary>
+[Трафареты СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds)   
   
-  [Трафареты СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds)   
-  [Трафарет ГОСТ 21.101-97](https://surrogate-tm.gitbook.io/my-stencils/spds/nabor-elementov-gost-21.101-97)  
-  [Трафарет для схемы расположения оборудования в шкафу](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu)    
-  [Stencil for create rack diagram](https://surrogate-tm.gitbook.io/my-stencils/racks/stencil-for-create-rack-diagram)    
-  [Трафарет MS Visio для создания однолинейных схем](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem)    
+- [Инженерное меню трафарета СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu) (описание в разработке)
+
+[Трафарет ГОСТ 21.101-97](https://surrogate-tm.gitbook.io/my-stencils/spds/nabor-elementov-gost-21.101-97)  
+[Трафарет для схемы расположения оборудования в шкафу](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu)    
+[Stencil for create rack diagram](https://surrogate-tm.gitbook.io/my-stencils/racks/stencil-for-create-rack-diagram)    
+[Трафарет MS Visio для создания однолинейных схем](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem)    
 <!--- </details>--->
 
 ## Мои коды
