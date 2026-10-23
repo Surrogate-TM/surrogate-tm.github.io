@@ -76,17 +76,23 @@
 
 ## Мои трафареты
 По долгу службы и призванию души я создавал трафареты для приложения MS Visio. С января 2021 я буду публиковать свои наработки и описания к ним [здесь](https://surrogate-tm.gitbook.io/my-stencils/)!   
-<!--- <details>--->
-  <summary>Перечень трафаретов</summary>
+<!--- <details>
+<details><summary>Перечень трафаретов</summary>
+</details>--->
+**Перечень трафаретов**    
 [Трафареты СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds)   
-  
-- [Инженерное меню трафарета СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu) (описание в разработке)
-
-[Трафарет ГОСТ 21.101-97](https://surrogate-tm.gitbook.io/my-stencils/spds/nabor-elementov-gost-21.101-97)  
-[Трафарет для схемы расположения оборудования в шкафу](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu)    
-[Stencil for create rack diagram](https://surrogate-tm.gitbook.io/my-stencils/racks/stencil-for-create-rack-diagram)    
-[Трафарет MS Visio для создания однолинейных схем](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem)    
+[Трафарет ГОСТ 21.101-97](https://surrogate-tm.gitbook.io/my-stencils/spds/nabor-elementov-gost-21.101-97)   
+[Трафарет для схемы расположения оборудования в шкафу](https://surrogate-tm.gitbook.io/my-stencils/racks/trafaret-dlya-skhemy-raspolozheniya-oborudovaniya-v-shkafu)     
+[Stencil for create rack diagram](https://surrogate-tm.gitbook.io/my-stencils/racks/stencil-for-create-rack-diagram)     
+[Трафарет MS Visio для создания однолинейных схем](https://surrogate-tm.gitbook.io/my-stencils/other/trafaret-ms-visio-dlya-sozdaniya-odnolineinykh-skhem)   
 <!--- </details>--->
+**Статьи об инженерном меню**    
+[Инженерное меню трафарета СПДС](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu)       
+[Список разделов в документе](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu/spisok-razdelov-v-dokumente)         
+[Разделители в шифре](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu/razdeliteli-v-shifre)       
+[Формы штампа в разделе](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu/formy-shtampa-v-razdele)       
+[Роли подписантов](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu/roli-podpisantov)       
+[Списки фамилий](https://surrogate-tm.gitbook.io/my-stencils/spds/spds/inzhenernoe-menyu/spiski-familii)     
 
 ## Мои коды
 [GitHub Gist](https://gist.github.com/Surrogate-TM)    
